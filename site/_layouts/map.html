@@ -1,0 +1,10 @@
+---
+# Default leaflet map page
+layout: default
+custom-foot: js/map-js.html
+---
+{%- assign t = site.data.locale[site.lang] -%}
+{%- assign clean_content = content | strip | normalize_whitespace -%}
+{% if clean_content != "" %}<div class="container my-4">{{ content }}</div>{% endif %}
+<h2 class="visually-hidden">{{ t.map_heading | default: "Map of Collection Items" }}</h2>
+<div id="mapContainer"></div>

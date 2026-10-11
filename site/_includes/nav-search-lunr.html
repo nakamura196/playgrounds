@@ -1,0 +1,12 @@
+{%- assign t = site.data.locale[site.lang] -%}
+{% comment %}
+
+    Navbar search box.
+
+    Form set up to use the default search page.
+
+{%- endcomment -%}
+<form role="search" id="nav-search" action="{{ '/search/index.html' | relative_url }}">
+    <svg class="nav-search-icon" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/></svg>
+    <input id="nav-search-box" class="form-control" type="search" placeholder="{{ t.search_collection_items | default: "Search" }}" aria-label="{{ t.search_collection_items | default: "Search collection items" }}" name="q">
+</form>

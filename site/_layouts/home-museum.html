@@ -1,0 +1,65 @@
+---
+# Museum-style home page (use with banner-featured-image: true): prominent search with
+# example queries, era shortcuts, and an image grid of all items.
+# Options (front matter of the page using this layout):
+#   search-examples: list of example queries shown under the search box
+#   grid-items: list of objectids to feature in the image grid (default: all items)
+#   chip-field: metadata field for the shortcut chips under the search (default: era)
+#   (the page content is shown beside the search box)
+layout: default
+---
+{%- assign t = site.data.locale[site.lang] -%}
+{%- assign items = site.data[site.metadata] | where_exp: 'item','item.objectid and item.parentid == nil' -%}
+<div class="container museum-home">
+
+    <section class="museum-search row gx-4 gx-lg-5 gy-4 align-items-start">
+        <div class="col-lg-7">
+            <h2 class="museum-h2">{{ t.search_heading | default: "Search the collection" }}</h2>
+            <form action="{{ '/search/' | relative_url }}" method="get" class="d-flex gap-2 mb-3" role="search">
+                <input class="form-control form-control-lg" type="search" name="q" aria-label="{{ t.search | default: 'Search' }}" placeholder="{{ t.search_placeholder | default: 'Enter your search term...' }}">
+                <button class="btn btn-primary btn-lg px-4" type="submit">{{ t.search | default: "Search" }}</button>
+            </form>
+            {% if page.search-examples %}
+            <p class="small text-muted mb-2">{{ t.search_examples | default: "Try:" }}</p>
+            <div class="d-flex flex-wrap gap-2">
+                {% for q in page.search-examples %}<a class="museum-chip" href="{{ '/search/?q=' | append: q | relative_url }}">{{ q }}</a>{% endfor %}
+            </div>
+            {% endif %}
+        </div>
+        <div class="col-lg-5 museum-intro">
+            {{ content }}
+        </div>
+    </section>
+
+    {%- assign chip_field = page.chip-field | default: 'era' -%}
+    {%- assign eras = items | map: chip_field | compact | uniq | sort -%}
+    {% if eras.size > 1 %}
+    <section class="museum-eras">
+        <h2 class="museum-h2">{{ t.browse_by_era | default: "Browse by period" }}</h2>
+        <div class="d-flex flex-wrap gap-2">
+        {% for e in eras %}{% assign n = items | where: chip_field, e | size %}
+            <a class="museum-chip museum-chip-lg" href="{{ e | url_param_escape | prepend: ':' | prepend: chip_field | prepend: '/browse.html#' | relative_url }}">{{ e }} <span>{{ n }}</span></a>
+        {% endfor %}
+        </div>
+    </section>
+    {% endif %}
+
+    <section class="museum-grid-section">
+        <div class="d-flex justify-content-between align-items-baseline">
+            <h2 class="museum-h2">{% if page.grid-items %}{{ t.featured_items | default: "Selected items" }}{% else %}{{ t.all_items | default: "All items" }}{% endif %} <span class="museum-count">{{ items | size }}</span></h2>
+            <a href="{{ '/browse.html' | relative_url }}">{{ t.browse_all | default: "Browse all" }} →</a>
+        </div>
+        <div class="museum-grid">
+            {%- if page.grid-items -%}{%- assign grid_items = "" | split: "" -%}{%- for id in page.grid-items -%}{%- assign found = items | where: 'objectid', id | first -%}{%- if found -%}{%- assign grid_items = grid_items | push: found -%}{%- endif -%}{%- endfor -%}{%- else -%}{%- assign grid_items = items -%}{%- endif -%}
+            {% for item in grid_items %}
+            <a class="museum-card" href="{{ '/items/' | append: item.objectid | append: '.html' | relative_url }}">
+                <div class="museum-card-img">{% if item.image_thumb %}<img class="lazyload" data-src="{{ item.image_thumb | relative_url }}" alt="{{ item.image_alt_text | default: item.title | escape }}">{% else %}<span class="museum-card-noimg" aria-hidden="true">{{ item[chip_field] }}</span>{% endif %}</div>
+                <h3 class="museum-card-title">{{ item.title }}</h3>
+                {%- assign card_year = item.year | default: item.date -%}
+                <p class="museum-card-meta">{% if item.playground_count %}{{ item.playground_count }} {{ t.playgrounds_n | default: "playgrounds" }}{% else %}{{ card_year }}{% if card_year and item.era %} · {% endif %}{{ item.era }}{% endif %}</p>
+            </a>
+            {% endfor %}
+        </div>
+    </section>
+
+</div>

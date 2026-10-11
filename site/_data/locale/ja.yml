@@ -1,0 +1,202 @@
+# Japanese UI strings. Templates look these up as t.<key> and fall back to
+# the English text written in the template when a key is missing.
+home: ホーム
+items: 公園
+search: 検索
+search_heading: 公園を探す
+search_placeholder: 公園の名前・地区・施設などを入力
+search_terms: 検索語
+search_collection_items: 公園を検索
+search_examples: 例えば
+search_options: 検索のしかた
+results_found: "%n 件見つかりました"
+compare: 比べる
+query: 検索語
+engine_lunr: 元のCollectionBuilder
+engine_cjk: 日本語対応版
+matched_items: 見つかった公園
+browse_by_era: 地区から見る
+all_items: 収録した公園
+browse_all: 一覧へ
+filter_placeholder: 絞り込む語を入力
+all_fields: すべての項目
+title: 公園名
+content_type: 資料の形式
+advanced_search: 詳細検索…
+reset: 解除
+random: ランダム
+start_date: 開始年
+end_date: 終了年
+loading: 読み込み中…
+n_of_total: "%total 件中 %n 件"
+label_suffix: ""   # 項目名の後ろの「:」を付けない（表の形で区切りが見えるため）
+browse_end: "以上 %n 件"
+view_full_record: 詳しく見る
+item_info: 書誌情報
+jump_to_item_info: 書誌情報へ移動
+attribution: 引用するとき
+citation: 表記例
+rights: 利用条件
+rights_label: 利用条件
+rights_standardized: ライセンス
+previous: "&laquo; 前の公園"
+back_to_browse: 一覧に戻る
+next: "次の公園 &raquo;"
+last_updated: 最終更新
+iiif_manifest: IIIFマニフェスト
+open_in_mirador: Miradorで開く
+view_source: 東大デジタルアーカイブで見る
+featured_image: この画像の公園
+advanced_search_title: 詳細検索
+close: 閉じる
+remove_condition: 条件を削除
+add_field: 条件を追加
+sort_by: 並べ替え：
+add_another_field: 条件を追加
+enter_search_term: 検索語を入力
+download_data: ダウンロード
+collection_data: 目録データのダウンロード
+dl_intro: 目録データを、再利用しやすい形式で取り出せます。
+dl_complete: 目録の全項目
+dl_complete_desc: すべての公園の全項目です。CSV（Excel・Google スプレッドシートで開けます）と JSON（ウェブアプリ向け）があります。
+dl_facets: 項目ごとの値の一覧
+dl_facets_desc: 地区・ほかの施設などの項目について、値とその件数をまとめたものです。
+timeline: 年表
+dl_timeline_desc: 年表用の JSON です。<a href="https://timeline.knightlab.com/">TimelineJS</a> で使えます。
+dl_source: サイトのソースコード
+dl_source_desc: このサイトのソースコードです。<a href="https://github.com/CollectionBuilder/collectionbuilder-csv">CollectionBuilder-CSV</a> をもとに作っています。
+source_code: ソースコード
+back_to_top: ページの先頭へ
+link: リンク
+all: すべて
+# DataTables (data page table) — passed as its `language` option
+datatables:
+  search: "表内を検索："
+  lengthMenu: "_MENU_ 件ずつ表示"
+  lengthLabels:
+    "-1": "すべて"
+  info: "全 _TOTAL_ 件中 _START_〜_END_ 件"
+  infoEmpty: "0 件"
+  infoFiltered: "（全 _MAX_ 件から絞り込み）"
+  zeroRecords: "該当する公園はありません"
+  emptyTable: "データがありません"
+  loadingRecords: "読み込み中…"
+  paginate:
+    first: "最初"
+    last: "最後"
+    next: "次へ"
+    previous: "前へ"
+  aria:
+    paginate:
+      first: "最初のページ"
+      previous: "前のページ"
+      next: "次のページ"
+      last: "最後のページ"
+  buttons:
+    csv: "CSV"
+    excel: "Excel"
+toc_title: 目次
+to: 〜
+template_labels:
+  iiif: IIIF 画像
+  image: 画像
+  record: 書誌のみ
+  pdf: PDF
+  video: 動画
+  audio: 音声
+  compound_object: 複合資料
+  multiple: 複数の画像
+featured_items: 収録した公園から
+skip_to_content: 本文へ移動
+toggle_navigation: メニューを開く
+built_with: 使用ツール
+up_arrow: 上向きの矢印
+boolean_option: 条件のつなぎ方
+op_and: かつ
+op_or: または
+op_not: 除く
+metadata_field: 検索する項目
+select_filter_field: 絞り込む項目を選ぶ
+filter_options: 絞り込む項目
+filter_items: 絞り込む
+dl_metadata_csv: CSV
+dl_metadata_json: JSON
+dl_facets_json: JSON
+dl_timeline_json: JSON
+language: 言語
+year_nav: 年へ移動
+# --- upstream template as of 2026-09 (item buttons, home cards, data page, search help, credits)
+item_options: 公園の操作
+view_transcript: 書き起こしを見る
+view_on_timeline: 年表で見る
+view_on_map: 地図で見る
+view_on_full_map: 大きな地図で見る
+view_on_vimeo: Vimeoで見る
+view_on_youtube: YouTubeで見る
+link_to_object: 公園へのリンク
+download: ダウンロード
+click_full_screen: クリックで全画面表示
+previous_item: 前の公園
+next_item: 次の公園
+item_n_of: "%total 点中 %n 点目"
+item_n: "公園 %n"
+items_unit: 点
+visit_banner_record: 背景画像の公園を見る
+org_home_suffix: のホームページ
+map_heading: 公園の地図
+map_search_title: 地図上の公園を検索
+map_search_placeholder: 地図上の公園を検索…
+view_item: 公園を見る
+link_to: "リンク先："
+date_range: "%s〜%e"
+date_from: "%s以降"
+date_until: "%e以前"
+locations: 地名
+dl_subjects: 主題の一覧
+dl_subjects_desc: 主題の値とその件数をまとめたものです。この目録の内容を分析するときに使えます。
+dl_subjects_csv: 主題 CSV
+dl_subjects_json: 主題 JSON
+dl_locations_desc: 地名の値とその件数をまとめたものです。地名の可視化や分析に使えます。
+dl_locations_csv: 地名 CSV
+dl_locations_json: 地名 JSON
+dl_geo_desc: 緯度経度のある公園の情報を <a href="https://ja.wikipedia.org/wiki/GeoJSON">GeoJSON</a> 形式でまとめたものです。地理的な分析に使えます。
+dl_geodata_json: 位置情報 JSON
+search_help_intro: "検索語の後ろに次の書き方を足すと、結果を絞り込めます。"
+search_op_field: "項目を指定する：項目名、コロン、検索語の順に書きます。例：<code>title:foo</code>、<code>date:1911</code>、<code>subject:tree</code>。この目録で使える項目は "
+search_op_field_end: "。"
+search_op_wildcard: "ワイルドカード：<code>*</code> は任意の文字列を表します。例：<code>foo*</code>、<code>*oo</code>。語の前半や後半だけで探すときに便利です。"
+search_op_fuzzy: "あいまい検索：検索語の後ろに <code>~</code> と数字を付けます。例：<code>foo~1</code>。数字が大きいほど、ゆれを許します。表記ゆれの吸収に使えます。"
+search_op_boost: "重み付け：語の後ろに <code>^</code> と数字を付けると、その語を重視します。例：<code>foo^10</code>。複数の語のうち、特に大事な語があるときに使います。"
+technical: 技術情報
+technical_credits: 技術情報（CollectionBuilder）
+credits_p1: このデジタルコレクションは、オープンソースのフレームワーク <a href="https://collectionbuilder.github.io/">CollectionBuilder</a> で作っています。CollectionBuilder は、アイダホ大学図書館のライブラリアンが <a href="https://lib-static.github.io">Lib-Static</a> の考え方に沿って開発しています。
+credits_p2: テンプレートは <a href="https://github.com/CollectionBuilder/collectionbuilder-csv">CollectionBuilder-CSV</a>、静的サイトの生成には <a href="https://jekyllrb.com/">Jekyll</a> を使っています。
+collection_as_data: データとして公開
+collection_as_data_desc: この目録のメタデータを、再利用しやすい形式で取り出せます。
+dli_metadata_csv: 目録 CSV
+dli_metadata_json: 目録 JSON
+dli_subjects_csv: 主題 CSV
+dli_subjects_json: 主題 JSON
+dli_geodata_json: 位置情報 JSON
+dli_locations_csv: 地名 CSV
+dli_locations_json: 地名 JSON
+dli_timeline_json: 年表 JSON
+dli_facets_json: 項目別集計 JSON
+description: 説明
+learn_more: 詳しくはこちら &raquo;
+time_span: 収録期間
+view_timeline: 年表を見る
+content: 収録内容
+other: その他
+total_items: 件（合計）
+view_table: 一覧表を見る
+sample_items: 公園の例
+top_subjects: 主な主題
+carousel_prev: 前へ
+carousel_next: 次へ
+slide: スライド
+advanced_short: 詳細
+advanced_short_suffix: 検索
+# このサイトで足した文言
+playgrounds_n: か所
+vocab_heading: 遊具の語彙

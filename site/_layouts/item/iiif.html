@@ -1,0 +1,27 @@
+---
+# IIIF item layout
+# Shows the item's IIIF manifest in Universal Viewer, with links to open the
+# same manifest elsewhere. The manifest is the `manifest` field (an external
+# manifest) or, when that is empty, the one this site generates from the
+# item's own images (the `page_gen` entry with template 'manifest').
+layout: item/item-page-base
+---
+{%- assign t = site.data.locale[site.lang] -%}
+{%- assign manifest_url = page.manifest -%}
+{%- if manifest_url == nil or manifest_url == "" -%}
+{%- assign manifest_gen = site.page_gen | where: "template", "manifest" | first -%}
+{%- if manifest_gen.permalink -%}{%- assign manifest_url = manifest_gen.permalink | replace: ':name', page.base_filename | absolute_url -%}{%- endif -%}
+{%- endif -%}
+<div class="card mb-4 iiif-item">
+
+    {% include item/iiif-manifest-universal-viewer.html manifest=manifest_url %}
+
+    <div class="card-body d-flex flex-wrap gap-2 justify-content-center">
+        <a class="btn btn-outline-dark" href="{{ manifest_url }}" target="_blank" rel="noopener">
+            <img src="https://iiif.io/img/logo-iiif-34x30.png" alt="" width="20" height="18" class="me-1"> {{ t.iiif_manifest | default: "IIIF Manifest" }}
+        </a>
+        <a class="btn btn-outline-dark" href="https://projectmirador.org/embed/?iiif-content={{ manifest_url | url_encode }}" target="_blank" rel="noopener">{{ t.open_in_mirador | default: "Open in Mirador" }}</a>
+        {% if page.source %}<a class="btn btn-outline-dark" href="{{ page.source }}" target="_blank" rel="noopener">{{ t.view_source | default: "View at source" }}</a>{% endif %}
+    </div>
+
+</div>

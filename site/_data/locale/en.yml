@@ -1,0 +1,52 @@
+# English UI. Template strings already default to English, so this file only
+# overrides the labels that _data/config-*.csv give in Japanese
+# (applied by _plugins/cb_i18n.rb), plus strings written for this demo.
+config_labels:
+  config-nav:
+    /: Home
+    /map.html: Map
+    /browse.html: Browse
+    /search/: Search
+    /vocab/: Equipment vocabulary
+    /data.html: Data
+    /about.html: About
+  config-metadata:
+    title: Park
+    description: Description
+    neighbourhood: Neighbourhood
+    location: Address
+    playground_count: Playgrounds
+    equipment: Play equipment
+    surveyed: Surveyed on
+    hectare: Area (ha)
+    washrooms: Washrooms
+    subject: Other park facilities
+    parkid: Park ID (City)
+    source: Source
+    rights: Rights
+  config-browse:
+    neighbourhood: { display_name: Neighbourhood, sort_name: Neighbourhood, facet_name: Neighbourhood }
+    playground_count: { display_name: Playgrounds, sort_name: Playgrounds }
+    subject: { facet_name: Other park facilities }
+    washrooms: { facet_name: Washrooms }
+    equipment: { facet_name: Play equipment }
+  config-map:
+    neighbourhood: Neighbourhood
+    playground_count: Playgrounds
+    subject: Other facilities
+  config-table:
+    title: Park
+    neighbourhood: Neighbourhood
+    playground_count: Playgrounds
+    washrooms: Washrooms
+    surveyed: Surveyed on
+template_labels:
+  iiif: IIIF image
+# strings written for this site
+browse_by_era: Browse by neighbourhood
+all_items: Parks
+featured_items: Selected parks
+search_heading: Find a park
+search_placeholder: Park name, neighbourhood, facility...
+playgrounds_n: playgrounds
+vocab_heading: Play equipment vocabulary

@@ -1,0 +1,17 @@
+id,label_en,label_ja,broader,chicago_set,note
+swing,Swings,ぶらんこ,,https://chicagoplaygrounds.com/api/item_sets/3045,
+slide,Slides,すべり台,,https://chicagoplaygrounds.com/api/item_sets/3052,
+climbing,Climbing,登る遊具,,https://chicagoplaygrounds.com/api/item_sets/3053,
+climbing-vertical,Vertical climbers,縦に登る遊具（はしご・壁）,climbing,https://chicagoplaygrounds.com/api/item_sets/9055,
+climbing-traverse,Traverses,横に渡る遊具,climbing,https://chicagoplaygrounds.com/api/item_sets/4087,
+climbing-net,Nets,網の遊具,climbing,https://chicagoplaygrounds.com/api/item_sets/4088,
+overhead,Overhead,頭上の遊具（雲梯・吊り輪）,,https://chicagoplaygrounds.com/api/item_sets/3055,
+spinning,Spinning,回る遊具,,https://chicagoplaygrounds.com/api/item_sets/3054,
+seesaw,See-saws,シーソー,,https://chicagoplaygrounds.com/api/item_sets/3056,
+spring,Spring riders,スプリング遊具,,,シカゴは集合ではなく「On a Spring」というタグで扱う
+water,Water play,水遊び,,https://chicagoplaygrounds.com/api/item_sets/3670,
+sound,Musical,音の遊具,,https://chicagoplaygrounds.com/api/item_sets/4894,
+panel,Play panels,パネル遊具,,,シカゴは集合なし（名前に Panel が付く項目が多数）
+sand,Sand play,砂遊び,,,シカゴは集合なし
+zipline,Zip lines,ジップライン,,,シカゴは集合なし
+structure,Play structures,複合遊具,,https://chicagoplaygrounds.com/api/item_sets/3666,型の組み合わせ。contains で中の型を指す

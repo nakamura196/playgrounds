@@ -1,0 +1,4 @@
+field,display_name,search
+neighbourhood,地区,true
+playground_count,遊び場の数,false
+subject,ほかの施設,true

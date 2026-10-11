@@ -1,0 +1,6 @@
+field,display_name,btn,hidden,sort_name,facet_name
+neighbourhood,地区,true,,地区,地区
+playground_count,遊び場の数,,,遊び場の数,
+subject,,true,true,,公園のほかの施設
+washrooms,,true,true,,トイレ
+equipment,,true,true,,遊具

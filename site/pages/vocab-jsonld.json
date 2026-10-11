@@ -1,0 +1,141 @@
+---
+# SKOS vocabulary of play equipment, from _data/vocab/*.csv (copied from vocab/ by
+# scripts/sync_site_data.zsh). Built only in the default build (lang below), since
+# the URIs are language-neutral; labels carry both languages.
+#
+#   categories.csv  skos:Concept, top concepts of the equipment scheme (broader → skos:broader)
+#   types.csv       skos:Concept in the equipment scheme, skos:broader → its categories
+#                   different_from → pgv:differentFrom (a sub-property of skos:related)
+#                   contains       → dcterms:hasPart
+#                   chicago + chicago_match exact → skos:exactMatch; candidate → rdfs:seeAlso
+#   products.csv    skos:Concept in a separate product scheme,
+#                   match exact → skos:exactMatch, close → skos:closeMatch (to the type)
+#
+# Concept URIs are <lod-base>/vocab/#<id>, which open this vocabulary's HTML page
+# at the entry. ids must be unique across the three tables.
+permalink: /vocab/vocab.jsonld
+layout: none
+lang: ja
+---
+{%- assign base = site.url | append: site.baseurl -%}{%- if site.lod-base -%}{%- assign base = site.lod-base -%}{%- endif -%}
+{%- assign v = base | append: '/vocab/' -%}
+{%- assign cats = site.data.vocab.categories -%}
+{%- assign types = site.data.vocab.types -%}
+{%- assign products = site.data.vocab.products -%}
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "https://schema.org/",
+    "pgv": {{ v | append: '#' | jsonify }},
+    "inScheme": { "@id": "skos:inScheme", "@type": "@id" },
+    "topConceptOf": { "@id": "skos:topConceptOf", "@type": "@id" },
+    "hasTopConcept": { "@id": "skos:hasTopConcept", "@type": "@id" },
+    "broader": { "@id": "skos:broader", "@type": "@id" },
+    "exactMatch": { "@id": "skos:exactMatch", "@type": "@id" },
+    "closeMatch": { "@id": "skos:closeMatch", "@type": "@id" },
+    "differentFrom": { "@id": "pgv:differentFrom", "@type": "@id" },
+    "hasPart": { "@id": "dcterms:hasPart", "@type": "@id" },
+    "seeAlso": { "@id": "rdfs:seeAlso", "@type": "@id" },
+    "subPropertyOf": { "@id": "rdfs:subPropertyOf", "@type": "@id" },
+    "prefLabel": { "@id": "skos:prefLabel", "@container": "@language" },
+    "altLabel": { "@id": "skos:altLabel", "@container": "@language" },
+    "definition": { "@id": "skos:definition", "@container": "@language" },
+    "editorialNote": { "@id": "skos:editorialNote", "@container": "@language" },
+    "label": { "@id": "rdfs:label", "@container": "@language" },
+    "comment": { "@id": "rdfs:comment", "@container": "@language" },
+    "manufacturer": { "@id": "schema:manufacturer" },
+    "name": { "@id": "schema:name" },
+    "url": { "@id": "schema:url", "@type": "@id" },
+    "modified": { "@id": "dcterms:modified" }
+  },
+  "@graph": [
+    {
+      "@id": {{ v | append: '#equipment' | jsonify }},
+      "@type": "skos:ConceptScheme",
+      "prefLabel": { "en": "Playground equipment types", "ja": "遊具の型" },
+      "definition": {
+        "en": "Types of playground equipment, defined by shape and movement. Product names are not used as type names.",
+        "ja": "遊具の型。形と動きで定義し、製品名を型の名前にしない。"
+      },
+      "hasTopConcept": [{% assign tops = cats | where_exp: 'c', 'c.broader == nil' %}{% for c in tops %}{{ v | append: '#' | append: c.id | jsonify }}{% unless forloop.last %}, {% endunless %}{% endfor %}]
+    },
+    {
+      "@id": {{ v | append: '#products' | jsonify }},
+      "@type": "skos:ConceptScheme",
+      "prefLabel": { "en": "Playground equipment products", "ja": "遊具の製品" },
+      "definition": {
+        "en": "Manufacturers' products, each matched to an equipment type.",
+        "ja": "メーカーの製品。それぞれ遊具の型に対応づける。"
+      }
+    },
+    {
+      "@id": "pgv:differentFrom",
+      "@type": "rdf:Property",
+      "subPropertyOf": "skos:related",
+      "label": { "en": "different from", "ja": "別物" },
+      "comment": {
+        "en": "A type that looks similar but is a different type. Stated in both directions.",
+        "ja": "見た目が似ているが別の型。両方向に張る。"
+      }
+    },
+    {%- for c in cats %}
+    {
+      "@id": {{ v | append: '#' | append: c.id | jsonify }},
+      "@type": "skos:Concept",
+      "inScheme": {{ v | append: '#equipment' | jsonify }},
+      {%- if c.broader %}
+      "broader": {{ v | append: '#' | append: c.broader | jsonify }},{% else %}
+      "topConceptOf": {{ v | append: '#equipment' | jsonify }},{% endif %}
+      {%- if c.chicago_set %}
+      "seeAlso": {{ c.chicago_set | jsonify }},{% endif %}
+      {%- if c.note %}
+      "editorialNote": { "ja": {{ c.note | jsonify }} },{% endif %}
+      "prefLabel": { "en": {{ c.label_en | jsonify }}, "ja": {{ c.label_ja | jsonify }} }
+    },{% endfor %}
+    {%- for ty in types %}
+    {%- assign tcats = ty.categories | split: ';' -%}
+    {%- assign alts = ty.alt_labels | split: ';' -%}
+    {%- assign diffs = ty.different_from | split: ';' -%}
+    {%- assign parts = ty['contains'] | split: ';' %}
+    {
+      "@id": {{ v | append: '#' | append: ty.id | jsonify }},
+      "@type": "skos:Concept",
+      "inScheme": {{ v | append: '#equipment' | jsonify }},
+      "broader": [{% for x in tcats %}{{ v | append: '#' | append: x | jsonify }}{% unless forloop.last %}, {% endunless %}{% endfor %}],
+      {%- if diffs.size > 0 %}
+      "differentFrom": [{% for x in diffs %}{{ v | append: '#' | append: x | jsonify }}{% unless forloop.last %}, {% endunless %}{% endfor %}],{% endif %}
+      {%- if parts.size > 0 %}
+      "hasPart": [{% for x in parts %}{{ v | append: '#' | append: x | jsonify }}{% unless forloop.last %}, {% endunless %}{% endfor %}],{% endif %}
+      {%- if ty.chicago and ty.chicago_match == 'exact' %}
+      "exactMatch": {{ ty.chicago | jsonify }},{% elsif ty.chicago %}
+      "seeAlso": {{ ty.chicago | jsonify }},{% endif %}
+      {%- if alts.size > 0 %}
+      "altLabel": { "en": [{% for x in alts %}{{ x | strip | jsonify }}{% unless forloop.last %}, {% endunless %}{% endfor %}] },{% endif %}
+      {%- if ty.definition_ja %}
+      "definition": { "ja": {{ ty.definition_ja | jsonify }} },{% endif %}
+      {%- if ty.status %}
+      "editorialNote": { "ja": {{ ty.status | jsonify }} },{% endif %}
+      "prefLabel": { "en": {{ ty.label_en | jsonify }}, "ja": {{ ty.label_ja | jsonify }} }
+    },{% endfor %}
+    {%- for p in products %}
+    {
+      "@id": {{ v | append: '#' | append: p.id | jsonify }},
+      "@type": "skos:Concept",
+      "inScheme": {{ v | append: '#products' | jsonify }},
+      {%- if p.match == 'exact' %}
+      "exactMatch": {{ v | append: '#' | append: p.type | jsonify }},{% else %}
+      "closeMatch": {{ v | append: '#' | append: p.type | jsonify }},{% endif %}
+      "manufacturer": { "@type": "schema:Organization", "name": {{ p.manufacturer | jsonify }} },
+      {%- if p.url %}
+      "url": {{ p.url | jsonify }},{% endif %}
+      {%- if p.checked %}
+      "modified": {{ p.checked | jsonify }},{% endif %}
+      {%- if p.note %}
+      "editorialNote": { "ja": {{ p.note | jsonify }} },{% endif %}
+      "prefLabel": { "en": {{ p.product_name | jsonify }} }
+    }{% unless forloop.last %},{% endunless %}{% endfor %}
+  ]
+}

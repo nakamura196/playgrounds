@@ -1,0 +1,715 @@
+/*
+    Museum theme for CollectionBuilder
+    ----------------------------------
+    Quiet palette, serif headings, generous whitespace, large images.
+    Language-neutral: fonts are picked by the page language (<html lang>, set
+    from `lang` in _config.yml), so the same theme serves English, Japanese,
+    Chinese and Korean collections. CSS only; no template changes needed.
+
+    How it works: Bootstrap 5.3 reads its colours, radii and focus rings from
+    CSS variables (--bs-*). This file points those variables at the museum
+    palette first, so every Bootstrap component (buttons, dropdowns, modals,
+    tables, pagination) inherits the theme; component rules below only handle
+    shape and spacing. Pair it with _data/config-theme-colors.csv
+    (primary = accent, secondary = muted, success = ink, dark, light).
+
+    Use: add `@use "museum";` to _sass/_custom.scss.
+    Customise by overriding the variables in _custom.scss, e.g.
+        :root { --museum-accent: #2a4f7a; --museum-accent-rgb: 42, 79, 122; }
+        :root { --museum-heading-font: var(--museum-sans); }   // sans headings
+    Load the web fonts you need with `font-cdn` in _data/theme.yml
+    (fonts not loaded fall back to the system fonts in each stack).
+*/
+
+:root {
+    --museum-paper: #f7f4ee;
+    --museum-paper-2: #efe9df;      /* panels, placeholders */
+    --museum-surface: #fbf9f5;      /* raised surfaces (modals, tables) */
+    --museum-ink: #2b2a28;
+    --museum-muted: #6f6a62;
+    --museum-line: #ddd6ca;
+    --museum-accent: #7a4a2a;
+    --museum-accent-rgb: 122, 74, 42;
+    --museum-accent-dark: #5c3720;
+    --museum-dark: #24211d;
+    --museum-radius: 2px;
+
+    /* Latin defaults */
+    --museum-serif: "Source Serif 4", "Iowan Old Style", Georgia, serif;
+    --museum-sans: "Source Sans 3", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --museum-heading-font: var(--museum-serif);
+    --museum-body-font: var(--museum-sans);
+    --museum-heading-tracking: 0.01em;
+    --museum-body-leading: 1.7;
+
+    /* Bootstrap tokens -> museum palette */
+    --bs-body-bg: var(--museum-paper);
+    --bs-body-color: var(--museum-ink);
+    --bs-secondary-color: var(--museum-muted);
+    --bs-border-color: var(--museum-line);
+    --bs-border-radius: var(--museum-radius);
+    --bs-border-radius-sm: var(--museum-radius);
+    --bs-border-radius-lg: var(--museum-radius);
+    --bs-link-color: var(--museum-accent);
+    --bs-link-color-rgb: var(--museum-accent-rgb);
+    --bs-link-hover-color: var(--museum-accent-dark);
+    --bs-link-hover-color-rgb: 92, 55, 32;
+    --bs-focus-ring-color: rgba(var(--museum-accent-rgb), 0.3);
+    --bs-code-color: var(--museum-accent-dark);
+    --bs-tertiary-bg: var(--museum-paper-2);
+    --bs-secondary-bg: var(--museum-paper-2);
+}
+
+/* CJK: Mincho / Song / Myeongjo headings, Gothic / Hei / Dotum body.
+   A serif heading font is the convention for museum and rare-book sites in
+   all three languages; body text stays sans for screen legibility. */
+:lang(ja) {
+    --museum-serif: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", serif;
+    --museum-sans: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
+    --museum-heading-tracking: 0.05em;
+    --museum-body-leading: 1.9;
+}
+:lang(zh-Hans), :lang(zh-CN), :lang(zh) {
+    --museum-serif: "Noto Serif SC", "Songti SC", "SimSun", serif;
+    --museum-sans: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+    --museum-heading-tracking: 0.05em;
+    --museum-body-leading: 1.9;
+}
+:lang(zh-Hant), :lang(zh-TW), :lang(zh-HK) {
+    --museum-serif: "Noto Serif TC", "Songti TC", "PMingLiU", serif;
+    --museum-sans: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    --museum-heading-tracking: 0.05em;
+    --museum-body-leading: 1.9;
+}
+:lang(ko) {
+    --museum-serif: "Noto Serif KR", "AppleMyungjo", "Batang", serif;
+    --museum-sans: "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+    --museum-heading-tracking: 0.02em;
+    --museum-body-leading: 1.8;
+}
+
+/* ========== base ========== */
+body {
+    background-color: var(--museum-paper);
+    color: var(--museum-ink);
+    font-family: var(--museum-body-font);
+    line-height: var(--museum-body-leading);
+}
+h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5, .display-2, .card-header, .modal-title {
+    font-family: var(--museum-heading-font);
+    font-weight: 600;
+    letter-spacing: var(--museum-heading-tracking);
+    line-height: 1.45;
+    text-wrap: balance;
+}
+main h2 { margin-top: 2.5rem; margin-bottom: 1rem; }
+main h2:first-child { margin-top: 0; }
+a { text-decoration-thickness: 1px; text-underline-offset: 0.2em; }
+code { background: var(--museum-paper-2); padding: 0.1em 0.35em; border-radius: var(--museum-radius); font-size: 0.85em; }
+::selection { background: rgba(var(--museum-accent-rgb), 0.18); }
+/* long URLs and identifiers must not push the page sideways on phones */
+dd, .field-value, #searchResults p, .card-text, .museum-intro { overflow-wrap: anywhere; }
+
+/* one focus style everywhere (keyboard only) */
+:focus-visible { outline: 2px solid var(--museum-accent); outline-offset: 2px; box-shadow: none !important; }
+a:focus:not(:focus-visible), .btn:focus:not(:focus-visible), .nav-link:focus:not(:focus-visible) { outline: none; box-shadow: none; }
+.form-control, .form-select {
+    background-color: #fff;
+    border-color: var(--museum-line);
+    border-radius: var(--museum-radius);
+    &:focus { border-color: var(--museum-accent); box-shadow: 0 0 0 3px rgba(var(--museum-accent-rgb), 0.15); }
+}
+
+/* ========== buttons ========== */
+.btn {
+    white-space: nowrap;
+    border-radius: var(--museum-radius);
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    --bs-btn-focus-box-shadow: none;
+}
+.btn-lg { font-size: 1rem; padding: 0.6rem 1.4rem; }
+/* quiet secondary actions: outlined, not grey slabs */
+.btn-secondary, .btn-light, .btn-outline-secondary, .btn-outline-dark, .btn-outline-primary {
+    --bs-btn-color: var(--museum-ink);
+    --bs-btn-bg: transparent;
+    --bs-btn-border-color: var(--museum-line);
+    --bs-btn-hover-color: var(--museum-accent);
+    --bs-btn-hover-bg: var(--museum-surface);
+    --bs-btn-hover-border-color: var(--museum-accent);
+    --bs-btn-active-color: var(--museum-accent);
+    --bs-btn-active-bg: var(--museum-surface);
+    --bs-btn-active-border-color: var(--museum-accent);
+}
+.btn-dark, .btn-success, .btn-primary {
+    --bs-btn-hover-bg: var(--museum-accent-dark);
+    --bs-btn-hover-border-color: var(--museum-accent-dark);
+}
+.btn-outline-danger {
+    --bs-btn-color: var(--museum-muted);
+    --bs-btn-border-color: var(--museum-line);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #8b3a2e;
+    --bs-btn-hover-border-color: #8b3a2e;
+}
+
+/* ========== dropdowns, modals, pagination, tables ========== */
+.dropdown-menu {
+    --bs-dropdown-bg: var(--museum-surface);
+    --bs-dropdown-border-color: var(--museum-line);
+    --bs-dropdown-link-hover-bg: var(--museum-paper-2);
+    --bs-dropdown-link-active-bg: var(--museum-accent);
+    --bs-dropdown-border-radius: var(--museum-radius);
+    box-shadow: 0 8px 24px rgba(36, 33, 29, 0.08);
+    font-size: 0.95rem;
+}
+.modal {
+    --bs-modal-bg: var(--museum-surface);
+    --bs-modal-border-color: var(--museum-line);
+    --bs-modal-border-radius: var(--museum-radius);
+    --bs-modal-header-border-color: var(--museum-line);
+    --bs-modal-footer-border-color: var(--museum-line);
+    .modal-title { font-size: 1.3rem; }
+    .card { background: transparent; border: none; border-top: 1px solid var(--museum-line); border-radius: 0; }
+    .card-body { padding: 1.25rem 0; }
+    .card-title { font-size: 1.05rem; }
+}
+.modal-backdrop { --bs-backdrop-bg: var(--museum-dark); --bs-backdrop-opacity: 0.45; }
+.pagination {
+    --bs-pagination-color: var(--museum-ink);
+    --bs-pagination-bg: transparent;
+    --bs-pagination-border-color: var(--museum-line);
+    --bs-pagination-hover-color: var(--museum-accent);
+    --bs-pagination-hover-bg: var(--museum-paper-2);
+    --bs-pagination-hover-border-color: var(--museum-line);
+    --bs-pagination-active-bg: var(--museum-accent);
+    --bs-pagination-active-border-color: var(--museum-accent);
+    --bs-pagination-focus-box-shadow: none;
+    --bs-pagination-border-radius: var(--museum-radius);
+}
+.table {
+    --bs-table-bg: transparent;
+    --bs-table-striped-bg: rgba(36, 33, 29, 0.025);
+    --bs-table-hover-bg: var(--museum-paper-2);
+    --bs-table-border-color: var(--museum-line);
+    th { font-weight: 600; white-space: nowrap; }
+}
+
+/* ========== banner and navigation ========== */
+#title h1 a { font-size: 1.5rem; }
+#title p { color: var(--museum-muted); font-size: 0.9rem; letter-spacing: 0.08em; margin-bottom: 0.5rem; }
+
+#home-banner {
+    background-color: var(--museum-dark);
+    min-height: min(64vh, 660px);
+    display: flex;
+    align-items: flex-end;
+    #home-title-box { width: 100%; padding: 0 !important; }
+    #home-title-box > div {
+        /* scrim covers the whole text block, so the title reads on any image */
+        background: linear-gradient(180deg, rgba(36, 33, 29, 0) 0%, rgba(36, 33, 29, 0.55) 40%, rgba(36, 33, 29, 0.88) 100%) !important;
+        text-align: left !important;
+        padding: 9rem var(--museum-gutter) 2.5rem !important;
+    }
+    h1 { font-size: clamp(1.9rem, 5vw, 3.6rem); margin-bottom: 0.5rem; text-shadow: 0 1px 12px rgba(0, 0, 0, 0.35); }
+    p { letter-spacing: 0.12em; opacity: 0.85; }
+    > a.position-absolute {
+        background: transparent !important;
+        font-size: 0.75rem !important;
+        opacity: 0.75;
+        padding: 0.5rem 1rem !important;
+        text-decoration: none;
+        &:hover { opacity: 1; text-decoration: underline; }
+    }
+}
+
+.navbar {
+    border-bottom: 1px solid var(--museum-line);
+    background-color: var(--museum-paper) !important;
+    padding-top: 0.6rem; padding-bottom: 0.6rem;
+    .nav-link { letter-spacing: 0.06em; color: var(--museum-ink); }
+    .nav-link:hover { color: var(--museum-accent); }
+    .nav-link.active { color: var(--museum-accent) !important; font-weight: 600; }
+    .navbar-toggler { border-color: var(--museum-line); }
+    .form-control { background: var(--museum-surface); }
+}
+
+/* ========== footer ========== */
+footer.bg-black {
+    background-color: var(--museum-dark) !important;
+    color: rgba(247, 244, 238, 0.75);
+    padding-top: 3.5rem !important;
+    margin-top: 5rem;
+    .row { border-color: rgba(247, 244, 238, 0.12) !important; max-width: 1296px; margin-left: auto; margin-right: auto; }
+    h2 a { color: var(--museum-paper) !important; text-decoration: none; font-size: 1.2rem; }
+    p, .text-white { color: rgba(247, 244, 238, 0.7) !important; }
+    #footer-nav {
+        gap: 0.25rem 1.5rem;
+        margin-top: 1.25rem;
+        .nav-link {
+            padding: 0.2rem 0;
+            border: none !important;
+            border-radius: 0;
+            background: none !important;
+            color: rgba(247, 244, 238, 0.85) !important;
+            letter-spacing: 0.06em;
+            font-size: 0.9rem;
+            &:hover { color: #fff !important; }
+        }
+        .nav-link.active { color: #fff !important; box-shadow: inset 0 -1px 0 currentColor; }
+    }
+    #footer-credits { font-size: 0.8rem; img { max-height: 1.6rem; opacity: 0.8; } }
+    > div:last-child p { font-size: 0.8rem; letter-spacing: 0.08em; margin-bottom: 0.75rem; }
+}
+
+#scroll-to-top {
+    width: 2.75rem; height: 2.75rem;
+    padding: 0;
+    border-radius: 50%;
+    background: var(--museum-surface);
+    border: 1px solid var(--museum-line);
+    box-shadow: 0 4px 14px rgba(36, 33, 29, 0.12);
+    color: var(--museum-ink);
+    line-height: 2.6rem;
+    text-align: center;
+    svg { width: 1.1rem; height: 1.1rem; }
+    &:hover { color: var(--museum-accent); border-color: var(--museum-accent); }
+}
+
+/* ========== home ========== */
+.museum-home { padding-top: 3.5rem; padding-bottom: 1rem; }
+.museum-home section { margin-bottom: 4.5rem; }
+.museum-h2 {
+    font-size: 1.3rem;
+    margin: 0 0 1.25rem !important;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--museum-line);
+}
+.museum-count { font-family: var(--museum-sans); font-size: 0.9rem; color: var(--museum-muted); margin-left: 0.5rem; }
+.museum-intro { color: var(--museum-muted); font-size: 0.95rem; }
+.museum-chip {
+    display: inline-block;
+    padding: 0.25rem 0.9rem;
+    border: 1px solid var(--museum-line);
+    border-radius: 999px;
+    background: var(--museum-surface);
+    color: var(--museum-ink);
+    text-decoration: none;
+    font-size: 0.95rem;
+    &:hover, &:focus-visible { border-color: var(--museum-accent); color: var(--museum-accent); }
+    span { color: var(--museum-muted); font-size: 0.8em; margin-left: 0.35rem; }
+}
+.museum-chip-lg { padding: 0.45rem 1.2rem; font-family: var(--museum-heading-font); }
+
+.museum-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 2.5rem 1.75rem;
+}
+.museum-card {
+    color: var(--museum-ink);
+    text-decoration: none;
+    &:hover .museum-card-img img { transform: scale(1.03); }
+    &:hover .museum-card-title { color: var(--museum-accent); }
+}
+.museum-card-img {
+    aspect-ratio: 4 / 3;
+    background: var(--museum-paper-2);
+    overflow: hidden;
+    img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
+}
+.museum-card-title { font-size: 1rem; margin: 0.75rem 0 0.15rem; line-height: 1.55; }
+.museum-card-meta { font-size: 0.8rem; color: var(--museum-muted); margin: 0; letter-spacing: 0.06em; }
+
+/* images still loading: quiet paper block, no browser alt text, then fade in */
+img.lazyload, img.lazyloading { opacity: 0; color: transparent; }
+img.lazyloaded { opacity: 1; transition: opacity 0.4s ease; }
+
+/* ========== browse ========== */
+#browseFilter {
+    background: var(--museum-paper-2);
+    padding: 1rem;
+    .input-group > * { border-color: var(--museum-line); }
+}
+#activeFilters .btn {
+    background: var(--museum-accent);
+    border-color: var(--museum-accent);
+    color: #fff;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    padding: 0.15rem 0.8rem;
+    &:hover { background: var(--museum-accent-dark); }
+}
+#activeFilters .btn[onclick*="add"], #activeFilters .btn:last-child:not(:first-child) {
+    background: transparent; color: var(--museum-ink); border-color: var(--museum-line);
+}
+#numberOf {
+    font-size: 0.95rem;
+    font-family: var(--museum-sans);
+    color: var(--museum-muted);
+    text-align: left !important;
+    margin: 1.25rem 0 0.5rem;
+    letter-spacing: 0.04em;
+}
+#browseSortButton { background: transparent; color: var(--museum-ink); border-color: var(--museum-line); }
+#browseItems {
+    margin-top: 1rem;
+    .item { margin-bottom: 2.5rem !important; }
+    .card { background: transparent; border: none; border-radius: 0; }
+    .card-img-top { aspect-ratio: 4 / 3; object-fit: cover; border-radius: 0; background: var(--museum-paper-2); }
+    .card-body { text-align: left !important; padding: 0.75rem 0 0; }
+    .card-title { font-size: 1.05rem; margin-bottom: 0.3rem; }
+    .card-title a { color: var(--museum-ink) !important; text-decoration: none; }
+    .card-title a:hover { color: var(--museum-accent) !important; }
+    .card-text { font-size: 0.85rem; color: var(--museum-muted); margin-bottom: 0.4rem; }
+    .card-text strong { font-weight: 500; }
+    .card-text .btn-secondary {
+        background: var(--museum-paper-2); color: var(--museum-muted); border: none;
+        border-radius: 999px; padding: 0.05rem 0.65rem; margin: 0.2rem 0.3rem 0 0 !important; font-size: 0.78rem; font-weight: 400;
+        &:hover { background: rgba(var(--museum-accent-rgb), 0.12); color: var(--museum-accent); }
+    }
+    .card-text .btn-outline-secondary { display: none; } /* media-type badge */
+    hr, .card-body > .btn-light { display: none; }
+}
+
+/* ========== search results ========== */
+#searchResults {
+    .search-result { display: flex; gap: 1.25rem; padding-bottom: 1.25rem; border-color: var(--museum-line) !important; }
+    .search-thumb { flex: 0 0 120px; aspect-ratio: 4 / 3; background: var(--museum-paper-2); overflow: hidden; }
+    .search-thumb img { width: 100%; height: 100%; object-fit: cover; }
+    .search-text { min-width: 0; }
+    h4 { font-size: 1.1rem; margin-bottom: 0.3rem; }
+    h4 a { text-decoration: none; }
+    p { margin-left: 0 !important; font-size: 0.9rem; color: var(--museum-muted);
+        display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
+}
+
+/* ========== item pages ========== */
+.breadcrumb { font-size: 0.85rem; background: transparent !important; padding-left: 0 !important; }
+/* the display_template "eyebrow" above the title */
+.container > .h5.small { font-family: var(--museum-sans); font-size: 0.7rem !important; letter-spacing: 0.2em; color: var(--museum-accent); margin-bottom: 0.25rem !important; }
+.iiif-item { border: none; background: transparent; }
+.iiif-item .uv { background: var(--museum-dark); height: min(700px, 78vh) !important; }
+#metadata {
+    margin-top: 2.5rem;
+    border-top: 1px solid var(--museum-line);
+    padding-top: 2rem;
+    dl { display: grid; grid-template-columns: minmax(8em, 12em) 1fr; gap: 0.75rem 2rem; }
+    dt { color: var(--museum-muted); font-weight: 500; font-size: 0.9rem; margin: 0; }
+    dd { margin: 0; }
+    dd a[href^="http"] { word-break: break-all; }
+}
+.card { border-color: var(--museum-line); border-radius: var(--museum-radius); }
+.card-header { background-color: transparent; border-bottom-color: var(--museum-line); font-size: 1rem; }
+/* citation and rights boxes */
+#metadata ~ .col-md-5 .card { background: var(--museum-paper-2); border: none; }
+#metadata ~ .col-md-5 .card-header { border-bottom: 1px solid var(--museum-line); }
+/* floating previous / next arrows */
+#item-nav .btn {
+    background: var(--museum-surface) !important;
+    border: 1px solid var(--museum-line) !important;
+    color: var(--museum-ink) !important;
+    border-radius: 50% !important;
+    width: 2.75rem; height: 2.75rem; padding: 0 !important;
+    line-height: 2.6rem; font-size: 1.1rem !important;
+    box-shadow: 0 4px 14px rgba(36, 33, 29, 0.1);
+    opacity: 0.85;
+    &:hover { opacity: 1; color: var(--museum-accent) !important; border-color: var(--museum-accent) !important; }
+}
+
+/* ========== timeline ========== */
+#timeline {
+    --bs-table-striped-bg: transparent;
+    tr { border-color: var(--museum-line); }
+    th { width: 8rem; padding-top: 1.5rem; }
+    th h3 { font-size: 1.6rem; color: var(--museum-accent); }
+    td { padding-top: 1.5rem; padding-bottom: 1.5rem; }
+    .timeline-thumb {
+        width: 100%; aspect-ratio: 4 / 3; object-fit: cover;
+        border: none; border-radius: 0; padding: 0; background: var(--museum-paper-2);
+        margin-bottom: 1rem;
+    }
+}
+
+/* ========== data page ========== */
+.data-header {
+    display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 1rem 2rem;
+    margin-bottom: 1.5rem;
+    > h2, > p { flex: 1 1 100%; }
+    > .btn { float: none !important; order: 3; }
+}
+.data-header > :not(.btn):not(.modal) { flex: 1 1 36rem; }
+.dataTables_wrapper {
+    font-size: 0.95rem;
+    .dt-buttons { margin-bottom: 1rem; }
+    .dt-buttons .btn { font-size: 0.85rem; padding: 0.3rem 0.9rem; }
+    .dataTables_filter input, .dataTables_length select { border: 1px solid var(--museum-line); border-radius: var(--museum-radius); background: #fff; padding: 0.25rem 0.5rem; }
+    .dataTables_info { color: var(--museum-muted); font-size: 0.85rem; padding-top: 1rem !important; }
+    .dataTables_paginate { padding-top: 0.75rem !important; }
+}
+#item-table { min-width: 42rem; margin-top: 0.75rem !important; }
+table.dataTable thead > tr > th.sorting::before, table.dataTable thead > tr > th.sorting::after { opacity: 0.25; }
+table.dataTable thead > tr > th.sorting_asc::before, table.dataTable thead > tr > th.sorting_desc::after { opacity: 1; color: var(--museum-accent); }
+
+/* ========== search comparison ========== */
+.compare-table {
+    background: var(--museum-surface);
+    min-width: 34rem;
+    th[scope="row"] { font-family: var(--museum-heading-font); font-weight: 500; white-space: normal; min-width: 9rem; }
+    .compare-count { font-size: 1.4rem; font-variant-numeric: tabular-nums; width: 8rem; }
+    .is-zero { color: #a33; }
+    .is-hit { color: #2d6a3e; font-weight: 700; }
+}
+
+/* ========== about page ========== */
+#about-title-box h1 { font-size: clamp(1.8rem, 5vw, 3rem); }
+#about-toc-title .btn { background: var(--museum-surface); border-color: var(--museum-line); }
+#about-contents-wrapper h2 { font-size: 1.35rem; padding-bottom: 0.4rem; border-bottom: 1px solid var(--museum-line); }
+
+/* ========== small screens ========== */
+@media (max-width: 575.98px) {
+    .museum-home { padding-top: 2rem; }
+    .museum-home section { margin-bottom: 2.75rem; }
+    .museum-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem 0.9rem; }
+    .museum-card-title { font-size: 0.9rem; }
+    #browseFilter { padding: 0.6rem; }
+    #browseItems .item { width: 50%; padding-left: 0.45rem; padding-right: 0.45rem; margin-bottom: 1.75rem !important; }
+    #browseItems .card-title { font-size: 0.95rem; }
+    #browseItems .card-text strong { display: none; }
+    #searchResults .search-thumb { flex-basis: 84px; }
+    #metadata dl { grid-template-columns: 1fr; gap: 0.1rem; }
+    #metadata dd { margin-bottom: 0.9rem; }
+    #timeline th { width: auto; display: block; padding-bottom: 0; }
+    #timeline td { display: block; }
+    .compare-table .compare-count { width: auto; font-size: 1.1rem; }
+    #home-banner { min-height: 50vh; }
+    footer.bg-black { margin-top: 3rem; }
+    #scroll-to-top { right: 0.75rem !important; bottom: 4.25rem !important; }
+}
+
+/* footer content lines up with the page container */
+@media (min-width: 992px) {
+    footer.bg-black > .row, footer.bg-black > div:last-child { max-width: 960px; margin-left: auto; margin-right: auto; }
+}
+@media (min-width: 1200px) {
+    footer.bg-black > .row, footer.bg-black > div:last-child { max-width: 1140px; }
+}
+@media (min-width: 1400px) {
+    footer.bg-black > .row, footer.bg-black > div:last-child { max-width: 1320px; }
+}
+footer.bg-black > .row > div { padding-left: 0.75rem !important; padding-right: 0.75rem !important; }
+.dt-buttons .btn { background: transparent !important; color: var(--museum-ink) !important; border: 1px solid var(--museum-line) !important; }
+.dt-buttons .btn:hover { color: var(--museum-accent) !important; border-color: var(--museum-accent) !important; }
+
+/* ========== pass 2 (second review round) ========== */
+/* hero: light overall veil + bottom scrim */
+#home-banner::before { content: ""; position: absolute; inset: 0; background: rgba(24, 22, 19, 0.16); pointer-events: none; }
+#home-banner #home-title-box { position: relative; z-index: 1; }
+
+/* one "you are here" treatment in header and footer: underline */
+.navbar .nav-link.active { font-weight: 500; box-shadow: inset 0 -1px 0 currentColor; }
+
+/* quiet buttons need a visible edge */
+.btn-secondary, .btn-light, .btn-outline-secondary, .btn-outline-dark, .btn-outline-primary { --bs-btn-border-color: #c9bfae; }
+
+/* result count reads as a heading, not body text */
+#numberOf { font-family: var(--museum-heading-font); color: var(--museum-ink); font-size: 1.05rem; }
+
+/* show the current filter scope on phones too */
+#selectedField { display: inline !important; font-size: 0.85rem; }
+
+/* item: citation / rights boxes as one warm panel, no seam */
+#metadata ~ .col-md-5 .card { --bs-card-bg: var(--museum-paper-2); --bs-card-cap-bg: transparent; }
+#metadata ~ .col-md-5 .card-body, #metadata ~ .col-md-5 dl { background: transparent; }
+/* item: long URLs on one line with ellipsis */
+#metadata dd a[href^="http"] { display: inline-block; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; vertical-align: bottom; word-break: normal; }
+/* item: viewer links read as secondary text actions, not a row of slabs */
+.iiif-item .card-body { justify-content: flex-start !important; gap: 0.25rem 1.5rem !important; padding: 0.9rem 0; }
+.iiif-item .card-body .btn { border: none; padding: 0.2rem 0; font-size: 0.9rem; color: var(--museum-accent); background: none; }
+.iiif-item .card-body .btn:hover { text-decoration: underline; }
+
+/* data table (DataTables 2): sort indicators */
+table.dataTable thead th .dt-column-order { opacity: 0.35; }
+table.dataTable thead th.dt-ordering-asc .dt-column-order, table.dataTable thead th.dt-ordering-desc .dt-column-order { opacity: 1; color: var(--museum-accent); }
+
+/* scrollable tables: edge shadows show there is more to the side */
+.table-responsive {
+    background:
+        linear-gradient(to right, var(--museum-paper) 30%, rgba(247, 244, 238, 0)) left / 2.5rem 100% no-repeat local,
+        linear-gradient(to left, var(--museum-paper) 30%, rgba(247, 244, 238, 0)) right / 2.5rem 100% no-repeat local,
+        linear-gradient(to right, rgba(36, 33, 29, 0.12), rgba(36, 33, 29, 0)) left / 0.9rem 100% no-repeat scroll,
+        linear-gradient(to left, rgba(36, 33, 29, 0.12), rgba(36, 33, 29, 0)) right / 0.9rem 100% no-repeat scroll;
+}
+.table-responsive .table { --bs-table-bg: transparent; }
+
+/* search comparison: one accent; zero is muted, a hit is accent */
+.compare-table .is-zero { color: var(--museum-muted); font-weight: 400; }
+.compare-table .is-hit { color: var(--museum-accent); }
+
+/* modal and dropdown carry the heading face */
+.modal-title { font-family: var(--museum-heading-font) !important; }
+
+@media (max-width: 575.98px) {
+    /* compare table becomes stacked cards */
+    .compare-table { min-width: 0; background: transparent; }
+    .compare-table thead { display: none; }
+    .compare-table tr { display: block; background: var(--museum-surface); border: 1px solid var(--museum-line); margin-bottom: 0.9rem; padding: 0.75rem 1rem; }
+    .compare-table th[scope="row"] { display: block; border: none; padding: 0 0 0.4rem; font-size: 1.05rem; }
+    .compare-table td { display: flex; justify-content: space-between; align-items: baseline; border: none; padding: 0.15rem 0; text-align: left !important; }
+    .compare-table td::before { content: attr(data-label); font-size: 0.8rem; color: var(--museum-muted); margin-right: 1rem; }
+    .compare-table td.small { display: block; padding-top: 0.4rem; }
+    .compare-table td.small::before { display: block; margin-bottom: 0.2rem; }
+    #scroll-to-top { bottom: 5rem !important; }
+}
+
+/* ========== pass 3 ========== */
+/* grid items must be allowed to shrink, or one long URL widens the page */
+#metadata dl { grid-template-columns: minmax(8em, 12em) minmax(0, 1fr); }
+#metadata dt, #metadata dd { min-width: 0; }
+@media (max-width: 575.98px) { #metadata dl { grid-template-columns: minmax(0, 1fr); } }
+
+/* CJK hero titles: break at spaces, not inside words (falls back if too long) */
+:lang(ja) #home-banner h1, :lang(ko) #home-banner h1, :lang(ja) #about-title-box h1 { word-break: keep-all; overflow-wrap: anywhere; }
+#home-banner #home-title-box > div { padding-bottom: 3rem !important; }
+
+/* "jump to item info" button: small outlined pill */
+h2 > a.btn-outline-dark[href="#metadata"] {
+    border-radius: 999px; font-size: 0.8rem !important; padding: 0.15rem 0.8rem; margin-left: 1rem !important;
+    vertical-align: middle; font-family: var(--museum-sans); letter-spacing: 0.06em;
+}
+
+/* ========== pass 4 ========== */
+/* header search: magnifier inside the box */
+#nav-search { position: relative; }
+#nav-search .nav-search-icon { position: absolute; left: 0.75rem; top: 50%; transform: translateY(-50%); color: var(--museum-muted); pointer-events: none; }
+#nav-search-box { padding-left: 2.25rem; }
+/* phone menu: the search box already leads to the search page, so drop the duplicate link */
+@media (max-width: 991.98px) {
+    #page-nav .nav-link[href$="/search/"], #page-nav .nav-link[href$="/search.html"] { display: none; }
+    #nav-search { margin: 0.5rem 0 0.75rem; }
+}
+
+/* item: bibliographic record as one framed surface with ruled rows */
+#metadata { border-top: none; padding-top: 0; }
+#item-metadata {
+    background: var(--museum-surface);
+    border: 1px solid var(--museum-line);
+    padding: 0.5rem 2rem;
+}
+#item-metadata dl { gap: 0; margin: 0; }
+#item-metadata dt, #item-metadata dd { padding: 0.8rem 0; border-top: 1px solid var(--museum-line); }
+#item-metadata dt:first-of-type, #item-metadata dt:first-of-type + dd { border-top: none; }
+#item-metadata dt { padding-right: 1.5rem; }
+@media (max-width: 575.98px) {
+    #item-metadata { padding: 0.25rem 1rem; }
+    #item-metadata dd { border-top: none; padding-top: 0; }
+    #item-metadata dt { padding-bottom: 0.2rem; }
+}
+
+/* search comparison: calmer rows — ink text, smaller counts, titles clamped to two lines */
+.compare-table {
+    th[scope="row"] a { color: var(--museum-ink); text-decoration: none; }
+    th[scope="row"] a:hover { color: var(--museum-accent); text-decoration: underline; }
+    td, th { padding-top: 0.85rem; padding-bottom: 0.85rem; }
+    .compare-count { font-size: 1.15rem; font-weight: 500; }
+    .is-hit { font-weight: 600; }
+    td.small { color: var(--museum-muted); line-height: 1.6; }
+    td.small a { color: var(--museum-muted); text-decoration: none; }
+    td.small a:hover { color: var(--museum-accent); text-decoration: underline; }
+}
+@media (min-width: 576px) {
+    .compare-table .compare-titles { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+}
+
+/* browse: a closing line under the grid, so a short last row reads as the end */
+.browse-end {
+    display: flex; align-items: center; gap: 1rem;
+    color: var(--museum-muted); font-size: 0.85rem; letter-spacing: 0.1em;
+    margin: 0.5rem 0 3rem;
+    &::before, &::after { content: ""; flex: 1; border-top: 1px solid var(--museum-line); }
+}
+
+/* Universal Viewer: keep our heading face and caps out of its panels */
+.uv h1, .uv h2, .uv h3, .uv .title { font-family: var(--museum-sans) !important; }
+:lang(ja) .uv .title, :lang(ja) .uv h2 { text-transform: none; letter-spacing: 0.08em; }
+/* UV sizes its page box for English; let it fit the label, number, total and button on one line */
+.uv .headerPanel .centerOptions .search { width: auto; white-space: nowrap; }
+.uv .headerPanel .centerOptions .mode label { white-space: nowrap; }
+/* phone menu: the active page is shown by colour alone (a full-width underline reads as a divider) */
+@media (max-width: 991.98px) { .navbar .navbar-collapse .nav-link.active { box-shadow: none; } }
+/* text fields: a visible halo on focus, not just a 1px colour change */
+.form-control:focus, .form-select:focus { border-color: var(--museum-accent); box-shadow: 0 0 0 3px rgba(var(--museum-accent-rgb), 0.2) !important; }
+/* UV's collapsed side tab rotates its label 90° (made for Latin text); CJK reads upright in vertical writing */
+:lang(ja) .uv .closed a.title, :lang(zh) .uv .closed a.title, :lang(ko) .uv .closed a.title {
+    transform: none !important; writing-mode: vertical-rl; text-orientation: upright;
+    width: auto !important; height: auto !important; letter-spacing: 0.2em; margin: 0.5rem auto 0 !important; position: static !important;
+}
+/* UV's own language menu only offers its bundled European locales; picking one discards our Japanese strings */
+:lang(ja) .uv .overlay.settings .setting.locale, :lang(zh) .uv .overlay.settings .setting.locale, :lang(ko) .uv .overlay.settings .setting.locale { display: none; }
+/* footer credit: no synthetic italics for CJK text */
+:lang(ja) #footer-credits em, :lang(zh) #footer-credits em, :lang(ko) #footer-credits em { font-style: normal; }
+/* comparison: query terms stay links (dotted underline), without the accent colour */
+.compare-table th[scope="row"] a { text-decoration: underline dotted; text-decoration-color: var(--museum-line); text-underline-offset: 0.3em; }
+
+/* ========== pass 5 ========== */
+/* full-bleed banners: text starts on the same line as the navbar and page
+   content, i.e. the Bootstrap .container edge at each breakpoint */
+#home-banner, #about-feature { --museum-container: 100%; --museum-gutter: calc((100% - var(--museum-container)) / 2 + 0.75rem); }
+@media (min-width: 576px) { #home-banner, #about-feature { --museum-container: 540px; } }
+@media (min-width: 768px) { #home-banner, #about-feature { --museum-container: 720px; } }
+@media (min-width: 992px) { #home-banner, #about-feature { --museum-container: 960px; } }
+@media (min-width: 1200px) { #home-banner, #about-feature { --museum-container: 1140px; } }
+@media (min-width: 1400px) { #home-banner, #about-feature { --museum-container: 1320px; } }
+/* hero: the banner include adds `padding: 4rem 0`, which left a strip of bare
+   image under the scrim. The title box now sits on the image's bottom edge. */
+#home-banner { padding: 0 !important; }
+#home-banner #home-title-box { align-self: stretch; display: flex; flex-direction: column; justify-content: flex-end; }
+/* round icon buttons: the base theme sets font-size 40px on the link, so the
+   icon sat on a 40px text line and drifted off-centre. Centre it geometrically. */
+#scroll-to-top { font-size: 1rem; line-height: 1; }
+/* about page banner: same treatment as the home hero (the layout's own
+   `padding: 4rem 0` left bare image above and below a floating dark band) */
+#about-feature {
+    position: relative;
+    padding: 0 !important;
+    min-height: min(40vh, 380px);
+    display: flex;
+    align-items: flex-end;
+    background-color: var(--museum-dark);
+}
+#about-feature::before { content: ""; position: absolute; inset: 0; background: rgba(24, 22, 19, 0.16); pointer-events: none; }
+#about-feature #about-title-box { position: relative; z-index: 1; width: 100%; padding: 0 !important; }
+#about-feature .about-title {
+    background: linear-gradient(180deg, rgba(36, 33, 29, 0) 0%, rgba(36, 33, 29, 0.55) 40%, rgba(36, 33, 29, 0.88) 100%) !important;
+    padding: 6rem var(--museum-gutter) 2.25rem !important;
+    h2 { margin: 0; font-size: clamp(1.8rem, 5vw, 3rem); text-shadow: 0 1px 12px rgba(0, 0, 0, 0.35); }
+}
+/* about page body: contents column and TOC sit inside the page container, like
+   every other page (the base layout runs edge to edge, so the TOC started at 32px) */
+.jekyll-toc-list { font-style: normal; }
+@media (min-width: 992px) {
+    #about-wrapper { max-width: 960px; margin: 0 auto; padding: 0 0.75rem; grid-template-columns: 13rem minmax(0, 1fr); column-gap: 3rem; }
+    #about-toc-list { padding: 2.6rem 0 1rem; }
+    .jekyll-toc-list { font-size: 0.9rem; border-left: 1px solid var(--museum-line); padding-left: 1rem; }
+    .jekyll-toc-list a { color: var(--museum-muted); text-decoration: none; }
+    .jekyll-toc-list a:hover { color: var(--museum-accent); text-decoration: underline; }
+    #about-contents-wrapper { padding: 2rem 0 0; }
+}
+@media (max-width: 991.98px) {
+    #about-contents-wrapper, #credits-contents-wrapper { margin: 0 auto; padding: 1rem 0.75rem; }
+}
+/* phones/tablets: the about TOC is a bar fixed to the bottom; keep the footer's last line clear of it */
+@media (max-width: 991.98px) { body:has(#about-toc-wrapper) footer { padding-bottom: 3.5rem !important; } }
+@media (min-width: 576px) and (max-width: 767.98px) { #about-contents-wrapper, #credits-contents-wrapper { max-width: 540px; } }
+@media (min-width: 768px) and (max-width: 991.98px) { #about-contents-wrapper, #credits-contents-wrapper { max-width: 720px; } }
+@media (min-width: 1200px) { #about-wrapper { max-width: 1140px; } }
+@media (min-width: 1400px) { #about-wrapper { max-width: 1320px; } }
+#scroll-to-top svg { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); vertical-align: 0; }
+
+/* Matched text in search results (marked by the cjk_index runtime) */
+.search-result mark {
+    padding: 0 .1em;
+    color: inherit;
+    background-color: rgba(var(--museum-accent-rgb), .14);
+    border-bottom: 2px solid rgba(var(--museum-accent-rgb), .55);
+}

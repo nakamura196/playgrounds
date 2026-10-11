@@ -1,0 +1,15 @@
+{%- assign t = site.data.locale[site.lang] -%}
+{% comment %}
+
+    Adds a basic citation box for the item with reference link to the item page.
+
+{%- endcomment -%}
+<div class="card">
+    <div class="card-header">{{ t.attribution | default: "Attribution" }}</div>
+    <div class="card-body">
+        <dl>
+            <dt>{{ t.citation | default: "Citation:" }}</dt>
+            <dd>"{{ page.title }}", {{ site.title }}, {% if site.organization-name %}{{ site.organization-name }}, {% endif %}<a href="{{ page.url | absolute_url }}">{{ page.url | absolute_url }}</a></dd>
+        </dl>
+    </div>
+</div>

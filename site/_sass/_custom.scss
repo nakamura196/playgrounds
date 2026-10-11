@@ -1,0 +1,38 @@
+/*
+    Put your custom SCSS here!
+    This allows you to override any CollectionBuilder or Bootstrap CSS without modifying the base theme files directly.
+*/
+
+/* Museum theme (see _sass/_museum.scss for the variables you can override) */
+@use "museum";
+
+/* Playgrounds: green accent instead of the museum brown */
+:root {
+    --museum-accent: #2f6b4f;
+    --museum-accent-rgb: 47, 107, 79;
+    --museum-accent-dark: #22513b;
+    --museum-dark: #1f2a24;
+}
+
+/* Home cards without a photograph yet: a short tile with the neighbourhood */
+.museum-card-img:has(.museum-card-noimg) {
+    aspect-ratio: auto;
+    min-height: 4.5rem;
+    display: flex;
+    align-items: flex-end;
+    padding: 0.6rem 0.75rem;
+}
+.museum-card-noimg {
+    font-family: var(--museum-sans);
+    font-size: 0.8rem;
+    letter-spacing: 0.02em;
+    color: var(--museum-muted);
+}
+
+/* Equipment vocabulary page */
+.vocab-list {
+    dt { font-family: var(--museum-heading-font); font-weight: 600; margin-top: 1.25rem; scroll-margin-top: 5rem; }
+    dt:target { color: var(--museum-accent); }
+    dd { margin: 0.25rem 0 0; padding-left: 1rem; border-left: 2px solid var(--museum-line); }
+    dd > div + div { margin-top: 0.15rem; }
+}

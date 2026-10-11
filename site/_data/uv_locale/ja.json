@@ -1,0 +1,237 @@
+{
+  "modules": {
+    "contentLeftPanel": {
+      "content": {
+        "collapse": "目次を閉じる",
+        "collapseFull": "ギャラリーを閉じる",
+        "date": "日付",
+        "expand": "目次を開く",
+        "expandFull": "ギャラリーを開く",
+        "index": "索引",
+        "manifestRanges": "構成",
+        "searchResult": "{0} 件",
+        "searchResults": "{0} 件",
+        "sortBy": "並べ替え:",
+        "thumbnails": "サムネイル",
+        "title": "目次",
+        "volume": "巻"
+      }
+    },
+    "dialogue": {
+      "content": {
+        "close": "閉じる"
+      }
+    },
+    "downloadDialogue": {
+      "content": {
+        "allPages": "全ページ",
+        "currentViewAsJpg": "表示中の範囲 {0} × {1}px (jpg)",
+        "currentViewAsJpgExplanation": "新しいウィンドウで開きます",
+        "download": "ダウンロード",
+        "downloadSelection": "選んだページをダウンロード",
+        "downloadSelectionExplanation": "ダウンロードするページを選ぶ画面を開きます。",
+        "editSettings": "設定を変更",
+        "entireDocument": "資料全体 ({0})",
+        "entireFileAsOriginal": "ファイル全体",
+        "individualPages": "個別のページ",
+        "noneAvailable": "ダウンロードできる形式がありません。",
+        "pagingNote": "ほかの形式を選ぶには、見開き表示を切ってください。",
+        "preview": "プレビュー",
+        "selection": "選択範囲",
+        "title": "ダウンロード",
+        "wholeImageHighRes": "画像全体 {0} × {1}px ({2})",
+        "wholeImageLowResAsJpg": "画像全体 {0} × {1}px (jpg)",
+        "wholeImagesHighRes": "画像全体 ({0})",
+        "wholeImageHighResExplanation": "新しいウィンドウで開きます。",
+        "wholeImageLowResAsJpgExplanation": "新しいウィンドウで開きます。",
+        "wholeImagesHighResExplanation": "2 つの新しいウィンドウで開きます。",
+        "termsOfUse": "利用条件"
+      }
+    },
+    "footerPanel": {
+      "content": {
+        "bookmark": "ブックマークに追加",
+        "download": "ダウンロード",
+        "embed": "埋め込み",
+        "exitFullScreen": "全画面を終了",
+        "feedback": "ご意見",
+        "fullScreen": "全画面",
+        "moreInfo": "資料の情報",
+        "open": "開く",
+        "share": "共有"
+      }
+    },
+    "genericDialogue": {
+      "content": {
+        "emptyValue": "値を入力してください。",
+        "invalidNumber": "正しい数を入力してください。",
+        "noMatches": "見つかりませんでした。",
+        "ok": "OK",
+        "pageNotFound": "入力した番号のページはこの資料にありません。",
+        "refresh": "再読み込み"
+      }
+    },
+    "helpDialogue": {
+      "content": {
+        "title": "ヘルプ",
+        "text": ""
+      }
+    },
+    "moreInfoRightPanel": {
+      "content": {
+        "attribution": "提供",
+        "canvasHeader": "この画像について",
+        "collapse": "情報を閉じる",
+        "collapseFull": "ギャラリーを閉じる",
+        "copiedToClipboard": "コピーしました",
+        "copyToClipboard": "コピー",
+        "description": "説明",
+        "expand": "情報を開く",
+        "expandFull": "ギャラリーを開く",
+        "less": "閉じる",
+        "license": "ライセンス",
+        "logo": "ロゴ",
+        "manifestHeader": "資料について",
+        "more": "続き",
+        "noData": "表示する情報がありません",
+        "page": "ページ",
+        "rangeHeader": "この部分について",
+        "title": "資料の情報"
+      }
+    },
+    "multiSelectDialogue": {
+      "content": {
+        "select": "ダウンロード",
+        "selectAll": "すべて選ぶ",
+        "title": "ダウンロードするページを選ぶ"
+      }
+    },
+    "pagingHeaderPanel": {
+      "content": {
+        "close": "閉じる",
+        "emptyValue": "値を入力してください",
+        "first": "最初",
+        "firstImage": "最初の画像",
+        "firstPage": "最初のページ",
+        "folio": "丁",
+        "gallery": "一覧表示",
+        "go": "移動",
+        "help": "ヘルプ",
+        "image": "画像",
+        "last": "最後",
+        "lastImage": "最後の画像",
+        "lastPage": "最後のページ",
+        "next": "次",
+        "nextImage": "次の画像",
+        "nextPage": "次のページ",
+        "of": "/ {0}",
+        "oneUp": "1ページ表示",
+        "page": "ページ",
+        "pageSearchLabel": "ページ番号で移動",
+        "previous": "前",
+        "previousImage": "前の画像",
+        "previousPage": "前のページ",
+        "settings": "設定",
+        "twoUp": "見開き表示"
+      }
+    },
+    "openSeadragonCenterPanel": {
+      "content": {
+        "attribution": "提供",
+        "goHome": "全体を表示",
+        "imageUnavailable": "画像を表示できません",
+        "next": "次",
+        "previous": "前",
+        "rotateRight": "右に回転",
+        "zoomIn": "拡大",
+        "zoomOut": "縮小"
+      }
+    },
+    "mobileFooterPanel": {
+      "content": {
+        "rotateRight": "右に回転",
+        "moreInfo": "資料の情報",
+        "zoomIn": "拡大",
+        "zoomOut": "縮小"
+      }
+    },
+    "settingsDialogue": {
+      "content": {
+        "locale": "言語",
+        "navigatorEnabled": "全体図を表示",
+        "clickToZoomEnabled": "クリックで拡大",
+        "pagingEnabled": "見開き表示",
+        "reducedMotion": "動きを減らす（アニメーションを切る）",
+        "preserveViewport": "拡大率を保つ",
+        "title": "設定",
+        "website": "<a href='https://github.com/universalviewer/universalviewer#contributors'>Universal Viewer について</a>"
+      }
+    },
+    "shareDialogue": {
+      "content": {
+        "customSize": "指定",
+        "embed": "埋め込み",
+        "embedInstructions": "自分のサイトに埋め込むには、下のコードをコピーして貼り付けてください。",
+        "height": "高さ",
+        "iiif": "IIIFマニフェスト",
+        "share": "共有",
+        "shareInstructions": "共有するには、下のURLをコピーしてください。",
+        "size": "大きさ:",
+        "width": "幅"
+      }
+    },
+    "searchFooterPanel": {
+      "content": {
+        "clearSearch": "消去",
+        "displaying": "{0} {1} / {2}",
+        "enterKeyword": "語を入力",
+        "image": "画像",
+        "imageCaps": "画像",
+        "instanceFound": "「{0}」が 1 か所見つかりました",
+        "instancesFound": "「{1}」が {0} か所見つかりました",
+        "nextResult": "次の結果",
+        "page": "ページ",
+        "pageCaps": "ページ",
+        "previousResult": "前の結果",
+        "print": "印刷",
+        "resultFoundFor": "件見つかりました：",
+        "resultsFoundFor": "件見つかりました：",
+        "searchWithin": "この資料の中を検索："
+      }
+    },
+    "authDialogue": {
+      "content": {
+        "cancel": "キャンセル",
+        "confirm": "確認"
+      }
+    },
+    "clickThroughDialogue": {
+      "content": {
+        "viewTerms": "利用条件の全文を読む"
+      }
+    },
+    "loginDialogue": {
+      "content": {
+        "login": "ログイン",
+        "logout": "ログアウト",
+        "cancel": "キャンセル"
+      }
+    },
+    "restrictedDialogue": {
+      "content": {
+        "cancel": "キャンセル"
+      }
+    }
+  },
+  "content": {
+    "authCORSError": "お使いのブラウザは CORS に対応していないため、この資料を表示できません。",
+    "authorisationFailedMessage": "ログインできませんでした。もう一度お試しください。",
+    "canvasIndexOutOfRange": "指定したコマは範囲外です。",
+    "fallbackDegradedLabel": "ログイン",
+    "fallbackDegradedMessage": "高い解像度で見るにはログインしてください。",
+    "forbiddenResourceMessage": "この画像を見る権限がありません。",
+    "mediaViewer": "画像ビューア",
+    "skipToDownload": "ダウンロードと別の形式へ移動",
+    "termsOfUse": "利用条件"
+  }
+}

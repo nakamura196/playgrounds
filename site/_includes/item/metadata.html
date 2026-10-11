@@ -1,0 +1,33 @@
+{% comment %}
+
+    Adds metadata to item pages in a description list element.
+    Fields are configured via _data/config-metadata.csv 
+    A `vocab` column names a table in _data/vocab/ (e.g. types): the field's values are
+    ids in that table, shown with their label and linked to /vocab/#<id>.
+    
+{%- endcomment -%}
+{%- assign loc = site.data.locale[site.lang] -%}
+{%- assign fields = site.data.config-metadata | where_exp: 'item', 'item.display_name != nil' -%}
+<div id="item-metadata">
+    <dl>
+        {% for f in fields %}{% if page[f.field] %}
+        <dt class="field">{{ f.display_name }}{% if loc contains "label_suffix" %}{{ loc.label_suffix }}{% else %}:{% endif %}</dt>
+        <dd class="field-value">
+            {% if f.vocab %}
+            {% assign terms = page[f.field] | split: ";" %}{% assign label_col = 'label_' | append: site.lang %}
+            {% for t in terms %}{% assign id = t | strip %}{% assign term = site.data.vocab[f.vocab] | where: 'id', id | first %}
+            <a class="me-3" href="{{ '/vocab/#' | append: id | relative_url }}">{{ term[label_col] | default: term.label_en | default: id }}</a>
+            {% endfor %}
+            {% elsif f.browse_link == "true" %}
+            {% assign topics = page[f.field] | split: ";" %}
+            {% for t in topics %}
+            <a class="me-3" href="{{ t | strip | url_param_escape | prepend: ':' | prepend: f.field | prepend: '/browse.html#' | relative_url }}">{{ t | strip }}</a>
+            {% endfor %}
+            {% elsif f.external_link == "true" %}
+            <a href="{{ page[f.field] }}">{{ page[f.field] }}</a>
+            {% else %}
+            {{ page[f.field] | replace: '""','"' }}{% endif %}
+        </dd>
+        {% endif %}{% endfor %}
+    </dl>
+</div>

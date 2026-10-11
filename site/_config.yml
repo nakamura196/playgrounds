@@ -1,0 +1,111 @@
+##########
+# collectionbuilder-csv
+# Jekyll Digital Collection Generator
+# https://github.com/CollectionBuilder/collectionbuilder-csv
+##########
+
+##########
+# URL VARIABLES
+#
+# site domain, full URL to the production location of your collection
+url: https://playgrounds.ldas.jp
+# path to location on the domain if necessary e.g. /digital/hjccc
+baseurl: ""
+# location of code, the full url to your github repository
+source-code: https://github.com/nakamura196/playgrounds
+
+##########
+# SITE SETTINGS
+#
+# language of the site (html lang attribute, UI strings in _data/locale/<lang>.yml)
+lang: ja
+# interface languages built from this repository, one build per language
+# (the English build adds _config.en.yml). Used for the language switch
+# link and hreflang alternates; leave out for a single-language site.
+languages:
+  - code: ja
+    label: 日本語
+    baseurl: ""
+  - code: en
+    label: English
+    baseurl: /en
+# title of site appears in banner
+title: バンクーバーの遊び場
+# tagline, a short phrase that will appear throughout the site in the top banner
+tagline: 遊具の記録（準備中）
+# description appears in meta tags and other locations
+# this description might appear in search result lists, keep around 160 characters max
+description: "バンクーバー市の遊び場 136 か所（114 の公園）を、遊具の種類から探せるようにする記録の準備版です。いまは市のオープンデータにある公園の情報だけを載せています。"
+# keywords, a short list of subjects describing the collection, separated by semicolon, to appear in rich markup
+keywords: playground; play equipment; Vancouver; parks; 遊び場; 遊具
+# creator of the digital collection, to appear in meta tags; we typically use our GitHub usernames but feel free to just use your name
+author: nakamura196
+
+##########
+# COLLECTION SETTINGS
+#
+# Set the metadata for your collection (the name of the CSV file in your _data directory that describes the objects in your collection) 
+# Use the filename of your CSV **without** the ".csv" extension! E.g. _data/demo-metadata.csv --> "demo-metadata"
+metadata: playgrounds
+# page generation settings [optional!]
+# [optional: only used if you need to tweak CB defaults or generate from more than one data file]
+# # Base of the URIs in the JSON-LD (items/*.jsonld, vocab/vocab.jsonld), shared by
+# the Japanese and English builds. Change it once if the site moves; every URI follows.
+lod-base: https://playgrounds.ldas.jp
+
+page_gen:
+  # item pages (the default)
+  - data: 'playgrounds'
+  # JSON-LD of each item at /items/<objectid>.jsonld (schema.org, links to the
+  # equipment vocabulary at /vocab/vocab.jsonld). Layout: _layouts/item/jsonld.json
+  - data: 'playgrounds'
+    template: 'jsonld'
+    template_override: true
+    extension: 'jsonld'
+    permalink: '/items/:name.jsonld'
+
+##########
+# ORGANIZATION SETTINGS
+#
+# Enter name and link for your organization (replacing the name and links below)
+# These values will be used in attribution and data 
+organization-name: "City of Vancouver Open Data（公園の情報）"
+organization-link: https://opendata.vancouver.ca/explore/dataset/parks-facilities/
+# Add logo image links if you would like them to appear in banner and footer. Delete or leave blank to remove logos.
+organization-logo-banner:
+organization-logo-nav:
+
+##########
+# ROBOTS EXCLUDE
+#
+# set noindex to true if you do NOT want Google to index your site
+# noindex: true 
+
+##########
+# BUILD SETTINGS 
+#
+# Note: use environment variable on build command to include analytics
+# JEKYLL_ENV=production jekyll build
+# (this is done automatically by gh-pages build)
+#
+# Library directory location. This allows you to customize where the standard assets are found.
+# provide a relative path in this repository or full url 
+lib-assets: /assets/lib
+# ignore stuff
+exclude: [vendor/, docs/, Rakefile, rakelib/, README.md, LICENSE, AGENTS.md, CLAUDE.md, HUMANS.md]
+# compress CSS output
+sass:
+  style: compressed
+
+##########
+# CJK SEARCH (cjk_index gem)
+#
+# Builds assets/cjk-index/search.json (the search index) and
+# assets/cjk-index/cjk-index.js (the browser runtime) at build time.
+# The collectionbuilder preset reads the same fields as the default search
+# (_data/config-search.csv, index = true). Used when search-cjk is true in _data/theme.yml.
+cjk_index:
+  variants: [ja, zh] # ja: old/new kanji; zh: Traditional/Simplified Chinese (so 实录 finds 実録)
+  indexes:
+    - name: search
+      preset: collectionbuilder

@@ -1,0 +1,42 @@
+{%- assign t = site.data.locale[site.lang] -%}
+{% comment %}
+
+    Collection data downloads.
+    Based on the stubs present in the config-nav, displays relevant download btn links for metadata derivatives in a variety of formats. This highlights the ability to explore and reuse collection data.
+
+    E.G. --> {% include index/data-download.html %}
+
+    Options:
+
+    - "heading_level" = customize the level of the heading if necessary for accessibility, choose "h1", "h2", "h3", etc (optional, default "h2")
+
+{%- endcomment -%}
+{%- assign stubs = site.data.config-nav | map: 'stub' | join: ';' -%}
+<div class="card mb-3">
+    <div class="card-body">
+        <{{ include.heading_level | default: 'h2' | strip }} class="card-title h5">{{ t.collection_as_data | default: "Collection as Data" }}</{{ include.heading_level | default: 'h2' | strip }}>
+        <p><small>{{ t.collection_as_data_desc | default: "Download this collection's metadata in a variety of reusable formats." }}</small></p>
+        <p class="card-text text-center">
+            <a class="btn btn-sm btn-secondary m-1" href="{{ '/assets/data/metadata.csv' | relative_url }}" download>{{ t.dli_metadata_csv | default: "Metadata CSV" }}</a>
+            <a class="btn btn-sm btn-secondary m-1" href="{{ '/assets/data/metadata.json' | relative_url }}" target="_blank">{{ t.dli_metadata_json | default: "Metadata JSON" }}</a>
+            {% if stubs contains "subject" %}
+            <a class="btn btn-sm btn-secondary m-1" href="{{ '/assets/data/subjects.csv' | relative_url }}" download>{{ t.dli_subjects_csv | default: "Subjects CSV" }}</a>
+            <a class="btn btn-sm btn-secondary m-1" href="{{ '/assets/data/subjects.json' | relative_url }}" target="_blank">{{ t.dli_subjects_json | default: "Subjects JSON" }}</a>
+            {% endif %}
+            {% if stubs contains "map" %}
+            <a class="btn btn-sm btn-secondary m-1" href="{{ '/assets/data/geodata.json' | relative_url }}" target="_blank">{{ t.dli_geodata_json | default: "Geodata JSON" }}</a>
+            {% endif %}
+            {% if stubs contains "location" %}
+            <a class="btn btn-sm btn-secondary m-1" href="{{ '/assets/data/locations.csv' | relative_url }}" download>{{ t.dli_locations_csv | default: "Locations CSV" }}</a>
+            <a class="btn btn-sm btn-secondary m-1" href="{{ '/assets/data/locations.json' | relative_url }}" target="_blank">{{ t.dli_locations_json | default: "Locations JSON" }}</a>
+            {% endif %}
+            {% if stubs contains "timeline" %}
+            <a class="btn btn-sm btn-secondary m-1" href="{{ '/assets/data/timelinejs.json' | relative_url }}" target="_blank">{{ t.dli_timeline_json | default: "Timeline JSON" }}</a>
+            {% endif %}
+            {% if site.data.theme.metadata-facets-fields %}
+            <a class="btn btn-sm btn-secondary m-1" href="{{ '/assets/data/facets.json' | relative_url }}" target="_blank">{{ t.dli_facets_json | default: "Facets JSON" }}</a>
+            {% endif %}
+            <a class="btn btn-sm btn-secondary m-1" href="{{ site.source-code }}" rel="noopener">{{ t.source_code | default: "Source Code" }}</a>
+        </p>
+    </div>
+</div>

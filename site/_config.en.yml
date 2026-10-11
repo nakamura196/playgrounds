@@ -1,0 +1,17 @@
+# English build of the same site. Build with:
+#   bundle exec jekyll build --config _config.yml,_config.en.yml -d _site/en
+# Only the keys that differ from _config.yml. UI strings fall back to the
+# English defaults in the templates; labels from _data/config-*.csv are
+# overridden in _data/locale/en.yml (config_labels). Pages with `lang: en`
+# replace their default version (see _plugins/cb_i18n.rb).
+lang: en
+baseurl: /en
+title: Vancouver Playgrounds
+tagline: A record of play equipment (in preparation)
+description: "A record of the 136 playgrounds in 114 City of Vancouver parks, to be searchable by play equipment. For now it holds only the park information from the City's open data."
+keywords: playground; play equipment; Vancouver; parks
+organization-name: "City of Vancouver Open Data (park information)"
+# item pages only: the JSON-LD (items/*.jsonld) and the vocabulary file are
+# language-neutral and come from the default build
+page_gen:
+  - data: 'playgrounds'

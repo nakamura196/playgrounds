@@ -1,0 +1,17 @@
+{%- assign t = site.data.locale[site.lang] -%}
+<script>
+    // When the user scrolls down from the top of the document, show the button
+    window.onscroll = function () {
+        if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+            document.getElementById("scroll-to-top").style.display = "block";
+        } else {
+            document.getElementById("scroll-to-top").style.display = "none";
+        }
+    }
+</script>
+<a href="#maincontent" id="scroll-to-top" class="btn btn-link" title="{{ t.back_to_top | default: "Back to Top" }}">
+    <span class="visually-hidden">{{ t.back_to_top | default: "Back to Top" }}</span>
+    <svg class="bi icon-sprite" role="img" aria-label="{{ t.up_arrow | default: "Up Arrow" }}">
+        <use href="{{ '/assets/css/cb-icons.svg' | relative_url }}#icon-back-to-top"/>
+    </svg>
+</a>

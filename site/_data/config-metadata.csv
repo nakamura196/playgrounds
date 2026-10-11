@@ -1,0 +1,14 @@
+field,display_name,browse_link,external_link,dc_map,schema_map,vocab
+title,公園,,,DCTERMS.title,name,
+description,説明,,,DCTERMS.description,description,
+neighbourhood,地区,true,,DCTERMS.spatial,,
+location,所在地,,,,,
+playground_count,遊び場の数,,,,,
+equipment,遊具,,,,,types
+surveyed,現地で確認した日,,,,,
+hectare,面積（ha）,,,,,
+washrooms,トイレ,,,,,
+subject,公園のほかの施設,true,,DCTERMS.subject,keywords,
+parkid,公園の番号（市）,,,DCTERMS.identifier,identifier,
+source,出典,,,DCTERMS.source,,
+rights,利用条件,,,DCTERMS.rights,license,

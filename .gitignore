@@ -1,0 +1,13 @@
+data/
+.DS_Store
+__pycache__/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+site/_site/
+site/.jekyll-cache/
+site/vendor/
+site/.bundle/
+site/Gemfile.lock

@@ -1,0 +1,7 @@
+field,index,display
+title,true,true
+neighbourhood,true,true
+location,true,false
+description,true,false
+subject,true,false
+equipment,true,false

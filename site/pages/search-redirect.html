@@ -1,0 +1,18 @@
+---
+# /search.html was linked from the nav before the search page moved to its
+# permalink /search/; keep old links working (query string is carried over)
+permalink: /search.html
+sitemap: false
+---
+<!doctype html>
+<html lang="{{ site.lang | default: "en" }}">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<link rel="canonical" href="{{ '/search/' | absolute_url }}">
+<meta http-equiv="refresh" content="0; url={{ '/search/' | relative_url }}">
+<script>location.replace({{ '/search/' | relative_url | jsonify }} + location.search + location.hash);</script>
+<title>{{ site.data.locale[site.lang].search | default: "Search" }}</title>
+</head>
+<body><p><a href="{{ '/search/' | relative_url }}">{{ site.data.locale[site.lang].search | default: "Search" }}</a></p></body>
+</html>

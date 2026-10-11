@@ -1,0 +1,112 @@
+{%- assign t = site.data.locale[site.lang] -%}
+{% comment %}
+
+  Adds previous and next button arrows to provide navigation between items.
+  Requires cb_page_gen plugin.
+  The item order follows the order in the metadata CSV, so pre-sort the CSV to the desired order.
+
+{%- endcomment -%}
+<div class="text-center">
+  <a class="btn btn-secondary" href="{{ page.previous_item | relative_url }}" id="prev-page-button">{{ t.previous | default: "&laquo; Previous" }}</a>
+  <a class="btn btn-secondary" href="{{ '/browse.html' | relative_url }}">{{ t.back_to_browse | default: "Back to Browse" }}</a>
+  <a class="btn btn-secondary" href="{{ page.next_item | relative_url }}" id="next-page-button">{{ t.next | default: "Next &raquo;" }}</a>
+</div>
+<div id="item-nav">
+  <div class="d-none d-md-block">
+    <a class="previous btn btn-lg btn-secondary" href="{{ page.previous_item | relative_url }}">&laquo;</a>
+    <a class="next btn btn-lg btn-secondary" href="{{ page.next_item | relative_url }}">&raquo;</a>
+  </div>
+</div>
+<script>
+  function leftArrowPressed() {
+    location.href = document.getElementById("prev-page-button").href;
+  };
+
+  function rightArrowPressed() {
+    location.href = document.getElementById("next-page-button").href;
+  };
+
+  function leftModalArrowPressed() {
+    // Get the modal element.
+    var modalshow = document.querySelector(".modal.show");
+    // If the modal exists, get the prev button element.
+    if (modalshow) {
+      const prevButton = modalshow.querySelector(".prev-child-button");
+      // If the prev button exists, click it.
+      if (prevButton) {
+        prevButton.click();
+      }
+    }
+  };
+
+  function rightModalArrowPressed() {
+    // Get the modal element.
+    var modalshow = document.querySelector(".modal.show");
+    // If the modal exists, get the prev button element.
+    if (modalshow) {
+      const nextButton = modalshow.querySelector(".next-child-button");
+      // If the prev button exists, click it.
+      if (nextButton) {
+        nextButton.click();
+      }
+    }
+  };
+
+  function isModalShown() {
+    // Get the modal element.
+    const modal = document.querySelector(".modal.show");
+
+    // Check if the modal has the "show" class.
+    return modal && modal.classList.contains("show");
+  };
+
+  function isSpotlightModalShown() {
+    // Get the modal element.
+    const spotlight = document.getElementById("spotlight");
+    // Check if the modal has the "show" class.
+    return spotlight && spotlight.classList.contains("show");
+  };
+
+  function isImageComparisonFocused(evt) {
+    // Check if the key event originated from (or bubbled through) a before-after
+    // or opacity-compare web component, so its own arrow key handling isn't overridden.
+    var path = evt.composedPath ? evt.composedPath() : [];
+    return path.some(function (el) {
+      return el.tagName && ["BEFORE-AFTER", "OPACITY-COMPARE"].includes(el.tagName);
+    });
+  };
+
+
+  document.onkeydown = function (evt) {
+    evt = evt || window.event;
+    if (isImageComparisonFocused(evt)) {
+      // Let the image comparison component handle its own arrow key navigation.
+
+    } else if (isSpotlightModalShown()) {
+
+
+    } else if (isModalShown()) {
+      // The modal is shown.
+      switch (evt.keyCode) {
+        case 37:
+          leftModalArrowPressed();
+            break;
+        case 39:
+          rightModalArrowPressed();
+            break;
+      }
+    }
+    else {
+      // The modal is not shown.
+      switch (evt.keyCode) {
+        case 37:
+          leftArrowPressed();
+            break;
+        case 39:
+          rightArrowPressed();
+            break;
+      }
+    }
+
+  };
+</script>

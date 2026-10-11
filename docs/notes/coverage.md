@@ -1,0 +1,258 @@
+# 写真の集まり具合（Mapillary / Commons）
+
+Metro Vancouver の遊び場の遊具を、写真から検索できるサイトを作る。
+写真は Mapillary と Wikimedia Commons から集め、CLIP で文章と画像の両方から検索し、
+OpenStreetMap（OSM）の公園一覧と地図に出す、という構想。
+作り始める前に、そもそも写真がどれだけあるかを確かめる。
+
+## 2026-10-10 Myrtle Park（North Vancouver）で 1 か所試す
+
+対象: 回る輪の雲梯（輪が回転する雲梯）。
+
+- OSM: 公園は way/397550739（中心 49.3203, -122.9488、District of North Vancouver の Cove Cliff）。
+  遊び場は 3 つ（way/394994133、way/397556889、way/1291855488）と水遊び場 1 つ（way/397556891）。
+  個々の遊具は登録されていない
+- Commons: 遊び場の中心から半径 500 m 以内の位置情報付き画像は 3 枚で、どれも OpenBenches
+  （記念ベンチの写真を集める取り組み）のベンチ。名前で検索すると "Myrtle Park" は
+  英国 Bingley の同名の公園ばかり出る
+- Mapillary: API の鍵が無いので、mapillary.com の地図で目視した。公園の西の Deep Cove Road 沿いの
+  遊歩道に撮影の跡が 1 本あり、撮影範囲の表示は出ている。公園内と Deep Cove Road には撮影の跡が無い
+
+結論: 両方とも写っていない。Mapillary は主に道路から撮るので、公園の奥の遊具は写りにくい。
+
+## 2026-10-10 Metro Vancouver 全体の OSM
+
+`scripts/fetch_osm_playgrounds.py`。範囲は OSM relation 2218280（Metro Vancouver Regional District）。
+
+- 遊び場（leisure=playground）: 2,736 か所
+- 遊具（playground=*）: 1,488 件。内訳の上位は swing 491、structure 227、slide 138、hopscotch 90、
+  climbingframe 89、splash_pad 69。monkey_bars は 8 件。回る輪の雲梯に当たる値は無い
+
+OSM の遊具の記録は少なく、種類の分け方も粗い。検索の手がかりは写真の側から取る必要がある。
+
+## 却下・保留した案
+
+- Google 画像検索・ストリートビュー・Google マップの写真を集める: 却下。
+  検索結果の写真は撮影者ごとに権利があり、まとめて取り込むことは Google の規約でも禁じられている。
+  地図サービスの写真は保存も、それをもとにしたデータ（CLIP の特徴量を含む）を作ることも禁じられている。
+  CLIP が見分けられるかを数枚で試すだけなら、手で保存した画像を手元で使い、リポジトリにも公開サイトにも入れない
+
+## 2026-10-10 Flickr
+
+API の鍵が無いので、flickr.com の検索画面で、自由に使える条件（CC と PD）の写真に絞って見た。
+
+- "Myrtle Park North Vancouver": 25 枚。入り江の景色、水遊び場、野球場、近くの店。回る雲梯は 0 枚
+- "monkey bars spinning": 13 枚。どれも遊具と無関係
+- 分かったこと: Flickr の写真には遊具の名前がほぼ付いていない。言葉では探せず、画像の中身から探す必要がある
+
+## 2026-10-10 対象の遊具の呼び名
+
+Google 画像検索の結果を目で見て確かめた。中心の柱のまわりを水平の輪が回り、輪に付いた取っ手にぶら下がる。
+英語の呼び名は spinning monkey bars / monkey bar wheel。製品の例は
+Little Tikes Commercial "Fun Wheels"、Belson "360° Orbital Horizontal Ladder"、
+Landscape Structures "Circular Horizontal Ladder"、PWAP "Hold'n Spin Spinner"。
+先行事例として chicagoplaygrounds.com（シカゴの遊び場の遊具を 1 つずつ登録しているサイト。
+"Overhead Spinning Rings" の項目がある）。
+
+## 2026-10-10 CLIP で見分けられるか（小さな試験）
+
+`scripts/commons_testset.py` → `scripts/clip_rank.py`。モデルは openai/clip-vit-large-patch14
+（Hugging Face transformers 4.57.6、Apple の GPU（MPS）で実行）。
+
+- 画像: Commons の Category:Monkey bars / Merry-go-rounds (playground) / Climbing frames を 2 段まで辿った 93 枚
+  （Playground equipment in Canada と Playgrounds in British Columbia はその名前の分類が無く 0 枚）。
+  ここに回る雲梯の写真 2 枚（PWAP と swingsetmall.com のページの代表画像）を混ぜて 95 枚
+- 問い: 「回る輪の雲梯」と、取り違えやすい 5 つ（まっすぐな雲梯、回転遊具、ぶらんこ、すべり台、公園）。
+  6 つの中での割合で点数を出す
+- 結果: 回る雲梯の 2 枚は 95 枚中 1 位（0.96）と 3 位（0.93）。2 位は円形の網の回転遊具（0.93）、
+  4 位は吊り輪（0.82）、5 位はドーム型のジャングルジム（0.74）。「丸い・輪・頭上」の形は捉えているが、
+  丸い遊具一般との区別は甘い
+- 限界: 正解が 2 枚だけで、どちらも遊具が大きく写った製品写真。Mapillary のように遠くから小さく写る写真では
+  未確認。正解の 2 枚は手元の試験だけに使い、`data/private/` に置いて git に入れない（`data/` ごと除外済み）
+
+主張の候補: 写真に遊具名の付いていない一般の写真群（Flickr）でも、CLIP の文章検索で特定の遊具を上位に出せる
+（根拠は上の 95 枚の試験。正解を増やした再試験が要る）。
+
+## 2026-10-10 Commons の位置情報付き画像は、遊び場の近くにどれだけあるか
+
+`scripts/commons_coverage.py 50`。OSM の遊び場 2,736 か所の中心点から、Commons の geosearch
+（位置情報付きファイル、名前空間 6）で半径 50 m 以内を引いた。約 1 時間半かかった（1 か所 1 秒の待ちを入れた）。
+
+- 半径 50 m 以内に画像が 1 枚でもある遊び場: 122 か所（4.5%）。25 m 以内は 49 か所、10 m 以内は 8 か所
+- 引っかかった画像は延べ 457 枚。1 か所に 41 枚集まる所もある（Gastown、Granville Island など名所の近く）
+- 題名に遊び場らしい語（playground、swing など）がある画像を持つ遊び場は 5 か所。うち 1 枚は子犬の写真で、
+  実質 4 か所（Hastings Mill Playground など）
+- 多いのは街並み・建物・駅・桜の写真。Commons に移された Mapillary の画像も 55 枚（5 か所）あった。
+  ISS から地球を撮った写真が座標付きで引っかかる例もあり、位置情報だけでは中身は保証されない
+- 題名だけで数えたので、遊具が写っていても題名に出ていない画像は取りこぼしている（中身は未確認）
+
+結論: Commons は遊具の写真の供給源としてはほぼ使えない。近くに画像があるのは 4.5%、
+遊び場を写したと題名から分かるのは 2,736 か所中 4 か所。写真の主な供給源は Mapillary
+（と、利用者の投稿）になる。
+
+主張の候補: 都市の遊び場について、Commons の位置情報付き画像は 4.5% の遊び場にしか無く、
+遊具を写したものは 0.2% に満たない（根拠は本節の実測）。
+
+## 2026-10-10 Mapillary の写真は、遊び場の近くにどれだけあるか（途中経過）
+
+`scripts/mapillary_coverage.py 100`。Commons と同じく OSM の遊び場の中心点から、Mapillary の画像検索 API
+（graph.mapillary.com/images、範囲指定）で半径 100 m 以内を引いた。鍵は 1Password の「Mapillary」の access_token
+（読み取り専用のアプリ playground-search-research を登録して発行）。集計は `scripts/mapillary_summary.py`。
+「向いている」は、カメラの向きと遊び場への方角の差が 45 度以内、または 360 度写真。
+
+- 1,102 か所まで取った時点（全 2,736 か所の 40%）: 半径 50 m 以内に画像がある遊び場 16.2%、
+  向いている画像がある遊び場 11.3%。25 m 以内は 6.6%、10 m 以内は 1.0%。Commons（50 m で 4.5%）より多い
+- 50 m 以内の画像 7,827 枚の内訳は通常のカメラ 5,664、魚眼 1,931、360 度 193。撮影年は 2015〜2026 年に散らばる
+- 360 度写真なのに is_pano が偽のものがある。camera_type（spherical）でも判定するように直した
+- 写真が密集した場所では API が 500「量を減らせ」を返す（例 49.2124, -122.6564）。範囲を 4 つに分けて取り直すようにした
+- Myrtle Park の 3 つの遊び場は、いちばん近い画像でも 245 m。2018 年 1 月の 1 回の撮影で、道路沿いを横向きに撮ったもの
+
+全 2,736 か所を取り終えた（同日。量が多すぎて打ち切られた検索は 0 件。500 が出た 49.2124, -122.6564 も取れている）。
+
+| 半径 | 画像がある遊び場 | 向いている画像がある遊び場 | 画像がある所の枚数（中央値） |
+|---|---|---|---|
+| 10 m | 26（1.0%） | 8（0.3%） | 2.5 |
+| 25 m | 193（7.1%） | 78（2.9%） | 7 |
+| 50 m | 491（17.9%） | 345（12.6%） | 23 |
+| 100 m | 1,063（38.9%） | 778（28.4%） | 48 |
+
+- 途中経過（40% の時点で 50 m 16.2%、向いている 11.3%）から大きくは動かなかった
+- 50 m 以内の画像は 24,241 枚、うち 360 度 1,077 枚
+- 50 m 以内に画像がある 491 か所で、いちばん新しい画像の撮影年: 2014 年 4、2015 年 15、2016 年 1、2017 年 23、
+  2018 年 51、2019 年 15、2020 年 86、2021 年 69、2022 年 20、2023 年 31、2024 年 73、2025 年 22、2026 年 81。
+  2023 年以降に撮られた画像があるのは 207 か所で、全体の 7.6%
+- 分かったこと: 遊具の方を向いた画像が 50 m 以内にあるのは、8 か所に 1 か所。
+  遊具の入れ替えに追いつける新しさ（2023 年以降）まで求めると、さらに少ない。
+  Mapillary だけで遊具の一覧を作るのは難しい
+- 確かめていないこと: 「向いている」画像に、実際に遊具が写っているか（木や建物で隠れていないか）は見ていない
+
+主張の候補: 都市圏の遊び場 2,736 か所のうち、Mapillary で遊具の方を向いた画像が 50 m 以内にあるのは 12.6%
+（向きを問わなければ 17.9%）。Wikimedia Commons は向きを問わず 4.5%（根拠は本節と前の節の測定）。
+
+## 2026-10-10 CLIP は実際の写真で回る雲梯を見分けられるか
+
+`scripts/mapillary_clip.py 50 10` → `scripts/eval_positives.py`。
+
+- はずれ: 遊び場から 50 m 以内で向いている Mapillary 画像を、1 か所につき近い順に 10 枚まで。176 か所の 998 枚
+  （1024px の縮小画像）。1 枚を左・中・右の正方形に切り、「回る輪の雲梯」の割合の最大を点数にした
+- 正解: Google マップの Myrtle Park / Myrtle Park Playground の投稿写真から、回る雲梯が写った 3 枚を
+  Claude in Chrome で画面ごと保存した（真下からの接写、3 つの輪を横から、全体写真の奥に小さく 2 つ）。
+  前の試験の製品写真 2 枚も加えた。`data/private/positives/` に置き、git にも公開サイトにも入れない
+- 結果（999 枚中の順位）: 製品写真 2 枚は 1 位。Google マップの 3 枚は 156 位（奥に小さく、0.080）、
+  173 位（接写、0.070）、297 位（横から 3 つ、0.028）。はずれの最高点は 0.89 で、車の屋根から撮った 360 度写真
+- 分かったこと: CLIP の文章検索がうまくいったのは、遊具だけが大きく写った製品写真だけだった。
+  人が撮った実際の写真では、輪が画面いっぱいに写っていても見分けられなかった。
+  3 つの輪が横からはっきり写った写真が、いちばん順位が低い
+- 確かめていないこと: 正解は 1 か所の 3 枚だけ。画像を手がかりにした検索（正解の写真に似た写真を探す）や、
+  小さく切って照らす方法、検出用に学習したモデルは試していない
+
+主張の候補: 汎用の画像と文章のモデル（CLIP）による文章検索は、特定の遊具を製品写真では 1 位に出せるが、
+利用者の撮った写真では 999 枚中 156〜297 位に沈む（根拠は本節の測定）。
+自分で撮る写真は、遊具全体を背景から離して撮るか、撮った人が遊具名を付ける必要がある。
+
+## 2026-10-11 訂正: CLIP の小さな試験の画像の出どころ
+
+「CLIP で見分けられるか（小さな試験）」の節で、画像を Monkey bars / Merry-go-rounds (playground) /
+Climbing frames から取ったと書いたが誤り。data/testset/index.json の分類を数え直すと、
+Monkey bars 59 枚と Playgrounds in British Columbia（下位の Playgrounds in Vancouver、Terra Nova Adventure Park を含む）34 枚だった。
+Commons の API で確かめると、Merry-go-rounds (playground) は存在せず、Climbing frames は中身の無い転送用の分類
+（実体は Jungle gyms）。testset.log は累計の枚数を、次に辿る分類の名前と並べて出していたので読み違えた。
+
+あわせて、記事にするため数え直した点:
+- 題名に遊び場らしい語がある Commons 画像を持つ遊び場は、"Play Ground" の表記揺れを含めるかで 3〜4 か所
+- Myrtle Park の 245 m は 100 m の全件取得とは別に範囲を広げて見た値で、data/mapillary_coverage.jsonl からは再現できない
+
+記事: tech.ldas.jp/ja/posts/playground-photo-coverage-vancouver/（地図は scripts/plot_coverage_map.py で描いた）
+
+## 2026-10-11 訂正: Myrtle Park の遊具の形
+
+「対象の遊具の呼び名」の節で、回る雲梯を「中心の柱のまわりを水平の輪が回る」と書いたが、これは Google 画像検索で見た製品の形で、
+Myrtle Park の実物ではなかった。手元の写真（data/private/positives/gmaps_myrtle_pg_02_side.png）で見ると、
+横に渡した梁から水平な輪が 3 つ吊られ、それぞれが回る型。chicagoplaygrounds.com の "Overhead Spinning Rings"（13 か所）と同じ型。
+
+製品名も確かめ直した（2026-10-11、各社のページ）:
+- 同じ型: Little Tikes Commercial "90° Fun Wheels"
+- 別の遊具: PWAP の Hold-N-Spin は 1 本の柱の上で輪が回る型（CLIP の試験の製品写真 1 枚はこれ。もう 1 枚 swingsetmall は梁から吊る型）
+- 回らない: Belson "360° Orbital Horizontal Ladder"、Landscape Structures "Circular Horizontal Ladder" は円形に組んだ固定のはしご
+
+分かったこと: 同じ遊具が別の名前で呼ばれ、似た名前が別の遊具を指す。名前で探せない理由の具体例になる。
+
+## 2026-10-11 再公開と、関連する数・サイト
+
+- 記事はデジタルアーカイブの文脈で書き直し、tech-blog #258 で再公開した。
+- chicagoplaygrounds.com の項目 "Overhead Spinning Rings"（https://chicagoplaygrounds.com/s/guide/item/3164）は、2026-10-11 の時点で 13 か所に付いていた。説明は「1 本の水平の梁の下に 3 つの輪、輪は自由に回る」。似た別の遊具 "Single Overhead Spinning Ring" には "Different From" という関係が張られている。語彙の設計の実例として使える。
+- 続けるなら、公開には Omeka S より CollectionBuilder（https://collectionbuilder.github.io/）が向く、というのが本人の判断。サーバを持たずに静的なサイトとして置けるので、運用の費用が小さい。
+- City of Vancouver のオープンデータ（2026-10-11 取得）: 公園 218（parks データセットの件数）、遊び場 136（parks-facilities の Playgrounds の facilitycount の合計）。2019 年の報道では Park Board の遊び場は 160 とされており、数え方の違いは確かめていない。Metro Vancouver 全体の OSM の遊び場 2,736 とは範囲が違う。
+- 既存の写真サイト: vancouverplaygrounds.com は Vancouver 市内を中心に 54 か所の遊び場を写真つきで載せ、"Spinner" などの遊具で絞り込める（WordPress、運営者の記載なし）。
+
+## 2026-10-11 市内を回りきれるかの見積もり
+
+- City of Vancouver のオープンデータ（parks-facilities の Playgrounds）では、遊び場は 136 か所で、114 の公園にある。21 の地区に分かれる（多い順に Renfrew-Collingwood 12、Kensington-Cedar Cottage 11、Hastings-Sunrise 9）。
+- 114 の公園の座標を、近い順にたどった直線距離の合計は約 111 km。道なりにすると 1.3 倍程度と見て約 145 km。
+- 自転車で半日に 8 公園ほど回れると仮定すると、およそ 15 回で回りきれる。週 1 回なら 4 か月ほど。
+- 公開の候補は CollectionBuilder（本人の案）。
+- 撮影は子どもが写らない時間帯に行う。chicagoplaygrounds.com も「子どもの写った画像は載せない」と明記している。
+
+## 2026-10-11 CollectionBuilder 用の CSV と、遊具の語彙の下書き
+
+`scripts/build_cb_csv.py` → `collection/playgrounds.csv`。入力は data/opendata/ の parks.json（218 行）と parks-facilities.json（645 行）。
+
+- 1 行 = 遊び場のある公園 1 つ（114 行、遊び場の合計 136）。オープンデータには遊び場ごとの位置が無く、公園ごとの数しか無いため。
+  遊び場の数の内訳: 1 か所 97 公園、2 か所 14、3 か所 1、4 か所 2。複数ある公園は、現地で撮るときに遊び場ごとに分ける
+- 座標は公園の代表点（googlemapdest）。遊び場そのものの位置ではない
+- 遊具が無いので display_template は record（画像なしの項目）。公園の他の施設は subject に入れて絞り込みに使う
+
+chicagoplaygrounds.com の構成を Omeka S の API（/api/resource_templates, /api/items）で読んだ（2026-10-11）:
+- 遊具の型は 400 件（item set 3074）。項目は Equipment Name (schema:name)、Description、Descriptive Tag (schema:category)、
+  Different From (schema:disambiguatingDescription)、Other Name (schema:alternateName)、Equipment Contains (schema:item)、Audience
+- 400 件のうち Different From があるのは 123、Other Name 44、Contains 4
+- 大分類は item set で持つ（Swings 12、Slides 21、Climbing 138 とその下の Vertical 53 / Traverse 26 / Net 36、Overhead 43、
+  Spinning 25、See-Saws 7、Water 20、Musical 8）。1 つの型が複数の大分類に入る
+- 遊び場の側は Playground Equipment (schema:amenityFeature) で型を指すだけ。設置ごとの記録（いつ見たか、どの製品か）は無い
+- 製品名・メーカーの欄は無い。KOMPAN がタグに 1 件あるだけ
+- Different From は片方向。3425 Single Overhead Spinning Ring → 3164 Overhead Spinning Rings はあるが、逆は無い
+
+語彙の下書き: `vocab/categories.csv`（大分類 16）、`vocab/types.csv`（型 26）、`vocab/products.csv`（製品 4）。
+- 型は形と動きで定義し、製品名を型の名前にしない（シカゴと同じ）。製品は別の表にし、型を指す（exact / close）。シカゴに無い部分
+- 「別物」（different_from）は両方向に張る。シカゴとの対応は chicago_match に exact / candidate で書いた。
+  exact は写真か説明文で確かめた 2 件（3164, 3425）だけで、ほかは名前で選んだ候補
+- 確かめていないこと: 製品のページの URL は控えていなかったので空欄。Vancouver で実際に多い遊具はまだ数えていない
+
+## 2026-10-11 CollectionBuilder のサイトと JSON-LD
+
+`site/` に CollectionBuilder のサイトを組んだ。~/git/collectionbuilder/cb-ja-demo（ce806c8）を `git archive` で写し、
+東大の資料・IIIF まわり（static_iiif gem、manifest のテンプレート、見本の画像）を外した。日本語版と英語版（/en/）の 2 つを組む形はそのまま。
+
+- データは `collection/playgrounds.csv` と `vocab/*.csv` が正本。`zsh scripts/sync_site_data.zsh` で `site/_data/` に写す
+- 組み立ては Docker（ruby:3.3）。手元の Ruby では gem が組めない（cb-ja-demo と同じ事情）。
+  `docker run --rm -v "$PWD/site":/srv -w /srv -e BUNDLE_PATH=vendor/bundle-docker ruby:3.3 sh -c 'bundle install && bundle exec jekyll build'`、
+  英語版は `--config _config.yml,_config.en.yml -d _site/en` を足す
+- 公園ごとの JSON-LD: `items/<objectid>.jsonld`（114 件、`_layouts/item/jsonld.json`）。schema:Park。
+  ほかの施設とトイレは amenityFeature（名前と true/false）。遊具は amenityFeature に additionalType で語彙の概念を指す。
+  シカゴが遊び場から遊具の型を schema:amenityFeature で指しているのに合わせた
+- 語彙: `vocab/vocab.jsonld`（SKOS、概念 46・概念体系 2）と、人が読む `vocab/` のページ。
+  概念の URI は `<lod-base>/vocab/#<id>` で、ページの該当の項目が開く。
+  型→大分類は skos:broader、別物は pgv:differentFrom（skos:related の下位）、含む型は dcterms:hasPart、
+  シカゴとの対応は exact だけ skos:exactMatch、候補は rdfs:seeAlso（確かめていない対応を一致と書かないため）。
+  製品は別の概念体系にし、型へ exact → skos:exactMatch、close → skos:closeMatch
+- URI の基点は `_config.yml` の `lod-base`（仮に https://nakamura196.github.io/playgrounds）。日本語版と英語版で同じ URI になる。
+  置き場所が決まったらここを 1 か所直す。JSON-LD は日本語版の組み立てでだけ作る
+- 確かめたこと: 114 件と語彙が JSON として読め、rdflib で読み込める（語彙 394 トリプル、公園 計 5,406）。語彙の中で指す先の欠けは 0。
+  遊具の欄を仮に埋めた組み立てで、公園のページに遊具の名前（語彙へのリンク）と JSON-LD のボタンが出ることを確かめ、データは戻した
+- 落とし穴: Liquid では `contains` が予約語なので、`ty.contains` ではなく `ty['contains']` と書く。
+  cb-ja-demo は開発時に referrer を送らない設定があり、OpenStreetMap のタイルは 403 になる。地図は Esri のまま使う
+- Myrtle Park は City of Vancouver の公園の一覧に無い（市外）。CLIP の試験に使った遊具は、このサイトの 114 件には入らない
+- まだのこと: 絞り込みの「遊具」は語彙の id がそのまま出る（名前ではない）。トイレは Y/N のまま。git に未登録で、公開先も未定
+
+## 2026-10-11 公開先: playgrounds.ldas.jp
+
+公開先を https://playgrounds.ldas.jp に決めた。GitHub Pages（公開リポジトリ nakamura196/playgrounds、まだ作っていない）に独自ドメインを当てる。
+`_config.yml` の url と lod-base をこのドメインにし、baseurl は日本語版 ""・英語版 /en にした。`site/CNAME` を足した。
+
+- 却下: nakamura196.github.io/playgrounds（仮置きのまま）。URI がリポジトリ名に縛られる。
+  railclass ではリポジトリ名を変えたため、RDF の URI をすべて差し替えることになった
+- 却下: w3id.org。転送の登録に PR の審査が要り、railclass の PR（perma-id/w3id.org#6867）もまだ通っていない。
+  語彙はまだ下書きで、いま永続 URI を約束する段階ではない。安定したら w3id から playgrounds.ldas.jp へ転送する形で足せる
+- ldas.jp のサブドメインなら、DNS は手元で管理でき、置き場所を GitHub Pages から移しても URI は変わらない
+- 確かめたこと: 日本語版・英語版を組み直し、JSON-LD の主語に github.io が残っていないこと（0 件）、
+  rdflib で 114 件と語彙をまとめて読んで 5,687 トリプル（重なりを除いた数）、hreflang が /en/ を指すことを見た

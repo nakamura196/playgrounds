@@ -1,0 +1,11 @@
+{%- comment -%}
+    Links to the same page in the site's other interface languages
+    (site.languages in _config.yml; each language is a separate build).
+{%- endcomment -%}
+{%- if site.languages.size > 1 -%}
+<ul class="navbar-nav lang-switch ms-lg-3" aria-label="{{ t.language | default: "Language" }}">
+    {%- for l in site.languages -%}{%- unless l.code == site.lang %}
+    <li class="nav-item"><a class="nav-link" href="{{ site.url }}{{ l.baseurl }}{{ page.url }}" hreflang="{{ l.code }}" lang="{{ l.code }}">{{ l.label }}</a></li>
+    {%- endunless -%}{%- endfor %}
+</ul>
+{%- endif -%}

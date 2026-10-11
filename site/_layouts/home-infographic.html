@@ -1,0 +1,31 @@
+---
+# Default home page with boxes providing collection stats
+layout: page
+---
+{%- assign t = site.data.locale[site.lang] -%}
+<div class="row">
+
+  <div class="col-md-8">
+
+    {% include index/description.html %}
+    {% assign ttl = t.sample_items | default: "Sample Items" %}{% include index/carousel.html title=ttl %}
+    
+  </div>
+  <div class="col-md-4">  
+
+    {% include index/time.html %}
+
+    {% assign ttl = t.top_subjects | default: "Top Subjects" %}{% include index/featured-terms.html field="subject" title=ttl btn-color="primary" %}
+
+    {% assign ttl = t.locations | default: "Locations" %}{% include index/featured-terms.html field="location" title=ttl btn-color="outline-secondary" %}
+    
+    {% include index/content.html %}
+
+  </div>
+  <div class="col-md-12">
+
+    {% include index/data-download.html %}
+
+  </div>
+
+</div>

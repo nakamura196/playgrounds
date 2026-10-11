@@ -1,0 +1,27 @@
+id,label_en,label_ja,categories,definition_ja,alt_labels,different_from,contains,chicago,chicago_match,status
+overhead-spinning-rings,Overhead Spinning Rings,回る輪の雲梯（梁から吊る型）,overhead;spinning,横に渡した 1 本の梁の下に輪が 3 つ吊られ、それぞれの輪が自由に回る。輪どうしは同じ面に並ばない,spinning monkey bars;monkey bar wheel,single-overhead-spinning-ring;post-spinning-ring;circular-horizontal-ladder;hanging-rings,,https://chicagoplaygrounds.com/s/guide/item/3164,exact,Myrtle Park の写真と照合済み（2026-10-11）
+single-overhead-spinning-ring,Single Overhead Spinning Ring,回る輪の雲梯（輪 1 つ）,overhead;spinning,梁の下に輪が 1 つだけ吊られて回る,,overhead-spinning-rings,,https://chicagoplaygrounds.com/s/guide/item/3425,exact,シカゴの説明に合わせた。Vancouver で見たことはない
+post-spinning-ring,Post-mounted Spinning Ring,回る輪の雲梯（1 本柱の型）,overhead;spinning,1 本の柱の上に水平な輪が載り、輪ごと回る。輪の取っ手にぶら下がる,,overhead-spinning-rings;circular-horizontal-ladder,,https://chicagoplaygrounds.com/s/guide/item/3211,candidate,シカゴの Overhead Spinning Circle (Standalone) と同じかは未確認
+circular-horizontal-ladder,Circular Horizontal Ladder,円形の雲梯（回らない）,overhead,はしごを円形に組んだ雲梯。回らない,circular monkey bars,overhead-spinning-rings;post-spinning-ring;monkey-bars,,https://chicagoplaygrounds.com/s/guide/item/3157,candidate,シカゴの Circular Monkey Bars と同じかは未確認
+monkey-bars,Monkey Bars,雲梯,overhead,まっすぐな横木を等間隔に並べたはしごを頭上に渡したもの,horizontal ladder,circular-horizontal-ladder,,https://chicagoplaygrounds.com/s/guide/item/3155,candidate,
+hanging-rings,Hanging Rings,吊り輪,overhead,鎖やロープで吊った輪を伝って渡る,,overhead-spinning-rings,,https://chicagoplaygrounds.com/s/guide/item/3159,candidate,
+belt-swing,Belt Seat Swing,ぶらんこ（帯の座面）,swing,ゴムの帯の座面のぶらんこ,,toddler-swing,,https://chicagoplaygrounds.com/s/guide/item/3104,candidate,
+toddler-swing,Toddler Swing,ぶらんこ（幼児用のかご型）,swing,脚を通す囲いのある幼児用の座面,bucket swing,belt-swing;adaptive-swing,,https://chicagoplaygrounds.com/s/guide/item/3105,candidate,
+saucer-swing,Saucer Swing,円盤ぶらんこ,swing,円い網か円盤の座面に数人で乗る,bird's nest swing,tire-swing,,https://chicagoplaygrounds.com/s/guide/item/3108,candidate,
+tire-swing,Tire Swing,タイヤぶらんこ,swing,タイヤを横にして吊った座面,,saucer-swing,,https://chicagoplaygrounds.com/s/guide/item/3109,candidate,
+adaptive-swing,Adaptive Swing,体を支える座面のぶらんこ,swing,背もたれと固定具のある座面。障害のある子も乗れる,,toddler-swing,,https://chicagoplaygrounds.com/s/guide/item/3106,candidate,
+straight-slide,Single Straight Slide,まっすぐなすべり台,slide,1 人用のまっすぐなすべり台,,wave-slide,,https://chicagoplaygrounds.com/s/guide/item/3111,candidate,
+wave-slide,Single Wave Slide,波形のすべり台,slide,途中に起伏のある 1 人用のすべり台,,straight-slide,,https://chicagoplaygrounds.com/s/guide/item/3119,candidate,
+tube-slide,Curved Tube Slide,筒形のすべり台,slide,筒の中をすべる曲がったすべり台,,corkscrew-slide,,https://chicagoplaygrounds.com/s/guide/item/3411,candidate,
+corkscrew-slide,Single Corkscrew Slide,らせんのすべり台,slide,柱のまわりをらせん状に下りる開いたすべり台,spiral slide,tube-slide,,https://chicagoplaygrounds.com/s/guide/item/3113,candidate,
+merry-go-round,Merry Go Round,回転台,spinning,円い台に乗り、台ごと回る,roundabout,spinning-seat,,https://chicagoplaygrounds.com/s/guide/item/4034,candidate,
+spinning-seat,Spinning Seat,回る椅子,spinning,1 人用の座面が軸のまわりを回る,,merry-go-round,,https://chicagoplaygrounds.com/s/guide/item/3143,candidate,
+spring-rider,Seat on a Spring,スプリング遊具（1 人用）,spring,ばねの上の座面にまたがって揺らす。動物などの形がある,spring rocker,two-seat-spring,,https://chicagoplaygrounds.com/s/guide/item/3153,candidate,シカゴは形ごとに別項目（Whale/Zebra/Sea Horse on a Spring）
+two-seat-spring,Two Seats on a Spring,スプリング遊具（2 人用）,spring;seesaw,1 つのばねの上に座面が 2 つ,,spring-rider;seesaw-two,,https://chicagoplaygrounds.com/s/guide/item/3421,candidate,
+seesaw-two,Two Person See-Saw,シーソー（2 人用）,seesaw,中央の支点で上下する板に 2 人が向かい合って座る,teeter-totter,two-seat-spring,,https://chicagoplaygrounds.com/s/guide/item/3146,candidate,
+rope-net-bridge,Rope Net Bridge,網の吊り橋,climbing-net,網を張った吊り橋を渡る,,plank-bridge,,https://chicagoplaygrounds.com/s/guide/item/3246,candidate,
+plank-bridge,Plank Bridge,板の吊り橋,climbing-traverse,板を並べて吊った橋,,rope-net-bridge,,https://chicagoplaygrounds.com/s/guide/item/3123,candidate,
+climbing-wall,Climbing Wall with Holds,登り壁,climbing-vertical,壁面に取っ手（ホールド）を付けた登り壁,,,,https://chicagoplaygrounds.com/s/guide/item/3089,candidate,
+balance-beam,Balance Beam,平均台,climbing-traverse,地面近くの細い梁の上を歩く,,,,https://chicagoplaygrounds.com/s/guide/item/3234,candidate,
+zip-line,Zip Line with Circle Seat,ジップライン（円い座面）,zipline,張ったワイヤーに沿って座面ごと滑る,,,,https://chicagoplaygrounds.com/s/guide/item/3460,candidate,
+sand-scooper,Sand Scooper,砂すくい,sand,座って操作するショベルで砂をすくう,sand digger,,,https://chicagoplaygrounds.com/s/guide/item/3152,candidate,

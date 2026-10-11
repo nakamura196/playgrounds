@@ -1,0 +1,69 @@
+---
+title: 遊具の語彙
+layout: page
+permalink: /vocab/
+# The equipment vocabulary as a page, from _data/vocab/*.csv.
+# Each entry has an anchor (#<id>), so the concept URIs in vocab.jsonld
+# (<lod-base>/vocab/#<id>) open here. Labels follow the build's language.
+---
+{%- assign t = site.data.locale[site.lang] -%}
+{%- assign en = false -%}{%- if site.lang == 'en' -%}{%- assign en = true -%}{%- endif -%}
+{%- assign base = site.url | append: site.baseurl -%}{%- if site.lod-base -%}{%- assign base = site.lod-base -%}{%- endif -%}
+{%- assign cats = site.data.vocab.categories -%}
+{%- assign types = site.data.vocab.types -%}
+{%- assign products = site.data.vocab.products -%}
+<link rel="alternate" type="application/ld+json" href="{{ base }}/vocab/vocab.jsonld">
+
+<h1 class="museum-h2">{{ t.vocab_heading | default: "Play equipment vocabulary" }}</h1>
+
+{% if en %}
+<p>Types of play equipment, defined by shape and movement. Product names are not used as type names; products are listed separately and point to a type.
+"Different from" marks a type that looks similar but is not the same; it is stated in both directions.
+Correspondence with <a href="https://chicagoplaygrounds.com/">Chicago Playgrounds</a> is marked "same" only when checked against photographs or descriptions; other links are candidates chosen by name.
+Definitions are in Japanese for now.</p>
+{% else %}
+<p>遊具の型を、形と動きで定義しています。製品名を型の名前にはせず、製品は別の表から型を指します。
+「別物」は、見た目が似ているが違う型です。両方向に記しています。
+<a href="https://chicagoplaygrounds.com/">Chicago Playgrounds</a> との対応は、写真か説明文で確かめたものだけを「同じ」とし、ほかは名前で選んだ候補です。</p>
+{% endif %}
+<p><a class="btn btn-outline-primary btn-sm" href="{{ base }}/vocab/vocab.jsonld">SKOS (JSON-LD)</a></p>
+
+<h2 class="h4 mt-5">{% if en %}Categories{% else %}大分類{% endif %} <span class="museum-count">{{ cats | size }}</span></h2>
+<dl class="vocab-list">
+{% for c in cats %}
+  <dt id="{{ c.id }}">{% if en %}{{ c.label_en }}{% else %}{{ c.label_ja }} <span class="text-muted small">{{ c.label_en }}</span>{% endif %}</dt>
+  <dd>
+    {% if c.broader %}{% assign b = cats | where: 'id', c.broader | first %}<div>{% if en %}Broader{% else %}上位{% endif %}: <a href="#{{ b.id }}">{% if en %}{{ b.label_en }}{% else %}{{ b.label_ja }}{% endif %}</a></div>{% endif %}
+    {% assign kids = "" | split: "" %}{% for ty in types %}{% assign tc = ty.categories | split: ';' %}{% if tc contains c.id %}{% assign kids = kids | push: ty %}{% endif %}{% endfor %}
+    {% if kids.size > 0 %}<div>{% for ty in kids %}<a href="#{{ ty.id }}">{% if en %}{{ ty.label_en }}{% else %}{{ ty.label_ja }}{% endif %}</a>{% unless forloop.last %} · {% endunless %}{% endfor %}</div>{% endif %}
+    {% if c.chicago_set %}<div class="small"><a href="{{ c.chicago_set }}">Chicago Playgrounds</a></div>{% endif %}
+  </dd>
+{% endfor %}
+</dl>
+
+<h2 class="h4 mt-5">{% if en %}Equipment types{% else %}遊具の型{% endif %} <span class="museum-count">{{ types | size }}</span></h2>
+<dl class="vocab-list">
+{% for ty in types %}
+  <dt id="{{ ty.id }}">{% if en %}{{ ty.label_en }}{% else %}{{ ty.label_ja }} <span class="text-muted small">{{ ty.label_en }}</span>{% endif %}</dt>
+  <dd>
+    {% if ty.definition_ja %}<div>{{ ty.definition_ja }}</div>{% endif %}
+    {% assign tc = ty.categories | split: ';' %}<div class="small">{% if en %}Categories{% else %}大分類{% endif %}: {% for x in tc %}{% assign c = cats | where: 'id', x | first %}<a href="#{{ x }}">{% if en %}{{ c.label_en }}{% else %}{{ c.label_ja }}{% endif %}</a>{% unless forloop.last %} · {% endunless %}{% endfor %}</div>
+    {% if ty.alt_labels %}<div class="small">{% if en %}Also called{% else %}別名{% endif %}: {{ ty.alt_labels | replace: ';', ' · ' }}</div>{% endif %}
+    {% if ty.different_from %}{% assign d = ty.different_from | split: ';' %}<div class="small">{% if en %}Different from{% else %}別物{% endif %}: {% for x in d %}{% assign o = types | where: 'id', x | first %}<a href="#{{ x }}">{% if en %}{{ o.label_en | default: x }}{% else %}{{ o.label_ja | default: x }}{% endif %}</a>{% unless forloop.last %} · {% endunless %}{% endfor %}</div>{% endif %}
+    {% if ty['contains'] %}{% assign d = ty['contains'] | split: ';' %}<div class="small">{% if en %}Contains{% else %}含む型{% endif %}: {% for x in d %}{% assign o = types | where: 'id', x | first %}<a href="#{{ x }}">{% if en %}{{ o.label_en | default: x }}{% else %}{{ o.label_ja | default: x }}{% endif %}</a>{% unless forloop.last %} · {% endunless %}{% endfor %}</div>{% endif %}
+    {% assign ps = products | where: 'type', ty.id %}{% if ps.size > 0 %}<div class="small">{% if en %}Products{% else %}製品{% endif %}: {% for p in ps %}<a href="#{{ p.id }}">{{ p.manufacturer }} {{ p.product_name }}</a>{% unless forloop.last %} · {% endunless %}{% endfor %}</div>{% endif %}
+    {% if ty.chicago %}<div class="small"><a href="{{ ty.chicago }}">Chicago Playgrounds</a> {% if ty.chicago_match == 'exact' %}({% if en %}same{% else %}同じ{% endif %}){% else %}({% if en %}candidate{% else %}候補{% endif %}){% endif %}</div>{% endif %}
+  </dd>
+{% endfor %}
+</dl>
+
+<h2 class="h4 mt-5">{% if en %}Products{% else %}製品{% endif %} <span class="museum-count">{{ products | size }}</span></h2>
+<dl class="vocab-list">
+{% for p in products %}{% assign ty = types | where: 'id', p.type | first %}
+  <dt id="{{ p.id }}">{{ p.product_name }} <span class="text-muted small">{{ p.manufacturer }}</span></dt>
+  <dd>
+    <div class="small">{% if en %}Type{% else %}型{% endif %}: <a href="#{{ p.type }}">{% if en %}{{ ty.label_en }}{% else %}{{ ty.label_ja }}{% endif %}</a> ({% if p.match == 'exact' %}{% if en %}same{% else %}同じ{% endif %}{% else %}{% if en %}close{% else %}近い{% endif %}{% endif %})</div>
+    {% if p.url %}<div class="small"><a href="{{ p.url }}">{% if en %}Product page{% else %}製品のページ{% endif %}</a></div>{% endif %}
+  </dd>
+{% endfor %}
+</dl>
