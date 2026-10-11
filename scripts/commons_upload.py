@@ -9,7 +9,8 @@ The rules come from the photo guide (site/pages/guide.md) and the lab note
 - the location (GPS) and the camera make/model are kept
 - the video part of a Pixel "motion photo" is removed, together with the HDR
   gain map (Commons shows neither)
-- photos are uploaded a few days after they were taken (--min-age-days)
+- an optional wait after the photo was taken (--min-age-days, default 0;
+  the upload time only shows the photo existed by then, not when it was taken)
 
 Blurring people is done by hand before this step; point `source` at the
 blurred file.
@@ -313,7 +314,7 @@ def main() -> None:
     u = sub.add_parser("upload")
     u.add_argument("batch", type=Path)
     u.add_argument("--yes", action="store_true", help="really upload (default: dry run)")
-    u.add_argument("--min-age-days", type=int, default=3)
+    u.add_argument("--min-age-days", type=int, default=0)
     a = ap.parse_args()
     if a.cmd == "prepare":
         prepare(a.batch)
