@@ -8,6 +8,7 @@ config_labels:
     /browse.html: Browse
     /search/: Search
     /vocab/: Equipment vocabulary
+    /guide.html: Photo guide
     /data.html: Data
     /about.html: About
   config-metadata:

@@ -276,3 +276,21 @@ chicagoplaygrounds.com の構成を Omeka S の API（/api/resource_templates, /
 - `equipment` には id を残す。公園のページの語彙へのリンクと JSON-LD は id を使うため
 - 日本語の検索の索引（cjk_index）も config-search を読むので、同じ欄で名前が入る。索引の中では「雲梯」が「云梯」のように変換されて入る（字体の揺れをそろえるため）
 - 確かめ方: 写しの CSV の 2 件に仮の遊具を入れて組み、一覧の絞り込みの欄が「遊具」/「Play equipment」、値が名前になることを見て、データは戻した
+
+## 2026-10-11 UBC 構内の遊び場: 公式の記録と、撮り方のガイドライン
+
+Wesbrook Mall の近くから現地調査を始めたいという話から。UBC の構内と周りの住宅地は市の外で、市のオープンデータに入らない
+（市のデータは古くない: parks 2025-09-22、parks-facilities 2026-07-30 更新）。
+
+- 公式の記録: UBC Campus + Community Planning の ArcGIS
+  （https://ags.gis.ubc.ca/arcgis/rest/services/Planning/ubcv_plan_landscape/MapServer/2、硬い舗装面の層）に、
+  名前に Playground を含む面が 15 件（遊び場 14 か所。Hawthorn Park が 2 面）。最終更新は 2021-11 〜 2026-01。
+  遊び場専用の層は無く、舗装面の種類（LSHARD_TYPE）も Concrete。名前で拾った。`data/ubc_playgrounds.json` に保存（git 外）
+- Wesbrook Village の中心（49.2507, -123.2353）から 600 m 以内に 6 か所: Nobel、Mundell、Wesbrook Park、Brockhouse、Smith、Khorana
+- OSM との比較: OSM は同じ範囲に名前の無い遊び場 3 つだけ（Nobel・Smith・Khorana と位置が一致）。Mundell、Wesbrook Park、Brockhouse は OSM に無い。
+  公式の層のほうが漏れが少ない
+- 利用条件: 層の licenseInfo は空。UBC の GIS データは UBC の構成員の教育目的、という案内がある。
+  サイトに位置を写すなら Campus + Community Planning の許可が要る。それまでは調査の計画にだけ使い、サイトには現地で撮った記録（写真の撮影地点）を載せる
+- Google マップは目で見る下調べには使えるが、場所の情報を写して載せることは規約で認められていない。名前の無い小さな遊び場も出にくい
+- 撮り方のガイドライン: サイトに `/guide.html`（日本語・英語）を足した。人のいない時間に撮る、誰でも入れる遊び場だけ、
+  遊び場の全体 → 遊具ごとの全体 → 動く所 → 銘板 の順。人が写った写真は使わない
