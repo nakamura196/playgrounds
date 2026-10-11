@@ -260,3 +260,11 @@ chicagoplaygrounds.com の構成を Omeka S の API（/api/resource_templates, /
 ## 2026-10-11 訂正: 公開先は play.ldas.jp
 
 上の節の playgrounds.ldas.jp を、URL が長いので play.ldas.jp に改めた（公開前・コミット前）。理由と却下した案は上の節のまま。
+
+## 2026-10-11 公開の準備
+
+- 公開リポジトリ nakamura196/playgrounds を作り、main を push した
+- `scripts/deploy-pages.zsh`: 日本語版（/）と英語版（/en/）を Docker で組み、`.nojekyll` を足して gh-pages に 1 コミットで push する。
+  Actions は使わない。組み上がりは 29 MB
+- GitHub Pages は gh-pages の push で自動的に有効になった。独自ドメイン play.ldas.jp を API で登録した
+- DNS（CNAME `play` → `nakamura196.github.io`、プロキシ無し）はまだ。1Password の承認がこの会話から通らなかったため
