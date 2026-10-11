@@ -8,7 +8,7 @@
 # URL VARIABLES
 #
 # site domain, full URL to the production location of your collection
-url: https://playgrounds.ldas.jp
+url: https://play.ldas.jp
 # path to location on the domain if necessary e.g. /digital/hjccc
 baseurl: ""
 # location of code, the full url to your github repository
@@ -51,7 +51,7 @@ metadata: playgrounds
 # [optional: only used if you need to tweak CB defaults or generate from more than one data file]
 # # Base of the URIs in the JSON-LD (items/*.jsonld, vocab/vocab.jsonld), shared by
 # the Japanese and English builds. Change it once if the site moves; every URI follows.
-lod-base: https://playgrounds.ldas.jp
+lod-base: https://play.ldas.jp
 
 page_gen:
   # item pages (the default)

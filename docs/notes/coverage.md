@@ -256,3 +256,7 @@ chicagoplaygrounds.com の構成を Omeka S の API（/api/resource_templates, /
 - ldas.jp のサブドメインなら、DNS は手元で管理でき、置き場所を GitHub Pages から移しても URI は変わらない
 - 確かめたこと: 日本語版・英語版を組み直し、JSON-LD の主語に github.io が残っていないこと（0 件）、
   rdflib で 114 件と語彙をまとめて読んで 5,687 トリプル（重なりを除いた数）、hreflang が /en/ を指すことを見た
+
+## 2026-10-11 訂正: 公開先は play.ldas.jp
+
+上の節の playgrounds.ldas.jp を、URL が長いので play.ldas.jp に改めた（公開前・コミット前）。理由と却下した案は上の節のまま。
