@@ -2,13 +2,14 @@
     Links to the item's own IIIF manifest, when cb_page_gen writes one
     (a `page_gen` entry with template 'manifest' in _config.yml).
     Items with an external `manifest` use the iiif layout instead.
+    The link uses `lod-base` when set, so both language builds point at the manifest's own id.
 {%- endcomment -%}
 {%- assign t = site.data.locale[site.lang] -%}
 {%- assign manifest_gen = site.page_gen | where: "template", "manifest" | first -%}
 {%- if manifest_gen and page.manifest == nil or manifest_gen and page.manifest == "" -%}
 {%- if manifest_gen.permalink -%}{%- assign manifest_path = manifest_gen.permalink | replace: ':name', page.base_filename -%}
 {%- else -%}{%- capture manifest_path %}/{{ manifest_gen.dir }}/{{ page.base_filename }}.{{ manifest_gen.extension | default: 'html' }}{% endcapture -%}{%- endif -%}
-{%- assign manifest_url = manifest_path | absolute_url -%}
+{%- if site.lod-base -%}{%- assign manifest_url = site.lod-base | append: manifest_path -%}{%- else -%}{%- assign manifest_url = manifest_path | absolute_url -%}{%- endif -%}
 <div class="iiif-links d-flex flex-wrap gap-2 justify-content-center mt-2">
     <a class="btn btn-outline-dark" href="{{ manifest_url }}" target="_blank" rel="noopener">
         <img src="https://iiif.io/img/logo-iiif-34x30.png" alt="" width="20" height="18" class="me-1"> {{ t.iiif_manifest | default: "IIIF Manifest" }}

@@ -1,6 +1,8 @@
 {% comment %}
 
     Adds a basic citation box for child item with reference link to the child modal.
+    Survey photos (with a `commons` link) leave out organization-name: that names the
+    source of the park data (the City), not of the photo.
 
 {%- endcomment -%}
 <div class="card mb-2">
@@ -8,7 +10,7 @@
     <div class="card-body">
         <dl>
             <dt>Citation:</dt>
-            <dd>"{{ child.title | default: page.title }}", {{ site.title }}, {% if site.organization-name %}{{ site.organization-name }}, {% endif %}<a href="{{ page.url | absolute_url }}#{{ child.objectid }}">{{ page.url | absolute_url }}#{{ child.objectid }}</a></dd>
+            <dd>"{{ child.title | default: page.title }}", {{ site.title }}, {% if site.organization-name and child.commons == nil %}{{ site.organization-name }}, {% endif %}<a href="{{ page.url | absolute_url }}#{{ child.objectid }}">{{ page.url | absolute_url }}#{{ child.objectid }}</a></dd>
         </dl>
     </div>
 </div>

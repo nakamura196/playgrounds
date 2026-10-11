@@ -25,6 +25,8 @@ config_labels:
     parkid: Park ID (City)
     source: Source
     rights: Rights
+    rightsstatement: Licence
+    commons: Wikimedia Commons page
   config-browse:
     neighbourhood: { display_name: Neighbourhood, sort_name: Neighbourhood, facet_name: Neighbourhood }
     playground_count: { display_name: Playgrounds, sort_name: Playgrounds }
@@ -51,3 +53,5 @@ search_heading: Find a park
 search_placeholder: Park name, neighbourhood, facility...
 playgrounds_n: playgrounds
 vocab_heading: Play equipment vocabulary
+# title field in a photo's details (compound object child), instead of the park field name
+child_title: Photo title

@@ -25,3 +25,6 @@ climbing-wall,Climbing Wall with Holds,登り壁,climbing-vertical,壁面に取�
 balance-beam,Balance Beam,平均台,climbing-traverse,地面近くの細い梁の上を歩く,,,,https://chicagoplaygrounds.com/s/guide/item/3234,candidate,
 zip-line,Zip Line with Circle Seat,ジップライン（円い座面）,zipline,張ったワイヤーに沿って座面ごと滑る,,,,https://chicagoplaygrounds.com/s/guide/item/3460,candidate,
 sand-scooper,Sand Scooper,砂すくい,sand,座って操作するショベルで砂をすくう,sand digger,,,https://chicagoplaygrounds.com/s/guide/item/3152,candidate,
+rope-net-spinner,Rope Net Spinner,回る網のかご,spinning;climbing-net,柱のまわりに綱の網を円すい形に張り、下の円盤ごと回る。網に登ったまま回る,spinning net climber;rope spinner,merry-go-round,,,,2026-10 Wesbrook Park（UBC）で確認。シカゴの対応は未確認
+low-rope-net,Low Rope Net,低い綱の網,climbing-net,地面近くに綱の網を張り、その上を渡ったり乗ったりする,,rope-net-bridge,,,,2026-10 Wesbrook Park（UBC）で確認。シカゴの対応は未確認
+stepping-stumps,Log Stepping Stumps,切り株の足場,climbing-traverse,高さの違う丸太の切り株を並べ、跳び移って渡る,stepping logs,balance-beam,,,,2026-10 Wesbrook Park（UBC）で確認。シカゴの対応は未確認

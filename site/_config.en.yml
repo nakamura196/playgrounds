@@ -8,7 +8,7 @@ lang: en
 baseurl: /en
 title: Vancouver Playgrounds
 tagline: A record of play equipment (in preparation)
-description: "A record of the 136 playgrounds in 114 City of Vancouver parks, to be searchable by play equipment. For now it holds only the park information from the City's open data."
+description: "A record of the 136 playgrounds in 114 City of Vancouver parks, to be searchable by play equipment. It starts from the City's open data and adds playgrounds surveyed on site."
 keywords: playground; play equipment; Vancouver; parks
 organization-name: "City of Vancouver Open Data (park information)"
 # item pages only: the JSON-LD (items/*.jsonld) and the vocabulary file are

@@ -8,7 +8,7 @@
 <div id="item-metadata">
     <dl>
         {% for f in fields %}{% if child[f.field] %}
-        <dt class="field">{{ f.display_name }}:</dt>
+        <dt class="field">{% if f.field == "title" %}{{ site.data.locale[site.lang].child_title | default: f.display_name }}{% else %}{{ f.display_name }}{% endif %}:</dt>
         <dd class="field-value">
             {% if f.browse_link == "true" %}
             {% assign topics = child[f.field] | split: ";" %}

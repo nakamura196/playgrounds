@@ -200,3 +200,5 @@ advanced_short_suffix: 検索
 # このサイトで足した文言
 playgrounds_n: か所
 vocab_heading: 遊具の語彙
+# title field in a photo's details (compound object child), instead of the park field name
+child_title: 写真の題名
