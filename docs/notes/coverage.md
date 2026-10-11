@@ -348,3 +348,17 @@ Commons に上げた 7 枚は、ページに撮影日時（分まで）と撮影
 - トップの大きな画像は写真 04（すべり台の塔の正面）。01 は人をぼかした跡があるので避けた
 - 写真のクレジットの例に、サイト全体の発行元の名前（「City of Vancouver Open Data（公園の情報）」）が入っていた。写真では誤りなので、Commons の写真では出さないようにした。
   サイト全体の発行元がこの名前になっている点（ページの説明の情報にも入る）は、まだ直していない
+
+## 2026-10-11 IIIF マニフェストを公開した後の確認
+
+- 公開した `https://play.ldas.jp/iiif/ubc-wesbrook.json` は、IIIF 公式の検査（presentation-validator.iiif.io、version 3.0）でエラー 0、警告 0
+- 各写真（キャンバス）の題名と説明が英語だけだった（本人の指摘）。日本語も並べた（photos.csv に title_ja / description_ja、公園の行に description_ja）。331cd68
+- 表示の問題（未解決）: projectmirador.org の埋め込み（Mirador 4）と uv-v4.netlify.app（Universal Viewer 4）では、写真の一覧と説明は出るが、大きな画像が出ない。
+  画像そのものは 200 で届いており、Commons は CORS（別のサイトからの読み込みの許可）も `*` で返している。ブラウザの記録には「WebGL cannot be used to draw this TiledImage because it has tainted data」（Mirador）、「Error creating texture in WebGL」（UV）。
+  どちらも中で使う OpenSeadragon が、画像サーバの無い 1 枚画像を WebGL で描こうとして失敗しているように見える。IIIF の見本（0001-mvm-image、1 枚画像・画像サーバ無し）は同じ Mirador で表示できたので、ビューアがこの形を全く扱えないわけではない。
+  手元で Mirador 3.4.3 を動かすと画像は描かれたが、初めの表示位置がずれていた。1280 px の縮小画像に替えても同じ。原因はまだ切り分けていない
+- 訂正（同日の夕方）: 改めて開くと、Mirador 4 でも UV 4 でも大きな画像が出た。直したものは無い。
+  確かめたこと: (1) UV で、まだ一度も開いていない写真 05 を選んでも出た（ブラウザに残っていた画像で出たのではない）。
+  (2) 上の 2 つの警告は、表示できた IIIF の見本でも同じように出る。OpenSeadragon は WebGL で描けないと普通の描き方に切り替えるので、警告は害が無い。
+  手元で OpenSeadragon 5.0.1 だけを動かしても、元の画像（4000×3000、4.3 MB）・960 px の縮小・見本の画像の 3 つとも描けた。
+  元の画像は curl で 0.4 秒で届く。前回出なかった理由は再現できず不明。読み込みの途中で画面を見ていた可能性がある。マニフェストは今のままでよい
