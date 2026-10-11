@@ -10,6 +10,8 @@
 
     Ids use `lod-base` in _config.yml, so the Japanese and English builds give the same
     manifest id. The park's position is given with the navPlace extension.
+    Labels and summaries carry en and ja (title_ja / description_ja columns, from
+    collection/surveyed-parks.csv and collection/photos.csv).
 {%- endcomment -%}
 {%- assign base = site.url | append: site.baseurl -%}{%- if site.lod-base -%}{%- assign base = site.lod-base -%}{%- endif -%}
 {%- assign manifest_id = base | append: '/iiif/' | append: page.objectid | append: '.json' -%}
@@ -23,7 +25,7 @@
   "type": "Manifest",
   "label": { "none": [ {{ page.title | jsonify }} ] },
   {%- if page.description %}
-  "summary": { "en": [ {{ page.description | jsonify }} ] },{% endif %}
+  "summary": { "en": [ {{ page.description | jsonify }} ]{% if page.description_ja %}, "ja": [ {{ page.description_ja | jsonify }} ]{% endif %} },{% endif %}
   "metadata": [
     {%- if page.location %}
     { "label": { "en": [ "Location" ], "ja": [ "所在地" ] }, "value": { "none": [ {{ page.location | jsonify }} ] } },{% endif %}
@@ -37,7 +39,7 @@
   ],
   "requiredStatement": {
     "label": { "en": [ "Attribution" ], "ja": [ "クレジット" ] },
-    "value": { "en": [ "Photos: Satoru Nakamura, CC BY 4.0, via Wikimedia Commons" ] }
+    "value": { "en": [ "Photos: Satoru Nakamura, CC BY 4.0, via Wikimedia Commons" ], "ja": [ "写真: 中村 覚（CC BY 4.0、Wikimedia Commons 経由）" ] }
   },
   "rights": "http://creativecommons.org/licenses/by/4.0/",
   "homepage": [
@@ -65,14 +67,14 @@
     {
       "id": {{ canvas_id | jsonify }},
       "type": "Canvas",
-      "label": { "en": [ {{ c.title | jsonify }} ] },
+      "label": { "en": [ {{ c.title | jsonify }} ]{% if c.title_ja %}, "ja": [ {{ c.title_ja | jsonify }} ]{% endif %} },
       {%- if c.description %}
-      "summary": { "en": [ {{ c.description | jsonify }} ] },{% endif %}
+      "summary": { "en": [ {{ c.description | jsonify }} ]{% if c.description_ja %}, "ja": [ {{ c.description_ja | jsonify }} ]{% endif %} },{% endif %}
       "width": {{ c.image_width | plus: 0 }},
       "height": {{ c.image_height | plus: 0 }},
       "thumbnail": [ { "id": {{ c.image_thumb | jsonify }}, "type": "Image", "format": "image/jpeg" } ],
       {%- if c.commons %}
-      "homepage": [ { "id": {{ c.commons | jsonify }}, "type": "Text", "label": { "en": [ "File page on Wikimedia Commons" ] }, "format": "text/html" } ],{% endif %}
+      "homepage": [ { "id": {{ c.commons | jsonify }}, "type": "Text", "label": { "en": [ "File page on Wikimedia Commons" ], "ja": [ "Wikimedia Commons のファイルのページ" ] }, "format": "text/html" } ],{% endif %}
       "items": [
         {
           "id": {{ canvas_id | append: '/page/1' | jsonify }},

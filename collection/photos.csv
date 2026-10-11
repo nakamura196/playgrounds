@@ -1,8 +1,8 @@
-objectid,parentid,commons_file,width,height,title,description
-ubc-wesbrook-01,ubc-wesbrook,"Wesbrook Park playground, UBC, Vancouver, 2026-10-11 01.jpg",4000,3000,The playground from the entrance path,"The whole playground from the entrance path: the tube slide tower, the rope net spinner and the log stepping stumps. Passers-by are pixelated."
-ubc-wesbrook-02,ubc-wesbrook,"Wesbrook Park playground, UBC, Vancouver, 2026-10-11 02.jpg",4000,3000,Tube slide tower and low rope net,"The tower with a tube slide, held by a mast and guy ropes, with a low rope net behind."
-ubc-wesbrook-03,ubc-wesbrook,"Wesbrook Park playground, UBC, Vancouver, 2026-10-11 03.jpg",3000,4000,Rope net spinner,"A cone of rope net around a central post, turning with the base disc."
-ubc-wesbrook-04,ubc-wesbrook,"Wesbrook Park playground, UBC, Vancouver, 2026-10-11 04.jpg",4000,3000,Tube slide tower from the front,"The tube slide tower as a whole, from the front."
-ubc-wesbrook-05,ubc-wesbrook,"Wesbrook Park playground, UBC, Vancouver, 2026-10-11 05.jpg",4000,3000,Log stepping stumps,Log stepping stumps of different heights.
-ubc-wesbrook-06,ubc-wesbrook,"Wesbrook Park playground, UBC, Vancouver, 2026-10-11 06.jpg",3000,4000,Spinning seat,A single spinning seat with a flexible pole.
-ubc-wesbrook-07,ubc-wesbrook,"Wesbrook Park playground, UBC, Vancouver, 2026-10-11 07.jpg",3000,4000,Post with three red rings,A post with three red rings. Its use is not known yet.
+objectid,parentid,commons_file,width,height,title,description,title_ja,description_ja
+ubc-wesbrook-01,ubc-wesbrook,"Wesbrook Park playground, UBC, Vancouver, 2026-10-11 01.jpg",4000,3000,The playground from the entrance path,"The whole playground from the entrance path: the tube slide tower, the rope net spinner and the log stepping stumps. Passers-by are pixelated.",入口の通路から見た遊び場,入口の通路から見た遊び場の全体。筒形のすべり台の塔、回る網のかご、切り株の足場。通りがかった人はぼかしてある。
+ubc-wesbrook-02,ubc-wesbrook,"Wesbrook Park playground, UBC, Vancouver, 2026-10-11 02.jpg",4000,3000,Tube slide tower and low rope net,"The tower with a tube slide, held by a mast and guy ropes, with a low rope net behind.",すべり台の塔と低い綱の網,筒形のすべり台の塔。柱と綱で支えてあり、奥に低い綱の網がある。
+ubc-wesbrook-03,ubc-wesbrook,"Wesbrook Park playground, UBC, Vancouver, 2026-10-11 03.jpg",3000,4000,Rope net spinner,"A cone of rope net around a central post, turning with the base disc.",回る網のかご,柱の周りに綱の網が円すい形に張ってあり、下の円盤ごと回る。
+ubc-wesbrook-04,ubc-wesbrook,"Wesbrook Park playground, UBC, Vancouver, 2026-10-11 04.jpg",4000,3000,Tube slide tower from the front,"The tube slide tower as a whole, from the front.",正面から見たすべり台の塔,筒形のすべり台の塔を正面から見た全体。
+ubc-wesbrook-05,ubc-wesbrook,"Wesbrook Park playground, UBC, Vancouver, 2026-10-11 05.jpg",4000,3000,Log stepping stumps,Log stepping stumps of different heights.,切り株の足場,高さの違う切り株を並べた足場。
+ubc-wesbrook-06,ubc-wesbrook,"Wesbrook Park playground, UBC, Vancouver, 2026-10-11 06.jpg",3000,4000,Spinning seat,A single spinning seat with a flexible pole.,回る椅子,しなる棒の付いた 1 人用の回る椅子。
+ubc-wesbrook-07,ubc-wesbrook,"Wesbrook Park playground, UBC, Vancouver, 2026-10-11 07.jpg",3000,4000,Post with three red rings,A post with three red rings. Its use is not known yet.,赤い輪が 3 つ付いた柱,赤い輪が 3 つ付いた柱。何に使う物かはまだ分からない。

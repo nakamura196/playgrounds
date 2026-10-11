@@ -34,6 +34,8 @@ FIELDS = [
     # 写真（CollectionBuilder の複数の画像を持つ記録 compound_object と、その子の行）
     "parentid", "format", "object_location", "image_small", "image_thumb", "image_alt_text",
     "rightsstatement", "commons", "image_width", "image_height",
+    # 日本語の題名と説明（IIIF マニフェストで英語と並べる。市のデータの行には無い）
+    "title_ja", "description_ja",
 ]
 
 RIGHTS = "Contains information licensed under the Open Government Licence – Vancouver"
@@ -87,6 +89,8 @@ def surveyed_rows():
             "commons": page,
             "image_width": ph["width"],
             "image_height": ph["height"],
+            "title_ja": ph["title_ja"],
+            "description_ja": ph["description_ja"],
         })
     parks = []
     for p in read("surveyed-parks.csv"):
