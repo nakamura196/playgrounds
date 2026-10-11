@@ -29,7 +29,7 @@ config_labels:
     playground_count: { display_name: Playgrounds, sort_name: Playgrounds }
     subject: { facet_name: Other park facilities }
     washrooms: { facet_name: Washrooms }
-    equipment: { facet_name: Play equipment }
+    equipment_name: { facet_name: Play equipment }
   config-map:
     neighbourhood: Neighbourhood
     playground_count: Playgrounds

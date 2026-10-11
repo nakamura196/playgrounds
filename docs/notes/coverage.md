@@ -268,3 +268,11 @@ chicagoplaygrounds.com の構成を Omeka S の API（/api/resource_templates, /
   Actions は使わない。組み上がりは 29 MB
 - GitHub Pages は gh-pages の push で自動的に有効になった。独自ドメイン play.ldas.jp を API で登録した
 - DNS（CNAME `play` → `nakamura196.github.io`、プロキシ無し）はまだ。1Password の承認がこの会話から通らなかったため
+
+## 2026-10-11 遊具の絞り込みを名前で
+
+- `site/_plugins/vocab_labels.rb`: config-metadata.csv で vocab を持つ欄（equipment）に、組み立てのときに `equipment_name` の欄を足す。
+  中身はその言語の名前（label_ja / label_en）を ";" でつないだもの。一覧の絞り込み（config-browse）と検索（config-search）はこちらを見る
+- `equipment` には id を残す。公園のページの語彙へのリンクと JSON-LD は id を使うため
+- 日本語の検索の索引（cjk_index）も config-search を読むので、同じ欄で名前が入る。索引の中では「雲梯」が「云梯」のように変換されて入る（字体の揺れをそろえるため）
+- 確かめ方: 写しの CSV の 2 件に仮の遊具を入れて組み、一覧の絞り込みの欄が「遊具」/「Play equipment」、値が名前になることを見て、データは戻した

@@ -4,4 +4,4 @@ neighbourhood,true,true
 location,true,false
 description,true,false
 subject,true,false
-equipment,true,false
+equipment_name,true,false
