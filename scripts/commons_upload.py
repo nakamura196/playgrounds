@@ -12,7 +12,7 @@ The rules come from the photo guide (site/pages/guide.md) and the lab note
 - an optional wait after the photo was taken (--min-age-days, default 0;
   the upload time only shows the photo existed by then, not when it was taken)
 
-Blurring people is done by hand before this step; point `source` at the
+People are pixelated before this step (scripts/blur_people.py, then check by eye); point `source` at the
 blurred file.
 
 Batch CSV (keep it under data/private/, which is not in git):
@@ -22,7 +22,8 @@ Batch CSV (keep it under data/private/, which is not in git):
 
 - source: path relative to the CSV
 - title: Commons file name without "File:"; must not contain a full date
-- categories: separated by ";" ("Playgrounds in Vancouver" is always added)
+- categories: separated by ";" ("Playgrounds in Vancouver" is added unless an
+  optional column default_categories is "no", e.g. a drinking fountain)
 
 Usage:
 
@@ -135,7 +136,8 @@ def out_paths(batch: Path, title: str) -> tuple[Path, Path]:
 
 def wikitext(row: dict, month: str, lat: float | None, lon: float | None) -> str:
     cats = [c.strip() for c in row.get("categories", "").split(";") if c.strip()]
-    cats += [c for c in ALWAYS_CATEGORIES if c not in cats]
+    if row.get("default_categories", "").strip().lower() != "no":
+        cats += [c for c in ALWAYS_CATEGORIES if c not in cats]
     desc = f"{{{{en|1={row['description_en']}}}}}"
     if row.get("description_ja"):
         desc += f"\n{{{{ja|1={row['description_ja']}}}}}"

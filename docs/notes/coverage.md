@@ -417,3 +417,24 @@ API は使わなかった。2025 年 3 月から、Google Photos の API はラ�
 - Commons に `Category:Playground survey in Vancouver` を作った（上位: Playgrounds in Vancouver、ボットのアカウントで作成）。公園の分類は `collection/commons-categories.csv` に、確かめた 3 つ（Hillcrest Park (Vancouver), Kensington Park (Vancouver), Wesbrook Park (UBC)）だけ書いた
 - 外の人の写真は、見てから `collection/photos.csv` に手で足す。自動では載せない
 - 撮り方のガイドに「Commons に投稿する」の節を足した
+
+## 2026-10-11 人物のモザイクを自動にする試作（`scripts/blur_people.py`）
+
+人の多い写真も使えるようにしたい、という話から。2 回目の現地調査（Mundell Park 3 枚、Brockhouse Park 13 枚、Pixel 9a）の 16 枚で試した。
+
+- 方法: 人の輪郭を切り抜くモデル（YOLO11x-seg、ultralytics 8.4.164）を、写真全体（1920 px）と、重なりのある区切り 6 枚（各 1280 px）にかけ、結果を全部足す。顔を探すモデル（OpenCV YuNet 2023mar）も、全体と区切り 12 枚にかける。輪郭は人の高さの 4% ＋ 6 px 広げ、人の大きさに合わせた粗いブロック（高さの 1/12、最小 12 px）でモザイクにする。閾値は低め（人 0.15、顔 0.6）で、塗りすぎる側に倒す
+- 処理はすべて手元（M 系の Mac、MPS）。16 枚（4000×3000）で 2 分 26 秒
+- 結果（確認用の縮小画像を目で見た）: 遠くの高さ 20〜30 px の人まで拾えた。ベビーカーの中の子は体では拾えず、顔のほうで拾えた。見落としは見つからなかった
+- 誤り: 案内板や Toy Box に描かれたイラストの顔を塗った（顔のモデル）。石を人と見たらしい小さな塗りが数か所。どちらも塗りすぎの側
+- EXIF（日付・GPS・機種）は元の写真から写し、向きは画素に焼き込んで 1 にした。`commons_upload.py prepare` はそのまま読める（未確認）
+- 環境はリポジトリの外: `~/.cache/blur-venv`（uv、`--exclude-newer 2026-09-27`）、モデルは `~/.cache/blur-models/`
+- 限界: 前景の子どもは、モザイクでも服・体格・自転車が残る。こうした写真は使わない、というガイドの線はそのまま
+- 同日、ブロックの大きさを見比べた（身長方向に 12・20・32 ブロック）。12 は四角が目立って浮く。32 は髪型・姿勢・服の柄まで分かり、知り合いなら見当が付く。20 を既定にした（中村の了承済み）。顔は体と別に、顔の高さ方向 6 ブロックの粗さで塗るので、体を細かくしても顔は粗いまま
+
+## 2026-10-11 2 回目の現地調査の写真を Commons に上げた（Mundell Park・Brockhouse Park）
+
+- 16 枚のうち 11 枚を上げた（モザイク後、`commons_upload.py` で日付を月に丸めた）。分類 `Category:Mundell Park (UBC)`・`Category:Brockhouse Park (UBC)` を新設（上位は Wesbrook Park と同じ。位置は写真の撮影地点から）
+- 上げなかった 5 枚: 手前に子どもが大きく写った 1 枚。Toy Box・水遊び場の決まりの看板・日焼けの注意書き・ごみ箱の掲示の 4 枚。看板の 4 枚は平面の絵や図が主役で、カナダのパノラマの自由（屋外の常設物を撮った写真の例外）は彫刻と建物だけが対象のため。手元の記録には残す
+- 彫刻を施した岩は、彫刻として例外に入るので上げた（作者は分からない）
+- 水飲み場・芝生のように遊具でない写真には「Playgrounds in Vancouver」を付けないよう、`commons_upload.py` に列 `default_categories`（no で付けない）を足した
+- Mundell の遊具の写真（Mundell Park playground 02）は、遊具の前に人が多く、遊具が隠れている。人の少ない時間に撮り直す予定（中村）
