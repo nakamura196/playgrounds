@@ -200,6 +200,8 @@ advanced_short_suffix: 検索
 # このサイトで足した文言
 playgrounds_n: か所
 vocab_heading: 遊具の語彙
+recent_items: 最近調べた公園
+surveyed_on: 現地調査
 # title field in a photo's details (compound object child), instead of the park field name
 child_title: 写真の題名
 # link text for URL fields on item pages (instead of the bare URL), by field name

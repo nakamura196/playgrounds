@@ -5,6 +5,7 @@
 <title>{{ page.title | escape }} | {{ site.title | escape }}</title>
 {%- if site.languages.size > 1 %}{% for l in site.languages %}
 <link rel="alternate" hreflang="{{ l.code }}" href="{{ site.url }}{{ l.baseurl }}{{ page.url }}">{% endfor %}{% endif %}
+<link rel="canonical" href="{{ page.url | absolute_url | replace: '/index.html', '/' }}">
 <link rel="shortcut icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}">
 <!--
 

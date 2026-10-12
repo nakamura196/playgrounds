@@ -1,5 +1,6 @@
 {% if page.subject %}<meta name="keywords" content="{{ page.subject | escape }}" >{% endif %}
-{% if page.description %}<meta name="description" content="Item from {{ site.title | escape }}: {{ page.description | truncatewords: 25 | escape }}">{% endif %}
+{%- assign meta_desc = page.description -%}{%- if site.lang != 'en' and page.description_ja -%}{%- assign meta_desc = page.description_ja -%}{%- endif -%}
+{% if meta_desc %}<meta name="description" content="{{ meta_desc | truncate: 160 | escape }}">{% endif %}
 <!-- DC meta -->
 <link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
 {%- assign dc-fields = site.data.config-metadata | where_exp: 'item', 'item.dc_map != nil' -%}
@@ -7,15 +8,17 @@
 {% endif %}{% endfor %}
 {% if site.organization-name %}<meta name="DCTERMS.publisher" content="{{ site.organization-name | escape }}" xml:lang="en" />{% endif %}
 <!-- Open Graph meta -->
-<meta property="og:title" content="{{ page.title | escape }}" />
+<meta property="og:title" content="{{ page.title | escape }} | {{ site.title | escape }}" />
 <meta property="og:type" content="website" />
-<meta property="og:description" content="Item from {{ site.title | escape }}. {{ page.description | truncatewords: 30 | escape }}" />
+<meta property="og:description" content="{{ meta_desc | default: site.description | truncate: 200 | escape }}" />
 {% if page.image_small or page.image_thumb %}
 <meta property="og:image" content="{{ page.image_small | default: page.image_thumb | absolute_url }}" />
 <meta property="og:image:alt" content="{{ page.title | escape }}" />{% endif %}
 <meta property="og:site_name" content="{{ site.title | escape }}" />
 <meta property="og:url" content="{{ page.url | absolute_url }}" />
-<meta property="og:locale" content="en_US" />
+<meta name="twitter:card" content="{% if page.image_small or page.image_thumb %}summary_large_image{% else %}summary{% endif %}" />
+<meta property="og:locale" content="{% if site.lang == 'en' %}en_CA{% else %}ja_JP{% endif %}" />
+<meta property="og:locale:alternate" content="{% if site.lang == 'en' %}ja_JP{% else %}en_CA{% endif %}" />
 <!-- schema.org JSON-LD -->
 <script type="application/ld+json">
 { 

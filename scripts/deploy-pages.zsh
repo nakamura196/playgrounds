@@ -6,6 +6,7 @@
 # Prerequisites: Docker running; run on main with main up to date.
 # Usage: zsh scripts/deploy-pages.zsh
 # What it does: copies collection/ and vocab/ into site/_data/, builds both languages in Docker (ruby:3.3),
+# builds with JEKYLL_ENV=production (CollectionBuilder adds the description, OGP and DC meta tags only then),
 # adds .nojekyll (the build is already done; GitHub must not run Jekyll again), and force-pushes site/_site/
 # as one commit to origin/gh-pages. The branch keeps no history: it is a build output.
 set -euo pipefail
@@ -20,7 +21,7 @@ remote=$(git remote get-url origin)
 
 zsh scripts/sync_site_data.zsh
 rm -rf site/_site
-docker run --rm -v "$root/site":/srv -w /srv -e BUNDLE_PATH=vendor/bundle-docker ruby:3.3 sh -c 'bundle install --quiet && bundle exec jekyll build && bundle exec jekyll build --config _config.yml,_config.en.yml -d _site/en'
+docker run --rm -v "$root/site":/srv -w /srv -e BUNDLE_PATH=vendor/bundle-docker -e JEKYLL_ENV=production ruby:3.3 sh -c 'bundle install --quiet && bundle exec jekyll build && bundle exec jekyll build --config _config.yml,_config.en.yml -d _site/en'
 touch site/_site/.nojekyll
 
 tmp=$(mktemp -d)

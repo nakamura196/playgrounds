@@ -4,6 +4,7 @@
 # Options (front matter of the page using this layout):
 #   search-examples: list of example queries shown under the search box
 #   grid-items: list of objectids to feature in the image grid (default: all items)
+#   Parks with photos from the site survey (survey_seq set) are also shown first, newest first, up to 6
 #   chip-field: metadata field for the shortcut chips under the search (default: era)
 #   (the page content is shown beside the search box)
 layout: default
@@ -43,6 +44,24 @@ layout: default
         </div>
     </section>
     {% endif %}
+
+    {%- assign recent = items | where_exp: 'item', 'item.survey_seq and item.image_thumb' | sort: 'survey_seq' | reverse -%}
+    {%- if recent.size > 0 %}
+    <section class="museum-grid-section" id="recent">
+        <div class="d-flex justify-content-between align-items-baseline">
+            <h2 class="museum-h2">{{ t.recent_items | default: "Recently surveyed" }} <span class="museum-count">{{ recent | size }}</span></h2>
+        </div>
+        <div class="museum-grid">
+            {% for item in recent limit: 6 %}
+            <a class="museum-card" href="{{ '/items/' | append: item.objectid | append: '.html' | relative_url }}">
+                <div class="museum-card-img"><img class="lazyload" data-src="{{ item.image_thumb | relative_url }}" alt="{{ item.image_alt_text | default: item.title | escape }}"></div>
+                <h3 class="museum-card-title">{{ item.title }}</h3>
+                <p class="museum-card-meta">{{ t.surveyed_on | default: "Surveyed" }} {{ item.surveyed }}</p>
+            </a>
+            {% endfor %}
+        </div>
+    </section>
+    {%- endif %}
 
     <section class="museum-grid-section">
         <div class="d-flex justify-content-between align-items-baseline">

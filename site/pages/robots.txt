@@ -1,0 +1,10 @@
+---
+# Only in the default build (the English build at /en/ shares the same host)
+permalink: /robots.txt
+layout: none
+lang: ja
+---
+User-agent: *
+Allow: /
+
+Sitemap: {{ '/sitemap.xml' | absolute_url }}

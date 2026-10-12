@@ -39,6 +39,9 @@ FIELDS = [
     "title_ja", "description_ja",
     # Commons の投稿画面を、分類・見出し・位置を入れた状態で開く URL（公園の行だけ）
     "commons_upload",
+    # 現地調査の順（surveyed-parks.csv の行の順、3 桁）。トップの「最近調べた公園」を新しい順に並べる。
+    # surveyed は月までしか無いので、同じ月の中の順はこれで決める
+    "survey_seq",
 ]
 
 RIGHTS = "Contains information licensed under the Open Government Licence – Vancouver"
@@ -113,7 +116,7 @@ def surveyed_rows():
             "description_ja": ph["description_ja"],
         })
     parks = []
-    for p in read("surveyed-parks.csv"):
+    for seq, p in enumerate(read("surveyed-parks.csv"), 1):
         kids = photos.get(p["objectid"], [])
         cover = next((k for k in kids if k["objectid"] == p["photo_thumb"]), kids[0] if kids else {})
         row = {k: v for k, v in p.items() if k != "photo_thumb"}
@@ -126,6 +129,7 @@ def surveyed_rows():
             "image_small": cover.get("image_small", ""),
             "image_thumb": cover.get("image_thumb", ""),
             "image_alt_text": cover.get("image_alt_text", ""),
+            "survey_seq": f"{seq:03d}",
         })
         parks.append((row, kids))
     return parks
