@@ -202,3 +202,9 @@ playgrounds_n: か所
 vocab_heading: 遊具の語彙
 # title field in a photo's details (compound object child), instead of the park field name
 child_title: 写真の題名
+# link text for URL fields on item pages (instead of the bare URL), by field name
+link_texts:
+  commons_upload: Wikimedia Commons の投稿画面を開く（分類・位置を入れた状態で開きます）
+# short note under a URL field's link on item pages (Markdown)
+link_notes:
+  commons_upload: Commons のアカウントが要ります。写真の撮影日時と撮影地点は Commons のページに公開されます。先に[撮り方](../guide.html)をご覧ください。

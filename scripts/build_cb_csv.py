@@ -19,7 +19,7 @@ import csv
 import hashlib
 import json
 from pathlib import Path
-from urllib.parse import quote
+from urllib.parse import quote, urlencode
 
 ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "data" / "opendata"
@@ -36,6 +36,8 @@ FIELDS = [
     "rightsstatement", "commons", "image_width", "image_height",
     # 日本語の題名と説明（IIIF マニフェストで英語と並べる。市のデータの行には無い）
     "title_ja", "description_ja",
+    # Commons の投稿画面を、分類・見出し・位置を入れた状態で開く URL（公園の行だけ）
+    "commons_upload",
 ]
 
 RIGHTS = "Contains information licensed under the Open Government Licence – Vancouver"
@@ -47,6 +49,9 @@ PHOTO_RIGHTS = "Photo: Satoru Nakamura (Wikimedia Commons User:Satoru196), CC BY
 CC_BY = "https://creativecommons.org/licenses/by/4.0/"
 COMMONS = "https://commons.wikimedia.org/wiki/"
 UPLOAD = "https://upload.wikimedia.org/wikipedia/commons/"
+UPLOAD_WIZARD = "https://commons.wikimedia.org/wiki/Special:UploadWizard"
+# サイト経由の投稿を集める分類（2026-10-11 作成、上位は Playgrounds in Vancouver）
+SURVEY_CATEGORY = "Playground survey in Vancouver"
 
 
 def commons_urls(name):
@@ -61,6 +66,20 @@ def commons_urls(name):
     original = f"{UPLOAD}{h[0]}/{h[:2]}/{q}"
     thumb = f"{UPLOAD}thumb/{h[0]}/{h[:2]}/{q}/{{w}}px-{q}"
     return page, original, thumb.format(w=960), thumb.format(w=330)
+
+
+def upload_url(row, park_categories):
+    """Commons の投稿画面（UploadWizard）の URL。分類・見出し・位置を前もって入れる。
+    公園の分類は commons-categories.csv で確かめたものだけ入れる（無い分類を入れると赤リンクになる）。"""
+    cats = [SURVEY_CATEGORY] + park_categories.get(row["objectid"], [])
+    params = {
+        "categories": "|".join(cats),
+        "caption": f"Playground in {row['title']}, Vancouver",
+        "captionlang": "en",
+    }
+    if row.get("latitude") and row.get("longitude"):
+        params.update(lat=row["latitude"], lon=row["longitude"])
+    return f"{UPLOAD_WIZARD}?{urlencode(params, quote_via=quote)}"
 
 
 def read(name):
@@ -157,6 +176,12 @@ def main():
     rows.sort(key=lambda r: r["title"])
     children = {park["objectid"]: kids for park, kids in surveyed}
     rows = [x for r in rows for x in [r, *children.get(r["objectid"], [])]]
+    park_categories = {}
+    for c in read("commons-categories.csv"):
+        park_categories.setdefault(c["objectid"], []).append(c["category"])
+    for r in rows:
+        if not r.get("parentid"):
+            r["commons_upload"] = upload_url(r, park_categories)
     OUT.parent.mkdir(exist_ok=True)
     with open(OUT, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=FIELDS, restval="")

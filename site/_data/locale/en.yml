@@ -27,6 +27,7 @@ config_labels:
     rights: Rights
     rightsstatement: Licence
     commons: Wikimedia Commons page
+    commons_upload: Add photos
   config-browse:
     neighbourhood: { display_name: Neighbourhood, sort_name: Neighbourhood, facet_name: Neighbourhood }
     playground_count: { display_name: Playgrounds, sort_name: Playgrounds }
@@ -55,3 +56,9 @@ playgrounds_n: playgrounds
 vocab_heading: Play equipment vocabulary
 # title field in a photo's details (compound object child), instead of the park field name
 child_title: Photo title
+# link text for URL fields on item pages (instead of the bare URL), by field name
+link_texts:
+  commons_upload: Open the Wikimedia Commons upload page (category and location filled in)
+# short note under a URL field's link on item pages (Markdown)
+link_notes:
+  commons_upload: You need a Commons account. The date, time and place stored in the photo are shown on Commons. Please read the [photo guide](../guide.html) first.

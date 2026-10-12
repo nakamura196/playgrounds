@@ -4,6 +4,8 @@
     Fields are configured via _data/config-metadata.csv 
     A `vocab` column names a table in _data/vocab/ (e.g. types): the field's values are
     ids in that table, shown with their label and linked to /vocab/#<id>.
+    URL fields (external_link) show link_texts.<field> from the locale file as the link text
+    when it is set, and link_notes.<field> as a short note under the link.
     
 {%- endcomment -%}
 {%- assign loc = site.data.locale[site.lang] -%}
@@ -24,7 +26,8 @@
             <a class="me-3" href="{{ t | strip | url_param_escape | prepend: ':' | prepend: f.field | prepend: '/browse.html#' | relative_url }}">{{ t | strip }}</a>
             {% endfor %}
             {% elsif f.external_link == "true" %}
-            <a href="{{ page[f.field] }}">{{ page[f.field] }}</a>
+            <a href="{{ page[f.field] }}">{{ loc.link_texts[f.field] | default: page[f.field] }}</a>
+            {% if loc.link_notes[f.field] %}<div class="small text-muted">{{ loc.link_notes[f.field] | markdownify | remove: '<p>' | remove: '</p>' }}</div>{% endif %}
             {% else %}
             {{ page[f.field] | replace: '""','"' }}{% endif %}
         </dd>

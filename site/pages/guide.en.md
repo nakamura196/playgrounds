@@ -39,3 +39,12 @@ For combination structures (slide, ladder and monkey bars joined together), take
 - Keep photos grouped by playground, with the date and place (park name, or the nearest street if it has none)
 - Photos are to be published under CC BY 4.0. Do not mix in photos taken by others, even with permission
 - Before publishing, the date taken is rounded to the month (the day and time are removed). The location and camera data are kept. This way nobody can tell where the photographer was and when. The original photos are kept privately
+
+## Adding your photos to Commons
+
+Anyone can add their photos to Wikimedia Commons.
+
+- On each park page, "Add photos" opens the Commons upload page with the categories (Playground survey in Vancouver and the park's own category), a caption and the park's location filled in
+- You need a Commons account. Please choose CC BY 4.0 as the licence
+- The date, time and place stored in the photo are shown on its Commons page. If you mind, remove them from the photo before uploading
+- Photos are added to this site after we have looked at them, not straight away

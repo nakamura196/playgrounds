@@ -404,3 +404,16 @@ API は使わなかった。2025 年 3 月から、Google Photos の API はラ�
 - 訂正（同じ日）: 南側の新しい遊具は、子どもの遊具ではなく KOMPAN 社の屋外運動器具の一角だった（懸垂の棒、平行棒、ケトルベル形のおもりと手順の看板）。
   「ジップライン」はワイヤーではなく固いレールを滑る取っ手（KOMPAN）。Commons の 08・09・10・12 の説明を直した。
   語彙に分類 fitness と 4 語（rail-trolley, pull-up-bars, parallel-bars, kettlebell-station）、製品に Corocord15-0335-3C1 を足した
+
+## 2026-10-11 検討: 「Commons に投稿する」ボタンと「近くの公園」
+
+- Commons の投稿画面（Special:UploadWizard）は、URL で `categories`（`|` 区切り）・`caption`・`captionlang`・`description`・`descriptionlang`・`lat`・`lon` を前もって入れられる（https://www.mediawiki.org/wiki/Extension:UploadWizard の URL arguments）。`campaign` と `fields[]` 以外は投稿キャンペーン無しで使える、と読める（実機では未確認）
+- 公園ごとの Commons の分類は、ほぼ無い。市の 114 公園のうち `Category:<公園名> (Vancouver)` があるのは 2 つ（Hillcrest Park, Kensington Park）。名前だけの `Category:<公園名>` は 32 あるが、同名の別の公園の可能性があり、そのままは使えない。上位の `Category:Playgrounds in Vancouver` はある
+- 案: 分類は「Playgrounds in Vancouver」＋確かめた公園の分類だけ。無い分類を URL で入れると赤リンクの分類ができるので入れない。サイト経由の投稿を集める分類を 1 つ作る案もある（未決）
+- 「近くの公園」は、ブラウザで現在地を取り、公園の位置（115 件）との距離を手元で計算して並べる。位置はサーバに送らない。HTTPS 化済みなので使える
+- 確かめていないこと: スマホでの投稿画面の使い勝手、写真の中の撮影地点と URL の lat/lon のどちらが優先されるか
+- 決めたこと（同日）: 「近くの公園」は CollectionBuilder の仕組みの外になるので、サイトには入れない。別のアプリも今は作らない。中村が使う場面が少なく、自分の投稿は加工の手順を通る `scripts/commons_upload.py` のほうがよいため。外の人の投稿が入り始めたら、サイトの公開データを読む小さな別ページとして考える
+- 投稿のリンクは、データの表の列 `commons_upload` として足した（`scripts/build_cb_csv.py` が作る）。ページの雛形への手入れは、URL の項目にリンクの文言と注記を出せるようにした 1 か所だけ（文言は locale の `link_texts` / `link_notes`）
+- Commons に `Category:Playground survey in Vancouver` を作った（上位: Playgrounds in Vancouver、ボットのアカウントで作成）。公園の分類は `collection/commons-categories.csv` に、確かめた 3 つ（Hillcrest Park (Vancouver), Kensington Park (Vancouver), Wesbrook Park (UBC)）だけ書いた
+- 外の人の写真は、見てから `collection/photos.csv` に手で足す。自動では載せない
+- 撮り方のガイドに「Commons に投稿する」の節を足した
