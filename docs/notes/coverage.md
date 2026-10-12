@@ -447,3 +447,19 @@ API は使わなかった。2025 年 3 月から、Google Photos の API はラ�
 - 水遊び場の中の物は遊具とみなし、既にあった大分類「水遊び」の下に型を 3 つ足した（水遊びの水路・水車・床の噴水口）。Mundell の複合遊具から「くぐるトンネル」も足した（筒形のすべり台と別物、と両方向に記した）。シカゴとの対応は未確認
 - Brockhouse は、調査の日に複合遊具が見当たらなかったので、遊び場の数を 0 にした。市のデータでも Water/Spray Parks は Playgrounds と別に数えている
 - 記録していないもの: Mundell の遊具は人が多く、すべり台とトンネル以外（右手の弧の形の登り遊具など）は形が確かめられない。Brockhouse の水路の緑の門の形の部品（水をせき止める物か）も未確認
+
+## 2026-10-12 3 回目の現地調査: Kids Tree Canopy Adventure（Grouse Mountain）を例外として載せた
+
+Grouse Mountain の山頂の子どもの遊び場で 11 枚撮った（Pixel 9a 10 枚、iPhone 12 mini 1 枚。どれも中村が撮影）。Google マップの名前は Kids Tree Canopy Adventure。
+
+- 範囲の判断: バンクーバー市の外（ノースバンクーバー郡）。しかも Grouse Mountain のリゾートの有料の区域（Skyride で上がる）の中で、写真ガイドの「誰でも入れる遊び場だけ」に当たらない。
+  本人の判断で、例外として載せた。説明文に、市の外であること・有料の区域であること・例外であることを書いた。ガイドそのものは変えていない
+- 中身: 網の橋でつながったツリーハウス、斜面へ下りる筒形のすべり台、縦に登る筒形の網、木の橋。入口の看板によれば 3 歳以上が対象で、大人の付き添いが要る
+- 語彙に 2 語を足した: ツリーハウス（treehouse、複合遊具）、縦に登る筒形の網（net-climbing-tube、網の遊具）。網の橋は既存の rope-net-bridge を当てた。木の橋は固定の橋で、吊り橋（plank-bridge）ではないので当てていない。シカゴとの対応は未確認
+- Commons: 9 枚を上げた（`Kids Tree Canopy Adventure, Grouse Mountain, North Vancouver, 2026-10 01〜09`）。分類 `Category:Kids Tree Canopy Adventure` を新設（上位: Grouse Mountain、Playgrounds in British Columbia、Treehouses in Canada）。市の外なので「Playgrounds in Vancouver」は付けていない（`default_categories` を no）
+- 上げなかった 2 枚: 木に掛けた看板 2 つ（年齢と付き添いの注意、Grouse Mountain の免責の掲示）。前回と同じく、平面の掲示が主役の写真はパノラマの自由の外のため
+- モザイク: 網の橋の上の子ども（04・07）と、09 の右の人を自動で塗った。09 ではツリーハウスの丸窓を顔と見て塗っている（塗りすぎの側なので残した）
+- iPhone の写真は HEIC なので、JPEG に変えてから EXIF を写した（`sips` → `exiftool -TagsFromFile`）
+- 落とし穴: 02〜06 の 5 枚は撮影地点が同じ値（49.381678, -123.079689）で、遊び場から約 350 m 東にずれている。山頂の建物の辺りで測った位置が更新されていない。
+  Commons のページの位置もこの値のまま。サイトの公園の位置は 08 の撮影地点（49.380117, -123.083992）を使った
+- 残っていること: サイトの「Commons に投稿する」リンクは、分類を「Playground survey in Vancouver」、見出しを「…, Vancouver」で作る。市の外の公園では合わない
