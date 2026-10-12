@@ -9,15 +9,17 @@
 <meta name="DCTERMS.date" content="{{ site.time | date: '%Y' }}" xml:lang="en" />
 <meta name="DCTERMS.description" content="{{ site.description | escape }}" xml:lang="en" />
 
-{%- assign og_rec = site.data[site.metadata] | where: 'objectid', site.data.theme.featured-image | first -%}
-{%- assign og_image = og_rec.image_small | default: site.data.featured_item.src -%}
+{%- comment -%} share image for pages other than park pages: made by scripts/make_og_image.py {%- endcomment -%}
+{%- assign og_image = '/assets/img/og-' | append: site.lang | append: '.jpg' -%}
 <!-- Open Graph meta -->
 <meta property="og:title" content="{% if page.title and page.url != "/" %}{{ page.title | escape }}, {% endif %}{{ site.title | escape }}" />
 <meta property="og:description" content="{{ site.description | escape }}" />
 <meta property="og:site_name" content="{{ site.title | escape }}" />
 <meta property="og:type" content="website" />
 <meta property="og:image" content="{{ og_image | absolute_url }}" />
-<meta property="og:image:alt" content="{{ site.data.featured_item.alt | escape }}" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="{{ site.title | escape }}" />
 <meta property="og:url" content="{{ page.url | absolute_url | replace: '/index.html', '/' }}" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="og:locale" content="{% if site.lang == 'en' %}en_CA{% else %}ja_JP{% endif %}" />
