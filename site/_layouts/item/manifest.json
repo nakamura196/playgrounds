@@ -35,6 +35,12 @@
     {%- assign eq_ids = page.equipment | split: ";" -%}
     {%- for e in eq_ids -%}{%- assign term = site.data.vocab.types | where: "id", e | first -%}
     {%- assign eq_en = eq_en | push: term.label_en -%}{%- assign eq_ja = eq_ja | push: term.label_ja -%}{%- endfor %}
+    {%- if page.amenities -%}
+    {%- assign am_en = "" | split: "" -%}{%- assign am_ja = "" | split: "" -%}
+    {%- assign am_ids = page.amenities | split: ";" -%}
+    {%- for a in am_ids -%}{%- assign term = site.data.vocab.amenities | where: "id", a | first -%}
+    {%- assign am_en = am_en | push: term.label_en -%}{%- assign am_ja = am_ja | push: term.label_ja -%}{%- endfor %}
+    { "label": { "en": [ "Amenities" ], "ja": [ "設備" ] }, "value": { "en": [ {{ am_en | join: "; " | jsonify }} ], "ja": [ {{ am_ja | join: "、" | jsonify }} ] } },{% endif %}
     { "label": { "en": [ "Play equipment" ], "ja": [ "遊具" ] }, "value": { "en": [ {{ eq_en | join: "; " | jsonify }} ], "ja": [ {{ eq_ja | join: "、" | jsonify }} ] } }
   ],
   "requiredStatement": {

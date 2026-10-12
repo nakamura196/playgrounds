@@ -438,3 +438,12 @@ API は使わなかった。2025 年 3 月から、Google Photos の API はラ�
 - 彫刻を施した岩は、彫刻として例外に入るので上げた（作者は分からない）
 - 水飲み場・芝生のように遊具でない写真には「Playgrounds in Vancouver」を付けないよう、`commons_upload.py` に列 `default_categories`（no で付けない）を足した
 - Mundell の遊具の写真（Mundell Park playground 02）は、遊具の前に人が多く、遊具が隠れている。人の少ない時間に撮り直す予定（中村）
+
+## 2026-10-11 Mundell Park・Brockhouse Park をサイトに載せた。「設備」の語彙を新設
+
+- 2 公園を `collection/surveyed-parks.csv` に、Commons の 11 枚を `collection/photos.csv` に足した。位置は写真の撮影地点（Mundell は遊具の写真、Brockhouse は丸い水遊び場の写真の地点）
+- 遊具でないもの（水飲み場など）は、遊具の語彙（types）に入れず、別の語彙 `vocab/amenities.csv` にした。列は `amenities`。最初の 5 語: 水飲み場・日よけの布・芝生の広場・彫刻を施した岩・共用のおもちゃ箱（おもちゃ箱は写真を Commons に上げていないが、現地で見たので記録した）。SKOS では別の ConceptScheme（`#amenities`）、公園の JSON-LD では遊具と同じく amenityFeature から additionalType で指す。概念の URI は遊具と同じ `/vocab/#<id>` なので、id は 4 つの表で重ならないようにする
+- 市のデータにある施設（`subject`、例: Water/Spray Parks）とは分けた。こちらは市の分類をそのまま写したもので、語彙として定義していない。Brockhouse の水遊び場は、市の公園と並べて絞り込めるよう `subject` にも Water/Spray Parks と入れた
+- 水遊び場の中の物は遊具とみなし、既にあった大分類「水遊び」の下に型を 3 つ足した（水遊びの水路・水車・床の噴水口）。Mundell の複合遊具から「くぐるトンネル」も足した（筒形のすべり台と別物、と両方向に記した）。シカゴとの対応は未確認
+- Brockhouse は、調査の日に複合遊具が見当たらなかったので、遊び場の数を 0 にした。市のデータでも Water/Spray Parks は Playgrounds と別に数えている
+- 記録していないもの: Mundell の遊具は人が多く、すべり台とトンネル以外（右手の弧の形の登り遊具など）は形が確かめられない。Brockhouse の水路の緑の門の形の部品（水をせき止める物か）も未確認

@@ -5,6 +5,7 @@ neighbourhood,地区,true,,DCTERMS.spatial,,
 location,所在地,,,,,
 playground_count,遊び場の数,,,,,
 equipment,遊具,,,,,types
+amenities,設備,,,,,amenities
 surveyed,現地で確認した日,,,,,
 hectare,面積（ha）,,,,,
 washrooms,トイレ,,,,,

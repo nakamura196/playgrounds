@@ -12,6 +12,7 @@ permalink: /vocab/
 {%- assign cats = site.data.vocab.categories -%}
 {%- assign types = site.data.vocab.types -%}
 {%- assign products = site.data.vocab.products -%}
+{%- assign amenities = site.data.vocab.amenities -%}
 <link rel="alternate" type="application/ld+json" href="{{ base }}/vocab/vocab.jsonld">
 
 <h1 class="museum-h2">{{ t.vocab_heading | default: "Play equipment vocabulary" }}</h1>
@@ -64,6 +65,17 @@ Definitions are in Japanese for now.</p>
   <dd>
     <div class="small">{% if en %}Type{% else %}型{% endif %}: <a href="#{{ p.type }}">{% if en %}{{ ty.label_en }}{% else %}{{ ty.label_ja }}{% endif %}</a> ({% if p.match == 'exact' %}{% if en %}same{% else %}同じ{% endif %}{% else %}{% if en %}close{% else %}近い{% endif %}{% endif %})</div>
     {% if p.url %}<div class="small"><a href="{{ p.url }}">{% if en %}Product page{% else %}製品のページ{% endif %}</a></div>{% endif %}
+  </dd>
+{% endfor %}
+</dl>
+
+<h2 class="h4 mt-5">{% if en %}Amenities{% else %}設備{% endif %} <span class="museum-count">{{ amenities | size }}</span></h2>
+<p class="small">{% if en %}Things in a park other than play equipment, such as a drinking fountain, recorded on site.{% else %}遊具ではない、公園の中のもの（水飲み場など）。現地調査で記録したもの。{% endif %}</p>
+<dl class="vocab-list">
+{% for a in amenities %}
+  <dt id="{{ a.id }}">{% if en %}{{ a.label_en }}{% else %}{{ a.label_ja }} <span class="text-muted small">{{ a.label_en }}</span>{% endif %}</dt>
+  <dd>
+    {% if a.definition_ja %}<div>{{ a.definition_ja }}</div>{% endif %}
   </dd>
 {% endfor %}
 </dl>

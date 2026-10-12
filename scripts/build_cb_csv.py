@@ -6,6 +6,7 @@
 
 手で書く表（collection/ に置く。市のデータを取り直しても消えない）:
   surveyed-parks.csv    市のデータに無い遊び場（UBC など）。位置は現地調査の写真の撮影地点
+                        equipment は vocab/types.csv、amenities（水飲み場などの設備）は vocab/amenities.csv の id を ; で並べる
   photos.csv            現地調査の写真。1 枚 1 行。写真そのものは Wikimedia Commons に置き、ここには名前と
                         元の画像の幅・高さ（IIIF マニフェストに要る。Commons の imageinfo で調べた値）だけ書く
 
@@ -30,7 +31,7 @@ FIELDS = [
     "objectid", "title", "description", "location", "latitude", "longitude",
     "subject", "type", "display_template", "source", "rights",
     "parkid", "neighbourhood", "playground_count", "hectare", "washrooms",
-    "equipment", "surveyed",
+    "equipment", "amenities", "surveyed",
     # 写真（CollectionBuilder の複数の画像を持つ記録 compound_object と、その子の行）
     "parentid", "format", "object_location", "image_small", "image_thumb", "image_alt_text",
     "rightsstatement", "commons", "image_width", "image_height",

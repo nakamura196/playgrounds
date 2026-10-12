@@ -5,3 +5,4 @@ location,true,false
 description,true,false
 subject,true,false
 equipment_name,true,false
+amenities_name,true,false

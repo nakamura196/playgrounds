@@ -6,17 +6,21 @@
     build's own baseurl, so the Japanese and English builds give the same URIs:
       park       <lod-base>/items/<objectid>   (GitHub Pages serves the .html page)
       equipment  <lod-base>/vocab/#<type id>   (SKOS concepts in /vocab/vocab.jsonld)
+      amenities  <lod-base>/vocab/#<amenity id>
 
     Other park facilities (the `subject` column) and washrooms are amenityFeature
     entries with a name and a true/false value. Play equipment (the `equipment`
     column, type ids from vocab/types.csv separated by ;) is also an amenityFeature,
     with additionalType pointing to the concept, as chicagoplaygrounds.com links
-    playgrounds to its equipment items with schema:amenityFeature.
+    playgrounds to its equipment items with schema:amenityFeature. Amenities from
+    the survey (the `amenities` column, ids from vocab/amenities.csv, e.g. a drinking
+    fountain) are amenityFeature entries in the same way.
 {%- endcomment -%}
 {%- assign base = site.url | append: site.baseurl -%}{%- if site.lod-base -%}{%- assign base = site.lod-base -%}{%- endif -%}
 {%- assign item_id = base | append: '/items/' | append: page.objectid -%}
 {%- assign facilities = page.subject | split: ';' -%}
 {%- assign equipment = page.equipment | split: ';' -%}
+{%- assign amenities = page.amenities | split: ';' -%}
 {
   "@context": {
     "@vocab": "https://schema.org/",
@@ -67,6 +71,13 @@
       "name": {{ concept.label_en | default: e | jsonify }},
       "value": true,
       "additionalType": { "@id": {{ base | append: '/vocab/#' | append: e | jsonify }} }
+    },{% endfor %}
+    {%- for a in amenities %}{% assign a = a | strip %}{% assign concept = site.data.vocab.amenities | where: 'id', a | first %}
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": {{ concept.label_en | default: a | jsonify }},
+      "value": true,
+      "additionalType": { "@id": {{ base | append: '/vocab/#' | append: a | jsonify }} }
     },{% endfor %}
     {%- for f in facilities %}
     {

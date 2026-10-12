@@ -5,7 +5,7 @@
 set -euo pipefail
 ROOT=${0:A:h:h}
 cp $ROOT/collection/playgrounds.csv $ROOT/site/_data/playgrounds.csv
-for f in categories types products; do
+for f in categories types products amenities; do
   cp $ROOT/vocab/$f.csv $ROOT/site/_data/vocab/$f.csv
 done
-echo "copied: playgrounds.csv, vocab/{categories,types,products}.csv"
+echo "copied: playgrounds.csv, vocab/{categories,types,products,amenities}.csv"

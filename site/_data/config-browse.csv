@@ -4,3 +4,4 @@ playground_count,遊び場の数,,,遊び場の数,
 subject,,true,true,,公園のほかの施設
 washrooms,,true,true,,トイレ
 equipment_name,,true,true,,遊具
+amenities_name,,true,true,,設備

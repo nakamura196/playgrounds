@@ -10,9 +10,10 @@
 #                   chicago + chicago_match exact → skos:exactMatch; candidate → rdfs:seeAlso
 #   products.csv    skos:Concept in a separate product scheme,
 #                   match exact → skos:exactMatch, close → skos:closeMatch (to the type)
+#   amenities.csv   skos:Concept in a separate amenity scheme (drinking fountain etc.)
 #
 # Concept URIs are <lod-base>/vocab/#<id>, which open this vocabulary's HTML page
-# at the entry. ids must be unique across the three tables.
+# at the entry. ids must be unique across the four tables.
 permalink: /vocab/vocab.jsonld
 layout: none
 lang: ja
@@ -22,6 +23,7 @@ lang: ja
 {%- assign cats = site.data.vocab.categories -%}
 {%- assign types = site.data.vocab.types -%}
 {%- assign products = site.data.vocab.products -%}
+{%- assign amenities = site.data.vocab.amenities -%}
 {
   "@context": {
     "skos": "http://www.w3.org/2004/02/skos/core#",
@@ -70,6 +72,16 @@ lang: ja
         "en": "Manufacturers' products, each matched to an equipment type.",
         "ja": "メーカーの製品。それぞれ遊具の型に対応づける。"
       }
+    },
+    {
+      "@id": {{ v | append: '#amenities' | jsonify }},
+      "@type": "skos:ConceptScheme",
+      "prefLabel": { "en": "Park amenities", "ja": "公園の設備" },
+      "definition": {
+        "en": "Things in a park other than play equipment, such as a drinking fountain, recorded on site.",
+        "ja": "遊具ではない、公園の中のもの（水飲み場など）。現地調査で記録したもの。"
+      },
+      "hasTopConcept": [{% for a in amenities %}{{ v | append: '#' | append: a.id | jsonify }}{% unless forloop.last %}, {% endunless %}{% endfor %}]
     },
     {
       "@id": "pgv:differentFrom",
@@ -136,6 +148,18 @@ lang: ja
       {%- if p.note %}
       "editorialNote": { "ja": {{ p.note | jsonify }} },{% endif %}
       "prefLabel": { "en": {{ p.product_name | jsonify }} }
+    },{% endfor %}
+    {%- for a in amenities %}
+    {
+      "@id": {{ v | append: '#' | append: a.id | jsonify }},
+      "@type": "skos:Concept",
+      "inScheme": {{ v | append: '#amenities' | jsonify }},
+      "topConceptOf": {{ v | append: '#amenities' | jsonify }},
+      {%- if a.definition_ja %}
+      "definition": { "ja": {{ a.definition_ja | jsonify }} },{% endif %}
+      {%- if a.note %}
+      "editorialNote": { "ja": {{ a.note | jsonify }} },{% endif %}
+      "prefLabel": { "en": {{ a.label_en | jsonify }}, "ja": {{ a.label_ja | jsonify }} }
     }{% unless forloop.last %},{% endunless %}{% endfor %}
   ]
 }

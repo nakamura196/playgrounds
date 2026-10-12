@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 # Adds a `<field>_name` column to the collection data for every field that has a
-# `vocab` table in _data/config-metadata.csv (now: equipment → types). The column
+# `vocab` table in _data/config-metadata.csv (now: equipment → types, amenities → amenities). The column
 # holds the labels of the ids in the site's language (label_<lang>, then label_en,
 # then the id), joined with ";".
 #
