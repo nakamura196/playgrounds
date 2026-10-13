@@ -464,3 +464,28 @@ Grouse Mountain の山頂の子どもの遊び場で 11 枚撮った（Pixel 9a 
   Commons のページの位置もこの値のまま。サイトの公園の位置は 08 の撮影地点（49.380117, -123.083992）を使った
 - 残っていること: サイトの「Commons に投稿する」リンクは、分類を「Playground survey in Vancouver」、見出しを「…, Vancouver」で作る。市の外の公園では合わない
 - 追記（同日）: Commons の 02〜06 の `{{Location}}` を 08 の撮影地点（49.380117, -123.083992）に直した。API で 5 ページを編集した（ボット用パスワードでログイン）。写真のファイルの中の GPS は元の値のまま（ファイルは差し替えていない）
+
+## 2026-10-12 検討: OSM にあって市のデータに無い遊び場を足すか
+
+市のデータ（parks-facilities の Playgrounds、114 公園）と、OSM の `leisure=playground` を突き合わせた。比較の道具は手元の一時スクリプト（OSM の公園・学校の区画の中にあるかで分け、市の点から 350 m 以内か名前の一致で「市にある」とした）。リポジトリにはまだ入れていない。
+
+- 市内の OSM の遊び場 546 点: 公園の中 222、学校の中 210、どちらでもない 114
+- 学校: 98 校・209 点。市のデータには学校は無い
+- 公園で市のデータに無いもの 35 点。うち 8 公園は市の外（ノースバンクーバーの 7 公園、リッチモンドの Tait Waterfront Park）
+- 残りを市の公園一覧（parks、218 公園）と名前・位置で合わせると、**17 公園は市の公園なのに、市の遊び場の一覧に入っていない**: Adanac、Alice Townley、Cambie、Carolina、Coal Harbour、Garden、George Wainborn、Gordon、Grimmett、Malkin、Oak Meadows、Park Site on Trinity Street、Prince of Wales、Sahalli、Salsbury、Tisdall、Trillium
+- ほかに市の公園一覧に無い新しい公園が 3 つ（Lilian To Park、Rainbow Park、Promontory Park）。Captain Cook Park・Slocan Park の近くに名前の無い点がある
+- 市の遊び場 136 にこの約 20 を足すと 156 前後になり、2019 年の報道の「Park Board の遊び場 160」に近い。市の parks-facilities が遊び場を数え漏らしている可能性がある（未確認）
+- 判断（案）: 公園の約 20 件は、写真で遊具があるのを確かめてから足す。学校は授業中は入れない・件数が倍近くになるので、同じ一覧には混ぜない。どちらでもない 114 点（マンションの中庭・保育施設など。`access=private` 等が 32 点）は足さない
+- ライセンス: OSM は ODbL。OSMF の目安では 100 件未満の抜き出しは「少量」で、同じ条件での再公開は求められない。公園 20 件なら収まるが、学校を足すと超える
+
+## 2026-10-12 4 回目の現地調査: Eagles Park・Jim Taylor Park・Hawthorn Park（UBC）
+
+17:40〜18:02 PDT に 18 枚撮った（Pixel 9a）。撮影地点が 3 か所に分かれ、UBC C+CP の遊び場の面（`data/ubc_playgrounds.json`）の名前と照らして公園を決めた: Eagles Park 4 枚（OBJECTID 851）、Jim Taylor Park 6 枚（840）、Hawthorn Park 8 枚（844・853 の 2 面）。
+
+- 18 枚とも `blur_people.py` でモザイクをかけ、`commons_upload.py` で投稿した（`Eagles Park, UBC, Vancouver, 2026-10 01` など）。分類 `Category:Eagles Park (UBC)`・`Jim Taylor Park (UBC)`・`Hawthorn Park (UBC)` を新設（上位は Mundell と同じ）。Commons の既存の `Category:Hawthorn Park` は水遊び場のある別の公園らしく、使っていない
+- 判断: Jim Taylor の 3 枚（子どもが大きく写った雲梯の 2 枚、キックスケーターの子が手前の全景）は、初めは「手前に子どもが大きく写った写真は使わない」の線で外す案だった。本人の指摘で入れた。木の吊り台に見えた遊具は、上に緑の雲梯を渡した枠で、ぶら下がる子が写った写真を外すと雲梯があることが記録から消える。遊具の記録として要る写真なら、モザイクをかけて使う
+- 確認の進め方: 投稿の前に、分け方と説明文を手元の HTML（`data/private/upload/2026-10e/review.html`、git 外）で本人に見てもらった
+- 自動のモザイクの誤り: 人のいない写真 3 枚で、遊具や建物の小さな部分（最大 836×202 px）を顔と見て塗った。塗りすぎの側なので残した
+- 語彙に 4 語: ばねのシーソー（spring-seesaw）、立って回る遊具（standing-spinner）、らせんの登り棒（coil-climber）、斜めの綱の網（cargo-net）。Jim Taylor の緑のすべり台は上の入口に屋根のある開いたらせんで、柱のまわりを下りる形ではないが corkscrew-slide を当てた。シカゴとの対応は未確認
+- 記録していないもの: Eagles の曲面の板の遊具の型（パネル遊具か）、Hawthorn 南側の波形の板の付いた登り枠と青い座面の正体。いずれも語彙に当てていない
+- Google マップに写真を投稿できるかを聞かれた。ふつうの写真を投稿する API は無い（Street View Publish API は 360 度写真のみ）。アプリから手で投稿するしかない
