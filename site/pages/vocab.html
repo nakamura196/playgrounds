@@ -52,6 +52,7 @@ Definitions are in Japanese for now.</p>
     {% if ty.alt_labels %}<div class="small">{% if en %}Also called{% else %}別名{% endif %}: {{ ty.alt_labels | replace: ';', ' · ' }}</div>{% endif %}
     {% if ty.different_from %}{% assign d = ty.different_from | split: ';' %}<div class="small">{% if en %}Different from{% else %}別物{% endif %}: {% for x in d %}{% assign o = types | where: 'id', x | first %}<a href="#{{ x }}">{% if en %}{{ o.label_en | default: x }}{% else %}{{ o.label_ja | default: x }}{% endif %}</a>{% unless forloop.last %} · {% endunless %}{% endfor %}</div>{% endif %}
     {% if ty['contains'] %}{% assign d = ty['contains'] | split: ';' %}<div class="small">{% if en %}Contains{% else %}含む型{% endif %}: {% for x in d %}{% assign o = types | where: 'id', x | first %}<a href="#{{ x }}">{% if en %}{{ o.label_en | default: x }}{% else %}{{ o.label_ja | default: x }}{% endif %}</a>{% unless forloop.last %} · {% endunless %}{% endfor %}</div>{% endif %}
+    {% if ty.count_equipment > 0 %}<div class="small"><a href="{{ ty.browse_name | url_param_escape | prepend: 'equipment_name:' | prepend: '/browse.html#' | relative_url }}">{% if en %}Playgrounds with this ({{ ty.count_equipment }}){% else %}この遊具がある遊び場（{{ ty.count_equipment }} か所）{% endif %}</a></div>{% endif %}
     {% assign ps = products | where: 'type', ty.id %}{% if ps.size > 0 %}<div class="small">{% if en %}Products{% else %}製品{% endif %}: {% for p in ps %}<a href="#{{ p.id }}">{{ p.manufacturer }} {{ p.product_name }}</a>{% unless forloop.last %} · {% endunless %}{% endfor %}</div>{% endif %}
     {% if ty.chicago %}<div class="small"><a href="{{ ty.chicago }}">Chicago Playgrounds</a> {% if ty.chicago_match == 'exact' %}({% if en %}same{% else %}同じ{% endif %}){% else %}({% if en %}candidate{% else %}候補{% endif %}){% endif %}</div>{% endif %}
   </dd>
@@ -76,6 +77,7 @@ Definitions are in Japanese for now.</p>
   <dt id="{{ a.id }}">{% if en %}{{ a.label_en }}{% else %}{{ a.label_ja }} <span class="text-muted small">{{ a.label_en }}</span>{% endif %}</dt>
   <dd>
     {% if a.definition_ja %}<div>{{ a.definition_ja }}</div>{% endif %}
+    {% if a.count_amenities > 0 %}<div class="small"><a href="{{ a.browse_name | url_param_escape | prepend: 'amenities_name:' | prepend: '/browse.html#' | relative_url }}">{% if en %}Playgrounds with this ({{ a.count_amenities }}){% else %}この設備がある遊び場（{{ a.count_amenities }} か所）{% endif %}</a></div>{% endif %}
   </dd>
 {% endfor %}
 </dl>

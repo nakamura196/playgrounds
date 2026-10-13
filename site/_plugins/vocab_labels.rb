@@ -10,6 +10,12 @@
 # cjk_index preset, both reading _data/config-search.csv) use `<field>_name`, so
 # people filter and search by "ぶらんこ" / "Swings", not by "swing".
 #
+# It also writes, on each term of the table, `count_<field>` (how many items have
+# that id) and `browse_name` (the label used in `<field>_name`), so the vocab page
+# can link a term to /browse.html#<field>_name:<label>. Browse matches by
+# substring, so a label inside another label (e.g. 雲梯) would show more items
+# than counted; that case is reported as a build warning.
+#
 # Runs at :post_read, before the generators (item pages, cjk_index) read the data.
 module VocabLabels
   def self.add_label_columns(site)
@@ -26,9 +32,22 @@ module VocabLabels
         [t['id'].to_s, [t["label_#{lang}"], t['label_en'], t['id']].map(&:to_s).find { |l| !l.strip.empty? }]
       end
       field = f['field']
+      counts = Hash.new(0)
       rows.each do |row|
         ids = row[field].to_s.split(';').map(&:strip).reject(&:empty?)
+        ids.uniq.each { |id| counts[id] += 1 }
         row["#{field}_name"] = ids.map { |id| labels.fetch(id, id) }.join(';') unless ids.empty?
+      end
+      table.each do |t|
+        id = t['id'].to_s
+        t['browse_name'] = labels[id]
+        t["count_#{field}"] = counts[id]
+        next if counts[id].zero?
+
+        shown = rows.count { |row| row["#{field}_name"].to_s.upcase.include?(labels[id].upcase) }
+        next if shown == counts[id]
+
+        Jekyll.logger.warn 'VocabLabels:', "#{field}:#{labels[id]} links to #{shown} items in browse, but #{counts[id]} have the id #{id}"
       end
     end
   end
