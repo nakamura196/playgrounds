@@ -11,3 +11,6 @@ site/.jekyll-cache/
 site/vendor/
 site/.bundle/
 site/Gemfile.lock
+
+# model weights (downloaded by ultralytics)
+*.pt
