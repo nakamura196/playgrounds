@@ -1,0 +1,100 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "https://play.ldas.jp/items/park159",
+  "@type": "Park",
+  "name": "Renfrew Community Park",
+  "description": "1 playground in Renfrew Community Park (Renfrew-Collingwood). Equipment not yet surveyed.",
+  "identifier": "159",
+  "address": "2929 E 22nd Avenue, Vancouver, BC",
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 49.252129,
+    "longitude": -123.042896
+  },
+  "containedInPlace": {
+    "@type": "Place",
+    "name": "Renfrew-Collingwood"
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "playground count",
+      "value": 1
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "area",
+      "value": 5.0,
+      "unitCode": "HAR",
+      "unitText": "ha"
+    }
+  ],
+  "amenityFeature": [
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Ball Hockey",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Community Centres",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Dogs Off-Leash Areas",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Field Houses",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Football Fields",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Lacrosse Boxes",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Lighted Fields",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Softball",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Swimming Pools",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Wading Pool",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Washrooms",
+      "value": false
+    }
+  ],
+  "mainEntityOfPage": "https://play.ldas.jp/items/park159.html",
+  "isPartOf": { "@id": "https://play.ldas.jp/", "name": "バンクーバーの遊び場" },
+  "isBasedOn": [
+    "https://opendata.vancouver.ca/explore/dataset/parks/",
+    "https://opendata.vancouver.ca/explore/dataset/parks-facilities/"
+  ],
+  "license": "https://opendata.vancouver.ca/pages/licence/",
+  "creditText": "Contains information licensed under the Open Government Licence – Vancouver"
+}

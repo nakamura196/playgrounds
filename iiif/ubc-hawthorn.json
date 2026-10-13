@@ -1,0 +1,280 @@
+{
+  "@context": [
+    "http://iiif.io/api/extension/navplace/context.json",
+    "http://iiif.io/api/presentation/3/context.json"
+  ],
+  "id": "https://play.ldas.jp/iiif/ubc-hawthorn.json",
+  "type": "Manifest",
+  "label": { "none": [ "Hawthorn Park" ] },
+  "summary": { "en": [ "2 play areas in Hawthorn Park (UBC). North: spring riders, a spring seesaw and a small slide tower. South: a metal climbing frame with a slide, a bowl-shaped spinning seat and a standing spinner. Not in the City of Vancouver open data; the position is where the survey photos were taken." ], "ja": [ "Hawthorn Park（UBC）にある遊び場 2 か所。北側にスプリング遊具、ばねのシーソー、小さなすべり台の塔。南側にすべり台の付いた金属の登り枠、おわん形の回る椅子、立って回る遊具。市のオープンデータには無く、位置は現地調査の写真を撮った地点。" ] },
+  "metadata": [
+    { "label": { "en": [ "Location" ], "ja": [ "所在地" ] }, "value": { "none": [ "University of British Columbia, Vancouver, BC" ] } },
+    { "label": { "en": [ "Surveyed" ], "ja": [ "現地で確認した日" ] }, "value": { "none": [ "2026-10" ] } },
+    { "label": { "en": [ "Play equipment" ], "ja": [ "遊具" ] }, "value": { "en": [ "Seat on a Spring; Spring Seesaw; Single Straight Slide; Spinning Seat; Standing Spinner" ], "ja": [ "スプリング遊具（1 人用）、ばねのシーソー、まっすぐなすべり台、回る椅子、立って回る遊具" ] } }
+  ],
+  "requiredStatement": {
+    "label": { "en": [ "Attribution" ], "ja": [ "クレジット" ] },
+    "value": { "en": [ "Photos: Satoru Nakamura, CC BY 4.0, via Wikimedia Commons" ], "ja": [ "写真: 中村 覚（CC BY 4.0、Wikimedia Commons 経由）" ] }
+  },
+  "rights": "http://creativecommons.org/licenses/by/4.0/",
+  "homepage": [
+    { "id": "https://play.ldas.jp/items/ubc-hawthorn.html", "type": "Text", "label": { "none": [ "Hawthorn Park" ] }, "format": "text/html" }
+  ],
+  "seeAlso": [
+    { "id": "https://play.ldas.jp/items/ubc-hawthorn.jsonld", "type": "Dataset", "format": "application/ld+json", "profile": "https://schema.org/" }
+  ],
+  "navPlace": {
+    "id": "https://play.ldas.jp/iiif/ubc-hawthorn.json/feature-collection/1",
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "id": "https://play.ldas.jp/iiif/ubc-hawthorn.json/feature/1",
+        "type": "Feature",
+        "properties": { "label": { "none": [ "Hawthorn Park" ] } },
+        "geometry": { "type": "Point", "coordinates": [ -123.248192, 49.258189 ] }
+      }
+    ]
+  },
+  "items": [{
+      "id": "https://play.ldas.jp/iiif/ubc-hawthorn.json/canvas/1",
+      "type": "Canvas",
+      "label": { "en": [ "The north area" ], "ja": [ "北側の遊び場" ] },
+      "summary": { "en": [ "Hawthorn Park playground (north area): spring riders, a spring see-saw and a small slide tower in a wood-chip area." ], "ja": [ "Hawthorn Park の遊び場（北側）。ウッドチップの中に、スプリング遊具、ばねのシーソー、小さなすべり台の塔。" ] },
+      "width": 4000,
+      "height": 3000,
+      "thumbnail": [ { "id": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_01.jpg/330px-Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_01.jpg", "type": "Image", "format": "image/jpeg" } ],
+      "homepage": [ { "id": "https://commons.wikimedia.org/wiki/File:Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_01.jpg", "type": "Text", "label": { "en": [ "File page on Wikimedia Commons" ], "ja": [ "Wikimedia Commons のファイルのページ" ] }, "format": "text/html" } ],
+      "items": [
+        {
+          "id": "https://play.ldas.jp/iiif/ubc-hawthorn.json/canvas/1/page/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://play.ldas.jp/iiif/ubc-hawthorn.json/canvas/1/annotation/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://upload.wikimedia.org/wikipedia/commons/0/05/Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_01.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 4000,
+                "height": 3000
+              },
+              "target": "https://play.ldas.jp/iiif/ubc-hawthorn.json/canvas/1"
+            }
+          ]
+        }
+      ]
+    },{
+      "id": "https://play.ldas.jp/iiif/ubc-hawthorn.json/canvas/2",
+      "type": "Canvas",
+      "label": { "en": [ "Spring rider with handlebars" ], "ja": [ "ハンドルの付いたスプリング遊具" ] },
+      "summary": { "en": [ "Red and navy spring rider with handlebars, Hawthorn Park." ], "ja": [ "ハンドルの付いた赤と紺のスプリング遊具。Hawthorn Park。" ] },
+      "width": 4000,
+      "height": 3000,
+      "thumbnail": [ { "id": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_02.jpg/330px-Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_02.jpg", "type": "Image", "format": "image/jpeg" } ],
+      "homepage": [ { "id": "https://commons.wikimedia.org/wiki/File:Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_02.jpg", "type": "Text", "label": { "en": [ "File page on Wikimedia Commons" ], "ja": [ "Wikimedia Commons のファイルのページ" ] }, "format": "text/html" } ],
+      "items": [
+        {
+          "id": "https://play.ldas.jp/iiif/ubc-hawthorn.json/canvas/2/page/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://play.ldas.jp/iiif/ubc-hawthorn.json/canvas/2/annotation/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://upload.wikimedia.org/wikipedia/commons/3/35/Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_02.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 4000,
+                "height": 3000
+              },
+              "target": "https://play.ldas.jp/iiif/ubc-hawthorn.json/canvas/2"
+            }
+          ]
+        }
+      ]
+    },{
+      "id": "https://play.ldas.jp/iiif/ubc-hawthorn.json/canvas/3",
+      "type": "Canvas",
+      "label": { "en": [ "Spring seesaw" ], "ja": [ "ばねのシーソー" ] },
+      "summary": { "en": [ "Spring see-saw: a long seat on two springs with a seat at each end and fish-shaped side panels, Hawthorn Park." ], "ja": [ "ばねのシーソー。2 つのばねの上の長い台の両端に座面があり、横に魚の形の板が付く。Hawthorn Park。" ] },
+      "width": 4000,
+      "height": 3000,
+      "thumbnail": [ { "id": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_03.jpg/330px-Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_03.jpg", "type": "Image", "format": "image/jpeg" } ],
+      "homepage": [ { "id": "https://commons.wikimedia.org/wiki/File:Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_03.jpg", "type": "Text", "label": { "en": [ "File page on Wikimedia Commons" ], "ja": [ "Wikimedia Commons のファイルのページ" ] }, "format": "text/html" } ],
+      "items": [
+        {
+          "id": "https://play.ldas.jp/iiif/ubc-hawthorn.json/canvas/3/page/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://play.ldas.jp/iiif/ubc-hawthorn.json/canvas/3/annotation/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://upload.wikimedia.org/wikipedia/commons/9/97/Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_03.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 4000,
+                "height": 3000
+              },
+              "target": "https://play.ldas.jp/iiif/ubc-hawthorn.json/canvas/3"
+            }
+          ]
+        }
+      ]
+    },{
+      "id": "https://play.ldas.jp/iiif/ubc-hawthorn.json/canvas/4",
+      "type": "Canvas",
+      "label": { "en": [ "Small slide tower" ], "ja": [ "小さなすべり台の塔" ] },
+      "summary": { "en": [ "Small slide tower: a red round panel, a blue roof panel, a yellow straight slide and low step platforms, Hawthorn Park." ], "ja": [ "小さなすべり台の塔。赤い円筒の板、青い屋根の板、黄色のまっすぐなすべり台、低い踏み台。Hawthorn Park。" ] },
+      "width": 4000,
+      "height": 3000,
+      "thumbnail": [ { "id": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_04.jpg/330px-Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_04.jpg", "type": "Image", "format": "image/jpeg" } ],
+      "homepage": [ { "id": "https://commons.wikimedia.org/wiki/File:Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_04.jpg", "type": "Text", "label": { "en": [ "File page on Wikimedia Commons" ], "ja": [ "Wikimedia Commons のファイルのページ" ] }, "format": "text/html" } ],
+      "items": [
+        {
+          "id": "https://play.ldas.jp/iiif/ubc-hawthorn.json/canvas/4/page/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://play.ldas.jp/iiif/ubc-hawthorn.json/canvas/4/annotation/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_04.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 4000,
+                "height": 3000
+              },
+              "target": "https://play.ldas.jp/iiif/ubc-hawthorn.json/canvas/4"
+            }
+          ]
+        }
+      ]
+    },{
+      "id": "https://play.ldas.jp/iiif/ubc-hawthorn.json/canvas/5",
+      "type": "Canvas",
+      "label": { "en": [ "The south area" ], "ja": [ "南側の遊び場" ] },
+      "summary": { "en": [ "Hawthorn Park playground (south area): a metal climbing frame with a wavy panel and a green spinning seat. People are pixelated." ], "ja": [ "Hawthorn Park の遊び場（南側）。波形の板の付いた金属の登り枠と、緑の回る椅子。人にはモザイクをかけている。" ] },
+      "width": 4000,
+      "height": 3000,
+      "thumbnail": [ { "id": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_05.jpg/330px-Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_05.jpg", "type": "Image", "format": "image/jpeg" } ],
+      "homepage": [ { "id": "https://commons.wikimedia.org/wiki/File:Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_05.jpg", "type": "Text", "label": { "en": [ "File page on Wikimedia Commons" ], "ja": [ "Wikimedia Commons のファイルのページ" ] }, "format": "text/html" } ],
+      "items": [
+        {
+          "id": "https://play.ldas.jp/iiif/ubc-hawthorn.json/canvas/5/page/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://play.ldas.jp/iiif/ubc-hawthorn.json/canvas/5/annotation/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_05.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 4000,
+                "height": 3000
+              },
+              "target": "https://play.ldas.jp/iiif/ubc-hawthorn.json/canvas/5"
+            }
+          ]
+        }
+      ]
+    },{
+      "id": "https://play.ldas.jp/iiif/ubc-hawthorn.json/canvas/6",
+      "type": "Canvas",
+      "label": { "en": [ "Bowl-shaped spinning seat" ], "ja": [ "おわん形の回る椅子" ] },
+      "summary": { "en": [ "Green bowl-shaped spinning seat, Hawthorn Park." ], "ja": [ "緑のおわん形の回る椅子。Hawthorn Park。" ] },
+      "width": 4000,
+      "height": 3000,
+      "thumbnail": [ { "id": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_06.jpg/330px-Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_06.jpg", "type": "Image", "format": "image/jpeg" } ],
+      "homepage": [ { "id": "https://commons.wikimedia.org/wiki/File:Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_06.jpg", "type": "Text", "label": { "en": [ "File page on Wikimedia Commons" ], "ja": [ "Wikimedia Commons のファイルのページ" ] }, "format": "text/html" } ],
+      "items": [
+        {
+          "id": "https://play.ldas.jp/iiif/ubc-hawthorn.json/canvas/6/page/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://play.ldas.jp/iiif/ubc-hawthorn.json/canvas/6/annotation/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://upload.wikimedia.org/wikipedia/commons/5/50/Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_06.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 4000,
+                "height": 3000
+              },
+              "target": "https://play.ldas.jp/iiif/ubc-hawthorn.json/canvas/6"
+            }
+          ]
+        }
+      ]
+    },{
+      "id": "https://play.ldas.jp/iiif/ubc-hawthorn.json/canvas/7",
+      "type": "Canvas",
+      "label": { "en": [ "Standing spinner" ], "ja": [ "立って回る遊具" ] },
+      "summary": { "en": [ "Standing spinner: a curved pole with a foot plate at the bottom, Hawthorn Park." ], "ja": [ "立って回る遊具。曲がった柱の下に足をのせる台がある。Hawthorn Park。" ] },
+      "width": 3000,
+      "height": 4000,
+      "thumbnail": [ { "id": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_07.jpg/330px-Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_07.jpg", "type": "Image", "format": "image/jpeg" } ],
+      "homepage": [ { "id": "https://commons.wikimedia.org/wiki/File:Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_07.jpg", "type": "Text", "label": { "en": [ "File page on Wikimedia Commons" ], "ja": [ "Wikimedia Commons のファイルのページ" ] }, "format": "text/html" } ],
+      "items": [
+        {
+          "id": "https://play.ldas.jp/iiif/ubc-hawthorn.json/canvas/7/page/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://play.ldas.jp/iiif/ubc-hawthorn.json/canvas/7/annotation/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://upload.wikimedia.org/wikipedia/commons/d/df/Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_07.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 3000,
+                "height": 4000
+              },
+              "target": "https://play.ldas.jp/iiif/ubc-hawthorn.json/canvas/7"
+            }
+          ]
+        }
+      ]
+    },{
+      "id": "https://play.ldas.jp/iiif/ubc-hawthorn.json/canvas/8",
+      "type": "Canvas",
+      "label": { "en": [ "Metal climbing frame with a slide" ], "ja": [ "すべり台の付いた金属の登り枠" ] },
+      "summary": { "en": [ "Metal climbing frame with arched ladders, a blue straight slide and a blue seat, Hawthorn Park." ], "ja": [ "弧形のはしごの付いた金属の登り枠。青いまっすぐなすべり台と青い座面。Hawthorn Park。" ] },
+      "width": 4000,
+      "height": 3000,
+      "thumbnail": [ { "id": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_08.jpg/330px-Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_08.jpg", "type": "Image", "format": "image/jpeg" } ],
+      "homepage": [ { "id": "https://commons.wikimedia.org/wiki/File:Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_08.jpg", "type": "Text", "label": { "en": [ "File page on Wikimedia Commons" ], "ja": [ "Wikimedia Commons のファイルのページ" ] }, "format": "text/html" } ],
+      "items": [
+        {
+          "id": "https://play.ldas.jp/iiif/ubc-hawthorn.json/canvas/8/page/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://play.ldas.jp/iiif/ubc-hawthorn.json/canvas/8/annotation/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://upload.wikimedia.org/wikipedia/commons/8/86/Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_08.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 4000,
+                "height": 3000
+              },
+              "target": "https://play.ldas.jp/iiif/ubc-hawthorn.json/canvas/8"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

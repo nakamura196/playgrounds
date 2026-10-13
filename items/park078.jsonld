@@ -1,0 +1,50 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "https://play.ldas.jp/items/park078",
+  "@type": "Park",
+  "name": "Thunderbird Park",
+  "description": "1 playground in Thunderbird Park (Hastings-Sunrise). Equipment not yet surveyed.",
+  "identifier": "78",
+  "address": "3485 E 2nd Avenue, Vancouver, BC",
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 49.268829,
+    "longitude": -123.028552
+  },
+  "containedInPlace": {
+    "@type": "Place",
+    "name": "Hastings-Sunrise"
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "playground count",
+      "value": 1
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "area",
+      "value": 0.89,
+      "unitCode": "HAR",
+      "unitText": "ha"
+    }
+  ],
+  "amenityFeature": [
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Washrooms",
+      "value": false
+    }
+  ],
+  "mainEntityOfPage": "https://play.ldas.jp/items/park078.html",
+  "isPartOf": { "@id": "https://play.ldas.jp/", "name": "バンクーバーの遊び場" },
+  "isBasedOn": [
+    "https://opendata.vancouver.ca/explore/dataset/parks/",
+    "https://opendata.vancouver.ca/explore/dataset/parks-facilities/"
+  ],
+  "license": "https://opendata.vancouver.ca/pages/licence/",
+  "creditText": "Contains information licensed under the Open Government Licence – Vancouver"
+}

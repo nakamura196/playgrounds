@@ -1,0 +1,105 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "https://play.ldas.jp/items/park010",
+  "@type": "Park",
+  "name": "Andy Livingstone Park",
+  "description": "3 playgrounds in Andy Livingstone Park (Downtown). Equipment not yet surveyed.",
+  "identifier": "10",
+  "address": "89 Expo Boulevard, Vancouver, BC",
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 49.278923,
+    "longitude": -123.1055
+  },
+  "containedInPlace": {
+    "@type": "Place",
+    "name": "Downtown"
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "playground count",
+      "value": 3
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "area",
+      "value": 4.21,
+      "unitCode": "HAR",
+      "unitText": "ha"
+    }
+  ],
+  "amenityFeature": [
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Basketball Courts",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Field Hockey",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Field Houses",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Football Fields",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Lighted Fields",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Pickleball",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Skateboard Parks",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Soccer Fields",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Softball",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Tennis Courts",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Ultimate Fields",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Washrooms",
+      "value": true
+    }
+  ],
+  "mainEntityOfPage": "https://play.ldas.jp/items/park010.html",
+  "isPartOf": { "@id": "https://play.ldas.jp/", "name": "バンクーバーの遊び場" },
+  "isBasedOn": [
+    "https://opendata.vancouver.ca/explore/dataset/parks/",
+    "https://opendata.vancouver.ca/explore/dataset/parks-facilities/"
+  ],
+  "license": "https://opendata.vancouver.ca/pages/licence/",
+  "creditText": "Contains information licensed under the Open Government Licence – Vancouver"
+}

@@ -1,0 +1,65 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "https://play.ldas.jp/items/park179",
+  "@type": "Park",
+  "name": "MacLean Park",
+  "description": "1 playground in MacLean Park (Strathcona). Equipment not yet surveyed.",
+  "identifier": "179",
+  "address": "710 Keefer Street, Vancouver, BC",
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 49.278838,
+    "longitude": -123.088396
+  },
+  "containedInPlace": {
+    "@type": "Place",
+    "name": "Strathcona"
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "playground count",
+      "value": 1
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "area",
+      "value": 1.21,
+      "unitCode": "HAR",
+      "unitText": "ha"
+    }
+  ],
+  "amenityFeature": [
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Field Houses",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Softball",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Water/Spray Parks",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Washrooms",
+      "value": true
+    }
+  ],
+  "mainEntityOfPage": "https://play.ldas.jp/items/park179.html",
+  "isPartOf": { "@id": "https://play.ldas.jp/", "name": "バンクーバーの遊び場" },
+  "isBasedOn": [
+    "https://opendata.vancouver.ca/explore/dataset/parks/",
+    "https://opendata.vancouver.ca/explore/dataset/parks-facilities/"
+  ],
+  "license": "https://opendata.vancouver.ca/pages/licence/",
+  "creditText": "Contains information licensed under the Open Government Licence – Vancouver"
+}

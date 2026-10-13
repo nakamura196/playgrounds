@@ -1,0 +1,110 @@
+{
+    "facets": [ 
+        {
+            "field": "neighbourhood",
+            "terms": { 
+                "renfrew-collingwood": 12,
+                "hastings-sunrise": 11,
+                "grandview-woodland": 11,
+                "kensington-cedar cottage": 11,
+                "mount pleasant": 10,
+                "downtown": 9,
+                "marpole": 7,
+                "sunset": 6,
+                "ubc": 6,
+                "victoria-fraserview": 6,
+                "kitsilano": 6,
+                "strathcona": 5,
+                "arbutus-ridge": 5,
+                "riley park": 5,
+                "kerrisdale": 4,
+                "west point grey": 4,
+                "south cambie": 4,
+                "oakridge": 4,
+                "fairview": 3,
+                "killarney": 3,
+                "dunbar-southlands": 3,
+                "west end": 2,
+                "north vancouver": 1
+            }
+        },
+        {
+            "field": "subject",
+            "terms": { 
+                "soccer fields": 54,
+                "field houses": 51,
+                "tennis courts": 36,
+                "softball": 34,
+                "basketball courts": 26,
+                "dogs off-leash areas": 24,
+                "baseball diamonds": 20,
+                "wading pool": 20,
+                "ultimate fields": 16,
+                "water/spray parks": 14,
+                "community centres": 13,
+                "lighted fields": 12,
+                "picnic sites": 12,
+                "ball hockey": 11,
+                "football fields": 10,
+                "jogging trails": 10,
+                "swimming pools": 9,
+                "pickleball": 7,
+                "rugby fields": 7,
+                "skateboard parks": 6,
+                "running tracks": 6,
+                "community halls": 6,
+                "food concessions": 5,
+                "rinks": 5,
+                "cricket pitches": 5,
+                "field hockey": 5,
+                "bowling greens": 4,
+                "restaurants": 3,
+                "golf courses": 3,
+                "beaches": 2,
+                "lacrosse boxes": 2,
+                "outdoor roller hockey rinks": 1,
+                "disc golf courses": 1,
+                "drinking fountain": 1
+            }
+        },
+        {
+            "field": "washrooms",
+            "terms": { 
+                "n": 75,
+                "y": 56
+            }
+        },
+        {
+            "field": "equipment",
+            "terms": { 
+                "spring-rider": 2,
+                "spinning-seat": 2,
+                "climbing-wall": 2,
+                "tube-slide": 2,
+                "kettlebell-station": 1,
+                "parallel-bars": 1,
+                "pull-up-bars": 1,
+                "rail-trolley": 1,
+                "stepping-stumps": 1,
+                "low-rope-net": 1,
+                "rope-net-spinner": 1,
+                "crawl-tunnel": 1,
+                "wave-slide": 1,
+                "net-climbing-tube": 1,
+                "rope-net-bridge": 1,
+                "treehouse": 1,
+                "monkey-bars": 1,
+                "coil-climber": 1,
+                "cargo-net": 1,
+                "corkscrew-slide": 1,
+                "standing-spinner": 1,
+                "straight-slide": 1,
+                "spring-seesaw": 1,
+                "ground-spray": 1,
+                "water-wheel": 1,
+                "water-channel": 1
+            }
+        }
+        
+    ]
+}

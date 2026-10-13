@@ -1,0 +1,21 @@
+{ 
+    "title": "バンクーバーの遊び場",
+    "url": "https://play.ldas.jp/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10-11_04.jpg", 
+    "description": "バンクーバー市の遊び場 136 か所（114 の公園）を、遊具の種類から探せるようにする記録の準備版です。市のオープンデータにある公園の情報に、現地で調べた遊び場を足していきます。",
+    "publisher": { 
+        "name": "City of Vancouver Open Data（公園の情報）", 
+        "url": "https://opendata.vancouver.ca/explore/dataset/parks-facilities/", 
+        "logo": "" 
+    },
+    "date_start": "",
+    "date_end": "",
+    "objects": {
+        null: "0",
+        "image/jpeg": "53"
+        
+    },
+    "data": "https://play.ldas.jp/assets/data/datapackage.json",
+    "last_build_date": "2026-10-13"
+}
+

@@ -1,0 +1,80 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "https://play.ldas.jp/items/park140",
+  "@type": "Park",
+  "name": "Robson Park",
+  "description": "1 playground in Robson Park (Mount Pleasant). Equipment not yet surveyed.",
+  "identifier": "140",
+  "address": "599 Kingsway, Vancouver, BC",
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 49.258229,
+    "longitude": -123.091798
+  },
+  "containedInPlace": {
+    "@type": "Place",
+    "name": "Mount Pleasant"
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "playground count",
+      "value": 1
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "area",
+      "value": 1.56,
+      "unitCode": "HAR",
+      "unitText": "ha"
+    }
+  ],
+  "amenityFeature": [
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Ball Hockey",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Basketball Courts",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Field Houses",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Soccer Fields",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Tennis Courts",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Wading Pool",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Washrooms",
+      "value": true
+    }
+  ],
+  "mainEntityOfPage": "https://play.ldas.jp/items/park140.html",
+  "isPartOf": { "@id": "https://play.ldas.jp/", "name": "バンクーバーの遊び場" },
+  "isBasedOn": [
+    "https://opendata.vancouver.ca/explore/dataset/parks/",
+    "https://opendata.vancouver.ca/explore/dataset/parks-facilities/"
+  ],
+  "license": "https://opendata.vancouver.ca/pages/licence/",
+  "creditText": "Contains information licensed under the Open Government Licence – Vancouver"
+}

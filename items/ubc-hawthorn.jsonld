@@ -1,0 +1,78 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "https://play.ldas.jp/items/ubc-hawthorn",
+  "@type": "Park",
+  "name": "Hawthorn Park",
+  "description": "2 play areas in Hawthorn Park (UBC). North: spring riders, a spring seesaw and a small slide tower. South: a metal climbing frame with a slide, a bowl-shaped spinning seat and a standing spinner. Not in the City of Vancouver open data; the position is where the survey photos were taken.",
+  "identifier": null,
+  "address": "University of British Columbia, Vancouver, BC",
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 49.258189,
+    "longitude": -123.248192
+  },
+  "containedInPlace": {
+    "@type": "Place",
+    "name": "UBC"
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "playground count",
+      "value": 2
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "equipment surveyed on",
+      "value": "2026-10"
+    }
+  ],
+  "amenityFeature": [
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Seat on a Spring",
+      "value": true,
+      "additionalType": { "@id": "https://play.ldas.jp/vocab/#spring-rider" }
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Spring Seesaw",
+      "value": true,
+      "additionalType": { "@id": "https://play.ldas.jp/vocab/#spring-seesaw" }
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Single Straight Slide",
+      "value": true,
+      "additionalType": { "@id": "https://play.ldas.jp/vocab/#straight-slide" }
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Spinning Seat",
+      "value": true,
+      "additionalType": { "@id": "https://play.ldas.jp/vocab/#spinning-seat" }
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Standing Spinner",
+      "value": true,
+      "additionalType": { "@id": "https://play.ldas.jp/vocab/#standing-spinner" }
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Washrooms",
+      "value": false
+    }
+  ],
+  "mainEntityOfPage": "https://play.ldas.jp/items/ubc-hawthorn.html",
+  "isPartOf": { "@id": "https://play.ldas.jp/", "name": "バンクーバーの遊び場" },
+  "isBasedOn": [
+    "https://opendata.vancouver.ca/explore/dataset/parks/",
+    "https://opendata.vancouver.ca/explore/dataset/parks-facilities/"
+  ],
+  "license": "https://opendata.vancouver.ca/pages/licence/",
+  "creditText": "CC BY 4.0"
+}

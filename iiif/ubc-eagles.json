@@ -1,0 +1,160 @@
+{
+  "@context": [
+    "http://iiif.io/api/extension/navplace/context.json",
+    "http://iiif.io/api/presentation/3/context.json"
+  ],
+  "id": "https://play.ldas.jp/iiif/ubc-eagles.json",
+  "type": "Manifest",
+  "label": { "none": [ "Eagles Park" ] },
+  "summary": { "en": [ "1 small playground in Eagles Park (UBC) for young children: two spring riders and a low play structure of curved panels with peepholes. Not in the City of Vancouver open data; the position is where the survey photos were taken." ], "ja": [ "Eagles Park（UBC）にある小さい子向けの遊び場 1 か所。スプリング遊具 2 つと、のぞき穴の付いた曲面の板で囲んだ低い遊具。市のオープンデータには無く、位置は現地調査の写真を撮った地点。" ] },
+  "metadata": [
+    { "label": { "en": [ "Location" ], "ja": [ "所在地" ] }, "value": { "none": [ "University of British Columbia, Vancouver, BC" ] } },
+    { "label": { "en": [ "Surveyed" ], "ja": [ "現地で確認した日" ] }, "value": { "none": [ "2026-10" ] } },
+    { "label": { "en": [ "Play equipment" ], "ja": [ "遊具" ] }, "value": { "en": [ "Seat on a Spring" ], "ja": [ "スプリング遊具（1 人用）" ] } }
+  ],
+  "requiredStatement": {
+    "label": { "en": [ "Attribution" ], "ja": [ "クレジット" ] },
+    "value": { "en": [ "Photos: Satoru Nakamura, CC BY 4.0, via Wikimedia Commons" ], "ja": [ "写真: 中村 覚（CC BY 4.0、Wikimedia Commons 経由）" ] }
+  },
+  "rights": "http://creativecommons.org/licenses/by/4.0/",
+  "homepage": [
+    { "id": "https://play.ldas.jp/items/ubc-eagles.html", "type": "Text", "label": { "none": [ "Eagles Park" ] }, "format": "text/html" }
+  ],
+  "seeAlso": [
+    { "id": "https://play.ldas.jp/items/ubc-eagles.jsonld", "type": "Dataset", "format": "application/ld+json", "profile": "https://schema.org/" }
+  ],
+  "navPlace": {
+    "id": "https://play.ldas.jp/iiif/ubc-eagles.json/feature-collection/1",
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "id": "https://play.ldas.jp/iiif/ubc-eagles.json/feature/1",
+        "type": "Feature",
+        "properties": { "label": { "none": [ "Eagles Park" ] } },
+        "geometry": { "type": "Point", "coordinates": [ -123.246303, 49.258631 ] }
+      }
+    ]
+  },
+  "items": [{
+      "id": "https://play.ldas.jp/iiif/ubc-eagles.json/canvas/1",
+      "type": "Canvas",
+      "label": { "en": [ "The playground" ], "ja": [ "遊び場の全体" ] },
+      "summary": { "en": [ "Eagles Park playground: two spring riders and a low play structure of curved panels, with benches behind. People are pixelated." ], "ja": [ "Eagles Park の遊び場。スプリング遊具 2 つと、曲面の板で囲んだ低い遊具。奥にベンチ。人にはモザイクをかけている。" ] },
+      "width": 4000,
+      "height": 3000,
+      "thumbnail": [ { "id": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Eagles_Park%2C_UBC%2C_Vancouver%2C_2026-10_01.jpg/330px-Eagles_Park%2C_UBC%2C_Vancouver%2C_2026-10_01.jpg", "type": "Image", "format": "image/jpeg" } ],
+      "homepage": [ { "id": "https://commons.wikimedia.org/wiki/File:Eagles_Park%2C_UBC%2C_Vancouver%2C_2026-10_01.jpg", "type": "Text", "label": { "en": [ "File page on Wikimedia Commons" ], "ja": [ "Wikimedia Commons のファイルのページ" ] }, "format": "text/html" } ],
+      "items": [
+        {
+          "id": "https://play.ldas.jp/iiif/ubc-eagles.json/canvas/1/page/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://play.ldas.jp/iiif/ubc-eagles.json/canvas/1/annotation/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Eagles_Park%2C_UBC%2C_Vancouver%2C_2026-10_01.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 4000,
+                "height": 3000
+              },
+              "target": "https://play.ldas.jp/iiif/ubc-eagles.json/canvas/1"
+            }
+          ]
+        }
+      ]
+    },{
+      "id": "https://play.ldas.jp/iiif/ubc-eagles.json/canvas/2",
+      "type": "Canvas",
+      "label": { "en": [ "Yellow and red spring rider" ], "ja": [ "黄と赤のスプリング遊具" ] },
+      "summary": { "en": [ "Yellow and red spring rider with a handle, Eagles Park." ], "ja": [ "取っ手の付いた黄と赤のスプリング遊具。Eagles Park。" ] },
+      "width": 4000,
+      "height": 3000,
+      "thumbnail": [ { "id": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Eagles_Park%2C_UBC%2C_Vancouver%2C_2026-10_02.jpg/330px-Eagles_Park%2C_UBC%2C_Vancouver%2C_2026-10_02.jpg", "type": "Image", "format": "image/jpeg" } ],
+      "homepage": [ { "id": "https://commons.wikimedia.org/wiki/File:Eagles_Park%2C_UBC%2C_Vancouver%2C_2026-10_02.jpg", "type": "Text", "label": { "en": [ "File page on Wikimedia Commons" ], "ja": [ "Wikimedia Commons のファイルのページ" ] }, "format": "text/html" } ],
+      "items": [
+        {
+          "id": "https://play.ldas.jp/iiif/ubc-eagles.json/canvas/2/page/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://play.ldas.jp/iiif/ubc-eagles.json/canvas/2/annotation/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://upload.wikimedia.org/wikipedia/commons/8/82/Eagles_Park%2C_UBC%2C_Vancouver%2C_2026-10_02.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 4000,
+                "height": 3000
+              },
+              "target": "https://play.ldas.jp/iiif/ubc-eagles.json/canvas/2"
+            }
+          ]
+        }
+      ]
+    },{
+      "id": "https://play.ldas.jp/iiif/ubc-eagles.json/canvas/3",
+      "type": "Canvas",
+      "label": { "en": [ "Low play structure of curved panels" ], "ja": [ "曲面の板で囲んだ低い遊具" ] },
+      "summary": { "en": [ "Low play structure for small children: curved red panels with peepholes around a round deck, a tall pole in the middle and a small blue and yellow side section, Eagles Park." ], "ja": [ "小さい子向けの低い遊具。丸い床のまわりをのぞき穴の付いた赤い曲面の板が囲み、中央に高い柱、脇に青と黄の小さな部分がある。Eagles Park。" ] },
+      "width": 4000,
+      "height": 3000,
+      "thumbnail": [ { "id": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Eagles_Park%2C_UBC%2C_Vancouver%2C_2026-10_03.jpg/330px-Eagles_Park%2C_UBC%2C_Vancouver%2C_2026-10_03.jpg", "type": "Image", "format": "image/jpeg" } ],
+      "homepage": [ { "id": "https://commons.wikimedia.org/wiki/File:Eagles_Park%2C_UBC%2C_Vancouver%2C_2026-10_03.jpg", "type": "Text", "label": { "en": [ "File page on Wikimedia Commons" ], "ja": [ "Wikimedia Commons のファイルのページ" ] }, "format": "text/html" } ],
+      "items": [
+        {
+          "id": "https://play.ldas.jp/iiif/ubc-eagles.json/canvas/3/page/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://play.ldas.jp/iiif/ubc-eagles.json/canvas/3/annotation/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://upload.wikimedia.org/wikipedia/commons/d/df/Eagles_Park%2C_UBC%2C_Vancouver%2C_2026-10_03.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 4000,
+                "height": 3000
+              },
+              "target": "https://play.ldas.jp/iiif/ubc-eagles.json/canvas/3"
+            }
+          ]
+        }
+      ]
+    },{
+      "id": "https://play.ldas.jp/iiif/ubc-eagles.json/canvas/4",
+      "type": "Canvas",
+      "label": { "en": [ "Red and navy spring rider" ], "ja": [ "赤と紺のスプリング遊具" ] },
+      "summary": { "en": [ "Red and navy spring rider with a handle, Eagles Park." ], "ja": [ "取っ手の付いた赤と紺のスプリング遊具。Eagles Park。" ] },
+      "width": 4000,
+      "height": 3000,
+      "thumbnail": [ { "id": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Eagles_Park%2C_UBC%2C_Vancouver%2C_2026-10_04.jpg/330px-Eagles_Park%2C_UBC%2C_Vancouver%2C_2026-10_04.jpg", "type": "Image", "format": "image/jpeg" } ],
+      "homepage": [ { "id": "https://commons.wikimedia.org/wiki/File:Eagles_Park%2C_UBC%2C_Vancouver%2C_2026-10_04.jpg", "type": "Text", "label": { "en": [ "File page on Wikimedia Commons" ], "ja": [ "Wikimedia Commons のファイルのページ" ] }, "format": "text/html" } ],
+      "items": [
+        {
+          "id": "https://play.ldas.jp/iiif/ubc-eagles.json/canvas/4/page/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://play.ldas.jp/iiif/ubc-eagles.json/canvas/4/annotation/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Eagles_Park%2C_UBC%2C_Vancouver%2C_2026-10_04.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 4000,
+                "height": 3000
+              },
+              "target": "https://play.ldas.jp/iiif/ubc-eagles.json/canvas/4"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

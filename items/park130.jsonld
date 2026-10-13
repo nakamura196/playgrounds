@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "https://play.ldas.jp/items/park130",
+  "@type": "Park",
+  "name": "William Mackie Park",
+  "description": "1 playground in William Mackie Park (Marpole). Equipment not yet surveyed.",
+  "identifier": "130",
+  "address": "1592 W 71st Avenue, Vancouver, BC",
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 49.206787,
+    "longitude": -123.142733
+  },
+  "containedInPlace": {
+    "@type": "Place",
+    "name": "Marpole"
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "playground count",
+      "value": 1
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "area",
+      "value": 0.37,
+      "unitCode": "HAR",
+      "unitText": "ha"
+    }
+  ],
+  "amenityFeature": [
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Basketball Courts",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Washrooms",
+      "value": false
+    }
+  ],
+  "mainEntityOfPage": "https://play.ldas.jp/items/park130.html",
+  "isPartOf": { "@id": "https://play.ldas.jp/", "name": "バンクーバーの遊び場" },
+  "isBasedOn": [
+    "https://opendata.vancouver.ca/explore/dataset/parks/",
+    "https://opendata.vancouver.ca/explore/dataset/parks-facilities/"
+  ],
+  "license": "https://opendata.vancouver.ca/pages/licence/",
+  "creditText": "Contains information licensed under the Open Government Licence – Vancouver"
+}

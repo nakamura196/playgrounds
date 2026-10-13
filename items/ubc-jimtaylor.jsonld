@@ -1,0 +1,78 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "https://play.ldas.jp/items/ubc-jimtaylor",
+  "@type": "Park",
+  "name": "Jim Taylor Park",
+  "description": "1 playground in Jim Taylor Park (UBC): a wooden play structure with a green spiral slide, a sloping cargo net and a coil climber, a log climbing wall, and a wooden frame with monkey bars. Not in the City of Vancouver open data; the position is where the survey photos were taken.",
+  "identifier": null,
+  "address": "University of British Columbia, Vancouver, BC",
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 49.259281,
+    "longitude": -123.247614
+  },
+  "containedInPlace": {
+    "@type": "Place",
+    "name": "UBC"
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "playground count",
+      "value": 1
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "equipment surveyed on",
+      "value": "2026-10"
+    }
+  ],
+  "amenityFeature": [
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Single Corkscrew Slide",
+      "value": true,
+      "additionalType": { "@id": "https://play.ldas.jp/vocab/#corkscrew-slide" }
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Sloping Cargo Net",
+      "value": true,
+      "additionalType": { "@id": "https://play.ldas.jp/vocab/#cargo-net" }
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Coil Climber",
+      "value": true,
+      "additionalType": { "@id": "https://play.ldas.jp/vocab/#coil-climber" }
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Climbing Wall with Holds",
+      "value": true,
+      "additionalType": { "@id": "https://play.ldas.jp/vocab/#climbing-wall" }
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Monkey Bars",
+      "value": true,
+      "additionalType": { "@id": "https://play.ldas.jp/vocab/#monkey-bars" }
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Washrooms",
+      "value": false
+    }
+  ],
+  "mainEntityOfPage": "https://play.ldas.jp/items/ubc-jimtaylor.html",
+  "isPartOf": { "@id": "https://play.ldas.jp/", "name": "バンクーバーの遊び場" },
+  "isBasedOn": [
+    "https://opendata.vancouver.ca/explore/dataset/parks/",
+    "https://opendata.vancouver.ca/explore/dataset/parks-facilities/"
+  ],
+  "license": "https://opendata.vancouver.ca/pages/licence/",
+  "creditText": "CC BY 4.0"
+}

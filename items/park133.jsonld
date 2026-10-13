@@ -1,0 +1,65 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "https://play.ldas.jp/items/park133",
+  "@type": "Park",
+  "name": "China Creek North Park",
+  "description": "1 playground in China Creek North Park (Mount Pleasant). Equipment not yet surveyed.",
+  "identifier": "133",
+  "address": "1001 E 7th Avenue, Vancouver, BC",
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 49.264901,
+    "longitude": -123.083355
+  },
+  "containedInPlace": {
+    "@type": "Place",
+    "name": "Mount Pleasant"
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "playground count",
+      "value": 1
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "area",
+      "value": 3.16,
+      "unitCode": "HAR",
+      "unitText": "ha"
+    }
+  ],
+  "amenityFeature": [
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Jogging Trails",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Soccer Fields",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Softball",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Washrooms",
+      "value": false
+    }
+  ],
+  "mainEntityOfPage": "https://play.ldas.jp/items/park133.html",
+  "isPartOf": { "@id": "https://play.ldas.jp/", "name": "バンクーバーの遊び場" },
+  "isBasedOn": [
+    "https://opendata.vancouver.ca/explore/dataset/parks/",
+    "https://opendata.vancouver.ca/explore/dataset/parks-facilities/"
+  ],
+  "license": "https://opendata.vancouver.ca/pages/licence/",
+  "creditText": "Contains information licensed under the Open Government Licence – Vancouver"
+}

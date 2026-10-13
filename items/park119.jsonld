@@ -1,0 +1,60 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "https://play.ldas.jp/items/park119",
+  "@type": "Park",
+  "name": "Tatlow Park",
+  "description": "1 playground in Tatlow Park (Kitsilano). Equipment not yet surveyed.",
+  "identifier": "119",
+  "address": "2845 W 3rd Avenue, Vancouver, BC",
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 49.270068,
+    "longitude": -123.169609
+  },
+  "containedInPlace": {
+    "@type": "Place",
+    "name": "Kitsilano"
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "playground count",
+      "value": 1
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "area",
+      "value": 1.4,
+      "unitCode": "HAR",
+      "unitText": "ha"
+    }
+  ],
+  "amenityFeature": [
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Field Houses",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Tennis Courts",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Washrooms",
+      "value": true
+    }
+  ],
+  "mainEntityOfPage": "https://play.ldas.jp/items/park119.html",
+  "isPartOf": { "@id": "https://play.ldas.jp/", "name": "バンクーバーの遊び場" },
+  "isBasedOn": [
+    "https://opendata.vancouver.ca/explore/dataset/parks/",
+    "https://opendata.vancouver.ca/explore/dataset/parks-facilities/"
+  ],
+  "license": "https://opendata.vancouver.ca/pages/licence/",
+  "creditText": "Contains information licensed under the Open Government Licence – Vancouver"
+}

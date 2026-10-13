@@ -1,0 +1,746 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "https://schema.org/",
+    "pgv": "https://play.ldas.jp/vocab/#",
+    "inScheme": { "@id": "skos:inScheme", "@type": "@id" },
+    "topConceptOf": { "@id": "skos:topConceptOf", "@type": "@id" },
+    "hasTopConcept": { "@id": "skos:hasTopConcept", "@type": "@id" },
+    "broader": { "@id": "skos:broader", "@type": "@id" },
+    "exactMatch": { "@id": "skos:exactMatch", "@type": "@id" },
+    "closeMatch": { "@id": "skos:closeMatch", "@type": "@id" },
+    "differentFrom": { "@id": "pgv:differentFrom", "@type": "@id" },
+    "hasPart": { "@id": "dcterms:hasPart", "@type": "@id" },
+    "seeAlso": { "@id": "rdfs:seeAlso", "@type": "@id" },
+    "subPropertyOf": { "@id": "rdfs:subPropertyOf", "@type": "@id" },
+    "prefLabel": { "@id": "skos:prefLabel", "@container": "@language" },
+    "altLabel": { "@id": "skos:altLabel", "@container": "@language" },
+    "definition": { "@id": "skos:definition", "@container": "@language" },
+    "editorialNote": { "@id": "skos:editorialNote", "@container": "@language" },
+    "label": { "@id": "rdfs:label", "@container": "@language" },
+    "comment": { "@id": "rdfs:comment", "@container": "@language" },
+    "manufacturer": { "@id": "schema:manufacturer" },
+    "name": { "@id": "schema:name" },
+    "url": { "@id": "schema:url", "@type": "@id" },
+    "modified": { "@id": "dcterms:modified" }
+  },
+  "@graph": [
+    {
+      "@id": "https://play.ldas.jp/vocab/#equipment",
+      "@type": "skos:ConceptScheme",
+      "prefLabel": { "en": "Playground equipment types", "ja": "遊具の型" },
+      "definition": {
+        "en": "Types of playground equipment, defined by shape and movement. Product names are not used as type names.",
+        "ja": "遊具の型。形と動きで定義し、製品名を型の名前にしない。"
+      },
+      "hasTopConcept": ["https://play.ldas.jp/vocab/#swing", "https://play.ldas.jp/vocab/#slide", "https://play.ldas.jp/vocab/#climbing", "https://play.ldas.jp/vocab/#overhead", "https://play.ldas.jp/vocab/#spinning", "https://play.ldas.jp/vocab/#seesaw", "https://play.ldas.jp/vocab/#spring", "https://play.ldas.jp/vocab/#water", "https://play.ldas.jp/vocab/#sound", "https://play.ldas.jp/vocab/#panel", "https://play.ldas.jp/vocab/#sand", "https://play.ldas.jp/vocab/#zipline", "https://play.ldas.jp/vocab/#structure", "https://play.ldas.jp/vocab/#fitness"]
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#products",
+      "@type": "skos:ConceptScheme",
+      "prefLabel": { "en": "Playground equipment products", "ja": "遊具の製品" },
+      "definition": {
+        "en": "Manufacturers' products, each matched to an equipment type.",
+        "ja": "メーカーの製品。それぞれ遊具の型に対応づける。"
+      }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#amenities",
+      "@type": "skos:ConceptScheme",
+      "prefLabel": { "en": "Park amenities", "ja": "公園の設備" },
+      "definition": {
+        "en": "Things in a park other than play equipment, such as a drinking fountain, recorded on site.",
+        "ja": "遊具ではない、公園の中のもの（水飲み場など）。現地調査で記録したもの。"
+      },
+      "hasTopConcept": ["https://play.ldas.jp/vocab/#drinking-fountain", "https://play.ldas.jp/vocab/#shade-sail", "https://play.ldas.jp/vocab/#open-lawn", "https://play.ldas.jp/vocab/#carved-boulder", "https://play.ldas.jp/vocab/#toy-box"]
+    },
+    {
+      "@id": "pgv:differentFrom",
+      "@type": "rdf:Property",
+      "subPropertyOf": "skos:related",
+      "label": { "en": "different from", "ja": "別物" },
+      "comment": {
+        "en": "A type that looks similar but is a different type. Stated in both directions.",
+        "ja": "見た目が似ているが別の型。両方向に張る。"
+      }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#swing",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "topConceptOf": "https://play.ldas.jp/vocab/#equipment",
+      "seeAlso": "https://chicagoplaygrounds.com/api/item_sets/3045",
+      "prefLabel": { "en": "Swings", "ja": "ぶらんこ" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#slide",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "topConceptOf": "https://play.ldas.jp/vocab/#equipment",
+      "seeAlso": "https://chicagoplaygrounds.com/api/item_sets/3052",
+      "prefLabel": { "en": "Slides", "ja": "すべり台" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#climbing",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "topConceptOf": "https://play.ldas.jp/vocab/#equipment",
+      "seeAlso": "https://chicagoplaygrounds.com/api/item_sets/3053",
+      "prefLabel": { "en": "Climbing", "ja": "登る遊具" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#climbing-vertical",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "broader": "https://play.ldas.jp/vocab/#climbing",
+      "seeAlso": "https://chicagoplaygrounds.com/api/item_sets/9055",
+      "prefLabel": { "en": "Vertical climbers", "ja": "縦に登る遊具（はしご・壁）" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#climbing-traverse",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "broader": "https://play.ldas.jp/vocab/#climbing",
+      "seeAlso": "https://chicagoplaygrounds.com/api/item_sets/4087",
+      "prefLabel": { "en": "Traverses", "ja": "横に渡る遊具" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#climbing-net",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "broader": "https://play.ldas.jp/vocab/#climbing",
+      "seeAlso": "https://chicagoplaygrounds.com/api/item_sets/4088",
+      "prefLabel": { "en": "Nets", "ja": "網の遊具" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#overhead",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "topConceptOf": "https://play.ldas.jp/vocab/#equipment",
+      "seeAlso": "https://chicagoplaygrounds.com/api/item_sets/3055",
+      "prefLabel": { "en": "Overhead", "ja": "頭上の遊具（雲梯・吊り輪）" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#spinning",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "topConceptOf": "https://play.ldas.jp/vocab/#equipment",
+      "seeAlso": "https://chicagoplaygrounds.com/api/item_sets/3054",
+      "prefLabel": { "en": "Spinning", "ja": "回る遊具" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#seesaw",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "topConceptOf": "https://play.ldas.jp/vocab/#equipment",
+      "seeAlso": "https://chicagoplaygrounds.com/api/item_sets/3056",
+      "prefLabel": { "en": "See-saws", "ja": "シーソー" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#spring",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "topConceptOf": "https://play.ldas.jp/vocab/#equipment",
+      "editorialNote": { "ja": "シカゴは集合ではなく「On a Spring」というタグで扱う" },
+      "prefLabel": { "en": "Spring riders", "ja": "スプリング遊具" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#water",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "topConceptOf": "https://play.ldas.jp/vocab/#equipment",
+      "seeAlso": "https://chicagoplaygrounds.com/api/item_sets/3670",
+      "prefLabel": { "en": "Water play", "ja": "水遊び" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#sound",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "topConceptOf": "https://play.ldas.jp/vocab/#equipment",
+      "seeAlso": "https://chicagoplaygrounds.com/api/item_sets/4894",
+      "prefLabel": { "en": "Musical", "ja": "音の遊具" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#panel",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "topConceptOf": "https://play.ldas.jp/vocab/#equipment",
+      "editorialNote": { "ja": "シカゴは集合なし（名前に Panel が付く項目が多数）" },
+      "prefLabel": { "en": "Play panels", "ja": "パネル遊具" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#sand",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "topConceptOf": "https://play.ldas.jp/vocab/#equipment",
+      "editorialNote": { "ja": "シカゴは集合なし" },
+      "prefLabel": { "en": "Sand play", "ja": "砂遊び" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#zipline",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "topConceptOf": "https://play.ldas.jp/vocab/#equipment",
+      "editorialNote": { "ja": "シカゴは集合なし" },
+      "prefLabel": { "en": "Zip lines", "ja": "ジップライン" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#structure",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "topConceptOf": "https://play.ldas.jp/vocab/#equipment",
+      "seeAlso": "https://chicagoplaygrounds.com/api/item_sets/3666",
+      "editorialNote": { "ja": "型の組み合わせ。contains で中の型を指す" },
+      "prefLabel": { "en": "Play structures", "ja": "複合遊具" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#fitness",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "topConceptOf": "https://play.ldas.jp/vocab/#equipment",
+      "prefLabel": { "en": "Outdoor fitness", "ja": "屋外の運動器具" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#overhead-spinning-rings",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "broader": ["https://play.ldas.jp/vocab/#overhead", "https://play.ldas.jp/vocab/#spinning"],
+      "differentFrom": ["https://play.ldas.jp/vocab/#single-overhead-spinning-ring", "https://play.ldas.jp/vocab/#post-spinning-ring", "https://play.ldas.jp/vocab/#circular-horizontal-ladder", "https://play.ldas.jp/vocab/#hanging-rings"],
+      "exactMatch": "https://chicagoplaygrounds.com/s/guide/item/3164",
+      "altLabel": { "en": ["spinning monkey bars", "monkey bar wheel"] },
+      "definition": { "ja": "横に渡した 1 本の梁の下に輪が 3 つ吊られ、それぞれの輪が自由に回る。輪どうしは同じ面に並ばない" },
+      "editorialNote": { "ja": "Myrtle Park の写真と照合済み（2026-10-11）" },
+      "prefLabel": { "en": "Overhead Spinning Rings", "ja": "回る輪の雲梯（梁から吊る型）" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#single-overhead-spinning-ring",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "broader": ["https://play.ldas.jp/vocab/#overhead", "https://play.ldas.jp/vocab/#spinning"],
+      "differentFrom": ["https://play.ldas.jp/vocab/#overhead-spinning-rings"],
+      "exactMatch": "https://chicagoplaygrounds.com/s/guide/item/3425",
+      "definition": { "ja": "梁の下に輪が 1 つだけ吊られて回る" },
+      "editorialNote": { "ja": "シカゴの説明に合わせた。Vancouver で見たことはない" },
+      "prefLabel": { "en": "Single Overhead Spinning Ring", "ja": "回る輪の雲梯（輪 1 つ）" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#post-spinning-ring",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "broader": ["https://play.ldas.jp/vocab/#overhead", "https://play.ldas.jp/vocab/#spinning"],
+      "differentFrom": ["https://play.ldas.jp/vocab/#overhead-spinning-rings", "https://play.ldas.jp/vocab/#circular-horizontal-ladder"],
+      "seeAlso": "https://chicagoplaygrounds.com/s/guide/item/3211",
+      "definition": { "ja": "1 本の柱の上に水平な輪が載り、輪ごと回る。輪の取っ手にぶら下がる" },
+      "editorialNote": { "ja": "シカゴの Overhead Spinning Circle (Standalone) と同じかは未確認" },
+      "prefLabel": { "en": "Post-mounted Spinning Ring", "ja": "回る輪の雲梯（1 本柱の型）" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#circular-horizontal-ladder",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "broader": ["https://play.ldas.jp/vocab/#overhead"],
+      "differentFrom": ["https://play.ldas.jp/vocab/#overhead-spinning-rings", "https://play.ldas.jp/vocab/#post-spinning-ring", "https://play.ldas.jp/vocab/#monkey-bars"],
+      "seeAlso": "https://chicagoplaygrounds.com/s/guide/item/3157",
+      "altLabel": { "en": ["circular monkey bars"] },
+      "definition": { "ja": "はしごを円形に組んだ雲梯。回らない" },
+      "editorialNote": { "ja": "シカゴの Circular Monkey Bars と同じかは未確認" },
+      "prefLabel": { "en": "Circular Horizontal Ladder", "ja": "円形の雲梯（回らない）" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#monkey-bars",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "broader": ["https://play.ldas.jp/vocab/#overhead"],
+      "differentFrom": ["https://play.ldas.jp/vocab/#circular-horizontal-ladder"],
+      "seeAlso": "https://chicagoplaygrounds.com/s/guide/item/3155",
+      "altLabel": { "en": ["horizontal ladder"] },
+      "definition": { "ja": "まっすぐな横木を等間隔に並べたはしごを頭上に渡したもの" },
+      "prefLabel": { "en": "Monkey Bars", "ja": "雲梯" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#hanging-rings",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "broader": ["https://play.ldas.jp/vocab/#overhead"],
+      "differentFrom": ["https://play.ldas.jp/vocab/#overhead-spinning-rings"],
+      "seeAlso": "https://chicagoplaygrounds.com/s/guide/item/3159",
+      "definition": { "ja": "鎖やロープで吊った輪を伝って渡る" },
+      "prefLabel": { "en": "Hanging Rings", "ja": "吊り輪" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#belt-swing",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "broader": ["https://play.ldas.jp/vocab/#swing"],
+      "differentFrom": ["https://play.ldas.jp/vocab/#toddler-swing"],
+      "seeAlso": "https://chicagoplaygrounds.com/s/guide/item/3104",
+      "definition": { "ja": "ゴムの帯の座面のぶらんこ" },
+      "prefLabel": { "en": "Belt Seat Swing", "ja": "ぶらんこ（帯の座面）" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#toddler-swing",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "broader": ["https://play.ldas.jp/vocab/#swing"],
+      "differentFrom": ["https://play.ldas.jp/vocab/#belt-swing", "https://play.ldas.jp/vocab/#adaptive-swing"],
+      "seeAlso": "https://chicagoplaygrounds.com/s/guide/item/3105",
+      "altLabel": { "en": ["bucket swing"] },
+      "definition": { "ja": "脚を通す囲いのある幼児用の座面" },
+      "prefLabel": { "en": "Toddler Swing", "ja": "ぶらんこ（幼児用のかご型）" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#saucer-swing",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "broader": ["https://play.ldas.jp/vocab/#swing"],
+      "differentFrom": ["https://play.ldas.jp/vocab/#tire-swing"],
+      "seeAlso": "https://chicagoplaygrounds.com/s/guide/item/3108",
+      "altLabel": { "en": ["bird's nest swing"] },
+      "definition": { "ja": "円い網か円盤の座面に数人で乗る" },
+      "prefLabel": { "en": "Saucer Swing", "ja": "円盤ぶらんこ" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#tire-swing",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "broader": ["https://play.ldas.jp/vocab/#swing"],
+      "differentFrom": ["https://play.ldas.jp/vocab/#saucer-swing"],
+      "seeAlso": "https://chicagoplaygrounds.com/s/guide/item/3109",
+      "definition": { "ja": "タイヤを横にして吊った座面" },
+      "prefLabel": { "en": "Tire Swing", "ja": "タイヤぶらんこ" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#adaptive-swing",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "broader": ["https://play.ldas.jp/vocab/#swing"],
+      "differentFrom": ["https://play.ldas.jp/vocab/#toddler-swing"],
+      "seeAlso": "https://chicagoplaygrounds.com/s/guide/item/3106",
+      "definition": { "ja": "背もたれと固定具のある座面。障害のある子も乗れる" },
+      "prefLabel": { "en": "Adaptive Swing", "ja": "体を支える座面のぶらんこ" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#straight-slide",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "broader": ["https://play.ldas.jp/vocab/#slide"],
+      "differentFrom": ["https://play.ldas.jp/vocab/#wave-slide"],
+      "seeAlso": "https://chicagoplaygrounds.com/s/guide/item/3111",
+      "definition": { "ja": "1 人用のまっすぐなすべり台" },
+      "prefLabel": { "en": "Single Straight Slide", "ja": "まっすぐなすべり台" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#wave-slide",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "broader": ["https://play.ldas.jp/vocab/#slide"],
+      "differentFrom": ["https://play.ldas.jp/vocab/#straight-slide"],
+      "seeAlso": "https://chicagoplaygrounds.com/s/guide/item/3119",
+      "definition": { "ja": "途中に起伏のある 1 人用のすべり台" },
+      "prefLabel": { "en": "Single Wave Slide", "ja": "波形のすべり台" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#tube-slide",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "broader": ["https://play.ldas.jp/vocab/#slide"],
+      "differentFrom": ["https://play.ldas.jp/vocab/#corkscrew-slide", "https://play.ldas.jp/vocab/#crawl-tunnel", "https://play.ldas.jp/vocab/#net-climbing-tube"],
+      "seeAlso": "https://chicagoplaygrounds.com/s/guide/item/3411",
+      "definition": { "ja": "筒の中をすべる曲がったすべり台" },
+      "prefLabel": { "en": "Curved Tube Slide", "ja": "筒形のすべり台" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#corkscrew-slide",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "broader": ["https://play.ldas.jp/vocab/#slide"],
+      "differentFrom": ["https://play.ldas.jp/vocab/#tube-slide"],
+      "seeAlso": "https://chicagoplaygrounds.com/s/guide/item/3113",
+      "altLabel": { "en": ["spiral slide"] },
+      "definition": { "ja": "柱のまわりをらせん状に下りる開いたすべり台" },
+      "prefLabel": { "en": "Single Corkscrew Slide", "ja": "らせんのすべり台" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#merry-go-round",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "broader": ["https://play.ldas.jp/vocab/#spinning"],
+      "differentFrom": ["https://play.ldas.jp/vocab/#spinning-seat"],
+      "seeAlso": "https://chicagoplaygrounds.com/s/guide/item/4034",
+      "altLabel": { "en": ["roundabout"] },
+      "definition": { "ja": "円い台に乗り、台ごと回る" },
+      "prefLabel": { "en": "Merry Go Round", "ja": "回転台" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#spinning-seat",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "broader": ["https://play.ldas.jp/vocab/#spinning"],
+      "differentFrom": ["https://play.ldas.jp/vocab/#merry-go-round"],
+      "seeAlso": "https://chicagoplaygrounds.com/s/guide/item/3143",
+      "definition": { "ja": "1 人用の座面が軸のまわりを回る" },
+      "prefLabel": { "en": "Spinning Seat", "ja": "回る椅子" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#spring-rider",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "broader": ["https://play.ldas.jp/vocab/#spring"],
+      "differentFrom": ["https://play.ldas.jp/vocab/#two-seat-spring"],
+      "seeAlso": "https://chicagoplaygrounds.com/s/guide/item/3153",
+      "altLabel": { "en": ["spring rocker"] },
+      "definition": { "ja": "ばねの上の座面にまたがって揺らす。動物などの形がある" },
+      "editorialNote": { "ja": "シカゴは形ごとに別項目（Whale/Zebra/Sea Horse on a Spring）" },
+      "prefLabel": { "en": "Seat on a Spring", "ja": "スプリング遊具（1 人用）" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#two-seat-spring",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "broader": ["https://play.ldas.jp/vocab/#spring", "https://play.ldas.jp/vocab/#seesaw"],
+      "differentFrom": ["https://play.ldas.jp/vocab/#spring-rider", "https://play.ldas.jp/vocab/#seesaw-two"],
+      "seeAlso": "https://chicagoplaygrounds.com/s/guide/item/3421",
+      "definition": { "ja": "1 つのばねの上に座面が 2 つ" },
+      "prefLabel": { "en": "Two Seats on a Spring", "ja": "スプリング遊具（2 人用）" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#seesaw-two",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "broader": ["https://play.ldas.jp/vocab/#seesaw"],
+      "differentFrom": ["https://play.ldas.jp/vocab/#two-seat-spring"],
+      "seeAlso": "https://chicagoplaygrounds.com/s/guide/item/3146",
+      "altLabel": { "en": ["teeter-totter"] },
+      "definition": { "ja": "中央の支点で上下する板に 2 人が向かい合って座る" },
+      "prefLabel": { "en": "Two Person See-Saw", "ja": "シーソー（2 人用）" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#rope-net-bridge",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "broader": ["https://play.ldas.jp/vocab/#climbing-net"],
+      "differentFrom": ["https://play.ldas.jp/vocab/#plank-bridge"],
+      "seeAlso": "https://chicagoplaygrounds.com/s/guide/item/3246",
+      "definition": { "ja": "網を張った吊り橋を渡る" },
+      "prefLabel": { "en": "Rope Net Bridge", "ja": "網の吊り橋" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#plank-bridge",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "broader": ["https://play.ldas.jp/vocab/#climbing-traverse"],
+      "differentFrom": ["https://play.ldas.jp/vocab/#rope-net-bridge"],
+      "seeAlso": "https://chicagoplaygrounds.com/s/guide/item/3123",
+      "definition": { "ja": "板を並べて吊った橋" },
+      "prefLabel": { "en": "Plank Bridge", "ja": "板の吊り橋" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#climbing-wall",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "broader": ["https://play.ldas.jp/vocab/#climbing-vertical"],
+      "seeAlso": "https://chicagoplaygrounds.com/s/guide/item/3089",
+      "definition": { "ja": "壁面に取っ手（ホールド）を付けた登り壁" },
+      "prefLabel": { "en": "Climbing Wall with Holds", "ja": "登り壁" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#balance-beam",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "broader": ["https://play.ldas.jp/vocab/#climbing-traverse"],
+      "seeAlso": "https://chicagoplaygrounds.com/s/guide/item/3234",
+      "definition": { "ja": "地面近くの細い梁の上を歩く" },
+      "prefLabel": { "en": "Balance Beam", "ja": "平均台" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#zip-line",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "broader": ["https://play.ldas.jp/vocab/#zipline"],
+      "seeAlso": "https://chicagoplaygrounds.com/s/guide/item/3460",
+      "definition": { "ja": "張ったワイヤーに沿って座面ごと滑る" },
+      "prefLabel": { "en": "Zip Line with Circle Seat", "ja": "ジップライン（円い座面）" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#sand-scooper",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "broader": ["https://play.ldas.jp/vocab/#sand"],
+      "seeAlso": "https://chicagoplaygrounds.com/s/guide/item/3152",
+      "altLabel": { "en": ["sand digger"] },
+      "definition": { "ja": "座って操作するショベルで砂をすくう" },
+      "prefLabel": { "en": "Sand Scooper", "ja": "砂すくい" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#rope-net-spinner",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "broader": ["https://play.ldas.jp/vocab/#spinning", "https://play.ldas.jp/vocab/#climbing-net"],
+      "differentFrom": ["https://play.ldas.jp/vocab/#merry-go-round"],
+      "altLabel": { "en": ["spinning net climber", "rope spinner"] },
+      "definition": { "ja": "柱のまわりに綱の網を円すい形に張り、下の円盤ごと回る。網に登ったまま回る" },
+      "editorialNote": { "ja": "2026-10 Wesbrook Park（UBC）で確認。シカゴの対応は未確認" },
+      "prefLabel": { "en": "Rope Net Spinner", "ja": "回る網のかご" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#low-rope-net",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "broader": ["https://play.ldas.jp/vocab/#climbing-net"],
+      "differentFrom": ["https://play.ldas.jp/vocab/#rope-net-bridge"],
+      "definition": { "ja": "地面近くに綱の網を張り、その上を渡ったり乗ったりする" },
+      "editorialNote": { "ja": "2026-10 Wesbrook Park（UBC）で確認。シカゴの対応は未確認" },
+      "prefLabel": { "en": "Low Rope Net", "ja": "低い綱の網" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#stepping-stumps",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "broader": ["https://play.ldas.jp/vocab/#climbing-traverse"],
+      "differentFrom": ["https://play.ldas.jp/vocab/#balance-beam"],
+      "altLabel": { "en": ["stepping logs"] },
+      "definition": { "ja": "高さの違う丸太の切り株を並べ、跳び移って渡る" },
+      "editorialNote": { "ja": "2026-10 Wesbrook Park（UBC）で確認。シカゴの対応は未確認" },
+      "prefLabel": { "en": "Log Stepping Stumps", "ja": "切り株の足場" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#rail-trolley",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "broader": ["https://play.ldas.jp/vocab/#zipline"],
+      "differentFrom": ["https://play.ldas.jp/vocab/#zip-line"],
+      "altLabel": { "en": ["rail rider", "track ride"] },
+      "definition": { "ja": "頭上に渡した固い棒のレールに取っ手の付いた台車が付き、取っ手にぶら下がって滑る。ワイヤーではなくレールを使う" },
+      "editorialNote": { "ja": "2026-10 Wesbrook Park（UBC）で確認。シカゴの対応は未確認" },
+      "prefLabel": { "en": "Overhead Rail Trolley", "ja": "レールを滑る取っ手" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#pull-up-bars",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "broader": ["https://play.ldas.jp/vocab/#fitness", "https://play.ldas.jp/vocab/#overhead"],
+      "altLabel": { "en": ["pull-up station", "dip station"] },
+      "definition": { "ja": "2 本の柱の上に懸垂の棒を渡し、柱の内側に体を支える取っ手を付けた運動器具" },
+      "editorialNote": { "ja": "2026-10 Wesbrook Park（UBC）で確認。シカゴの対応は未確認" },
+      "prefLabel": { "en": "Pull-up Bar with Dip Handles", "ja": "懸垂の棒（ディップの取っ手付き）" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#parallel-bars",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "broader": ["https://play.ldas.jp/vocab/#fitness"],
+      "definition": { "ja": "低い 2 本の棒を平行に並べた運動器具。腕で体を支えて進む" },
+      "editorialNote": { "ja": "2026-10 Wesbrook Park（UBC）で確認。シカゴの対応は未確認" },
+      "prefLabel": { "en": "Parallel Bars", "ja": "平行棒" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#kettlebell-station",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "broader": ["https://play.ldas.jp/vocab/#fitness"],
+      "definition": { "ja": "縦の棒に沿って上下するケトルベル形のおもりを並べ、持ち上げて鍛える運動器具。手順の看板が付く" },
+      "editorialNote": { "ja": "2026-10 Wesbrook Park（UBC）で確認。シカゴの対応は未確認" },
+      "prefLabel": { "en": "Kettlebell Lift Station", "ja": "ケトルベル形のおもり" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#crawl-tunnel",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "broader": ["https://play.ldas.jp/vocab/#structure"],
+      "differentFrom": ["https://play.ldas.jp/vocab/#tube-slide", "https://play.ldas.jp/vocab/#net-climbing-tube"],
+      "definition": { "ja": "複合遊具の床どうしをつなぐ、くぐって通る筒。曲がった型もある" },
+      "editorialNote": { "ja": "2026-10 Mundell Park（UBC）で確認。シカゴの対応は未確認" },
+      "prefLabel": { "en": "Crawl Tunnel", "ja": "くぐるトンネル" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#water-channel",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "broader": ["https://play.ldas.jp/vocab/#water"],
+      "altLabel": { "en": ["stream"] },
+      "definition": { "ja": "地面に掘った浅い水路。水を流し、せき止めたり物を流したりして遊ぶ。岩で縁取ることが多い" },
+      "editorialNote": { "ja": "2026-10 Brockhouse Park（UBC）で確認。シカゴの対応は未確認" },
+      "prefLabel": { "en": "Water Play Channel", "ja": "水遊びの水路" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#water-wheel",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "broader": ["https://play.ldas.jp/vocab/#water"],
+      "definition": { "ja": "水路や噴き出す水の流れで回る羽根車" },
+      "editorialNote": { "ja": "2026-10 Brockhouse Park（UBC）で確認。シカゴの対応は未確認" },
+      "prefLabel": { "en": "Water Wheel", "ja": "水車" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#ground-spray",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "broader": ["https://play.ldas.jp/vocab/#water"],
+      "altLabel": { "en": ["ground jet"] },
+      "definition": { "ja": "水遊び場の床に埋めた吹き出し口。下から水が噴き上がる" },
+      "editorialNote": { "ja": "2026-10 Brockhouse Park（UBC）で確認（10 月で水は止まっていた）。シカゴの対応は未確認" },
+      "prefLabel": { "en": "Ground Spray Nozzle", "ja": "床の噴水口" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#treehouse",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "broader": ["https://play.ldas.jp/vocab/#structure"],
+      "altLabel": { "en": ["tree house"] },
+      "definition": { "ja": "木の幹や柱の上に建てた小屋。網の橋や通路でほかの小屋とつながり、中を通り抜けて進む" },
+      "editorialNote": { "ja": "2026-10 Kids Tree Canopy Adventure（Grouse Mountain）で確認。シカゴの対応は未確認" },
+      "prefLabel": { "en": "Treehouse", "ja": "ツリーハウス" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#net-climbing-tube",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "broader": ["https://play.ldas.jp/vocab/#climbing-net"],
+      "differentFrom": ["https://play.ldas.jp/vocab/#crawl-tunnel", "https://play.ldas.jp/vocab/#tube-slide"],
+      "altLabel": { "en": ["net tube climber"] },
+      "definition": { "ja": "綱の網を縦長の筒の形に張り、その中を登って上の床へ上がる" },
+      "editorialNote": { "ja": "2026-10 Kids Tree Canopy Adventure（Grouse Mountain）で確認。シカゴの対応は未確認" },
+      "prefLabel": { "en": "Vertical Net Climbing Tube", "ja": "縦に登る筒形の網" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#spring-seesaw",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "broader": ["https://play.ldas.jp/vocab/#spring", "https://play.ldas.jp/vocab/#seesaw"],
+      "differentFrom": ["https://play.ldas.jp/vocab/#two-seat-spring", "https://play.ldas.jp/vocab/#seesaw-two"],
+      "altLabel": { "en": ["spring rocker"] },
+      "definition": { "ja": "2 つのばねの上に長い台を載せ、両端の座面に乗って揺らす" },
+      "editorialNote": { "ja": "2026-10 Hawthorn Park（UBC）で確認。シカゴの対応は未確認" },
+      "prefLabel": { "en": "Spring Seesaw", "ja": "ばねのシーソー" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#standing-spinner",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "broader": ["https://play.ldas.jp/vocab/#spinning"],
+      "differentFrom": ["https://play.ldas.jp/vocab/#spinning-seat"],
+      "definition": { "ja": "曲がった柱の下の台に足をのせ、柱につかまって立ったまま回る" },
+      "editorialNote": { "ja": "2026-10 Hawthorn Park（UBC）で確認。シカゴの対応は未確認" },
+      "prefLabel": { "en": "Standing Spinner", "ja": "立って回る遊具" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#coil-climber",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "broader": ["https://play.ldas.jp/vocab/#climbing-vertical"],
+      "altLabel": { "en": ["spiral climber"] },
+      "definition": { "ja": "金属の棒をらせん状に巻いた柱を、つかまって登る" },
+      "editorialNote": { "ja": "2026-10 Jim Taylor Park（UBC）で確認。シカゴの対応は未確認" },
+      "prefLabel": { "en": "Coil Climber", "ja": "らせんの登り棒" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#cargo-net",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#equipment",
+      "broader": ["https://play.ldas.jp/vocab/#climbing-net"],
+      "differentFrom": ["https://play.ldas.jp/vocab/#low-rope-net", "https://play.ldas.jp/vocab/#rope-net-bridge"],
+      "altLabel": { "en": ["cargo net"] },
+      "definition": { "ja": "複合遊具の床へ斜めに張った綱の網を登る" },
+      "editorialNote": { "ja": "2026-10 Jim Taylor Park（UBC）で確認。シカゴの対応は未確認" },
+      "prefLabel": { "en": "Sloping Cargo Net", "ja": "斜めの綱の網" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#lt-90-fun-wheels",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#products",
+      "exactMatch": "https://play.ldas.jp/vocab/#overhead-spinning-rings",
+      "manufacturer": { "@type": "schema:Organization", "name": "Little Tikes Commercial" },
+      "modified": "2026-10-11",
+      "editorialNote": { "ja": "梁から吊った輪が回る型。Myrtle Park の実物と同じ型" },
+      "prefLabel": { "en": "90° Fun Wheels" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#pwap-hold-n-spin",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#products",
+      "exactMatch": "https://play.ldas.jp/vocab/#post-spinning-ring",
+      "manufacturer": { "@type": "schema:Organization", "name": "PWAP" },
+      "modified": "2026-10-11",
+      "editorialNote": { "ja": "1 本の柱の上で輪が回る型。CLIP の試験の製品写真 1 枚はこれ" },
+      "prefLabel": { "en": "Hold-N-Spin" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#belson-360-orbital",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#products",
+      "closeMatch": "https://play.ldas.jp/vocab/#circular-horizontal-ladder",
+      "manufacturer": { "@type": "schema:Organization", "name": "Belson" },
+      "modified": "2026-10-11",
+      "editorialNote": { "ja": "円形に組んだ固定のはしご。名前に 360° と付くが回らない" },
+      "prefLabel": { "en": "360° Orbital Horizontal Ladder" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#lsi-circular-ladder",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#products",
+      "closeMatch": "https://play.ldas.jp/vocab/#circular-horizontal-ladder",
+      "manufacturer": { "@type": "schema:Organization", "name": "Landscape Structures" },
+      "modified": "2026-10-11",
+      "editorialNote": { "ja": "円形に組んだ固定のはしご" },
+      "prefLabel": { "en": "Circular Horizontal Ladder" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#corocord-15-0335-3c1",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#products",
+      "closeMatch": "https://play.ldas.jp/vocab/#tube-slide",
+      "manufacturer": { "@type": "schema:Organization", "name": "Corocord" },
+      "modified": "2026-10-11",
+      "editorialNote": { "ja": "Wesbrook Park（UBC）のすべり台の塔の柱の銘板。Ref.-No. 32857、2019 年製、推奨 5〜12 歳。製品名は未確認" },
+      "prefLabel": { "en": null }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#drinking-fountain",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#amenities",
+      "topConceptOf": "https://play.ldas.jp/vocab/#amenities",
+      "definition": { "ja": "飲み水の出る、柱の形の水飲み器" },
+      "editorialNote": { "ja": "2026-10 Brockhouse Park（UBC）で確認" },
+      "prefLabel": { "en": "Drinking fountain", "ja": "水飲み場" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#shade-sail",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#amenities",
+      "topConceptOf": "https://play.ldas.jp/vocab/#amenities",
+      "definition": { "ja": "柱の間に張った、日差しを遮る布" },
+      "editorialNote": { "ja": "2026-10 Brockhouse Park（UBC）で確認" },
+      "prefLabel": { "en": "Shade sails", "ja": "日よけの布" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#open-lawn",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#amenities",
+      "topConceptOf": "https://play.ldas.jp/vocab/#amenities",
+      "definition": { "ja": "遊具を置かず、自由に使える芝生の広い面" },
+      "editorialNote": { "ja": "2026-10 Mundell Park・Brockhouse Park（UBC）で確認" },
+      "prefLabel": { "en": "Open lawn", "ja": "芝生の広場" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#carved-boulder",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#amenities",
+      "topConceptOf": "https://play.ldas.jp/vocab/#amenities",
+      "definition": { "ja": "表面に浮き彫りなどの彫刻を施した岩。作者や題名の表示が無いもの" },
+      "editorialNote": { "ja": "2026-10 Brockhouse Park（UBC）で確認。作者は分からない" },
+      "prefLabel": { "en": "Carved boulder", "ja": "彫刻を施した岩" }
+    },
+    {
+      "@id": "https://play.ldas.jp/vocab/#toy-box",
+      "@type": "skos:Concept",
+      "inScheme": "https://play.ldas.jp/vocab/#amenities",
+      "topConceptOf": "https://play.ldas.jp/vocab/#amenities",
+      "definition": { "ja": "遊び場の脇に置いた、誰でも使えるおもちゃを入れておく箱" },
+      "editorialNote": { "ja": "2026-10 Brockhouse Park（UBC）で確認。箱の絵が主役になるので Commons には上げていない" },
+      "prefLabel": { "en": "Toy box", "ja": "共用のおもちゃ箱" }
+    }
+  ]
+}

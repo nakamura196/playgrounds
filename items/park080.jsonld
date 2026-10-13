@@ -1,0 +1,65 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "https://play.ldas.jp/items/park080",
+  "@type": "Park",
+  "name": "Cedar Cottage Park",
+  "description": "2 playgrounds in Cedar Cottage Park (Kensington-Cedar Cottage). Equipment not yet surveyed.",
+  "identifier": "80",
+  "address": "2650 Clark Drive, Vancouver, BC",
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 49.260807,
+    "longitude": -123.076605
+  },
+  "containedInPlace": {
+    "@type": "Place",
+    "name": "Kensington-Cedar Cottage"
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "playground count",
+      "value": 2
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "area",
+      "value": 0.47,
+      "unitCode": "HAR",
+      "unitText": "ha"
+    }
+  ],
+  "amenityFeature": [
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Ball Hockey",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Basketball Courts",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Pickleball",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Washrooms",
+      "value": false
+    }
+  ],
+  "mainEntityOfPage": "https://play.ldas.jp/items/park080.html",
+  "isPartOf": { "@id": "https://play.ldas.jp/", "name": "バンクーバーの遊び場" },
+  "isBasedOn": [
+    "https://opendata.vancouver.ca/explore/dataset/parks/",
+    "https://opendata.vancouver.ca/explore/dataset/parks-facilities/"
+  ],
+  "license": "https://opendata.vancouver.ca/pages/licence/",
+  "creditText": "Contains information licensed under the Open Government Licence – Vancouver"
+}

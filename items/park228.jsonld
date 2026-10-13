@@ -1,0 +1,75 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "https://play.ldas.jp/items/park228",
+  "@type": "Park",
+  "name": "Oak Meadows Park",
+  "description": "1 playground in Oak Meadows Park (South Cambie). Not in the City's list of playgrounds; the position is from OpenStreetMap. Playground equipment confirmed from aerial imagery and review photos (2026-10). Equipment not yet surveyed.",
+  "identifier": "228",
+  "address": "899 W 37th Avenue, Vancouver, BC",
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 49.238232,
+    "longitude": -123.124134
+  },
+  "containedInPlace": {
+    "@type": "Place",
+    "name": "South Cambie"
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "playground count",
+      "value": 1
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "area",
+      "value": 5.0,
+      "unitCode": "HAR",
+      "unitText": "ha"
+    }
+  ],
+  "amenityFeature": [
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Dogs Off-Leash Areas",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Field Hockey",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Jogging Trails",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Soccer Fields",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Ultimate Fields",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Washrooms",
+      "value": false
+    }
+  ],
+  "mainEntityOfPage": "https://play.ldas.jp/items/park228.html",
+  "isPartOf": { "@id": "https://play.ldas.jp/", "name": "バンクーバーの遊び場" },
+  "isBasedOn": [
+    "https://opendata.vancouver.ca/explore/dataset/parks/",
+    "https://opendata.vancouver.ca/explore/dataset/parks-facilities/"
+  ],
+  "license": "https://opendata.vancouver.ca/pages/licence/",
+  "creditText": "Contains information licensed under the Open Government Licence – Vancouver; position © OpenStreetMap contributors, ODbL"
+}

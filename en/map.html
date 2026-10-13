@@ -1,0 +1,1299 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head prefix="og: http://ogp.me/ns#">
+    
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Map | Vancouver Playgrounds</title>
+<link rel="alternate" hreflang="ja" href="https://play.ldas.jp/map.html">
+<link rel="alternate" hreflang="en" href="https://play.ldas.jp/en/map.html">
+<link rel="canonical" href="https://play.ldas.jp/en/map.html">
+<link rel="shortcut icon" type="image/x-icon" href="/en/favicon.ico">
+<!--
+
+  _____     ____        __  _           ___       _ __   __       
+ / ___/__  / / /__ ____/ /_(_)__  ___  / _ )__ __(_) /__/ /__ ____
+/ /__/ _ \/ / / -_) __/ __/ / _ \/ _ \/ _  / // / / / _  / -_) __/
+\___/\___/_/_/\__/\__/\__/_/\___/_//_/____/\_,_/_/_/\_,_/\__/_/   
+                                                                
+    built with CollectionBuilder-CSV
+    https://github.com/CollectionBuilder/collectionbuilder-csv
+-->
+<meta name="generator" content="collectionbuilder-csv" />
+
+<!-- load style sheets -->
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="/en/assets/lib/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="/en/assets/lib/leaflet/leaflet.css">
+<link rel="stylesheet" href="/en/assets/lib/leaflet/leaflet.fullscreen.css">
+<link rel="stylesheet" href="/en/assets/lib/leaflet/leaflet.fusesearch.css"><link rel="stylesheet" href="/en/assets/lib/leaflet/MarkerCluster.css">
+<link rel="stylesheet" href="/en/assets/lib/leaflet/MarkerCluster.Default.css"><!-- load custom css last to allow overrides -->
+<link rel="stylesheet" href="/en/assets/css/cb.css?v=2026-10-13" type="text/css">
+
+
+
+<meta name="description" content="A record of the 136 playgrounds in 114 City of Vancouver parks, to be searchable by play equipment. It starts from the City&#39;s open data and adds playgrounds surveyed on site.">
+<meta name="author" content="nakamura196; City of Vancouver Open Data (park information)" >
+<meta name="keywords" content="playground; play equipment; Vancouver; parks">
+<!-- DC meta --> 
+<link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+<meta name="DCTERMS.title" content="Map, Vancouver Playgrounds" xml:lang="en" />
+<meta name="DCTERMS.creator" content="nakamura196" xml:lang="en" />
+<meta name="DCTERMS.publisher" content="City of Vancouver Open Data (park information)" xml:lang="en" />
+<meta name="DCTERMS.date" content="2026" xml:lang="en" />
+<meta name="DCTERMS.description" content="A record of the 136 playgrounds in 114 City of Vancouver parks, to be searchable by play equipment. It starts from the City&#39;s open data and adds playgrounds surveyed on site." xml:lang="en" /><!-- Open Graph meta -->
+<meta property="og:title" content="Map, Vancouver Playgrounds" />
+<meta property="og:description" content="A record of the 136 playgrounds in 114 City of Vancouver parks, to be searchable by play equipment. It starts from the City&#39;s open data and adds playgrounds surveyed on site." />
+<meta property="og:site_name" content="Vancouver Playgrounds" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://play.ldas.jp/en/assets/img/og-en.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Vancouver Playgrounds" />
+<meta property="og:url" content="https://play.ldas.jp/en/map.html" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="og:locale" content="en_CA" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<!-- schema.org JSON-LD -->
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebPage","headline":"Map, Vancouver Playgrounds","publisher": { "@context": "https://schema.org", "@type": "Organization", "name": "City of Vancouver Open Data (park information)", "url": "https://opendata.vancouver.ca/explore/dataset/parks-facilities/", "logo": "" },"description":"A record of the 136 playgrounds in 114 City of Vancouver parks, to be searchable by play equipment. It starts from the City's open data and adds playgrounds surveyed on site.","image":"https://play.ldas.jp/en/assets/img/og-en.jpg","url":"https://play.ldas.jp/en/map.html"}</script> 
+<!-- breadcrumbs schema -->
+<script type="application/ld+json">{"@context": "http://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "item": { "@id": "https://play.ldas.jp/en/", "name": "Vancouver Playgrounds" } },{ "@type": "ListItem", "position": 2, "item": { "@id": "https://play.ldas.jp/en/map.html", "name": "Map" } }] }</script>
+
+
+<!-- Analytics --> 
+
+<!-- Last build date: 2026-10-13 -->
+  </head>
+  <body class="d-flex flex-column h-100">
+    <div id="skip-to-content"><a href="#maincontent">Skip to main content</a></div>
+    <div class="container">
+    <div class="row align-items-center">
+        <div id="title" class="col-12">
+            <h1 class="mt-2"><a class="text-dark" href="/en/" >Vancouver Playgrounds</a></h1>	 
+            <p>A record of play equipment (in preparation)</p>
+        </div>
+        
+    </div>
+</div>
+    <nav class="navbar navbar-expand-lg bg-white" data-bs-theme="light">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#page-nav" aria-controls="page-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        
+        
+        <div class="collapse navbar-collapse" id="page-nav">
+            <ul class="navbar-nav me-auto">
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="/en/">Home</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/en/map.html">Map</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="/en/browse.html">Browse</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="/en/search/">Search</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="/en/vocab/">Equipment vocabulary</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="/en/guide.html">Photo guide</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="/en/data.html">Data</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="/en/about.html">About</a>
+                </li></ul>
+            
+            <form role="search" id="nav-search" action="/en/search/index.html">
+    <svg class="nav-search-icon" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/></svg>
+    <input id="nav-search-box" class="form-control" type="search" placeholder="Search" aria-label="Search collection items" name="q">
+</form>
+            <ul class="navbar-nav lang-switch ms-lg-3" aria-label="Language">
+    <li class="nav-item"><a class="nav-link" href="https://play.ldas.jp/map.html" hreflang="ja" lang="ja">日本語</a></li>
+</ul>
+            
+        </div>
+    </div>
+</nav>
+
+    <main id="maincontent" role="main" class="flex-shrink-0">
+      
+<h2 class="visually-hidden">Map of Collection Items</h2>
+<div id="mapContainer"></div>
+
+    </main>
+    <footer class="bg-black pt-4 mt-auto container-fluid">
+
+    <div class="row border-bottom border-white pb-4 mb-2">
+
+        <div class="col-md-7 px-4 mt-3">
+
+            <h2 class="h4"><a href="/en/" class="text-white">Vancouver Playgrounds</a></h2>
+            <p class="text-white"><small>A record of the 136 playgrounds in 114 City of Vancouver parks, to be searchable by play equipment. It starts from the City's open data and adds playgrounds surveyed on site.</small></p>
+            <nav>
+                <ul id="footer-nav" class="nav nav-pills ">
+                    <li class="nav-item">
+                    
+                        <a class="nav-link text-light" href="/en/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    
+                        <a class="nav-link text-light active" aria-current="page" href="/en/map.html">Map</a>
+                    </li>
+                    <li class="nav-item">
+                    
+                        <a class="nav-link text-light" href="/en/browse.html">Browse</a>
+                    </li>
+                    <li class="nav-item">
+                    
+                        <a class="nav-link text-light" href="/en/search/">Search</a>
+                    </li>
+                    <li class="nav-item">
+                    
+                        <a class="nav-link text-light" href="/en/vocab/">Equipment vocabulary</a>
+                    </li>
+                    <li class="nav-item">
+                    
+                        <a class="nav-link text-light" href="/en/guide.html">Photo guide</a>
+                    </li>
+                    <li class="nav-item">
+                    
+                        <a class="nav-link text-light" href="/en/data.html">Data</a>
+                    </li>
+                    <li class="nav-item">
+                    
+                        <a class="nav-link text-light" href="/en/about.html">About</a>
+                    </li></ul>
+            </nav>
+
+        </div>
+
+        <div class="col-md-5 mt-3 text-center">
+
+           
+            <p class="text-white text-md-end" id="footer-credits">
+                <small><em>built with</em>
+                    <a href="https://collectionbuilder.github.io/" title="CollectionBuilder">
+                        <img src="/en/assets/img/collectionbuilder-logo.png" class="img-fluid" alt="CollectionBuilder" >
+                    </a>
+                </small>
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-12 text-center pt-3 pb-1">
+        <p class="text-white">Last updated 2026</p>
+    </div>
+
+</footer>
+    <!-- Bootstrap bundle JS -->
+<script src="/en/assets/lib/bootstrap.bundle.min.js"></script>
+<!-- load other js -->
+<script src="/en/assets/lib/lazysizes.min.js" async></script>
+
+<!-- load leaflet dependencies -->
+<script src="/en/assets/lib/leaflet/leaflet.js"></script>
+<script src="/en/assets/lib/leaflet/Leaflet.fullscreen.min.js"></script>
+<script src="/en/assets/lib/leaflet/fuse.min.js"></script>
+<script src="/en/assets/lib/leaflet/leaflet.fusesearch.js"></script>
+<script src="/en/assets/lib/leaflet/leaflet.markercluster.js"></script>
+<script src="/en/assets/lib/leaflet/leaflet.markercluster.freezable.js"></script>
+
+<script>
+(function(){
+    /* add collection map data */
+    var geodata = { "type": "FeatureCollection", "features": [ 
+    
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.027446,49.234765] }, "properties":
+    { 
+        "neighbourhood":"Renfrew-Collingwood","playground_count":"1",
+        "template": "record","title": "Aberdeen Park",
+        "id": "park234" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.024297,49.276348] }, "properties":
+    { 
+        "neighbourhood":"Hastings-Sunrise","playground_count":"2","subject":"Field Houses;Football Fields;Soccer Fields",
+        "template": "record","title": "Adanac Park",
+        "id": "park065" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.073822,49.269098] }, "properties":
+    { 
+        "neighbourhood":"Grandview-Woodland","playground_count":"1",
+        "template": "record","title": "Alice Townley Park",
+        "id": "park049" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.184543,49.261014] }, "properties":
+    { 
+        "neighbourhood":"Kitsilano","playground_count":"1","subject":"Tennis Courts",
+        "template": "record","title": "Almond Park",
+        "id": "park106" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.1055,49.278923] }, "properties":
+    { 
+        "neighbourhood":"Downtown","playground_count":"3","subject":"Basketball Courts;Field Hockey;Field Houses;Football Fields;Lighted Fields;Pickleball;Skateboard Parks;Soccer Fields;Softball;Tennis Courts;Ultimate Fields",
+        "template": "record","title": "Andy Livingstone Park",
+        "id": "park010" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.15525,49.249783] }, "properties":
+    { 
+        "neighbourhood":"Arbutus-Ridge","playground_count":"1",
+        "template": "record","title": "Arbutus Village Park",
+        "id": "park001" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.119435,49.210597] }, "properties":
+    { 
+        "neighbourhood":"Marpole","playground_count":"1",
+        "template": "record","title": "Ash Park",
+        "id": "park122" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.175247,49.244951] }, "properties":
+    { 
+        "neighbourhood":"Dunbar-Southlands","playground_count":"1","subject":"Dogs Off-Leash Areas;Lighted Fields;Rugby Fields;Running Tracks;Softball;Ultimate Fields;Wading Pool",
+        "template": "record","title": "Balaclava Park",
+        "id": "park034" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.051302,49.255546] }, "properties":
+    { 
+        "neighbourhood":"Renfrew-Collingwood","playground_count":"1","subject":"Baseball Diamonds;Field Hockey;Field Houses;Lighted Fields;Soccer Fields;Softball",
+        "template": "record","title": "Beaconsfield Park",
+        "id": "park148" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.057615,49.215075] }, "properties":
+    { 
+        "neighbourhood":"Victoria-Fraserview","playground_count":"1","subject":"Field Houses;Soccer Fields;Softball;Wading Pool",
+        "template": "record","title": "Bobolink Park",
+        "id": "park191" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.066461,49.247695] }, "properties":
+    { 
+        "neighbourhood":"Kensington-Cedar Cottage","playground_count":"1","subject":"Ball Hockey;Basketball Courts;Field Houses;Soccer Fields;Tennis Courts;Wading Pool",
+        "template": "record","title": "Brewers Park",
+        "id": "park079" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.237653,49.253753] }, "properties":
+    { 
+        "neighbourhood":"UBC","playground_count":"0","subject":"Water/Spray Parks","img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Brockhouse_Park_splash_pad%2C_UBC%2C_Vancouver%2C_2026-10_06.jpg/330px-Brockhouse_Park_splash_pad%2C_UBC%2C_Vancouver%2C_2026-10_06.jpg",
+        "template": "compound_object","alt": "The splash pad with shade sails on the left and the community centre behind, Brockhouse Park, UBC. People are pixelated.","title": "Brockhouse Park",
+        "id": "ubc-brockhouse" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.050513,49.291253] }, "properties":
+    { 
+        "neighbourhood":"Hastings-Sunrise","playground_count":"1","subject":"Field Houses;Tennis Courts;Wading Pool",
+        "template": "record","title": "Burrard View Park",
+        "id": "park067" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.102377,49.284942] }, "properties":
+    { 
+        "neighbourhood":"Downtown","playground_count":"2","subject":"Dogs Off-Leash Areas;Field Houses;Water/Spray Parks",
+        "template": "record","title": "CRAB Park at Portside",
+        "id": "park028" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.045363,49.286214] }, "properties":
+    { 
+        "neighbourhood":"Hastings-Sunrise","playground_count":"1",
+        "template": "record","title": "Callister Park",
+        "id": "park068" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.118370,49.221581] }, "properties":
+    { 
+        "neighbourhood":"Oakridge","playground_count":"1",
+        "template": "record","title": "Cambie Park",
+        "id": "park142" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.028792,49.244232] }, "properties":
+    { 
+        "neighbourhood":"Renfrew-Collingwood","playground_count":"1",
+        "template": "record","title": "Cariboo Park",
+        "id": "park149" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.030451,49.242002] }, "properties":
+    { 
+        "neighbourhood":"Renfrew-Collingwood","playground_count":"1",
+        "template": "record","title": "Carleton Park",
+        "id": "park150" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.171406,49.256555] }, "properties":
+    { 
+        "neighbourhood":"Arbutus-Ridge","playground_count":"1","subject":"Baseball Diamonds;Field Houses;Football Fields;Soccer Fields;Softball",
+        "template": "record","title": "Carnarvon Park",
+        "id": "park002" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.090850,49.266361] }, "properties":
+    { 
+        "neighbourhood":"Mount Pleasant","playground_count":"1",
+        "template": "record","title": "Carolina Park",
+        "id": "park238" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.097473,49.237598] }, "properties":
+    { 
+        "neighbourhood":"Riley Park","playground_count":"1",
+        "template": "record","title": "Cartier Park",
+        "id": "park162" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.076605,49.260807] }, "properties":
+    { 
+        "neighbourhood":"Kensington-Cedar Cottage","playground_count":"2","subject":"Ball Hockey;Basketball Courts;Pickleball",
+        "template": "record","title": "Cedar Cottage Park",
+        "id": "park080" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.192177,49.249092] }, "properties":
+    { 
+        "neighbourhood":"Dunbar-Southlands","playground_count":"1","subject":"Baseball Diamonds;Field Houses;Soccer Fields;Water/Spray Parks",
+        "template": "record","title": "Chaldecott Park",
+        "id": "park037" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.032545,49.215527] }, "properties":
+    { 
+        "neighbourhood":"Killarney","playground_count":"4","subject":"Community Centres;Pickleball;Soccer Fields;Softball;Tennis Courts",
+        "template": "record","title": "Champlain Heights Park",
+        "id": "park100" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.1242,49.266995] }, "properties":
+    { 
+        "neighbourhood":"Fairview","playground_count":"2","subject":"Dogs Off-Leash Areas;Soccer Fields;Tennis Courts",
+        "template": "record","title": "Charleson Park",
+        "id": "park043" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.083355,49.264901] }, "properties":
+    { 
+        "neighbourhood":"Mount Pleasant","playground_count":"1","subject":"Jogging Trails;Soccer Fields;Softball",
+        "template": "record","title": "China Creek North Park",
+        "id": "park133" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.072405,49.257142] }, "properties":
+    { 
+        "neighbourhood":"Kensington-Cedar Cottage","playground_count":"2","subject":"Ball Hockey;Basketball Courts;Soccer Fields;Softball;Tennis Courts",
+        "template": "record","title": "Clark Park",
+        "id": "park081" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.0509,49.270355] }, "properties":
+    { 
+        "neighbourhood":"Hastings-Sunrise","playground_count":"1","subject":"Baseball Diamonds;Lighted Fields;Soccer Fields;Wading Pool",
+        "template": "record","title": "Clinton Park",
+        "id": "park070" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.125606,49.289902] }, "properties":
+    { 
+        "neighbourhood":"Downtown","playground_count":"1","subject":"Community Halls",
+        "template": "record","title": "Coal Harbour Park",
+        "id": "park013" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.036887,49.237066] }, "properties":
+    { 
+        "neighbourhood":"Renfrew-Collingwood","playground_count":"1","subject":"Basketball Courts;Field Houses;Soccer Fields;Softball;Wading Pool",
+        "template": "record","title": "Collingwood Park",
+        "id": "park151" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.111978,49.231521] }, "properties":
+    { 
+        "neighbourhood":"Oakridge","playground_count":"1","subject":"Field Houses;Softball;Ultimate Fields;Wading Pool",
+        "template": "record","title": "Columbia Park",
+        "id": "park143" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.160025,49.262026] }, "properties":
+    { 
+        "neighbourhood":"Kitsilano","playground_count":"1","subject":"Community Centres;Cricket Pitches;Field Houses;Lighted Fields;Rinks;Rugby Fields;Soccer Fields;Softball;Water/Spray Parks",
+        "template": "record","title": "Connaught Park",
+        "id": "park108" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.1139,49.273253] }, "properties":
+    { 
+        "neighbourhood":"Downtown","playground_count":"1","subject":"Basketball Courts;Dogs Off-Leash Areas;Skateboard Parks",
+        "template": "record","title": "Coopers&#39; Park",
+        "id": "park014" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.102924,49.274415] }, "properties":
+    { 
+        "neighbourhood":"Downtown","playground_count":"1",
+        "template": "record","title": "Creekside Park",
+        "id": "park015" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.124145,49.272569] }, "properties":
+    { 
+        "neighbourhood":"Downtown","playground_count":"1","subject":"Basketball Courts;Soccer Fields;Tennis Courts",
+        "template": "record","title": "David Lam Park",
+        "id": "park016" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.152426,49.265808] }, "properties":
+    { 
+        "neighbourhood":"Kitsilano","playground_count":"1",
+        "template": "record","title": "Delamont Park",
+        "id": "park109" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.122225,49.252493] }, "properties":
+    { 
+        "neighbourhood":"South Cambie","playground_count":"2","subject":"Basketball Courts;Community Centres;Cricket Pitches;Jogging Trails;Soccer Fields;Softball;Wading Pool",
+        "template": "record","title": "Douglas Park",
+        "id": "park175" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.246303,49.258631] }, "properties":
+    { 
+        "neighbourhood":"UBC","playground_count":"1","img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Eagles_Park%2C_UBC%2C_Vancouver%2C_2026-10_01.jpg/330px-Eagles_Park%2C_UBC%2C_Vancouver%2C_2026-10_01.jpg",
+        "template": "compound_object","alt": "Eagles Park playground: two spring riders and a low play structure of curved panels, with benches behind. People are pixelated.","title": "Eagles Park",
+        "id": "ubc-eagles" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.047702,49.233476] }, "properties":
+    { 
+        "neighbourhood":"Renfrew-Collingwood","playground_count":"1","subject":"Jogging Trails;Soccer Fields;Softball",
+        "template": "record","title": "Earles Park",
+        "id": "park152" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.132836,49.205468] }, "properties":
+    { 
+        "neighbourhood":"Marpole","playground_count":"1",
+        "template": "record","title": "Ebisu Park",
+        "id": "park236" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.123995,49.276458] }, "properties":
+    { 
+        "neighbourhood":"Downtown","playground_count":"1","subject":"Dogs Off-Leash Areas",
+        "template": "record","title": "Emery Barnes Park",
+        "id": "park020" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.031631,49.256485] }, "properties":
+    { 
+        "neighbourhood":"Renfrew-Collingwood","playground_count":"2","subject":"Baseball Diamonds;Community Halls;Dogs Off-Leash Areas;Field Houses;Football Fields;Soccer Fields;Wading Pool",
+        "template": "record","title": "Falaise Park",
+        "id": "park153" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.028741,49.234046] }, "properties":
+    { 
+        "neighbourhood":"Renfrew-Collingwood","playground_count":"1",
+        "template": "record","title": "Foster Park",
+        "id": "park154" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.067572,49.215398] }, "properties":
+    { 
+        "neighbourhood":"Victoria-Fraserview","playground_count":"1","subject":"Soccer Fields",
+        "template": "record","title": "Fraserview Park",
+        "id": "park192" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.058845,49.268251] }, "properties":
+    { 
+        "neighbourhood":"Grandview-Woodland","playground_count":"1","subject":"Ball Hockey;Basketball Courts;Field Houses;Soccer Fields;Tennis Courts;Water/Spray Parks",
+        "template": "record","title": "Garden Park",
+        "id": "park051" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.058517,49.244757] }, "properties":
+    { 
+        "neighbourhood":"Kensington-Cedar Cottage","playground_count":"1","subject":"Ball Hockey;Ultimate Fields",
+        "template": "record","title": "General Brock Park",
+        "id": "park082" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.094228,49.212608] }, "properties":
+    { 
+        "neighbourhood":"Sunset","playground_count":"1","subject":"Dogs Off-Leash Areas;Ultimate Fields",
+        "template": "record","title": "George Park",
+        "id": "park184" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.128971,49.272099] }, "properties":
+    { 
+        "neighbourhood":"Downtown","playground_count":"1",
+        "template": "record","title": "George Wainborn Park",
+        "id": "park225" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.082823,49.249576] }, "properties":
+    { 
+        "neighbourhood":"Kensington-Cedar Cottage","playground_count":"1","subject":"Basketball Courts",
+        "template": "record","title": "Glen Park",
+        "id": "park083" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.071325,49.223379] }, "properties":
+    { 
+        "neighbourhood":"Victoria-Fraserview","playground_count":"1","subject":"Baseball Diamonds;Field Houses;Football Fields;Rugby Fields;Soccer Fields;Softball",
+        "template": "record","title": "Gordon Park",
+        "id": "park194" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.070469,49.273511] }, "properties":
+    { 
+        "neighbourhood":"Grandview-Woodland","playground_count":"1","subject":"Field Houses;Water/Spray Parks",
+        "template": "record","title": "Grandview Park",
+        "id": "park052" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.13754,49.267284] }, "properties":
+    { 
+        "neighbourhood":"Fairview","playground_count":"1","subject":"Tennis Courts",
+        "template": "record","title": "Granville Loop Park",
+        "id": "park045" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.142395,49.258105] }, "properties":
+    { 
+        "neighbourhood":"Fairview","playground_count":"1","subject":"Bowling Greens;Field Houses;Tennis Courts",
+        "template": "record","title": "Granville Park",
+        "id": "park044" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.084974,49.241136] }, "properties":
+    { 
+        "neighbourhood":"Kensington-Cedar Cottage","playground_count":"1","subject":"Ball Hockey;Basketball Courts;Tennis Courts;Wading Pool",
+        "template": "record","title": "Grays Park",
+        "id": "park084" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.101953,49.254082] }, "properties":
+    { 
+        "neighbourhood":"Riley Park","playground_count":"1",
+        "template": "record","title": "Grimmett Park",
+        "id": "park163" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.095837,49.263965] }, "properties":
+    { 
+        "neighbourhood":"Mount Pleasant","playground_count":"1","subject":"Tennis Courts",
+        "template": "record","title": "Guelph Park",
+        "id": "park136" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.038884,49.280637] }, "properties":
+    { 
+        "neighbourhood":"Hastings-Sunrise","playground_count":"2","subject":"Baseball Diamonds;Basketball Courts;Community Centres;Field Houses;Tennis Courts;Water/Spray Parks",
+        "template": "record","title": "Hastings Community Park",
+        "id": "park073" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.186689,49.27279] }, "properties":
+    { 
+        "neighbourhood":"West Point Grey","playground_count":"1",
+        "template": "record","title": "Hastings Mill Park",
+        "id": "park217" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.248192,49.258189] }, "properties":
+    { 
+        "neighbourhood":"UBC","playground_count":"2","img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_01.jpg/330px-Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_01.jpg",
+        "template": "compound_object","alt": "Hawthorn Park playground (north area): spring riders, a spring see-saw and a small slide tower in a wood-chip area.","title": "Hawthorn Park",
+        "id": "ubc-hawthorn" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.121103,49.254765] }, "properties":
+    { 
+        "neighbourhood":"South Cambie","playground_count":"1","subject":"Lighted Fields;Tennis Courts",
+        "template": "record","title": "Heather Park",
+        "id": "park177" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.108417,49.244734] }, "properties":
+    { 
+        "neighbourhood":"Riley Park","playground_count":"1","subject":"Baseball Diamonds;Field Houses;Jogging Trails;Rinks;Soccer Fields;Swimming Pools",
+        "template": "record","title": "Hillcrest Park",
+        "id": "park164" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.110533,49.270869] }, "properties":
+    { 
+        "neighbourhood":"Mount Pleasant","playground_count":"1","subject":"Dogs Off-Leash Areas",
+        "template": "record","title": "Hinge Park",
+        "id": "park240" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.063266,49.218698] }, "properties":
+    { 
+        "neighbourhood":"Victoria-Fraserview","playground_count":"1","subject":"Basketball Courts;Tennis Courts",
+        "template": "record","title": "Humm Park",
+        "id": "park195" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.247614,49.259281] }, "properties":
+    { 
+        "neighbourhood":"UBC","playground_count":"1","img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Jim_Taylor_Park%2C_UBC%2C_Vancouver%2C_2026-10_02.jpg/330px-Jim_Taylor_Park%2C_UBC%2C_Vancouver%2C_2026-10_02.jpg",
+        "template": "compound_object","alt": "Green spiral slide with a hooded top on the wooden play structure, Jim Taylor Park. People are pixelated.","title": "Jim Taylor Park",
+        "id": "ubc-jimtaylor" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.062242,49.255808] }, "properties":
+    { 
+        "neighbourhood":"Kensington-Cedar Cottage","playground_count":"2","subject":"Ball Hockey;Baseball Diamonds;Basketball Courts;Community Centres;Dogs Off-Leash Areas;Field Houses;Food Concessions;Jogging Trails;Lighted Fields;Pickleball;Picnic Sites;Rinks;Rugby Fields;Soccer Fields;Softball;Tennis Courts",
+        "template": "record","title": "John Hendry (Trout Lake) Park",
+        "id": "park085" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.108174,49.264334] }, "properties":
+    { 
+        "neighbourhood":"Mount Pleasant","playground_count":"1","subject":"Field Houses;Soccer Fields;Softball",
+        "template": "record","title": "Jonathan Rogers Park",
+        "id": "park137" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.067051,49.235945] }, "properties":
+    { 
+        "neighbourhood":"Kensington-Cedar Cottage","playground_count":"1","subject":"Dogs Off-Leash Areas;Field Houses;Soccer Fields",
+        "template": "record","title": "Jones Park",
+        "id": "park086" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.046012,49.264099] }, "properties":
+    { 
+        "neighbourhood":"Hastings-Sunrise","playground_count":"1","subject":"Tennis Courts",
+        "template": "record","title": "Kaslo Park",
+        "id": "park074" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.075308,49.238478] }, "properties":
+    { 
+        "neighbourhood":"Kensington-Cedar Cottage","playground_count":"1","subject":"Community Centres;Community Halls;Skateboard Parks;Soccer Fields;Softball;Swimming Pools",
+        "template": "record","title": "Kensington Park",
+        "id": "park087" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.158043,49.233094] }, "properties":
+    { 
+        "neighbourhood":"Kerrisdale","playground_count":"1","subject":"Community Centres;Swimming Pools",
+        "template": "record","title": "Kerrisdale Centennial Park",
+        "id": "park093" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.083992,49.380117] }, "properties":
+    { 
+        "neighbourhood":"North Vancouver","playground_count":"1","img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Kids_Tree_Canopy_Adventure%2C_Grouse_Mountain%2C_North_Vancouver%2C_2026-10_03.jpg/330px-Kids_Tree_Canopy_Adventure%2C_Grouse_Mountain%2C_North_Vancouver%2C_2026-10_03.jpg",
+        "template": "compound_object","alt": "Treehouse tower with a green tube slide running down the slope, and a net bridge on the right, Kids Tree Canopy Adventure, Grouse Mountain.","title": "Kids Tree Canopy Adventure",
+        "id": "grouse-canopy" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.04413,49.227998] }, "properties":
+    { 
+        "neighbourhood":"Killarney","playground_count":"2","subject":"Baseball Diamonds;Community Centres;Community Halls;Dogs Off-Leash Areas;Field Houses;Lighted Fields;Rinks;Running Tracks;Soccer Fields;Softball;Swimming Pools;Ultimate Fields;Wading Pool",
+        "template": "record","title": "Killarney Park",
+        "id": "park103" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.074674,49.247499] }, "properties":
+    { 
+        "neighbourhood":"Kensington-Cedar Cottage","playground_count":"1","subject":"Basketball Courts;Dogs Off-Leash Areas;Ultimate Fields",
+        "template": "record","title": "Kingcrest Park",
+        "id": "park088" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.153901,49.273431] }, "properties":
+    { 
+        "neighbourhood":"Kitsilano","playground_count":"1","subject":"Basketball Courts;Beaches;Food Concessions;Restaurants;Swimming Pools;Tennis Courts;Water/Spray Parks",
+        "template": "record","title": "Kitsilano Beach Park",
+        "id": "park112" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.11211,49.221371] }, "properties":
+    { 
+        "neighbourhood":"South Cambie","playground_count":"1","subject":"Golf Courses;Jogging Trails;Restaurants;Tennis Courts",
+        "template": "record","title": "Langara Golf Course",
+        "id": "park145" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.207284,49.273015] }, "properties":
+    { 
+        "neighbourhood":"West Point Grey","playground_count":"2","subject":"Beaches;Dogs Off-Leash Areas;Food Concessions;Picnic Sites",
+        "template": "record","title": "Locarno Park",
+        "id": "park219" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.098396,49.229748] }, "properties":
+    { 
+        "neighbourhood":"Sunset","playground_count":"1","subject":"Tennis Courts",
+        "template": "record","title": "MacDonald Park",
+        "id": "park185" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.088396,49.278838] }, "properties":
+    { 
+        "neighbourhood":"Strathcona","playground_count":"1","subject":"Field Houses;Softball;Water/Spray Parks",
+        "template": "record","title": "MacLean Park",
+        "id": "park179" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.107238,49.26158] }, "properties":
+    { 
+        "neighbourhood":"Mount Pleasant","playground_count":"1",
+        "template": "record","title": "Major Matthews Park",
+        "id": "park138" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.177304,49.232553] }, "properties":
+    { 
+        "neighbourhood":"Kerrisdale","playground_count":"1",
+        "template": "record","title": "Malkin Park",
+        "id": "park095" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.16013,49.223703] }, "properties":
+    { 
+        "neighbourhood":"Kerrisdale","playground_count":"1","subject":"Field Houses;Picnic Sites;Soccer Fields;Wading Pool",
+        "template": "record","title": "Maple Grove Park",
+        "id": "park096" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.138307,49.205507] }, "properties":
+    { 
+        "neighbourhood":"Marpole","playground_count":"1",
+        "template": "record","title": "Marpole Park",
+        "id": "park124" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.179732,49.268073] }, "properties":
+    { 
+        "neighbourhood":"Kitsilano","playground_count":"1","subject":"Field Houses;Soccer Fields;Softball;Tennis Courts",
+        "template": "record","title": "McBride Park",
+        "id": "park114" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.066601,49.265936] }, "properties":
+    { 
+        "neighbourhood":"Grandview-Woodland","playground_count":"1","subject":"Soccer Fields;Tennis Courts",
+        "template": "record","title": "McSpadden Park",
+        "id": "park054" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.085138,49.230901] }, "properties":
+    { 
+        "neighbourhood":"Sunset","playground_count":"1","subject":"Ball Hockey;Baseball Diamonds;Cricket Pitches;Field Hockey;Field Houses;Lacrosse Boxes;Lighted Fields;Pickleball;Picnic Sites;Running Tracks;Soccer Fields;Softball;Tennis Courts;Ultimate Fields",
+        "template": "record","title": "Memorial South Park",
+        "id": "park186" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.188166,49.243326] }, "properties":
+    { 
+        "neighbourhood":"Dunbar-Southlands","playground_count":"1","subject":"Baseball Diamonds;Basketball Courts;Bowling Greens;Community Centres;Field Houses;Soccer Fields;Tennis Courts",
+        "template": "record","title": "Memorial West Park",
+        "id": "park039" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.086219,49.215602] }, "properties":
+    { 
+        "neighbourhood":"Sunset","playground_count":"1","subject":"Community Halls;Field Houses;Soccer Fields;Tennis Courts",
+        "template": "record","title": "Moberly Park",
+        "id": "park187" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.130776,49.231291] }, "properties":
+    { 
+        "neighbourhood":"Oakridge","playground_count":"1","subject":"Field Houses;Soccer Fields;Softball",
+        "template": "record","title": "Montgomery Park",
+        "id": "park146" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.106743,49.25696] }, "properties":
+    { 
+        "neighbourhood":"Mount Pleasant","playground_count":"1","subject":"Basketball Courts;Skateboard Parks",
+        "template": "record","title": "Mount Pleasant Park",
+        "id": "park139" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.236261,49.251961] }, "properties":
+    { 
+        "neighbourhood":"UBC","playground_count":"1","img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Mundell_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_02.jpg/330px-Mundell_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_02.jpg",
+        "template": "compound_object","alt": "Play structure with slides and a curved crawl tunnel on wood-chip surfacing, Mundell Park playground, UBC. People are pixelated.","title": "Mundell Park",
+        "id": "ubc-mundell" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.057508,49.227724] }, "properties":
+    { 
+        "neighbourhood":"Victoria-Fraserview","playground_count":"1","subject":"Baseball Diamonds;Field Houses;Ultimate Fields;Wading Pool",
+        "template": "record","title": "Nanaimo Park",
+        "id": "park196" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.129558,49.282855] }, "properties":
+    { 
+        "neighbourhood":"West End","playground_count":"1","subject":"Dogs Off-Leash Areas",
+        "template": "record","title": "Nelson Park",
+        "id": "park203" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.037888,49.290122] }, "properties":
+    { 
+        "neighbourhood":"Hastings-Sunrise","playground_count":"2","subject":"Dogs Off-Leash Areas;Field Houses;Food Concessions;Picnic Sites;Soccer Fields;Swimming Pools",
+        "template": "record","title": "New Brighton Park",
+        "id": "park075" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.051061,49.237098] }, "properties":
+    { 
+        "neighbourhood":"Renfrew-Collingwood","playground_count":"1","subject":"Field Houses;Soccer Fields;Softball;Water/Spray Parks",
+        "template": "record","title": "Norquay Park",
+        "id": "park157" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.124134,49.238232] }, "properties":
+    { 
+        "neighbourhood":"South Cambie","playground_count":"1","subject":"Dogs Off-Leash Areas;Field Hockey;Jogging Trails;Soccer Fields;Ultimate Fields",
+        "template": "record","title": "Oak Meadows Park",
+        "id": "park228" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.128319,49.215497] }, "properties":
+    { 
+        "neighbourhood":"Marpole","playground_count":"1","subject":"Ball Hockey;Baseball Diamonds;Basketball Courts;Community Centres;Field Houses;Lighted Fields;Outdoor Roller Hockey Rinks;Soccer Fields;Softball;Tennis Courts;Water/Spray Parks",
+        "template": "record","title": "Oak Park",
+        "id": "park126" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.094313,49.282645] }, "properties":
+    { 
+        "neighbourhood":"Strathcona","playground_count":"1","subject":"Field Houses;Picnic Sites",
+        "template": "record","title": "Oppenheimer Park",
+        "id": "park180" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.062223,49.286172] }, "properties":
+    { 
+        "neighbourhood":"Grandview-Woodland","playground_count":"1",
+        "template": "record","title": "Oxford Park",
+        "id": "park056" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.058045,49.282533] }, "properties":
+    { 
+        "neighbourhood":"Grandview-Woodland","playground_count":"1","subject":"Basketball Courts;Dogs Off-Leash Areas;Field Houses;Pickleball;Picnic Sites;Tennis Courts;Water/Spray Parks",
+        "template": "record","title": "Pandora Park",
+        "id": "park057" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.059427,49.289555] }, "properties":
+    { 
+        "neighbourhood":"Hastings-Sunrise","playground_count":"1",
+        "template": "record","title": "Park Site on Trinity Street",
+        "id": "park061" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.097564,49.251572] }, "properties":
+    { 
+        "neighbourhood":"Renfrew-Collingwood","playground_count":"1",
+        "template": "record","title": "Price Park",
+        "id": "park158" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.097024,49.251692] }, "properties":
+    { 
+        "neighbourhood":"Riley Park","playground_count":"1","subject":"Field Houses;Soccer Fields;Water/Spray Parks",
+        "template": "record","title": "Prince Edward Park",
+        "id": "park166" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.155277,49.244462] }, "properties":
+    { 
+        "neighbourhood":"Arbutus-Ridge","playground_count":"1","subject":"Jogging Trails;Soccer Fields",
+        "template": "record","title": "Prince of Wales Park",
+        "id": "park003" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.148865,49.24369] }, "properties":
+    { 
+        "neighbourhood":"Arbutus-Ridge","playground_count":"1","subject":"Baseball Diamonds;Disc Golf Courses;Dogs Off-Leash Areas;Field Houses;Jogging Trails;Skateboard Parks;Soccer Fields",
+        "template": "record","title": "Quilchena Park",
+        "id": "park006" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.042896,49.252129] }, "properties":
+    { 
+        "neighbourhood":"Renfrew-Collingwood","playground_count":"1","subject":"Ball Hockey;Community Centres;Dogs Off-Leash Areas;Field Houses;Football Fields;Lacrosse Boxes;Lighted Fields;Softball;Swimming Pools;Wading Pool",
+        "template": "record","title": "Renfrew Community Park",
+        "id": "park159" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.104361,49.241987] }, "properties":
+    { 
+        "neighbourhood":"Riley Park","playground_count":"2","subject":"Baseball Diamonds;Basketball Courts;Community Centres;Field Houses;Soccer Fields",
+        "template": "record","title": "Riley Park",
+        "id": "park168" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.04575,49.205951] }, "properties":
+    { 
+        "neighbourhood":"Killarney","playground_count":"2","subject":"Basketball Courts;Picnic Sites;Tennis Courts;Ultimate Fields",
+        "template": "record","title": "Riverfront Park",
+        "id": "park197" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.147342,49.212238] }, "properties":
+    { 
+        "neighbourhood":"Marpole","playground_count":"1",
+        "template": "record","title": "Riverview Park",
+        "id": "park127" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.091798,49.258229] }, "properties":
+    { 
+        "neighbourhood":"Mount Pleasant","playground_count":"1","subject":"Ball Hockey;Basketball Courts;Field Houses;Soccer Fields;Tennis Courts;Wading Pool",
+        "template": "record","title": "Robson Park",
+        "id": "park140" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.082351,49.217276] }, "properties":
+    { 
+        "neighbourhood":"Sunset","playground_count":"1","subject":"Field Houses;Football Fields;Soccer Fields;Softball;Wading Pool",
+        "template": "record","title": "Ross Park",
+        "id": "park188" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.031384,49.271629] }, "properties":
+    { 
+        "neighbourhood":"Hastings-Sunrise","playground_count":"1","subject":"Field Houses;Football Fields;Golf Courses;Pickleball;Rugby Fields;Soccer Fields;Softball;Tennis Courts",
+        "template": "record","title": "Rupert Park",
+        "id": "park076" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.088968,49.263950] }, "properties":
+    { 
+        "neighbourhood":"Mount Pleasant","playground_count":"1",
+        "template": "record","title": "Sahalli Park",
+        "id": "park212" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.068203,49.277231] }, "properties":
+    { 
+        "neighbourhood":"Grandview-Woodland","playground_count":"1",
+        "template": "record","title": "Salsbury Park",
+        "id": "park058" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.141960658531,49.21978389371605] }, "properties":
+    { 
+        "neighbourhood":"Kerrisdale","playground_count":"1","subject":"Drinking Fountain",
+        "template": "record","title": "Shannon Mews",
+        "id": "park249" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.047574,49.243921] }, "properties":
+    { 
+        "neighbourhood":"Renfrew-Collingwood","playground_count":"1","subject":"Field Houses;Soccer Fields;Tennis Courts;Ultimate Fields;Wading Pool",
+        "template": "record","title": "Slocan Park",
+        "id": "park161" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.144307,49.302701] }, "properties":
+    { 
+        "neighbourhood":"West End","playground_count":"4","subject":"Bowling Greens;Cricket Pitches;Dogs Off-Leash Areas;Field Houses;Food Concessions;Golf Courses;Jogging Trails;Lighted Fields;Picnic Sites;Picnic Sites;Picnic Sites;Picnic Sites;Restaurants;Rugby Fields;Running Tracks;Softball;Swimming Pools;Tennis Courts;Water/Spray Parks",
+        "template": "record","title": "Stanley Park",
+        "id": "park206" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.087485,49.276983] }, "properties":
+    { 
+        "neighbourhood":"Strathcona","playground_count":"1",
+        "template": "record","title": "Strathcona Linear Park",
+        "id": "park182" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.084674,49.275276] }, "properties":
+    { 
+        "neighbourhood":"Strathcona","playground_count":"1","subject":"Baseball Diamonds;Basketball Courts;Dogs Off-Leash Areas;Field Houses;Running Tracks;Skateboard Parks;Soccer Fields;Softball;Tennis Courts",
+        "template": "record","title": "Strathcona Park",
+        "id": "park181" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.080752,49.254924] }, "properties":
+    { 
+        "neighbourhood":"Kensington-Cedar Cottage","playground_count":"1",
+        "template": "record","title": "Sunnyside Park",
+        "id": "park089" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.035037,49.266612] }, "properties":
+    { 
+        "neighbourhood":"Hastings-Sunrise","playground_count":"1","subject":"Baseball Diamonds;Community Halls;Dogs Off-Leash Areas;Field Houses;Soccer Fields;Wading Pool",
+        "template": "record","title": "Sunrise Park",
+        "id": "park077" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.096916,49.222561] }, "properties":
+    { 
+        "neighbourhood":"Sunset","playground_count":"1","subject":"Community Centres;Dogs Off-Leash Areas;Rinks;Soccer Fields",
+        "template": "record","title": "Sunset Park",
+        "id": "park189" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.169609,49.270068] }, "properties":
+    { 
+        "neighbourhood":"Kitsilano","playground_count":"1","subject":"Field Houses;Tennis Courts",
+        "template": "record","title": "Tatlow Park",
+        "id": "park119" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.098595,49.257091] }, "properties":
+    { 
+        "neighbourhood":"Mount Pleasant","playground_count":"1",
+        "template": "record","title": "Tea Swamp Park",
+        "id": "park141" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.069846,49.229752] }, "properties":
+    { 
+        "neighbourhood":"Victoria-Fraserview","playground_count":"1","subject":"Dogs Off-Leash Areas",
+        "template": "record","title": "Tecumseh Park",
+        "id": "park198" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.058646,49.278279] }, "properties":
+    { 
+        "neighbourhood":"Grandview-Woodland","playground_count":"1","subject":"Running Tracks;Soccer Fields;Softball;Swimming Pools",
+        "template": "record","title": "Templeton Park",
+        "id": "park060" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.028552,49.268829] }, "properties":
+    { 
+        "neighbourhood":"Hastings-Sunrise","playground_count":"1",
+        "template": "record","title": "Thunderbird Park",
+        "id": "park078" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.120571,49.228625] }, "properties":
+    { 
+        "neighbourhood":"Oakridge","playground_count":"1","subject":"Football Fields;Softball;Ultimate Fields",
+        "template": "record","title": "Tisdall Park",
+        "id": "park147" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.161879,49.25046] }, "properties":
+    { 
+        "neighbourhood":"Arbutus-Ridge","playground_count":"1","subject":"Baseball Diamonds;Cricket Pitches;Field Houses;Soccer Fields;Softball;Ultimate Fields",
+        "template": "record","title": "Trafalgar Park",
+        "id": "park008" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.093444,49.275061] }, "properties":
+    { 
+        "neighbourhood":"Strathcona","playground_count":"2","subject":"Field Hockey;Soccer Fields;Ultimate Fields",
+        "template": "record","title": "Trillium Park",
+        "id": "park245" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.06673,49.271694] }, "properties":
+    { 
+        "neighbourhood":"Grandview-Woodland","playground_count":"1",
+        "template": "record","title": "Victoria Park",
+        "id": "park062" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.072931,49.263034] }, "properties":
+    { 
+        "neighbourhood":"Grandview-Woodland","playground_count":"1",
+        "template": "record","title": "W.C. Shelly Park",
+        "id": "park063" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.231881,49.252133] }, "properties":
+    { 
+        "neighbourhood":"UBC","playground_count":"1","img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10-11_04.jpg/330px-Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10-11_04.jpg",
+        "template": "compound_object","alt": "The tube slide tower as a whole, from the front.","title": "Wesbrook Park",
+        "id": "ubc-wesbrook" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.204312,49.266301] }, "properties":
+    { 
+        "neighbourhood":"West Point Grey","playground_count":"1","subject":"Baseball Diamonds;Basketball Courts;Bowling Greens;Field Houses;Soccer Fields;Tennis Courts;Wading Pool",
+        "template": "record","title": "West Point Grey Park",
+        "id": "park221" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.214423,49.271852] }, "properties":
+    { 
+        "neighbourhood":"West Point Grey","playground_count":"1",
+        "template": "record","title": "Westmount Park",
+        "id": "park222" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.142733,49.206787] }, "properties":
+    { 
+        "neighbourhood":"Marpole","playground_count":"1","subject":"Basketball Courts",
+        "template": "record","title": "William Mackie Park",
+        "id": "park130" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.114024,49.215431] }, "properties":
+    { 
+        "neighbourhood":"Marpole","playground_count":"1","subject":"Field Houses;Football Fields;Rugby Fields;Softball;Ultimate Fields",
+        "template": "record","title": "Winona Park",
+        "id": "park131" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.073387,49.278526] }, "properties":
+    { 
+        "neighbourhood":"Grandview-Woodland","playground_count":"1","subject":"Soccer Fields;Softball;Wading Pool",
+        "template": "record","title": "Woodland Park",
+        "id": "park064" 
+    } }, 
+    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[-123.11862,49.28477] }, "properties":
+    { 
+        "neighbourhood":"Downtown","playground_count":"2",
+        "template": "record","title": "s??q?lxen?m&#39;ts&#39;exwts&#39;a?xwi7",
+        "id": "park248" 
+    } }
+    ]};
+
+    /* check for url parameters and setup initial view options */ 
+    let url = new URL(window.location);
+    const locationSearchParams = url.searchParams.get('location');
+    var mapCenter = locationSearchParams ? locationSearchParams.split(',') : [49.25, -123.12];
+    var mapZoom = locationSearchParams ? 16 : 12;
+    var markerFilter = url.searchParams.get('marker') ? url.searchParams.get('marker') : "";
+
+    /* init map */
+    var map = L.map('mapContainer');
+
+    /* add map layer options */
+    var Esri_WorldStreetMap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
+        attribution: 'Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom, 2012'
+    });
+    var Esri_NatGeoWorldMap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}', {
+        attribution: 'Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC',
+        maxZoom: 16
+    });
+    var Esri_WorldImagery = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+        attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+    });
+    var OpenStreetMap_Mapnik = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    });
+    /* add base map switcher */
+    var baseMaps = {
+        "Esri World StreetMap": Esri_WorldStreetMap,
+        "Esri National Geo": Esri_NatGeoWorldMap,
+        "Esri Imagery": Esri_WorldImagery,
+        "Open Street Map": OpenStreetMap_Mapnik
+    };
+    L.control.layers(baseMaps).addTo(map);
+    /* load base map */
+    Esri_WorldStreetMap.addTo(map);
+
+    
+    /* add search, https://github.com/naomap/leaflet-fusesearch */
+    var options = {
+        title: "Search Map Items",
+        placeholder: "Search map items...",
+        threshold: 0.35,
+        showResultFct: function(feature, container) {
+            var result = `<strong>${feature.properties.title}</strong><br>`;
+            
+            if(feature.properties["neighbourhood"]) { result += feature.properties["neighbourhood"] + `<br>`; }
+            
+            if(feature.properties["playground_count"]) { result += feature.properties["playground_count"] + `<br>`; }
+            
+            if(feature.properties["subject"]) { result += feature.properties["subject"] + `<br>`; }
+            
+            container.innerHTML = result;
+        }
+    };
+    var searchCtrl = L.control.fuseSearch(options);
+    searchCtrl.addTo(map);
+    searchCtrl.indexFeatures(geodata.features, ["title","neighbourhood","subject"]);
+
+    /* add fullscreen control */ 
+    map.addControl(new L.Control.Fullscreen());
+
+    
+    /* create cluster group */
+    var markers = L.markerClusterGroup({ 
+        maxClusterRadius: 25, 
+        singleMarkerMode: true,
+        iconCreateFunction: function(cluster) {
+            /* custom icon function, tweak default to add more alt text */
+            var childCount = cluster.getChildCount();
+            var csize;
+            if (childCount < 10) {
+                csize = 'small';
+            } else if (childCount < 100) {
+                csize = 'medium';
+            } else {
+                csize = 'large';
+            }
+            var c = ' marker-cluster-' + csize;
+            return new L.DivIcon({ html: '<div><span class="visually-hidden">' + csize +' cluster of </span><span>' + childCount + '</span><span class="visually-hidden"> items</span></div>', className: 'marker-cluster' + c, iconSize: new L.Point(40, 40) });
+        }
+        , removeOutsideVisibleBounds: false 
+    });
+
+    /* get icons function */ 
+    /* 
+    get a theme icon based on display_template or format 
+    return svg sprite
+*/
+function getIcon(objectTemplate,objectFormat,svgType) {
+    var iconTemplate, iconId, iconTitle;
+    if (objectTemplate && objectTemplate != "") {
+        iconTemplate = objectTemplate;
+    } else if (objectFormat && objectFormat != "") {
+        iconTemplate = objectFormat;
+    } else {
+        iconTemplate = ""
+    }
+    // choose icon
+    if (iconTemplate.includes("image")) {
+        iconId = "icon-image";
+        iconTitle = "image file icon";
+    } else if (iconTemplate.includes("pdf")) {
+        iconId = "icon-pdf";
+        iconTitle = "pdf file icon";
+    } else if (iconTemplate.includes("video")) {
+        iconId = "icon-video";
+        iconTitle = "video file icon";
+    } else if (iconTemplate.includes("audio")) {
+        iconId = "icon-audio";
+        iconTitle = "audio file icon";
+    } else if (iconTemplate.includes("panorama")) {
+        iconId = "icon-panorama";
+        iconTitle = "panorama file icon";
+    } else if (iconTemplate.includes("compound")) {
+        iconId = "icon-compound-object";
+        iconTitle = "compound object icon";
+    } else if (iconTemplate.includes("multiple")) {
+        iconId = "icon-multiple";
+        iconTitle = "multiple object icon";
+    } else if (iconTemplate.includes("record")) {
+        iconId = "icon-record";
+        iconTitle = "record object icon";
+    } else {
+        iconId = "icon-default";
+        iconTitle = "file icon";
+    }
+    if (svgType == "thumb") {
+        // svg sprite as thumb
+        return '<svg class="bi text-body img-fluid" fill="currentColor" role="img"><title>' + iconTitle + '</title><use href="/en/assets/css/cb-icons.svg#' + iconId + '"/></svg>';
+    } else if (svgType == "hidden") {
+        // svg as sprite with aria-hidden
+        return '<svg class="bi icon-sprite" aria-hidden="true"><use href="/en/assets/css/cb-icons.svg#' + iconId + '"/></svg>';
+    } else {
+        // svg as sprite
+        return '<svg class="bi icon-sprite" aria-label="' + iconTitle + '"><use href="/en/assets/css/cb-icons.svg#' + iconId + '"/></svg>';
+    }
+}
+
+
+    /* object popup function */
+    function objectPopups(feature, layer) {
+        /* bind feature for search */
+        feature.layer = layer;
+        // find item link
+        var itemHref = `/en/items/${ feature.properties.parent ? feature.properties.parent + ".html#" + feature.properties.id : feature.properties.id + ".html"}`;
+        // find image
+        var imgAlt = feature.properties.alt ? feature.properties.alt : feature.properties.title;
+        var thumbImg;
+        if (feature.properties.img) {
+            thumbImg = '<img class="map-thumb" src="' + feature.properties.img + '" alt="' + imgAlt + '">';
+        } else {
+            thumbImg = getIcon(feature.properties.template,feature.properties.format,"thumb")
+        }
+        // set up popup content
+        var popupTemplate = '<h2 class="h4"><a class="text-dark" href="' + itemHref + '">' +
+            feature.properties.title + '</a></h2><div class="text-center"><a href="' + itemHref + 
+            '" >' + thumbImg + '</a></div><p>';
+        
+        if (feature.properties["neighbourhood"]) {
+            popupTemplate += '<strong>Neighbourhood:</strong> ' + feature.properties["neighbourhood"] + '<br>'; 
+        }
+        
+        if (feature.properties["playground_count"]) {
+            popupTemplate += '<strong>Playgrounds:</strong> ' + feature.properties["playground_count"] + '<br>'; 
+        }
+        
+        if (feature.properties["subject"]) {
+            popupTemplate += '<strong>Other facilities:</strong> ' + feature.properties["subject"] + '<br>'; 
+        }
+        
+        popupTemplate += '</p><div class="text-center"><a class="btn btn-light" href="' + itemHref + '" >' + "View Item" + '</a></div>';
+        layer.bindPopup(popupTemplate);
+    }
+    function objectMarkers(feature,latlng) {
+        var marker = L.marker(latlng, {alt: feature.properties.title});
+        markers.addLayer(marker);
+        return marker;
+    }
+
+    /* add objects from geoJson features */
+    var mapFeatures = L.geoJson(geodata, {
+        onEachFeature: objectPopups,
+        pointToLayer: objectMarkers
+    });
+    map.addLayer(markers);
+
+    
+    /* if no location was specified in the URL query parameters, auto center the map */
+    if (locationSearchParams === null) {
+        const featureBounds = mapFeatures.getBounds()
+        if (featureBounds?.isValid()) {
+            map.fitBounds(featureBounds);
+        }
+    } else {
+        /* set map view based on URL parameters */
+        map.setView(mapCenter, mapZoom);
+    }
+    
+    
+    
+    /* uncluster when search is clicked */
+    document.querySelector('a.button').addEventListener("click", function() {
+        markers.disableClustering();
+    });
+    /* recluster when search is closed */
+    document.querySelector('a.close').addEventListener("click", function() {
+        markers.enableClustering();
+        document.querySelector('input.search-input').value = "";
+    });
+    
+    /* show popup if id in URL query */ 
+    if (markerFilter != "") {
+        
+        markers.eachLayer(layer => {
+            if (layer.feature.properties.id === markerFilter) {
+                /* uncluster clusters, then show */ 
+                if (markers.getVisibleParent(layer)["_childCount"]) {
+                    markers.getVisibleParent(layer).spiderfy();
+                } 
+                layer.openPopup();
+            }
+        });
+        
+    }
+
+})();
+
+</script>
+
+
+    <script>
+    // When the user scrolls down from the top of the document, show the button
+    window.onscroll = function () {
+        if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+            document.getElementById("scroll-to-top").style.display = "block";
+        } else {
+            document.getElementById("scroll-to-top").style.display = "none";
+        }
+    }
+</script>
+<a href="#maincontent" id="scroll-to-top" class="btn btn-link" title="Back to Top">
+    <span class="visually-hidden">Back to Top</span>
+    <svg class="bi icon-sprite" role="img" aria-label="Up Arrow">
+        <use href="/en/assets/css/cb-icons.svg#icon-back-to-top"/>
+    </svg>
+</a>
+  </body>
+</html>

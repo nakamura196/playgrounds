@@ -1,0 +1,281 @@
+{
+  "@context": [
+    "http://iiif.io/api/extension/navplace/context.json",
+    "http://iiif.io/api/presentation/3/context.json"
+  ],
+  "id": "https://play.ldas.jp/iiif/ubc-brockhouse.json",
+  "type": "Manifest",
+  "label": { "none": [ "Brockhouse Park" ] },
+  "summary": { "en": [ "Splash pad in Brockhouse Park (Wesbrook Village, UBC), next to the community centre: a round pad with boulders set in the concrete and ground spray nozzles, and a water-play channel lined with boulders, with a water wheel. Dry in October. No play structure was seen on the survey day. Not in the City of Vancouver open data; the position is where the survey photos were taken." ], "ja": [ "Brockhouse Park（UBC の Wesbrook Village）の水遊び場。コミュニティセンターの隣にある。コンクリートに岩を据えた丸い水遊び場で、床に噴水の吹き出し口がある。岩で縁取った水路があり、水車が付く。10 月は水が止まっている。調査の日に複合遊具は見当たらなかった。市のオープンデータには無く、位置は現地調査の写真を撮った地点。" ] },
+  "metadata": [
+    { "label": { "en": [ "Location" ], "ja": [ "所在地" ] }, "value": { "none": [ "Wesbrook Village, University of British Columbia, Vancouver, BC" ] } },
+    { "label": { "en": [ "Surveyed" ], "ja": [ "現地で確認した日" ] }, "value": { "none": [ "2026-10" ] } },
+    { "label": { "en": [ "Amenities" ], "ja": [ "設備" ] }, "value": { "en": [ "Drinking fountain; Shade sails; Open lawn; Carved boulder; Toy box" ], "ja": [ "水飲み場、日よけの布、芝生の広場、彫刻を施した岩、共用のおもちゃ箱" ] } },
+    { "label": { "en": [ "Play equipment" ], "ja": [ "遊具" ] }, "value": { "en": [ "Water Play Channel; Water Wheel; Ground Spray Nozzle" ], "ja": [ "水遊びの水路、水車、床の噴水口" ] } }
+  ],
+  "requiredStatement": {
+    "label": { "en": [ "Attribution" ], "ja": [ "クレジット" ] },
+    "value": { "en": [ "Photos: Satoru Nakamura, CC BY 4.0, via Wikimedia Commons" ], "ja": [ "写真: 中村 覚（CC BY 4.0、Wikimedia Commons 経由）" ] }
+  },
+  "rights": "http://creativecommons.org/licenses/by/4.0/",
+  "homepage": [
+    { "id": "https://play.ldas.jp/items/ubc-brockhouse.html", "type": "Text", "label": { "none": [ "Brockhouse Park" ] }, "format": "text/html" }
+  ],
+  "seeAlso": [
+    { "id": "https://play.ldas.jp/items/ubc-brockhouse.jsonld", "type": "Dataset", "format": "application/ld+json", "profile": "https://schema.org/" }
+  ],
+  "navPlace": {
+    "id": "https://play.ldas.jp/iiif/ubc-brockhouse.json/feature-collection/1",
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "id": "https://play.ldas.jp/iiif/ubc-brockhouse.json/feature/1",
+        "type": "Feature",
+        "properties": { "label": { "none": [ "Brockhouse Park" ] } },
+        "geometry": { "type": "Point", "coordinates": [ -123.237653, 49.253753 ] }
+      }
+    ]
+  },
+  "items": [{
+      "id": "https://play.ldas.jp/iiif/ubc-brockhouse.json/canvas/1",
+      "type": "Canvas",
+      "label": { "en": [ "Water-play channel lined with boulders" ], "ja": [ "岩で縁取った水遊びの水路" ] },
+      "summary": { "en": [ "Water-play channel lined with boulders, part of the splash pad in Brockhouse Park, UBC (dry, October). People are pixelated." ], "ja": [ "岩で縁取られた水遊びの水路。UBC の Brockhouse Park の水遊び場の一部（10 月、水は止まっている）。人にはモザイクをかけている。" ] },
+      "width": 4000,
+      "height": 3000,
+      "thumbnail": [ { "id": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Brockhouse_Park_splash_pad%2C_UBC%2C_Vancouver%2C_2026-10_01.jpg/330px-Brockhouse_Park_splash_pad%2C_UBC%2C_Vancouver%2C_2026-10_01.jpg", "type": "Image", "format": "image/jpeg" } ],
+      "homepage": [ { "id": "https://commons.wikimedia.org/wiki/File:Brockhouse_Park_splash_pad%2C_UBC%2C_Vancouver%2C_2026-10_01.jpg", "type": "Text", "label": { "en": [ "File page on Wikimedia Commons" ], "ja": [ "Wikimedia Commons のファイルのページ" ] }, "format": "text/html" } ],
+      "items": [
+        {
+          "id": "https://play.ldas.jp/iiif/ubc-brockhouse.json/canvas/1/page/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://play.ldas.jp/iiif/ubc-brockhouse.json/canvas/1/annotation/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Brockhouse_Park_splash_pad%2C_UBC%2C_Vancouver%2C_2026-10_01.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 4000,
+                "height": 3000
+              },
+              "target": "https://play.ldas.jp/iiif/ubc-brockhouse.json/canvas/1"
+            }
+          ]
+        }
+      ]
+    },{
+      "id": "https://play.ldas.jp/iiif/ubc-brockhouse.json/canvas/2",
+      "type": "Canvas",
+      "label": { "en": [ "The channel towards the splash pad" ], "ja": [ "水遊び場へ延びる水路" ] },
+      "summary": { "en": [ "The water-play channel running between boulders towards the splash pad, Brockhouse Park, UBC. People are pixelated." ], "ja": [ "岩の間を水遊び場のほうへ延びる水路。UBC の Brockhouse Park。人にはモザイクをかけている。" ] },
+      "width": 3000,
+      "height": 4000,
+      "thumbnail": [ { "id": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Brockhouse_Park_splash_pad%2C_UBC%2C_Vancouver%2C_2026-10_02.jpg/330px-Brockhouse_Park_splash_pad%2C_UBC%2C_Vancouver%2C_2026-10_02.jpg", "type": "Image", "format": "image/jpeg" } ],
+      "homepage": [ { "id": "https://commons.wikimedia.org/wiki/File:Brockhouse_Park_splash_pad%2C_UBC%2C_Vancouver%2C_2026-10_02.jpg", "type": "Text", "label": { "en": [ "File page on Wikimedia Commons" ], "ja": [ "Wikimedia Commons のファイルのページ" ] }, "format": "text/html" } ],
+      "items": [
+        {
+          "id": "https://play.ldas.jp/iiif/ubc-brockhouse.json/canvas/2/page/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://play.ldas.jp/iiif/ubc-brockhouse.json/canvas/2/annotation/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://upload.wikimedia.org/wikipedia/commons/9/98/Brockhouse_Park_splash_pad%2C_UBC%2C_Vancouver%2C_2026-10_02.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 3000,
+                "height": 4000
+              },
+              "target": "https://play.ldas.jp/iiif/ubc-brockhouse.json/canvas/2"
+            }
+          ]
+        }
+      ]
+    },{
+      "id": "https://play.ldas.jp/iiif/ubc-brockhouse.json/canvas/3",
+      "type": "Canvas",
+      "label": { "en": [ "Drinking fountain" ], "ja": [ "水飲み場" ] },
+      "summary": { "en": [ "Drinking fountain beside the path, Brockhouse Park, UBC." ], "ja": [ "小道の脇の水飲み場。UBC の Brockhouse Park。" ] },
+      "width": 3000,
+      "height": 4000,
+      "thumbnail": [ { "id": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Brockhouse_Park%2C_UBC%2C_Vancouver%2C_2026-10_03.jpg/330px-Brockhouse_Park%2C_UBC%2C_Vancouver%2C_2026-10_03.jpg", "type": "Image", "format": "image/jpeg" } ],
+      "homepage": [ { "id": "https://commons.wikimedia.org/wiki/File:Brockhouse_Park%2C_UBC%2C_Vancouver%2C_2026-10_03.jpg", "type": "Text", "label": { "en": [ "File page on Wikimedia Commons" ], "ja": [ "Wikimedia Commons のファイルのページ" ] }, "format": "text/html" } ],
+      "items": [
+        {
+          "id": "https://play.ldas.jp/iiif/ubc-brockhouse.json/canvas/3/page/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://play.ldas.jp/iiif/ubc-brockhouse.json/canvas/3/annotation/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://upload.wikimedia.org/wikipedia/commons/3/33/Brockhouse_Park%2C_UBC%2C_Vancouver%2C_2026-10_03.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 3000,
+                "height": 4000
+              },
+              "target": "https://play.ldas.jp/iiif/ubc-brockhouse.json/canvas/3"
+            }
+          ]
+        }
+      ]
+    },{
+      "id": "https://play.ldas.jp/iiif/ubc-brockhouse.json/canvas/4",
+      "type": "Canvas",
+      "label": { "en": [ "The round splash pad" ], "ja": [ "丸い水遊び場" ] },
+      "summary": { "en": [ "The round splash pad with boulders set in the concrete, Brockhouse Park, UBC (dry, October). People are pixelated." ], "ja": [ "コンクリートに岩を据えた丸い水遊び場。UBC の Brockhouse Park（10 月、水は止まっている）。人にはモザイクをかけている。" ] },
+      "width": 4000,
+      "height": 3000,
+      "thumbnail": [ { "id": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Brockhouse_Park_splash_pad%2C_UBC%2C_Vancouver%2C_2026-10_04.jpg/330px-Brockhouse_Park_splash_pad%2C_UBC%2C_Vancouver%2C_2026-10_04.jpg", "type": "Image", "format": "image/jpeg" } ],
+      "homepage": [ { "id": "https://commons.wikimedia.org/wiki/File:Brockhouse_Park_splash_pad%2C_UBC%2C_Vancouver%2C_2026-10_04.jpg", "type": "Text", "label": { "en": [ "File page on Wikimedia Commons" ], "ja": [ "Wikimedia Commons のファイルのページ" ] }, "format": "text/html" } ],
+      "items": [
+        {
+          "id": "https://play.ldas.jp/iiif/ubc-brockhouse.json/canvas/4/page/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://play.ldas.jp/iiif/ubc-brockhouse.json/canvas/4/annotation/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://upload.wikimedia.org/wikipedia/commons/2/27/Brockhouse_Park_splash_pad%2C_UBC%2C_Vancouver%2C_2026-10_04.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 4000,
+                "height": 3000
+              },
+              "target": "https://play.ldas.jp/iiif/ubc-brockhouse.json/canvas/4"
+            }
+          ]
+        }
+      ]
+    },{
+      "id": "https://play.ldas.jp/iiif/ubc-brockhouse.json/canvas/5",
+      "type": "Canvas",
+      "label": { "en": [ "Carved boulder" ], "ja": [ "彫刻を施した岩" ] },
+      "summary": { "en": [ "Carved boulder among grasses at the edge of the splash pad, Brockhouse Park, UBC." ], "ja": [ "水遊び場の縁の草の中にある、彫刻を施した岩。UBC の Brockhouse Park。" ] },
+      "width": 4000,
+      "height": 3000,
+      "thumbnail": [ { "id": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Brockhouse_Park%2C_UBC%2C_Vancouver%2C_2026-10_05.jpg/330px-Brockhouse_Park%2C_UBC%2C_Vancouver%2C_2026-10_05.jpg", "type": "Image", "format": "image/jpeg" } ],
+      "homepage": [ { "id": "https://commons.wikimedia.org/wiki/File:Brockhouse_Park%2C_UBC%2C_Vancouver%2C_2026-10_05.jpg", "type": "Text", "label": { "en": [ "File page on Wikimedia Commons" ], "ja": [ "Wikimedia Commons のファイルのページ" ] }, "format": "text/html" } ],
+      "items": [
+        {
+          "id": "https://play.ldas.jp/iiif/ubc-brockhouse.json/canvas/5/page/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://play.ldas.jp/iiif/ubc-brockhouse.json/canvas/5/annotation/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Brockhouse_Park%2C_UBC%2C_Vancouver%2C_2026-10_05.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 4000,
+                "height": 3000
+              },
+              "target": "https://play.ldas.jp/iiif/ubc-brockhouse.json/canvas/5"
+            }
+          ]
+        }
+      ]
+    },{
+      "id": "https://play.ldas.jp/iiif/ubc-brockhouse.json/canvas/6",
+      "type": "Canvas",
+      "label": { "en": [ "Splash pad, shade sails and the community centre" ], "ja": [ "水遊び場と日よけの布、コミュニティセンター" ] },
+      "summary": { "en": [ "The splash pad with shade sails on the left and the community centre behind, Brockhouse Park, UBC. People are pixelated." ], "ja": [ "水遊び場と、左の日よけの布、奥のコミュニティセンター。UBC の Brockhouse Park。人にはモザイクをかけている。" ] },
+      "width": 4000,
+      "height": 3000,
+      "thumbnail": [ { "id": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Brockhouse_Park_splash_pad%2C_UBC%2C_Vancouver%2C_2026-10_06.jpg/330px-Brockhouse_Park_splash_pad%2C_UBC%2C_Vancouver%2C_2026-10_06.jpg", "type": "Image", "format": "image/jpeg" } ],
+      "homepage": [ { "id": "https://commons.wikimedia.org/wiki/File:Brockhouse_Park_splash_pad%2C_UBC%2C_Vancouver%2C_2026-10_06.jpg", "type": "Text", "label": { "en": [ "File page on Wikimedia Commons" ], "ja": [ "Wikimedia Commons のファイルのページ" ] }, "format": "text/html" } ],
+      "items": [
+        {
+          "id": "https://play.ldas.jp/iiif/ubc-brockhouse.json/canvas/6/page/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://play.ldas.jp/iiif/ubc-brockhouse.json/canvas/6/annotation/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://upload.wikimedia.org/wikipedia/commons/3/32/Brockhouse_Park_splash_pad%2C_UBC%2C_Vancouver%2C_2026-10_06.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 4000,
+                "height": 3000
+              },
+              "target": "https://play.ldas.jp/iiif/ubc-brockhouse.json/canvas/6"
+            }
+          ]
+        }
+      ]
+    },{
+      "id": "https://play.ldas.jp/iiif/ubc-brockhouse.json/canvas/7",
+      "type": "Canvas",
+      "label": { "en": [ "Ground spray nozzle" ], "ja": [ "床の噴水の吹き出し口" ] },
+      "summary": { "en": [ "Ground spray nozzle in the splash pad floor, Brockhouse Park, UBC." ], "ja": [ "水遊び場の床にある噴水の吹き出し口。UBC の Brockhouse Park。" ] },
+      "width": 3000,
+      "height": 4000,
+      "thumbnail": [ { "id": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Brockhouse_Park_splash_pad%2C_UBC%2C_Vancouver%2C_2026-10_07.jpg/330px-Brockhouse_Park_splash_pad%2C_UBC%2C_Vancouver%2C_2026-10_07.jpg", "type": "Image", "format": "image/jpeg" } ],
+      "homepage": [ { "id": "https://commons.wikimedia.org/wiki/File:Brockhouse_Park_splash_pad%2C_UBC%2C_Vancouver%2C_2026-10_07.jpg", "type": "Text", "label": { "en": [ "File page on Wikimedia Commons" ], "ja": [ "Wikimedia Commons のファイルのページ" ] }, "format": "text/html" } ],
+      "items": [
+        {
+          "id": "https://play.ldas.jp/iiif/ubc-brockhouse.json/canvas/7/page/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://play.ldas.jp/iiif/ubc-brockhouse.json/canvas/7/annotation/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Brockhouse_Park_splash_pad%2C_UBC%2C_Vancouver%2C_2026-10_07.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 3000,
+                "height": 4000
+              },
+              "target": "https://play.ldas.jp/iiif/ubc-brockhouse.json/canvas/7"
+            }
+          ]
+        }
+      ]
+    },{
+      "id": "https://play.ldas.jp/iiif/ubc-brockhouse.json/canvas/8",
+      "type": "Canvas",
+      "label": { "en": [ "Water wheel in the channel" ], "ja": [ "水路の水車" ] },
+      "summary": { "en": [ "Red water wheel in the water-play channel, turned by the flowing water, Brockhouse Park, UBC. People are pixelated." ], "ja": [ "水路にある赤い水車。流れる水で回る。UBC の Brockhouse Park。人にはモザイクをかけている。" ] },
+      "width": 4000,
+      "height": 3000,
+      "thumbnail": [ { "id": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Brockhouse_Park_splash_pad%2C_UBC%2C_Vancouver%2C_2026-10_08.jpg/330px-Brockhouse_Park_splash_pad%2C_UBC%2C_Vancouver%2C_2026-10_08.jpg", "type": "Image", "format": "image/jpeg" } ],
+      "homepage": [ { "id": "https://commons.wikimedia.org/wiki/File:Brockhouse_Park_splash_pad%2C_UBC%2C_Vancouver%2C_2026-10_08.jpg", "type": "Text", "label": { "en": [ "File page on Wikimedia Commons" ], "ja": [ "Wikimedia Commons のファイルのページ" ] }, "format": "text/html" } ],
+      "items": [
+        {
+          "id": "https://play.ldas.jp/iiif/ubc-brockhouse.json/canvas/8/page/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://play.ldas.jp/iiif/ubc-brockhouse.json/canvas/8/annotation/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Brockhouse_Park_splash_pad%2C_UBC%2C_Vancouver%2C_2026-10_08.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 4000,
+                "height": 3000
+              },
+              "target": "https://play.ldas.jp/iiif/ubc-brockhouse.json/canvas/8"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

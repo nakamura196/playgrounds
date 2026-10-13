@@ -1,0 +1,145 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "https://play.ldas.jp/items/park206",
+  "@type": "Park",
+  "name": "Stanley Park",
+  "description": "4 playgrounds in Stanley Park (West End). Equipment not yet surveyed.",
+  "identifier": "206",
+  "address": "2000 W Georgia Street, Vancouver, BC",
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 49.302701,
+    "longitude": -123.144307
+  },
+  "containedInPlace": {
+    "@type": "Place",
+    "name": "West End"
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "playground count",
+      "value": 4
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "area",
+      "value": 400.0,
+      "unitCode": "HAR",
+      "unitText": "ha"
+    }
+  ],
+  "amenityFeature": [
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Bowling Greens",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Cricket Pitches",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Dogs Off-Leash Areas",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Field Houses",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Food Concessions",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Golf Courses",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Jogging Trails",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Lighted Fields",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Picnic Sites",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Picnic Sites",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Picnic Sites",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Picnic Sites",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Restaurants",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Rugby Fields",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Running Tracks",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Softball",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Swimming Pools",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Tennis Courts",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Water/Spray Parks",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Washrooms",
+      "value": true
+    }
+  ],
+  "mainEntityOfPage": "https://play.ldas.jp/items/park206.html",
+  "isPartOf": { "@id": "https://play.ldas.jp/", "name": "バンクーバーの遊び場" },
+  "isBasedOn": [
+    "https://opendata.vancouver.ca/explore/dataset/parks/",
+    "https://opendata.vancouver.ca/explore/dataset/parks-facilities/"
+  ],
+  "license": "https://opendata.vancouver.ca/pages/licence/",
+  "creditText": "Contains information licensed under the Open Government Licence – Vancouver"
+}

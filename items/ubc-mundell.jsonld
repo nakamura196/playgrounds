@@ -1,0 +1,66 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "https://play.ldas.jp/items/ubc-mundell",
+  "@type": "Park",
+  "name": "Mundell Park",
+  "description": "1 playground in Mundell Park (Wesbrook Village, UBC), next to an open lawn. Not in the City of Vancouver open data; the position is where the survey photos were taken. The play structure was crowded on the survey day, so only part of the equipment has been recorded; to be photographed again.",
+  "identifier": null,
+  "address": "Wesbrook Village, University of British Columbia, Vancouver, BC",
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 49.251961,
+    "longitude": -123.236261
+  },
+  "containedInPlace": {
+    "@type": "Place",
+    "name": "UBC"
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "playground count",
+      "value": 1
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "equipment surveyed on",
+      "value": "2026-10"
+    }
+  ],
+  "amenityFeature": [
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Single Wave Slide",
+      "value": true,
+      "additionalType": { "@id": "https://play.ldas.jp/vocab/#wave-slide" }
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Crawl Tunnel",
+      "value": true,
+      "additionalType": { "@id": "https://play.ldas.jp/vocab/#crawl-tunnel" }
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Open lawn",
+      "value": true,
+      "additionalType": { "@id": "https://play.ldas.jp/vocab/#open-lawn" }
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Washrooms",
+      "value": false
+    }
+  ],
+  "mainEntityOfPage": "https://play.ldas.jp/items/ubc-mundell.html",
+  "isPartOf": { "@id": "https://play.ldas.jp/", "name": "バンクーバーの遊び場" },
+  "isBasedOn": [
+    "https://opendata.vancouver.ca/explore/dataset/parks/",
+    "https://opendata.vancouver.ca/explore/dataset/parks-facilities/"
+  ],
+  "license": "https://opendata.vancouver.ca/pages/licence/",
+  "creditText": "CC BY 4.0"
+}

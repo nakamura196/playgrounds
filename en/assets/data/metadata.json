@@ -1,0 +1,4013 @@
+{ "objects": [{ 
+        "objectid": "park234",
+        "title": "Aberdeen Park",
+        "parkid": "234",
+        "neighbourhood": "Renfrew-Collingwood",
+        "location": "3525 Foster Avenue, Vancouver, BC",
+        "latitude": "49.234765",
+        "longitude": "-123.027446",
+        "playground_count": "1",
+        "hectare": "1.0",
+        "washrooms": "N",
+        
+        
+        
+        "description": "1 playground in Aberdeen Park (Renfrew-Collingwood). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park234.html"
+    },
+    { 
+        "objectid": "park065",
+        "title": "Adanac Park",
+        "parkid": "65",
+        "neighbourhood": "Hastings-Sunrise",
+        "location": "1025 Boundary Road, Vancouver, BC",
+        "latitude": "49.276348",
+        "longitude": "-123.024297",
+        "playground_count": "2",
+        "hectare": "4.17",
+        "washrooms": "Y",
+        "subject": "Field Houses;Football Fields;Soccer Fields",
+        
+        
+        "description": "2 playgrounds in Adanac Park (Hastings-Sunrise). Not in the City's list of playgrounds; the position is from OpenStreetMap. Playground equipment confirmed from aerial imagery and review photos (2026-10). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11); position: OpenStreetMap (© OpenStreetMap contributors, ODbL)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver; position © OpenStreetMap contributors, ODbL",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park065.html"
+    },
+    { 
+        "objectid": "park049",
+        "title": "Alice Townley Park",
+        "parkid": "49",
+        "neighbourhood": "Grandview-Woodland",
+        "location": "1775 Woodland Drive, Vancouver, BC",
+        "latitude": "49.269098",
+        "longitude": "-123.073822",
+        "playground_count": "1",
+        "hectare": "0.22",
+        "washrooms": "N",
+        
+        
+        
+        "description": "1 playground in Alice Townley Park (Grandview-Woodland). Not in the City's list of playgrounds; the position is from OpenStreetMap. Playground equipment confirmed from aerial imagery and review photos (2026-10). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11); position: OpenStreetMap (© OpenStreetMap contributors, ODbL)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver; position © OpenStreetMap contributors, ODbL",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park049.html"
+    },
+    { 
+        "objectid": "park106",
+        "title": "Almond Park",
+        "parkid": "106",
+        "neighbourhood": "Kitsilano",
+        "location": "3600 W 12th Avenue, Vancouver, BC",
+        "latitude": "49.261014",
+        "longitude": "-123.184543",
+        "playground_count": "1",
+        "hectare": "1.61",
+        "washrooms": "N",
+        "subject": "Tennis Courts",
+        
+        
+        "description": "1 playground in Almond Park (Kitsilano). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park106.html"
+    },
+    { 
+        "objectid": "park010",
+        "title": "Andy Livingstone Park",
+        "parkid": "10",
+        "neighbourhood": "Downtown",
+        "location": "89 Expo Boulevard, Vancouver, BC",
+        "latitude": "49.278923",
+        "longitude": "-123.1055",
+        "playground_count": "3",
+        "hectare": "4.21",
+        "washrooms": "Y",
+        "subject": "Basketball Courts;Field Hockey;Field Houses;Football Fields;Lighted Fields;Pickleball;Skateboard Parks;Soccer Fields;Softball;Tennis Courts;Ultimate Fields",
+        
+        
+        "description": "3 playgrounds in Andy Livingstone Park (Downtown). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park010.html"
+    },
+    { 
+        "objectid": "park001",
+        "title": "Arbutus Village Park",
+        "parkid": "1",
+        "neighbourhood": "Arbutus-Ridge",
+        "location": "4202 Valley Drive, Vancouver, BC",
+        "latitude": "49.249783",
+        "longitude": "-123.15525",
+        "playground_count": "1",
+        "hectare": "1.41",
+        "washrooms": "N",
+        
+        
+        
+        "description": "1 playground in Arbutus Village Park (Arbutus-Ridge). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park001.html"
+    },
+    { 
+        "objectid": "park122",
+        "title": "Ash Park",
+        "parkid": "122",
+        "neighbourhood": "Marpole",
+        "location": "8288 Ash Street, Vancouver, BC",
+        "latitude": "49.210597",
+        "longitude": "-123.119435",
+        "playground_count": "1",
+        "hectare": "0.51",
+        "washrooms": "N",
+        
+        
+        
+        "description": "1 playground in Ash Park (Marpole). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park122.html"
+    },
+    { 
+        "objectid": "park034",
+        "title": "Balaclava Park",
+        "parkid": "34",
+        "neighbourhood": "Dunbar-Southlands",
+        "location": "4594 Balaclava Street, Vancouver, BC",
+        "latitude": "49.244951",
+        "longitude": "-123.175247",
+        "playground_count": "1",
+        "hectare": "5.0",
+        "washrooms": "Y",
+        "subject": "Dogs Off-Leash Areas;Lighted Fields;Rugby Fields;Running Tracks;Softball;Ultimate Fields;Wading Pool",
+        
+        
+        "description": "1 playground in Balaclava Park (Dunbar-Southlands). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park034.html"
+    },
+    { 
+        "objectid": "park148",
+        "title": "Beaconsfield Park",
+        "parkid": "148",
+        "neighbourhood": "Renfrew-Collingwood",
+        "location": "3215 Slocan Street, Vancouver, BC",
+        "latitude": "49.255546",
+        "longitude": "-123.051302",
+        "playground_count": "1",
+        "hectare": "4.43",
+        "washrooms": "Y",
+        "subject": "Baseball Diamonds;Field Hockey;Field Houses;Lighted Fields;Soccer Fields;Softball",
+        
+        
+        "description": "1 playground in Beaconsfield Park (Renfrew-Collingwood). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park148.html"
+    },
+    { 
+        "objectid": "park191",
+        "title": "Bobolink Park",
+        "parkid": "191",
+        "neighbourhood": "Victoria-Fraserview",
+        "location": "2510 Hoylake Avenue, Vancouver, BC",
+        "latitude": "49.215075",
+        "longitude": "-123.057615",
+        "playground_count": "1",
+        "hectare": "3.82",
+        "washrooms": "Y",
+        "subject": "Field Houses;Soccer Fields;Softball;Wading Pool",
+        
+        
+        "description": "1 playground in Bobolink Park (Victoria-Fraserview). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park191.html"
+    },
+    { 
+        "objectid": "park079",
+        "title": "Brewers Park",
+        "parkid": "79",
+        "neighbourhood": "Kensington-Cedar Cottage",
+        "location": "4175 Victoria Drive, Vancouver, BC",
+        "latitude": "49.247695",
+        "longitude": "-123.066461",
+        "playground_count": "1",
+        "hectare": "1.38",
+        "washrooms": "Y",
+        "subject": "Ball Hockey;Basketball Courts;Field Houses;Soccer Fields;Tennis Courts;Wading Pool",
+        
+        
+        "description": "1 playground in Brewers Park (Kensington-Cedar Cottage). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park079.html"
+    },
+    { 
+        "objectid": "ubc-brockhouse",
+        "title": "Brockhouse Park",
+        
+        "neighbourhood": "UBC",
+        "location": "Wesbrook Village, University of British Columbia, Vancouver, BC",
+        "latitude": "49.253753",
+        "longitude": "-123.237653",
+        "playground_count": "0",
+        
+        
+        "subject": "Water/Spray Parks",
+        "equipment": "water-channel;water-wheel;ground-spray",
+        "surveyed": "2026-10",
+        "description": "Splash pad in Brockhouse Park (Wesbrook Village, UBC), next to the community centre: a round pad with boulders set in the concrete and ground spray nozzles, and a water-play channel lined with boulders, with a water wheel. Dry in October. No play structure was seen on the survey day. Not in the City of Vancouver open data; the position is where the survey photos were taken.",
+        "source": "Own survey",
+        "rights": "CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Brockhouse_Park_splash_pad%2C_UBC%2C_Vancouver%2C_2026-10_06.jpg/330px-Brockhouse_Park_splash_pad%2C_UBC%2C_Vancouver%2C_2026-10_06.jpg",
+        "object_location": "",
+        "reference_url": "/en/items/ubc-brockhouse.html"
+    },
+    { 
+        "objectid": "ubc-brockhouse-01",
+        "title": "Water-play channel lined with boulders",
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        "description": "Water-play channel lined with boulders, part of the splash pad in Brockhouse Park, UBC (dry, October). People are pixelated.",
+        
+        "rights": "Photo: Satoru Nakamura (Wikimedia Commons User:Satoru196), CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Brockhouse_Park_splash_pad%2C_UBC%2C_Vancouver%2C_2026-10_01.jpg/330px-Brockhouse_Park_splash_pad%2C_UBC%2C_Vancouver%2C_2026-10_01.jpg",
+        "object_location": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Brockhouse_Park_splash_pad%2C_UBC%2C_Vancouver%2C_2026-10_01.jpg",
+        "reference_url": "/en/items/ubc-brockhouse.html#ubc-brockhouse-01"
+    },
+    { 
+        "objectid": "ubc-brockhouse-02",
+        "title": "The channel towards the splash pad",
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        "description": "The water-play channel running between boulders towards the splash pad, Brockhouse Park, UBC. People are pixelated.",
+        
+        "rights": "Photo: Satoru Nakamura (Wikimedia Commons User:Satoru196), CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Brockhouse_Park_splash_pad%2C_UBC%2C_Vancouver%2C_2026-10_02.jpg/330px-Brockhouse_Park_splash_pad%2C_UBC%2C_Vancouver%2C_2026-10_02.jpg",
+        "object_location": "https://upload.wikimedia.org/wikipedia/commons/9/98/Brockhouse_Park_splash_pad%2C_UBC%2C_Vancouver%2C_2026-10_02.jpg",
+        "reference_url": "/en/items/ubc-brockhouse.html#ubc-brockhouse-02"
+    },
+    { 
+        "objectid": "ubc-brockhouse-03",
+        "title": "Drinking fountain",
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        "description": "Drinking fountain beside the path, Brockhouse Park, UBC.",
+        
+        "rights": "Photo: Satoru Nakamura (Wikimedia Commons User:Satoru196), CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Brockhouse_Park%2C_UBC%2C_Vancouver%2C_2026-10_03.jpg/330px-Brockhouse_Park%2C_UBC%2C_Vancouver%2C_2026-10_03.jpg",
+        "object_location": "https://upload.wikimedia.org/wikipedia/commons/3/33/Brockhouse_Park%2C_UBC%2C_Vancouver%2C_2026-10_03.jpg",
+        "reference_url": "/en/items/ubc-brockhouse.html#ubc-brockhouse-03"
+    },
+    { 
+        "objectid": "ubc-brockhouse-04",
+        "title": "The round splash pad",
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        "description": "The round splash pad with boulders set in the concrete, Brockhouse Park, UBC (dry, October). People are pixelated.",
+        
+        "rights": "Photo: Satoru Nakamura (Wikimedia Commons User:Satoru196), CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Brockhouse_Park_splash_pad%2C_UBC%2C_Vancouver%2C_2026-10_04.jpg/330px-Brockhouse_Park_splash_pad%2C_UBC%2C_Vancouver%2C_2026-10_04.jpg",
+        "object_location": "https://upload.wikimedia.org/wikipedia/commons/2/27/Brockhouse_Park_splash_pad%2C_UBC%2C_Vancouver%2C_2026-10_04.jpg",
+        "reference_url": "/en/items/ubc-brockhouse.html#ubc-brockhouse-04"
+    },
+    { 
+        "objectid": "ubc-brockhouse-05",
+        "title": "Carved boulder",
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        "description": "Carved boulder among grasses at the edge of the splash pad, Brockhouse Park, UBC.",
+        
+        "rights": "Photo: Satoru Nakamura (Wikimedia Commons User:Satoru196), CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Brockhouse_Park%2C_UBC%2C_Vancouver%2C_2026-10_05.jpg/330px-Brockhouse_Park%2C_UBC%2C_Vancouver%2C_2026-10_05.jpg",
+        "object_location": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Brockhouse_Park%2C_UBC%2C_Vancouver%2C_2026-10_05.jpg",
+        "reference_url": "/en/items/ubc-brockhouse.html#ubc-brockhouse-05"
+    },
+    { 
+        "objectid": "ubc-brockhouse-06",
+        "title": "Splash pad, shade sails and the community centre",
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        "description": "The splash pad with shade sails on the left and the community centre behind, Brockhouse Park, UBC. People are pixelated.",
+        
+        "rights": "Photo: Satoru Nakamura (Wikimedia Commons User:Satoru196), CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Brockhouse_Park_splash_pad%2C_UBC%2C_Vancouver%2C_2026-10_06.jpg/330px-Brockhouse_Park_splash_pad%2C_UBC%2C_Vancouver%2C_2026-10_06.jpg",
+        "object_location": "https://upload.wikimedia.org/wikipedia/commons/3/32/Brockhouse_Park_splash_pad%2C_UBC%2C_Vancouver%2C_2026-10_06.jpg",
+        "reference_url": "/en/items/ubc-brockhouse.html#ubc-brockhouse-06"
+    },
+    { 
+        "objectid": "ubc-brockhouse-07",
+        "title": "Ground spray nozzle",
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        "description": "Ground spray nozzle in the splash pad floor, Brockhouse Park, UBC.",
+        
+        "rights": "Photo: Satoru Nakamura (Wikimedia Commons User:Satoru196), CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Brockhouse_Park_splash_pad%2C_UBC%2C_Vancouver%2C_2026-10_07.jpg/330px-Brockhouse_Park_splash_pad%2C_UBC%2C_Vancouver%2C_2026-10_07.jpg",
+        "object_location": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Brockhouse_Park_splash_pad%2C_UBC%2C_Vancouver%2C_2026-10_07.jpg",
+        "reference_url": "/en/items/ubc-brockhouse.html#ubc-brockhouse-07"
+    },
+    { 
+        "objectid": "ubc-brockhouse-08",
+        "title": "Water wheel in the channel",
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        "description": "Red water wheel in the water-play channel, turned by the flowing water, Brockhouse Park, UBC. People are pixelated.",
+        
+        "rights": "Photo: Satoru Nakamura (Wikimedia Commons User:Satoru196), CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Brockhouse_Park_splash_pad%2C_UBC%2C_Vancouver%2C_2026-10_08.jpg/330px-Brockhouse_Park_splash_pad%2C_UBC%2C_Vancouver%2C_2026-10_08.jpg",
+        "object_location": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Brockhouse_Park_splash_pad%2C_UBC%2C_Vancouver%2C_2026-10_08.jpg",
+        "reference_url": "/en/items/ubc-brockhouse.html#ubc-brockhouse-08"
+    },
+    { 
+        "objectid": "park067",
+        "title": "Burrard View Park",
+        "parkid": "67",
+        "neighbourhood": "Hastings-Sunrise",
+        "location": "650 North Penticton Street, Vancouver, BC",
+        "latitude": "49.291253",
+        "longitude": "-123.050513",
+        "playground_count": "1",
+        "hectare": "2.76",
+        "washrooms": "Y",
+        "subject": "Field Houses;Tennis Courts;Wading Pool",
+        
+        
+        "description": "1 playground in Burrard View Park (Hastings-Sunrise). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park067.html"
+    },
+    { 
+        "objectid": "park028",
+        "title": "CRAB Park at Portside",
+        "parkid": "28",
+        "neighbourhood": "Downtown",
+        "location": "101 E Waterfront Road, Vancouver, BC",
+        "latitude": "49.284942",
+        "longitude": "-123.102377",
+        "playground_count": "2",
+        "hectare": "3.31",
+        "washrooms": "Y",
+        "subject": "Dogs Off-Leash Areas;Field Houses;Water/Spray Parks",
+        
+        
+        "description": "2 playgrounds in CRAB Park at Portside (Downtown). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park028.html"
+    },
+    { 
+        "objectid": "park068",
+        "title": "Callister Park",
+        "parkid": "68",
+        "neighbourhood": "Hastings-Sunrise",
+        "location": "2875 Oxford Street, Vancouver, BC",
+        "latitude": "49.286214",
+        "longitude": "-123.045363",
+        "playground_count": "1",
+        "hectare": "1.45",
+        "washrooms": "N",
+        
+        
+        
+        "description": "1 playground in Callister Park (Hastings-Sunrise). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park068.html"
+    },
+    { 
+        "objectid": "park142",
+        "title": "Cambie Park",
+        "parkid": "142",
+        "neighbourhood": "Oakridge",
+        "location": "500 W 54th Avenue, Vancouver, BC",
+        "latitude": "49.221581",
+        "longitude": "-123.118370",
+        "playground_count": "1",
+        "hectare": "0.93",
+        "washrooms": "N",
+        
+        
+        
+        "description": "1 playground in Cambie Park (Oakridge). Not in the City's list of playgrounds; the position is from OpenStreetMap. Playground equipment confirmed from aerial imagery and review photos (2026-10). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11); position: OpenStreetMap (© OpenStreetMap contributors, ODbL)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver; position © OpenStreetMap contributors, ODbL",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park142.html"
+    },
+    { 
+        "objectid": "park149",
+        "title": "Cariboo Park",
+        "parkid": "149",
+        "neighbourhood": "Renfrew-Collingwood",
+        "location": "3450 E 29th Avenue, Vancouver, BC",
+        "latitude": "49.244232",
+        "longitude": "-123.028792",
+        "playground_count": "1",
+        "hectare": "0.77",
+        "washrooms": "N",
+        
+        
+        
+        "description": "1 playground in Cariboo Park (Renfrew-Collingwood). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park149.html"
+    },
+    { 
+        "objectid": "park150",
+        "title": "Carleton Park",
+        "parkid": "150",
+        "neighbourhood": "Renfrew-Collingwood",
+        "location": "3450 Price Street, Vancouver, BC",
+        "latitude": "49.242002",
+        "longitude": "-123.030451",
+        "playground_count": "1",
+        "hectare": "0.68",
+        "washrooms": "N",
+        
+        
+        
+        "description": "1 playground in Carleton Park (Renfrew-Collingwood). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park150.html"
+    },
+    { 
+        "objectid": "park002",
+        "title": "Carnarvon Park",
+        "parkid": "2",
+        "neighbourhood": "Arbutus-Ridge",
+        "location": "2995 W 19th Avenue, Vancouver, BC",
+        "latitude": "49.256555",
+        "longitude": "-123.171406",
+        "playground_count": "1",
+        "hectare": "3.79",
+        "washrooms": "Y",
+        "subject": "Baseball Diamonds;Field Houses;Football Fields;Soccer Fields;Softball",
+        
+        
+        "description": "1 playground in Carnarvon Park (Arbutus-Ridge). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park002.html"
+    },
+    { 
+        "objectid": "park238",
+        "title": "Carolina Park",
+        "parkid": "238",
+        "neighbourhood": "Mount Pleasant",
+        "location": "2100 Carolina Street, Vancouver, BC",
+        "latitude": "49.266361",
+        "longitude": "-123.090850",
+        "playground_count": "1",
+        "hectare": "0.08",
+        "washrooms": "N",
+        
+        
+        
+        "description": "1 playground in Carolina Park (Mount Pleasant). Not in the City's list of playgrounds; the position is from OpenStreetMap. Playground equipment confirmed from aerial imagery and review photos (2026-10). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11); position: OpenStreetMap (© OpenStreetMap contributors, ODbL)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver; position © OpenStreetMap contributors, ODbL",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park238.html"
+    },
+    { 
+        "objectid": "park162",
+        "title": "Cartier Park",
+        "parkid": "162",
+        "neighbourhood": "Riley Park",
+        "location": "390 E 36th Avenue, Vancouver, BC",
+        "latitude": "49.237598",
+        "longitude": "-123.097473",
+        "playground_count": "1",
+        "hectare": "0.37",
+        "washrooms": "N",
+        
+        
+        
+        "description": "1 playground in Cartier Park (Riley Park). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park162.html"
+    },
+    { 
+        "objectid": "park080",
+        "title": "Cedar Cottage Park",
+        "parkid": "80",
+        "neighbourhood": "Kensington-Cedar Cottage",
+        "location": "2650 Clark Drive, Vancouver, BC",
+        "latitude": "49.260807",
+        "longitude": "-123.076605",
+        "playground_count": "2",
+        "hectare": "0.47",
+        "washrooms": "N",
+        "subject": "Ball Hockey;Basketball Courts;Pickleball",
+        
+        
+        "description": "2 playgrounds in Cedar Cottage Park (Kensington-Cedar Cottage). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park080.html"
+    },
+    { 
+        "objectid": "park037",
+        "title": "Chaldecott Park",
+        "parkid": "37",
+        "neighbourhood": "Dunbar-Southlands",
+        "location": "4175 Wallace Street, Vancouver, BC",
+        "latitude": "49.249092",
+        "longitude": "-123.192177",
+        "playground_count": "1",
+        "hectare": "3.45",
+        "washrooms": "Y",
+        "subject": "Baseball Diamonds;Field Houses;Soccer Fields;Water/Spray Parks",
+        
+        
+        "description": "1 playground in Chaldecott Park (Dunbar-Southlands). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park037.html"
+    },
+    { 
+        "objectid": "park100",
+        "title": "Champlain Heights Park",
+        "parkid": "100",
+        "neighbourhood": "Killarney",
+        "location": "3351 Maquinna Drive, Vancouver, BC",
+        "latitude": "49.215527",
+        "longitude": "-123.032545",
+        "playground_count": "4",
+        "hectare": "7.84",
+        "washrooms": "N",
+        "subject": "Community Centres;Pickleball;Soccer Fields;Softball;Tennis Courts",
+        
+        
+        "description": "4 playgrounds in Champlain Heights Park (Killarney). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park100.html"
+    },
+    { 
+        "objectid": "park043",
+        "title": "Charleson Park",
+        "parkid": "43",
+        "neighbourhood": "Fairview",
+        "location": "999 Charleson Street, Vancouver, BC",
+        "latitude": "49.266995",
+        "longitude": "-123.1242",
+        "playground_count": "2",
+        "hectare": "7.14",
+        "washrooms": "N",
+        "subject": "Dogs Off-Leash Areas;Soccer Fields;Tennis Courts",
+        
+        
+        "description": "2 playgrounds in Charleson Park (Fairview). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park043.html"
+    },
+    { 
+        "objectid": "park133",
+        "title": "China Creek North Park",
+        "parkid": "133",
+        "neighbourhood": "Mount Pleasant",
+        "location": "1001 E 7th Avenue, Vancouver, BC",
+        "latitude": "49.264901",
+        "longitude": "-123.083355",
+        "playground_count": "1",
+        "hectare": "3.16",
+        "washrooms": "N",
+        "subject": "Jogging Trails;Soccer Fields;Softball",
+        
+        
+        "description": "1 playground in China Creek North Park (Mount Pleasant). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park133.html"
+    },
+    { 
+        "objectid": "park081",
+        "title": "Clark Park",
+        "parkid": "81",
+        "neighbourhood": "Kensington-Cedar Cottage",
+        "location": "1500 E 14th Avenue, Vancouver, BC",
+        "latitude": "49.257142",
+        "longitude": "-123.072405",
+        "playground_count": "2",
+        "hectare": "4.28",
+        "washrooms": "N",
+        "subject": "Ball Hockey;Basketball Courts;Soccer Fields;Softball;Tennis Courts",
+        
+        
+        "description": "2 playgrounds in Clark Park (Kensington-Cedar Cottage). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park081.html"
+    },
+    { 
+        "objectid": "park070",
+        "title": "Clinton Park",
+        "parkid": "70",
+        "neighbourhood": "Hastings-Sunrise",
+        "location": "2690 Grant Street, Vancouver, BC",
+        "latitude": "49.270355",
+        "longitude": "-123.0509",
+        "playground_count": "1",
+        "hectare": "3.04",
+        "washrooms": "Y",
+        "subject": "Baseball Diamonds;Lighted Fields;Soccer Fields;Wading Pool",
+        
+        
+        "description": "1 playground in Clinton Park (Hastings-Sunrise). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park070.html"
+    },
+    { 
+        "objectid": "park013",
+        "title": "Coal Harbour Park",
+        "parkid": "13",
+        "neighbourhood": "Downtown",
+        "location": "480 Broughton Street, Vancouver, BC",
+        "latitude": "49.289902",
+        "longitude": "-123.125606",
+        "playground_count": "1",
+        "hectare": "0.95",
+        "washrooms": "N",
+        "subject": "Community Halls",
+        
+        
+        "description": "1 playground in Coal Harbour Park (Downtown). Not in the City's list of playgrounds; the position is from OpenStreetMap. Playground equipment confirmed from aerial imagery and review photos (2026-10). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11); position: OpenStreetMap (© OpenStreetMap contributors, ODbL)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver; position © OpenStreetMap contributors, ODbL",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park013.html"
+    },
+    { 
+        "objectid": "park151",
+        "title": "Collingwood Park",
+        "parkid": "151",
+        "neighbourhood": "Renfrew-Collingwood",
+        "location": "5275 McKinnon Street, Vancouver, BC",
+        "latitude": "49.237066",
+        "longitude": "-123.036887",
+        "playground_count": "1",
+        "hectare": "1.27",
+        "washrooms": "Y",
+        "subject": "Basketball Courts;Field Houses;Soccer Fields;Softball;Wading Pool",
+        
+        
+        "description": "1 playground in Collingwood Park (Renfrew-Collingwood). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park151.html"
+    },
+    { 
+        "objectid": "park143",
+        "title": "Columbia Park",
+        "parkid": "143",
+        "neighbourhood": "Oakridge",
+        "location": "5908 Alberta Street, Vancouver, BC",
+        "latitude": "49.231521",
+        "longitude": "-123.111978",
+        "playground_count": "1",
+        "hectare": "2.78",
+        "washrooms": "Y",
+        "subject": "Field Houses;Softball;Ultimate Fields;Wading Pool",
+        
+        
+        "description": "1 playground in Columbia Park (Oakridge). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park143.html"
+    },
+    { 
+        "objectid": "park108",
+        "title": "Connaught Park",
+        "parkid": "108",
+        "neighbourhood": "Kitsilano",
+        "location": "2390 W 10th Avenue, Vancouver, BC",
+        "latitude": "49.262026",
+        "longitude": "-123.160025",
+        "playground_count": "1",
+        "hectare": "5.98",
+        "washrooms": "N",
+        "subject": "Community Centres;Cricket Pitches;Field Houses;Lighted Fields;Rinks;Rugby Fields;Soccer Fields;Softball;Water/Spray Parks",
+        
+        
+        "description": "1 playground in Connaught Park (Kitsilano). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park108.html"
+    },
+    { 
+        "objectid": "park014",
+        "title": "Coopers' Park",
+        "parkid": "14",
+        "neighbourhood": "Downtown",
+        "location": "1020 Marinaside Crescent, Vancouver, BC",
+        "latitude": "49.273253",
+        "longitude": "-123.1139",
+        "playground_count": "1",
+        "hectare": "1.71",
+        "washrooms": "N",
+        "subject": "Basketball Courts;Dogs Off-Leash Areas;Skateboard Parks",
+        
+        
+        "description": "1 playground in Coopers' Park (Downtown). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park014.html"
+    },
+    { 
+        "objectid": "park015",
+        "title": "Creekside Park",
+        "parkid": "15",
+        "neighbourhood": "Downtown",
+        "location": "1455 Quebec Street, Vancouver, BC",
+        "latitude": "49.274415",
+        "longitude": "-123.102924",
+        "playground_count": "1",
+        "hectare": "2.53",
+        "washrooms": "N",
+        
+        
+        
+        "description": "1 playground in Creekside Park (Downtown). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park015.html"
+    },
+    { 
+        "objectid": "park016",
+        "title": "David Lam Park",
+        "parkid": "16",
+        "neighbourhood": "Downtown",
+        "location": "1300 Pacific Boulevard, Vancouver, BC",
+        "latitude": "49.272569",
+        "longitude": "-123.124145",
+        "playground_count": "1",
+        "hectare": "4.34",
+        "washrooms": "Y",
+        "subject": "Basketball Courts;Soccer Fields;Tennis Courts",
+        
+        
+        "description": "1 playground in David Lam Park (Downtown). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park016.html"
+    },
+    { 
+        "objectid": "park109",
+        "title": "Delamont Park",
+        "parkid": "109",
+        "neighbourhood": "Kitsilano",
+        "location": "2091 W 7th Avenue, Vancouver, BC",
+        "latitude": "49.265808",
+        "longitude": "-123.152426",
+        "playground_count": "1",
+        "hectare": "0.22",
+        "washrooms": "N",
+        
+        
+        
+        "description": "1 playground in Delamont Park (Kitsilano). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park109.html"
+    },
+    { 
+        "objectid": "park175",
+        "title": "Douglas Park",
+        "parkid": "175",
+        "neighbourhood": "South Cambie",
+        "location": "801 W 22nd Avenue, Vancouver, BC",
+        "latitude": "49.252493",
+        "longitude": "-123.122225",
+        "playground_count": "2",
+        "hectare": "5.32",
+        "washrooms": "N",
+        "subject": "Basketball Courts;Community Centres;Cricket Pitches;Jogging Trails;Soccer Fields;Softball;Wading Pool",
+        
+        
+        "description": "2 playgrounds in Douglas Park (South Cambie). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park175.html"
+    },
+    { 
+        "objectid": "ubc-eagles",
+        "title": "Eagles Park",
+        
+        "neighbourhood": "UBC",
+        "location": "University of British Columbia, Vancouver, BC",
+        "latitude": "49.258631",
+        "longitude": "-123.246303",
+        "playground_count": "1",
+        
+        
+        
+        "equipment": "spring-rider",
+        "surveyed": "2026-10",
+        "description": "1 small playground in Eagles Park (UBC) for young children: two spring riders and a low play structure of curved panels with peepholes. Not in the City of Vancouver open data; the position is where the survey photos were taken.",
+        "source": "Own survey",
+        "rights": "CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Eagles_Park%2C_UBC%2C_Vancouver%2C_2026-10_01.jpg/330px-Eagles_Park%2C_UBC%2C_Vancouver%2C_2026-10_01.jpg",
+        "object_location": "",
+        "reference_url": "/en/items/ubc-eagles.html"
+    },
+    { 
+        "objectid": "ubc-eagles-01",
+        "title": "The playground",
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        "description": "Eagles Park playground: two spring riders and a low play structure of curved panels, with benches behind. People are pixelated.",
+        
+        "rights": "Photo: Satoru Nakamura (Wikimedia Commons User:Satoru196), CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Eagles_Park%2C_UBC%2C_Vancouver%2C_2026-10_01.jpg/330px-Eagles_Park%2C_UBC%2C_Vancouver%2C_2026-10_01.jpg",
+        "object_location": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Eagles_Park%2C_UBC%2C_Vancouver%2C_2026-10_01.jpg",
+        "reference_url": "/en/items/ubc-eagles.html#ubc-eagles-01"
+    },
+    { 
+        "objectid": "ubc-eagles-02",
+        "title": "Yellow and red spring rider",
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        "description": "Yellow and red spring rider with a handle, Eagles Park.",
+        
+        "rights": "Photo: Satoru Nakamura (Wikimedia Commons User:Satoru196), CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Eagles_Park%2C_UBC%2C_Vancouver%2C_2026-10_02.jpg/330px-Eagles_Park%2C_UBC%2C_Vancouver%2C_2026-10_02.jpg",
+        "object_location": "https://upload.wikimedia.org/wikipedia/commons/8/82/Eagles_Park%2C_UBC%2C_Vancouver%2C_2026-10_02.jpg",
+        "reference_url": "/en/items/ubc-eagles.html#ubc-eagles-02"
+    },
+    { 
+        "objectid": "ubc-eagles-03",
+        "title": "Low play structure of curved panels",
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        "description": "Low play structure for small children: curved red panels with peepholes around a round deck, a tall pole in the middle and a small blue and yellow side section, Eagles Park.",
+        
+        "rights": "Photo: Satoru Nakamura (Wikimedia Commons User:Satoru196), CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Eagles_Park%2C_UBC%2C_Vancouver%2C_2026-10_03.jpg/330px-Eagles_Park%2C_UBC%2C_Vancouver%2C_2026-10_03.jpg",
+        "object_location": "https://upload.wikimedia.org/wikipedia/commons/d/df/Eagles_Park%2C_UBC%2C_Vancouver%2C_2026-10_03.jpg",
+        "reference_url": "/en/items/ubc-eagles.html#ubc-eagles-03"
+    },
+    { 
+        "objectid": "ubc-eagles-04",
+        "title": "Red and navy spring rider",
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        "description": "Red and navy spring rider with a handle, Eagles Park.",
+        
+        "rights": "Photo: Satoru Nakamura (Wikimedia Commons User:Satoru196), CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Eagles_Park%2C_UBC%2C_Vancouver%2C_2026-10_04.jpg/330px-Eagles_Park%2C_UBC%2C_Vancouver%2C_2026-10_04.jpg",
+        "object_location": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Eagles_Park%2C_UBC%2C_Vancouver%2C_2026-10_04.jpg",
+        "reference_url": "/en/items/ubc-eagles.html#ubc-eagles-04"
+    },
+    { 
+        "objectid": "park152",
+        "title": "Earles Park",
+        "parkid": "152",
+        "neighbourhood": "Renfrew-Collingwood",
+        "location": "2801 E 41st Avenue, Vancouver, BC",
+        "latitude": "49.233476",
+        "longitude": "-123.047702",
+        "playground_count": "1",
+        "hectare": "1.59",
+        "washrooms": "N",
+        "subject": "Jogging Trails;Soccer Fields;Softball",
+        
+        
+        "description": "1 playground in Earles Park (Renfrew-Collingwood). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park152.html"
+    },
+    { 
+        "objectid": "park236",
+        "title": "Ebisu Park",
+        "parkid": "236",
+        "neighbourhood": "Marpole",
+        "location": "8805 Olser Street, Vancouver, BC",
+        "latitude": "49.205468",
+        "longitude": "-123.132836",
+        "playground_count": "1",
+        "hectare": "0.4",
+        "washrooms": "N",
+        
+        
+        
+        "description": "1 playground in Ebisu Park (Marpole). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park236.html"
+    },
+    { 
+        "objectid": "park020",
+        "title": "Emery Barnes Park",
+        "parkid": "20",
+        "neighbourhood": "Downtown",
+        "location": "1170 Richards Street, Vancouver, BC",
+        "latitude": "49.276458",
+        "longitude": "-123.123995",
+        "playground_count": "1",
+        "hectare": "0.85",
+        "washrooms": "N",
+        "subject": "Dogs Off-Leash Areas",
+        
+        
+        "description": "1 playground in Emery Barnes Park (Downtown). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park020.html"
+    },
+    { 
+        "objectid": "park153",
+        "title": "Falaise Park",
+        "parkid": "153",
+        "neighbourhood": "Renfrew-Collingwood",
+        "location": "3434 Falaise Avenue, Vancouver, BC",
+        "latitude": "49.256485",
+        "longitude": "-123.031631",
+        "playground_count": "2",
+        "hectare": "7.57",
+        "washrooms": "Y",
+        "subject": "Baseball Diamonds;Community Halls;Dogs Off-Leash Areas;Field Houses;Football Fields;Soccer Fields;Wading Pool",
+        
+        
+        "description": "2 playgrounds in Falaise Park (Renfrew-Collingwood). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park153.html"
+    },
+    { 
+        "objectid": "park154",
+        "title": "Foster Park",
+        "parkid": "154",
+        "neighbourhood": "Renfrew-Collingwood",
+        "location": "5501 Aberdeen Street, Vancouver, BC",
+        "latitude": "49.234046",
+        "longitude": "-123.028741",
+        "playground_count": "1",
+        "hectare": "0.29",
+        "washrooms": "N",
+        
+        
+        
+        "description": "1 playground in Foster Park (Renfrew-Collingwood). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park154.html"
+    },
+    { 
+        "objectid": "park192",
+        "title": "Fraserview Park",
+        "parkid": "192",
+        "neighbourhood": "Victoria-Fraserview",
+        "location": "7595 Victoria Drive, Vancouver, BC",
+        "latitude": "49.215398",
+        "longitude": "-123.067572",
+        "playground_count": "1",
+        "hectare": "1.27",
+        "washrooms": "N",
+        "subject": "Soccer Fields",
+        
+        
+        "description": "1 playground in Fraserview Park (Victoria-Fraserview). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park192.html"
+    },
+    { 
+        "objectid": "park051",
+        "title": "Garden Park",
+        "parkid": "51",
+        "neighbourhood": "Grandview-Woodland",
+        "location": "1851 Garden Drive, Vancouver, BC",
+        "latitude": "49.268251",
+        "longitude": "-123.058845",
+        "playground_count": "1",
+        "hectare": "0.97",
+        "washrooms": "Y",
+        "subject": "Ball Hockey;Basketball Courts;Field Houses;Soccer Fields;Tennis Courts;Water/Spray Parks",
+        
+        
+        "description": "1 playground in Garden Park (Grandview-Woodland). Not in the City's list of playgrounds; the position is from OpenStreetMap. Playground equipment confirmed from aerial imagery and review photos (2026-10). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11); position: OpenStreetMap (© OpenStreetMap contributors, ODbL)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver; position © OpenStreetMap contributors, ODbL",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park051.html"
+    },
+    { 
+        "objectid": "park082",
+        "title": "General Brock Park",
+        "parkid": "82",
+        "neighbourhood": "Kensington-Cedar Cottage",
+        "location": "2301 Brock Street, Vancouver, BC",
+        "latitude": "49.244757",
+        "longitude": "-123.058517",
+        "playground_count": "1",
+        "hectare": "2.11",
+        "washrooms": "N",
+        "subject": "Ball Hockey;Ultimate Fields",
+        
+        
+        "description": "1 playground in General Brock Park (Kensington-Cedar Cottage). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park082.html"
+    },
+    { 
+        "objectid": "park184",
+        "title": "George Park",
+        "parkid": "184",
+        "neighbourhood": "Sunset",
+        "location": "500 E 63rd Avenue, Vancouver, BC",
+        "latitude": "49.212608",
+        "longitude": "-123.094228",
+        "playground_count": "1",
+        "hectare": "1.43",
+        "washrooms": "N",
+        "subject": "Dogs Off-Leash Areas;Ultimate Fields",
+        
+        
+        "description": "1 playground in George Park (Sunset). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park184.html"
+    },
+    { 
+        "objectid": "park225",
+        "title": "George Wainborn Park",
+        "parkid": "225",
+        "neighbourhood": "Downtown",
+        "location": "450 Beach Crescent, Vancouver, BC",
+        "latitude": "49.272099",
+        "longitude": "-123.128971",
+        "playground_count": "1",
+        "hectare": "2.49",
+        "washrooms": "N",
+        
+        
+        
+        "description": "1 playground in George Wainborn Park (Downtown). Not in the City's list of playgrounds; the position is from OpenStreetMap. Playground equipment confirmed from aerial imagery and review photos (2026-10). A recent Google Maps review (2026-09) says the playground could not be found; not yet confirmed. A candidate for a site visit. Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11); position: OpenStreetMap (© OpenStreetMap contributors, ODbL)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver; position © OpenStreetMap contributors, ODbL",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park225.html"
+    },
+    { 
+        "objectid": "park083",
+        "title": "Glen Park",
+        "parkid": "83",
+        "neighbourhood": "Kensington-Cedar Cottage",
+        "location": "3999 Glen Drive, Vancouver, BC",
+        "latitude": "49.249576",
+        "longitude": "-123.082823",
+        "playground_count": "1",
+        "hectare": "1.09",
+        "washrooms": "N",
+        "subject": "Basketball Courts",
+        
+        
+        "description": "1 playground in Glen Park (Kensington-Cedar Cottage). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park083.html"
+    },
+    { 
+        "objectid": "park194",
+        "title": "Gordon Park",
+        "parkid": "194",
+        "neighbourhood": "Victoria-Fraserview",
+        "location": "6675 Commercial Street, Vancouver, BC",
+        "latitude": "49.223379",
+        "longitude": "-123.071325",
+        "playground_count": "1",
+        "hectare": "6.51",
+        "washrooms": "Y",
+        "subject": "Baseball Diamonds;Field Houses;Football Fields;Rugby Fields;Soccer Fields;Softball",
+        
+        
+        "description": "1 playground in Gordon Park (Victoria-Fraserview). Not in the City's list of playgrounds; the position is from OpenStreetMap. Playground equipment confirmed from aerial imagery and review photos (2026-10). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11); position: OpenStreetMap (© OpenStreetMap contributors, ODbL)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver; position © OpenStreetMap contributors, ODbL",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park194.html"
+    },
+    { 
+        "objectid": "park052",
+        "title": "Grandview Park",
+        "parkid": "52",
+        "neighbourhood": "Grandview-Woodland",
+        "location": "1255 Commercial Drive, Vancouver, BC",
+        "latitude": "49.273511",
+        "longitude": "-123.070469",
+        "playground_count": "1",
+        "hectare": "0.89",
+        "washrooms": "Y",
+        "subject": "Field Houses;Water/Spray Parks",
+        
+        
+        "description": "1 playground in Grandview Park (Grandview-Woodland). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park052.html"
+    },
+    { 
+        "objectid": "park045",
+        "title": "Granville Loop Park",
+        "parkid": "45",
+        "neighbourhood": "Fairview",
+        "location": "1435 W 5th Avenue, Vancouver, BC",
+        "latitude": "49.267284",
+        "longitude": "-123.13754",
+        "playground_count": "1",
+        "hectare": "1.05",
+        "washrooms": "N",
+        "subject": "Tennis Courts",
+        
+        
+        "description": "1 playground in Granville Loop Park (Fairview). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park045.html"
+    },
+    { 
+        "objectid": "park044",
+        "title": "Granville Park",
+        "parkid": "44",
+        "neighbourhood": "Fairview",
+        "location": "3001 Fir Street, Vancouver, BC",
+        "latitude": "49.258105",
+        "longitude": "-123.142395",
+        "playground_count": "1",
+        "hectare": "1.96",
+        "washrooms": "Y",
+        "subject": "Bowling Greens;Field Houses;Tennis Courts",
+        
+        
+        "description": "1 playground in Granville Park (Fairview). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park044.html"
+    },
+    { 
+        "objectid": "park084",
+        "title": "Grays Park",
+        "parkid": "84",
+        "neighbourhood": "Kensington-Cedar Cottage",
+        "location": "4850 St. Catherines Street, Vancouver, BC",
+        "latitude": "49.241136",
+        "longitude": "-123.084974",
+        "playground_count": "1",
+        "hectare": "1.61",
+        "washrooms": "Y",
+        "subject": "Ball Hockey;Basketball Courts;Tennis Courts;Wading Pool",
+        
+        
+        "description": "1 playground in Grays Park (Kensington-Cedar Cottage). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park084.html"
+    },
+    { 
+        "objectid": "park163",
+        "title": "Grimmett Park",
+        "parkid": "163",
+        "neighbourhood": "Riley Park",
+        "location": "169 E 19th Avenue, Vancouver, BC",
+        "latitude": "49.254082",
+        "longitude": "-123.101953",
+        "playground_count": "1",
+        "hectare": "0.24",
+        "washrooms": "N",
+        
+        
+        
+        "description": "1 playground in Grimmett Park (Riley Park). Not in the City's list of playgrounds; the position is from OpenStreetMap. Playground equipment confirmed from aerial imagery and review photos (2026-10). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11); position: OpenStreetMap (© OpenStreetMap contributors, ODbL)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver; position © OpenStreetMap contributors, ODbL",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park163.html"
+    },
+    { 
+        "objectid": "park136",
+        "title": "Guelph Park",
+        "parkid": "136",
+        "neighbourhood": "Mount Pleasant",
+        "location": "2390 Brunswick Street, Vancouver, BC",
+        "latitude": "49.263965",
+        "longitude": "-123.095837",
+        "playground_count": "1",
+        "hectare": "1.04",
+        "washrooms": "N",
+        "subject": "Tennis Courts",
+        
+        
+        "description": "1 playground in Guelph Park (Mount Pleasant). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park136.html"
+    },
+    { 
+        "objectid": "park073",
+        "title": "Hastings Community Park",
+        "parkid": "73",
+        "neighbourhood": "Hastings-Sunrise",
+        "location": "3000 E Pender Street, Vancouver, BC",
+        "latitude": "49.280637",
+        "longitude": "-123.038884",
+        "playground_count": "2",
+        "hectare": "4.19",
+        "washrooms": "Y",
+        "subject": "Baseball Diamonds;Basketball Courts;Community Centres;Field Houses;Tennis Courts;Water/Spray Parks",
+        
+        
+        "description": "2 playgrounds in Hastings Community Park (Hastings-Sunrise). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park073.html"
+    },
+    { 
+        "objectid": "park217",
+        "title": "Hastings Mill Park",
+        "parkid": "217",
+        "neighbourhood": "West Point Grey",
+        "location": "1575 Alma Street, Vancouver, BC",
+        "latitude": "49.27279",
+        "longitude": "-123.186689",
+        "playground_count": "1",
+        "hectare": "1.23",
+        "washrooms": "N",
+        
+        
+        
+        "description": "1 playground in Hastings Mill Park (West Point Grey). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park217.html"
+    },
+    { 
+        "objectid": "ubc-hawthorn",
+        "title": "Hawthorn Park",
+        
+        "neighbourhood": "UBC",
+        "location": "University of British Columbia, Vancouver, BC",
+        "latitude": "49.258189",
+        "longitude": "-123.248192",
+        "playground_count": "2",
+        
+        
+        
+        "equipment": "spring-rider;spring-seesaw;straight-slide;spinning-seat;standing-spinner",
+        "surveyed": "2026-10",
+        "description": "2 play areas in Hawthorn Park (UBC). North: spring riders, a spring seesaw and a small slide tower. South: a metal climbing frame with a slide, a bowl-shaped spinning seat and a standing spinner. Not in the City of Vancouver open data; the position is where the survey photos were taken.",
+        "source": "Own survey",
+        "rights": "CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_01.jpg/330px-Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_01.jpg",
+        "object_location": "",
+        "reference_url": "/en/items/ubc-hawthorn.html"
+    },
+    { 
+        "objectid": "ubc-hawthorn-01",
+        "title": "The north area",
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        "description": "Hawthorn Park playground (north area): spring riders, a spring see-saw and a small slide tower in a wood-chip area.",
+        
+        "rights": "Photo: Satoru Nakamura (Wikimedia Commons User:Satoru196), CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_01.jpg/330px-Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_01.jpg",
+        "object_location": "https://upload.wikimedia.org/wikipedia/commons/0/05/Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_01.jpg",
+        "reference_url": "/en/items/ubc-hawthorn.html#ubc-hawthorn-01"
+    },
+    { 
+        "objectid": "ubc-hawthorn-02",
+        "title": "Spring rider with handlebars",
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        "description": "Red and navy spring rider with handlebars, Hawthorn Park.",
+        
+        "rights": "Photo: Satoru Nakamura (Wikimedia Commons User:Satoru196), CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_02.jpg/330px-Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_02.jpg",
+        "object_location": "https://upload.wikimedia.org/wikipedia/commons/3/35/Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_02.jpg",
+        "reference_url": "/en/items/ubc-hawthorn.html#ubc-hawthorn-02"
+    },
+    { 
+        "objectid": "ubc-hawthorn-03",
+        "title": "Spring seesaw",
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        "description": "Spring see-saw: a long seat on two springs with a seat at each end and fish-shaped side panels, Hawthorn Park.",
+        
+        "rights": "Photo: Satoru Nakamura (Wikimedia Commons User:Satoru196), CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_03.jpg/330px-Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_03.jpg",
+        "object_location": "https://upload.wikimedia.org/wikipedia/commons/9/97/Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_03.jpg",
+        "reference_url": "/en/items/ubc-hawthorn.html#ubc-hawthorn-03"
+    },
+    { 
+        "objectid": "ubc-hawthorn-04",
+        "title": "Small slide tower",
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        "description": "Small slide tower: a red round panel, a blue roof panel, a yellow straight slide and low step platforms, Hawthorn Park.",
+        
+        "rights": "Photo: Satoru Nakamura (Wikimedia Commons User:Satoru196), CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_04.jpg/330px-Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_04.jpg",
+        "object_location": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_04.jpg",
+        "reference_url": "/en/items/ubc-hawthorn.html#ubc-hawthorn-04"
+    },
+    { 
+        "objectid": "ubc-hawthorn-05",
+        "title": "The south area",
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        "description": "Hawthorn Park playground (south area): a metal climbing frame with a wavy panel and a green spinning seat. People are pixelated.",
+        
+        "rights": "Photo: Satoru Nakamura (Wikimedia Commons User:Satoru196), CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_05.jpg/330px-Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_05.jpg",
+        "object_location": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_05.jpg",
+        "reference_url": "/en/items/ubc-hawthorn.html#ubc-hawthorn-05"
+    },
+    { 
+        "objectid": "ubc-hawthorn-06",
+        "title": "Bowl-shaped spinning seat",
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        "description": "Green bowl-shaped spinning seat, Hawthorn Park.",
+        
+        "rights": "Photo: Satoru Nakamura (Wikimedia Commons User:Satoru196), CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_06.jpg/330px-Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_06.jpg",
+        "object_location": "https://upload.wikimedia.org/wikipedia/commons/5/50/Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_06.jpg",
+        "reference_url": "/en/items/ubc-hawthorn.html#ubc-hawthorn-06"
+    },
+    { 
+        "objectid": "ubc-hawthorn-07",
+        "title": "Standing spinner",
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        "description": "Standing spinner: a curved pole with a foot plate at the bottom, Hawthorn Park.",
+        
+        "rights": "Photo: Satoru Nakamura (Wikimedia Commons User:Satoru196), CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_07.jpg/330px-Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_07.jpg",
+        "object_location": "https://upload.wikimedia.org/wikipedia/commons/d/df/Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_07.jpg",
+        "reference_url": "/en/items/ubc-hawthorn.html#ubc-hawthorn-07"
+    },
+    { 
+        "objectid": "ubc-hawthorn-08",
+        "title": "Metal climbing frame with a slide",
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        "description": "Metal climbing frame with arched ladders, a blue straight slide and a blue seat, Hawthorn Park.",
+        
+        "rights": "Photo: Satoru Nakamura (Wikimedia Commons User:Satoru196), CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_08.jpg/330px-Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_08.jpg",
+        "object_location": "https://upload.wikimedia.org/wikipedia/commons/8/86/Hawthorn_Park%2C_UBC%2C_Vancouver%2C_2026-10_08.jpg",
+        "reference_url": "/en/items/ubc-hawthorn.html#ubc-hawthorn-08"
+    },
+    { 
+        "objectid": "park177",
+        "title": "Heather Park",
+        "parkid": "177",
+        "neighbourhood": "South Cambie",
+        "location": "702 W 18th Avenue, Vancouver, BC",
+        "latitude": "49.254765",
+        "longitude": "-123.121103",
+        "playground_count": "1",
+        "hectare": "0.98",
+        "washrooms": "N",
+        "subject": "Lighted Fields;Tennis Courts",
+        
+        
+        "description": "1 playground in Heather Park (South Cambie). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park177.html"
+    },
+    { 
+        "objectid": "park164",
+        "title": "Hillcrest Park",
+        "parkid": "164",
+        "neighbourhood": "Riley Park",
+        "location": "4501 Clancy Loranger Way, Vancouver, BC",
+        "latitude": "49.244734",
+        "longitude": "-123.108417",
+        "playground_count": "1",
+        "hectare": "7.51",
+        "washrooms": "N",
+        "subject": "Baseball Diamonds;Field Houses;Jogging Trails;Rinks;Soccer Fields;Swimming Pools",
+        
+        
+        "description": "1 playground in Hillcrest Park (Riley Park). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park164.html"
+    },
+    { 
+        "objectid": "park240",
+        "title": "Hinge Park",
+        "parkid": "240",
+        "neighbourhood": "Mount Pleasant",
+        "location": "215 W 1st Avenue, Vancouver, BC",
+        "latitude": "49.270869",
+        "longitude": "-123.110533",
+        "playground_count": "1",
+        "hectare": "0.95",
+        "washrooms": "N",
+        "subject": "Dogs Off-Leash Areas",
+        
+        
+        "description": "1 playground in Hinge Park (Mount Pleasant). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park240.html"
+    },
+    { 
+        "objectid": "park195",
+        "title": "Humm Park",
+        "parkid": "195",
+        "neighbourhood": "Victoria-Fraserview",
+        "location": "7250 Humm Street, Vancouver, BC",
+        "latitude": "49.218698",
+        "longitude": "-123.063266",
+        "playground_count": "1",
+        "hectare": "0.47",
+        "washrooms": "N",
+        "subject": "Basketball Courts;Tennis Courts",
+        
+        
+        "description": "1 playground in Humm Park (Victoria-Fraserview). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park195.html"
+    },
+    { 
+        "objectid": "ubc-jimtaylor",
+        "title": "Jim Taylor Park",
+        
+        "neighbourhood": "UBC",
+        "location": "University of British Columbia, Vancouver, BC",
+        "latitude": "49.259281",
+        "longitude": "-123.247614",
+        "playground_count": "1",
+        
+        
+        
+        "equipment": "corkscrew-slide;cargo-net;coil-climber;climbing-wall;monkey-bars",
+        "surveyed": "2026-10",
+        "description": "1 playground in Jim Taylor Park (UBC): a wooden play structure with a green spiral slide, a sloping cargo net and a coil climber, a log climbing wall, and a wooden frame with monkey bars. Not in the City of Vancouver open data; the position is where the survey photos were taken.",
+        "source": "Own survey",
+        "rights": "CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Jim_Taylor_Park%2C_UBC%2C_Vancouver%2C_2026-10_02.jpg/330px-Jim_Taylor_Park%2C_UBC%2C_Vancouver%2C_2026-10_02.jpg",
+        "object_location": "",
+        "reference_url": "/en/items/ubc-jimtaylor.html"
+    },
+    { 
+        "objectid": "ubc-jimtaylor-01",
+        "title": "The playground from the path",
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        "description": "Jim Taylor Park playground from the path: a wooden play structure with a green spiral slide, and a frame with overhead bars on the left. People are pixelated.",
+        
+        "rights": "Photo: Satoru Nakamura (Wikimedia Commons User:Satoru196), CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Jim_Taylor_Park%2C_UBC%2C_Vancouver%2C_2026-10_01.jpg/330px-Jim_Taylor_Park%2C_UBC%2C_Vancouver%2C_2026-10_01.jpg",
+        "object_location": "https://upload.wikimedia.org/wikipedia/commons/2/22/Jim_Taylor_Park%2C_UBC%2C_Vancouver%2C_2026-10_01.jpg",
+        "reference_url": "/en/items/ubc-jimtaylor.html#ubc-jimtaylor-01"
+    },
+    { 
+        "objectid": "ubc-jimtaylor-02",
+        "title": "Spiral slide",
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        "description": "Green spiral slide with a hooded top on the wooden play structure, Jim Taylor Park. People are pixelated.",
+        
+        "rights": "Photo: Satoru Nakamura (Wikimedia Commons User:Satoru196), CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Jim_Taylor_Park%2C_UBC%2C_Vancouver%2C_2026-10_02.jpg/330px-Jim_Taylor_Park%2C_UBC%2C_Vancouver%2C_2026-10_02.jpg",
+        "object_location": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Jim_Taylor_Park%2C_UBC%2C_Vancouver%2C_2026-10_02.jpg",
+        "reference_url": "/en/items/ubc-jimtaylor.html#ubc-jimtaylor-02"
+    },
+    { 
+        "objectid": "ubc-jimtaylor-03",
+        "title": "Log climbing wall",
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        "description": "Climbing wall of upright logs with green handholds and a rope, Jim Taylor Park.",
+        
+        "rights": "Photo: Satoru Nakamura (Wikimedia Commons User:Satoru196), CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Jim_Taylor_Park%2C_UBC%2C_Vancouver%2C_2026-10_03.jpg/330px-Jim_Taylor_Park%2C_UBC%2C_Vancouver%2C_2026-10_03.jpg",
+        "object_location": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Jim_Taylor_Park%2C_UBC%2C_Vancouver%2C_2026-10_03.jpg",
+        "reference_url": "/en/items/ubc-jimtaylor.html#ubc-jimtaylor-03"
+    },
+    { 
+        "objectid": "ubc-jimtaylor-04",
+        "title": "Cargo net and coil climber",
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        "description": "Wooden play structure with a sloping cargo net, a coil climber on the left and a slide behind. People are pixelated.",
+        
+        "rights": "Photo: Satoru Nakamura (Wikimedia Commons User:Satoru196), CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Jim_Taylor_Park%2C_UBC%2C_Vancouver%2C_2026-10_04.jpg/330px-Jim_Taylor_Park%2C_UBC%2C_Vancouver%2C_2026-10_04.jpg",
+        "object_location": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Jim_Taylor_Park%2C_UBC%2C_Vancouver%2C_2026-10_04.jpg",
+        "reference_url": "/en/items/ubc-jimtaylor.html#ubc-jimtaylor-04"
+    },
+    { 
+        "objectid": "ubc-jimtaylor-05",
+        "title": "Monkey bars",
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        "description": "Wooden frame with green overhead bars (monkey bars) and a wooden step with a handrail at one end, Jim Taylor Park. People are pixelated.",
+        
+        "rights": "Photo: Satoru Nakamura (Wikimedia Commons User:Satoru196), CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Jim_Taylor_Park%2C_UBC%2C_Vancouver%2C_2026-10_05.jpg/330px-Jim_Taylor_Park%2C_UBC%2C_Vancouver%2C_2026-10_05.jpg",
+        "object_location": "https://upload.wikimedia.org/wikipedia/commons/5/57/Jim_Taylor_Park%2C_UBC%2C_Vancouver%2C_2026-10_05.jpg",
+        "reference_url": "/en/items/ubc-jimtaylor.html#ubc-jimtaylor-05"
+    },
+    { 
+        "objectid": "ubc-jimtaylor-06",
+        "title": "Monkey bars from the step end",
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        "description": "The same monkey bars in use, seen from the step end, Jim Taylor Park. People are pixelated.",
+        
+        "rights": "Photo: Satoru Nakamura (Wikimedia Commons User:Satoru196), CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Jim_Taylor_Park%2C_UBC%2C_Vancouver%2C_2026-10_06.jpg/330px-Jim_Taylor_Park%2C_UBC%2C_Vancouver%2C_2026-10_06.jpg",
+        "object_location": "https://upload.wikimedia.org/wikipedia/commons/1/10/Jim_Taylor_Park%2C_UBC%2C_Vancouver%2C_2026-10_06.jpg",
+        "reference_url": "/en/items/ubc-jimtaylor.html#ubc-jimtaylor-06"
+    },
+    { 
+        "objectid": "park085",
+        "title": "John Hendry (Trout Lake) Park",
+        "parkid": "85",
+        "neighbourhood": "Kensington-Cedar Cottage",
+        "location": "3300 Victoria Drive, Vancouver, BC",
+        "latitude": "49.255808",
+        "longitude": "-123.062242",
+        "playground_count": "2",
+        "hectare": "27.31",
+        "washrooms": "Y",
+        "subject": "Ball Hockey;Baseball Diamonds;Basketball Courts;Community Centres;Dogs Off-Leash Areas;Field Houses;Food Concessions;Jogging Trails;Lighted Fields;Pickleball;Picnic Sites;Rinks;Rugby Fields;Soccer Fields;Softball;Tennis Courts",
+        
+        
+        "description": "2 playgrounds in John Hendry (Trout Lake) Park (Kensington-Cedar Cottage). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park085.html"
+    },
+    { 
+        "objectid": "park137",
+        "title": "Jonathan Rogers Park",
+        "parkid": "137",
+        "neighbourhood": "Mount Pleasant",
+        "location": "110 W 7th Avenue, Vancouver, BC",
+        "latitude": "49.264334",
+        "longitude": "-123.108174",
+        "playground_count": "1",
+        "hectare": "1.4",
+        "washrooms": "Y",
+        "subject": "Field Houses;Soccer Fields;Softball",
+        
+        
+        "description": "1 playground in Jonathan Rogers Park (Mount Pleasant). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park137.html"
+    },
+    { 
+        "objectid": "park086",
+        "title": "Jones Park",
+        "parkid": "86",
+        "neighbourhood": "Kensington-Cedar Cottage",
+        "location": "5350 Commercial Street, Vancouver, BC",
+        "latitude": "49.235945",
+        "longitude": "-123.067051",
+        "playground_count": "1",
+        "hectare": "1.42",
+        "washrooms": "Y",
+        "subject": "Dogs Off-Leash Areas;Field Houses;Soccer Fields",
+        
+        
+        "description": "1 playground in Jones Park (Kensington-Cedar Cottage). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park086.html"
+    },
+    { 
+        "objectid": "park074",
+        "title": "Kaslo Park",
+        "parkid": "74",
+        "neighbourhood": "Hastings-Sunrise",
+        "location": "2851 E 7th Avenue, Vancouver, BC",
+        "latitude": "49.264099",
+        "longitude": "-123.046012",
+        "playground_count": "1",
+        "hectare": "0.45",
+        "washrooms": "N",
+        "subject": "Tennis Courts",
+        
+        
+        "description": "1 playground in Kaslo Park (Hastings-Sunrise). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park074.html"
+    },
+    { 
+        "objectid": "park087",
+        "title": "Kensington Park",
+        "parkid": "87",
+        "neighbourhood": "Kensington-Cedar Cottage",
+        "location": "5175 Dumfries Street, Vancouver, BC",
+        "latitude": "49.238478",
+        "longitude": "-123.075308",
+        "playground_count": "1",
+        "hectare": "5.84",
+        "washrooms": "N",
+        "subject": "Community Centres;Community Halls;Skateboard Parks;Soccer Fields;Softball;Swimming Pools",
+        
+        
+        "description": "1 playground in Kensington Park (Kensington-Cedar Cottage). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park087.html"
+    },
+    { 
+        "objectid": "park093",
+        "title": "Kerrisdale Centennial Park",
+        "parkid": "93",
+        "neighbourhood": "Kerrisdale",
+        "location": "5898 Yew Street, Vancouver, BC",
+        "latitude": "49.233094",
+        "longitude": "-123.158043",
+        "playground_count": "1",
+        "hectare": "1.53",
+        "washrooms": "N",
+        "subject": "Community Centres;Swimming Pools",
+        
+        
+        "description": "1 playground in Kerrisdale Centennial Park (Kerrisdale). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park093.html"
+    },
+    { 
+        "objectid": "grouse-canopy",
+        "title": "Kids Tree Canopy Adventure",
+        
+        "neighbourhood": "North Vancouver",
+        "location": "Grouse Mountain, District of North Vancouver, BC",
+        "latitude": "49.380117",
+        "longitude": "-123.083992",
+        "playground_count": "1",
+        
+        
+        
+        "equipment": "treehouse;rope-net-bridge;tube-slide;net-climbing-tube",
+        "surveyed": "2026-10",
+        "description": "Children's play area among the trees at the top of Grouse Mountain: treehouses joined by net bridges, a tube slide down the slope, a vertical climbing net and a wooden footbridge. The sign says it is for ages 3 and up and adult supervision is required. Outside the City of Vancouver (District of North Vancouver) and inside the paid area of the Grouse Mountain resort (reached by the Skyride), so it is an exception to the rule of recording only playgrounds open to everyone. Not in the City of Vancouver open data; the position is where the survey photos were taken.",
+        "source": "Own survey",
+        "rights": "CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Kids_Tree_Canopy_Adventure%2C_Grouse_Mountain%2C_North_Vancouver%2C_2026-10_03.jpg/330px-Kids_Tree_Canopy_Adventure%2C_Grouse_Mountain%2C_North_Vancouver%2C_2026-10_03.jpg",
+        "object_location": "",
+        "reference_url": "/en/items/grouse-canopy.html"
+    },
+    { 
+        "objectid": "grouse-canopy-01",
+        "title": "Entrance with the name sign",
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        "description": "Entrance of Kids Tree Canopy Adventure on Grouse Mountain: the name sign hung between the trees and a boardwalk leading to treehouses joined by net bridges.",
+        
+        "rights": "Photo: Satoru Nakamura (Wikimedia Commons User:Satoru196), CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Kids_Tree_Canopy_Adventure%2C_Grouse_Mountain%2C_North_Vancouver%2C_2026-10_01.jpg/330px-Kids_Tree_Canopy_Adventure%2C_Grouse_Mountain%2C_North_Vancouver%2C_2026-10_01.jpg",
+        "object_location": "https://upload.wikimedia.org/wikipedia/commons/4/46/Kids_Tree_Canopy_Adventure%2C_Grouse_Mountain%2C_North_Vancouver%2C_2026-10_01.jpg",
+        "reference_url": "/en/items/grouse-canopy.html#grouse-canopy-01"
+    },
+    { 
+        "objectid": "grouse-canopy-02",
+        "title": "Boardwalk into the course",
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        "description": "The boardwalk leading into Kids Tree Canopy Adventure, with treehouses and a net bridge among the trees, Grouse Mountain.",
+        
+        "rights": "Photo: Satoru Nakamura (Wikimedia Commons User:Satoru196), CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Kids_Tree_Canopy_Adventure%2C_Grouse_Mountain%2C_North_Vancouver%2C_2026-10_02.jpg/330px-Kids_Tree_Canopy_Adventure%2C_Grouse_Mountain%2C_North_Vancouver%2C_2026-10_02.jpg",
+        "object_location": "https://upload.wikimedia.org/wikipedia/commons/1/18/Kids_Tree_Canopy_Adventure%2C_Grouse_Mountain%2C_North_Vancouver%2C_2026-10_02.jpg",
+        "reference_url": "/en/items/grouse-canopy.html#grouse-canopy-02"
+    },
+    { 
+        "objectid": "grouse-canopy-03",
+        "title": "Treehouse tower with a tube slide",
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        "description": "Treehouse tower with a green tube slide running down the slope, and a net bridge on the right, Kids Tree Canopy Adventure, Grouse Mountain.",
+        
+        "rights": "Photo: Satoru Nakamura (Wikimedia Commons User:Satoru196), CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Kids_Tree_Canopy_Adventure%2C_Grouse_Mountain%2C_North_Vancouver%2C_2026-10_03.jpg/330px-Kids_Tree_Canopy_Adventure%2C_Grouse_Mountain%2C_North_Vancouver%2C_2026-10_03.jpg",
+        "object_location": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Kids_Tree_Canopy_Adventure%2C_Grouse_Mountain%2C_North_Vancouver%2C_2026-10_03.jpg",
+        "reference_url": "/en/items/grouse-canopy.html#grouse-canopy-03"
+    },
+    { 
+        "objectid": "grouse-canopy-04",
+        "title": "Treehouse and a blue net bridge",
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        "description": "A treehouse under a high net walkway, with a blue net bridge sloping up between the trees, Kids Tree Canopy Adventure, Grouse Mountain. People are pixelated.",
+        
+        "rights": "Photo: Satoru Nakamura (Wikimedia Commons User:Satoru196), CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Kids_Tree_Canopy_Adventure%2C_Grouse_Mountain%2C_North_Vancouver%2C_2026-10_04.jpg/330px-Kids_Tree_Canopy_Adventure%2C_Grouse_Mountain%2C_North_Vancouver%2C_2026-10_04.jpg",
+        "object_location": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Kids_Tree_Canopy_Adventure%2C_Grouse_Mountain%2C_North_Vancouver%2C_2026-10_04.jpg",
+        "reference_url": "/en/items/grouse-canopy.html#grouse-canopy-04"
+    },
+    { 
+        "objectid": "grouse-canopy-05",
+        "title": "Net bridges between the trees",
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        "description": "Net bridges strung between the trees, seen from below, with a treehouse on the right, Kids Tree Canopy Adventure, Grouse Mountain.",
+        
+        "rights": "Photo: Satoru Nakamura (Wikimedia Commons User:Satoru196), CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Kids_Tree_Canopy_Adventure%2C_Grouse_Mountain%2C_North_Vancouver%2C_2026-10_05.jpg/330px-Kids_Tree_Canopy_Adventure%2C_Grouse_Mountain%2C_North_Vancouver%2C_2026-10_05.jpg",
+        "object_location": "https://upload.wikimedia.org/wikipedia/commons/5/56/Kids_Tree_Canopy_Adventure%2C_Grouse_Mountain%2C_North_Vancouver%2C_2026-10_05.jpg",
+        "reference_url": "/en/items/grouse-canopy.html#grouse-canopy-05"
+    },
+    { 
+        "objectid": "grouse-canopy-06",
+        "title": "Net bridge to a treehouse",
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        "description": "A net bridge with net side walls leading to a treehouse, seen from below, Kids Tree Canopy Adventure, Grouse Mountain.",
+        
+        "rights": "Photo: Satoru Nakamura (Wikimedia Commons User:Satoru196), CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Kids_Tree_Canopy_Adventure%2C_Grouse_Mountain%2C_North_Vancouver%2C_2026-10_06.jpg/330px-Kids_Tree_Canopy_Adventure%2C_Grouse_Mountain%2C_North_Vancouver%2C_2026-10_06.jpg",
+        "object_location": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Kids_Tree_Canopy_Adventure%2C_Grouse_Mountain%2C_North_Vancouver%2C_2026-10_06.jpg",
+        "reference_url": "/en/items/grouse-canopy.html#grouse-canopy-06"
+    },
+    { 
+        "objectid": "grouse-canopy-07",
+        "title": "Treehouse high among the trees",
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        "description": "A treehouse and a blue net bridge high among the trees, seen from below, Kids Tree Canopy Adventure, Grouse Mountain. People are pixelated.",
+        
+        "rights": "Photo: Satoru Nakamura (Wikimedia Commons User:Satoru196), CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Kids_Tree_Canopy_Adventure%2C_Grouse_Mountain%2C_North_Vancouver%2C_2026-10_07.jpg/330px-Kids_Tree_Canopy_Adventure%2C_Grouse_Mountain%2C_North_Vancouver%2C_2026-10_07.jpg",
+        "object_location": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Kids_Tree_Canopy_Adventure%2C_Grouse_Mountain%2C_North_Vancouver%2C_2026-10_07.jpg",
+        "reference_url": "/en/items/grouse-canopy.html#grouse-canopy-07"
+    },
+    { 
+        "objectid": "grouse-canopy-08",
+        "title": "Vertical climbing net",
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        "description": "A vertical climbing net tube beside a treehouse, on a wooden deck with railings, Kids Tree Canopy Adventure, Grouse Mountain.",
+        
+        "rights": "Photo: Satoru Nakamura (Wikimedia Commons User:Satoru196), CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Kids_Tree_Canopy_Adventure%2C_Grouse_Mountain%2C_North_Vancouver%2C_2026-10_08.jpg/330px-Kids_Tree_Canopy_Adventure%2C_Grouse_Mountain%2C_North_Vancouver%2C_2026-10_08.jpg",
+        "object_location": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Kids_Tree_Canopy_Adventure%2C_Grouse_Mountain%2C_North_Vancouver%2C_2026-10_08.jpg",
+        "reference_url": "/en/items/grouse-canopy.html#grouse-canopy-08"
+    },
+    { 
+        "objectid": "grouse-canopy-09",
+        "title": "Footbridge to a treehouse tower",
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        "description": "A wooden footbridge leading to a green treehouse tower, with a ladder up the trunk to a higher platform, Kids Tree Canopy Adventure, Grouse Mountain. People are pixelated.",
+        
+        "rights": "Photo: Satoru Nakamura (Wikimedia Commons User:Satoru196), CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Kids_Tree_Canopy_Adventure%2C_Grouse_Mountain%2C_North_Vancouver%2C_2026-10_09.jpg/330px-Kids_Tree_Canopy_Adventure%2C_Grouse_Mountain%2C_North_Vancouver%2C_2026-10_09.jpg",
+        "object_location": "https://upload.wikimedia.org/wikipedia/commons/4/48/Kids_Tree_Canopy_Adventure%2C_Grouse_Mountain%2C_North_Vancouver%2C_2026-10_09.jpg",
+        "reference_url": "/en/items/grouse-canopy.html#grouse-canopy-09"
+    },
+    { 
+        "objectid": "park103",
+        "title": "Killarney Park",
+        "parkid": "103",
+        "neighbourhood": "Killarney",
+        "location": "6205 Kerr Street, Vancouver, BC",
+        "latitude": "49.227998",
+        "longitude": "-123.04413",
+        "playground_count": "2",
+        "hectare": "13.36",
+        "washrooms": "N",
+        "subject": "Baseball Diamonds;Community Centres;Community Halls;Dogs Off-Leash Areas;Field Houses;Lighted Fields;Rinks;Running Tracks;Soccer Fields;Softball;Swimming Pools;Ultimate Fields;Wading Pool",
+        
+        
+        "description": "2 playgrounds in Killarney Park (Killarney). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park103.html"
+    },
+    { 
+        "objectid": "park088",
+        "title": "Kingcrest Park",
+        "parkid": "88",
+        "neighbourhood": "Kensington-Cedar Cottage",
+        "location": "4150 Knight Street, Vancouver, BC",
+        "latitude": "49.247499",
+        "longitude": "-123.074674",
+        "playground_count": "1",
+        "hectare": "2.41",
+        "washrooms": "N",
+        "subject": "Basketball Courts;Dogs Off-Leash Areas;Ultimate Fields",
+        
+        
+        "description": "1 playground in Kingcrest Park (Kensington-Cedar Cottage). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park088.html"
+    },
+    { 
+        "objectid": "park112",
+        "title": "Kitsilano Beach Park",
+        "parkid": "112",
+        "neighbourhood": "Kitsilano",
+        "location": "1499 Arbutus Street, Vancouver, BC",
+        "latitude": "49.273431",
+        "longitude": "-123.153901",
+        "playground_count": "1",
+        "hectare": "13.47",
+        "washrooms": "Y",
+        "subject": "Basketball Courts;Beaches;Food Concessions;Restaurants;Swimming Pools;Tennis Courts;Water/Spray Parks",
+        
+        
+        "description": "1 playground in Kitsilano Beach Park (Kitsilano). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park112.html"
+    },
+    { 
+        "objectid": "park145",
+        "title": "Langara Golf Course",
+        "parkid": "145",
+        "neighbourhood": "South Cambie",
+        "location": "6706 Alberta Street, Vancouver, BC",
+        "latitude": "49.221371",
+        "longitude": "-123.11211",
+        "playground_count": "1",
+        "hectare": "48.57",
+        "washrooms": "N",
+        "subject": "Golf Courses;Jogging Trails;Restaurants;Tennis Courts",
+        
+        
+        "description": "1 playground in Langara Golf Course (South Cambie). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park145.html"
+    },
+    { 
+        "objectid": "park219",
+        "title": "Locarno Park",
+        "parkid": "219",
+        "neighbourhood": "West Point Grey",
+        "location": "4445 NW Marine Drive, Vancouver, BC",
+        "latitude": "49.273015",
+        "longitude": "-123.207284",
+        "playground_count": "2",
+        "hectare": "19.0",
+        "washrooms": "Y",
+        "subject": "Beaches;Dogs Off-Leash Areas;Food Concessions;Picnic Sites",
+        
+        
+        "description": "2 playgrounds in Locarno Park (West Point Grey). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park219.html"
+    },
+    { 
+        "objectid": "park185",
+        "title": "MacDonald Park",
+        "parkid": "185",
+        "neighbourhood": "Sunset",
+        "location": "300 E 44th Avenue, Vancouver, BC",
+        "latitude": "49.229748",
+        "longitude": "-123.098396",
+        "playground_count": "1",
+        "hectare": "1.05",
+        "washrooms": "N",
+        "subject": "Tennis Courts",
+        
+        
+        "description": "1 playground in MacDonald Park (Sunset). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park185.html"
+    },
+    { 
+        "objectid": "park179",
+        "title": "MacLean Park",
+        "parkid": "179",
+        "neighbourhood": "Strathcona",
+        "location": "710 Keefer Street, Vancouver, BC",
+        "latitude": "49.278838",
+        "longitude": "-123.088396",
+        "playground_count": "1",
+        "hectare": "1.21",
+        "washrooms": "Y",
+        "subject": "Field Houses;Softball;Water/Spray Parks",
+        
+        
+        "description": "1 playground in MacLean Park (Strathcona). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park179.html"
+    },
+    { 
+        "objectid": "park138",
+        "title": "Major Matthews Park",
+        "parkid": "138",
+        "neighbourhood": "Mount Pleasant",
+        "location": "2627 Manitoba Street, Vancouver, BC",
+        "latitude": "49.26158",
+        "longitude": "-123.107238",
+        "playground_count": "1",
+        "hectare": "0.06",
+        "washrooms": "N",
+        
+        
+        
+        "description": "1 playground in Major Matthews Park (Mount Pleasant). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park138.html"
+    },
+    { 
+        "objectid": "park095",
+        "title": "Malkin Park",
+        "parkid": "95",
+        "neighbourhood": "Kerrisdale",
+        "location": "6001 Balaclava Street, Vancouver, BC",
+        "latitude": "49.232553",
+        "longitude": "-123.177304",
+        "playground_count": "1",
+        "hectare": "2.42",
+        "washrooms": "N",
+        
+        
+        
+        "description": "1 playground in Malkin Park (Kerrisdale). Not in the City's list of playgrounds; the position is from OpenStreetMap. Playground equipment confirmed from aerial imagery and review photos (2026-10). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11); position: OpenStreetMap (© OpenStreetMap contributors, ODbL)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver; position © OpenStreetMap contributors, ODbL",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park095.html"
+    },
+    { 
+        "objectid": "park096",
+        "title": "Maple Grove Park",
+        "parkid": "96",
+        "neighbourhood": "Kerrisdale",
+        "location": "6875 Yew Street, Vancouver, BC",
+        "latitude": "49.223703",
+        "longitude": "-123.16013",
+        "playground_count": "1",
+        "hectare": "4.2",
+        "washrooms": "Y",
+        "subject": "Field Houses;Picnic Sites;Soccer Fields;Wading Pool",
+        
+        
+        "description": "1 playground in Maple Grove Park (Kerrisdale). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park096.html"
+    },
+    { 
+        "objectid": "park124",
+        "title": "Marpole Park",
+        "parkid": "124",
+        "neighbourhood": "Marpole",
+        "location": "1410 W 72nd Avenue, Vancouver, BC",
+        "latitude": "49.205507",
+        "longitude": "-123.138307",
+        "playground_count": "1",
+        "hectare": "0.27",
+        "washrooms": "N",
+        
+        
+        
+        "description": "1 playground in Marpole Park (Marpole). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park124.html"
+    },
+    { 
+        "objectid": "park114",
+        "title": "McBride Park",
+        "parkid": "114",
+        "neighbourhood": "Kitsilano",
+        "location": "3350 W 4th Avenue, Vancouver, BC",
+        "latitude": "49.268073",
+        "longitude": "-123.179732",
+        "playground_count": "1",
+        "hectare": "1.71",
+        "washrooms": "Y",
+        "subject": "Field Houses;Soccer Fields;Softball;Tennis Courts",
+        
+        
+        "description": "1 playground in McBride Park (Kitsilano). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park114.html"
+    },
+    { 
+        "objectid": "park054",
+        "title": "McSpadden Park",
+        "parkid": "54",
+        "neighbourhood": "Grandview-Woodland",
+        "location": "2125 Victoria Drive, Vancouver, BC",
+        "latitude": "49.265936",
+        "longitude": "-123.066601",
+        "playground_count": "1",
+        "hectare": "1.62",
+        "washrooms": "N",
+        "subject": "Soccer Fields;Tennis Courts",
+        
+        
+        "description": "1 playground in McSpadden Park (Grandview-Woodland). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park054.html"
+    },
+    { 
+        "objectid": "park186",
+        "title": "Memorial South Park",
+        "parkid": "186",
+        "neighbourhood": "Sunset",
+        "location": "5955 Ross Street, Vancouver, BC",
+        "latitude": "49.230901",
+        "longitude": "-123.085138",
+        "playground_count": "1",
+        "hectare": "13.59",
+        "washrooms": "Y",
+        "subject": "Ball Hockey;Baseball Diamonds;Cricket Pitches;Field Hockey;Field Houses;Lacrosse Boxes;Lighted Fields;Pickleball;Picnic Sites;Running Tracks;Soccer Fields;Softball;Tennis Courts;Ultimate Fields",
+        
+        
+        "description": "1 playground in Memorial South Park (Sunset). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park186.html"
+    },
+    { 
+        "objectid": "park039",
+        "title": "Memorial West Park",
+        "parkid": "39",
+        "neighbourhood": "Dunbar-Southlands",
+        "location": "4747 Dunbar Street, Vancouver, BC",
+        "latitude": "49.243326",
+        "longitude": "-123.188166",
+        "playground_count": "1",
+        "hectare": "7.49",
+        "washrooms": "Y",
+        "subject": "Baseball Diamonds;Basketball Courts;Bowling Greens;Community Centres;Field Houses;Soccer Fields;Tennis Courts",
+        
+        
+        "description": "1 playground in Memorial West Park (Dunbar-Southlands). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park039.html"
+    },
+    { 
+        "objectid": "park187",
+        "title": "Moberly Park",
+        "parkid": "187",
+        "neighbourhood": "Sunset",
+        "location": "7646 Prince Albert Street, Vancouver, BC",
+        "latitude": "49.215602",
+        "longitude": "-123.086219",
+        "playground_count": "1",
+        "hectare": "3.6",
+        "washrooms": "Y",
+        "subject": "Community Halls;Field Houses;Soccer Fields;Tennis Courts",
+        
+        
+        "description": "1 playground in Moberly Park (Sunset). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park187.html"
+    },
+    { 
+        "objectid": "park146",
+        "title": "Montgomery Park",
+        "parkid": "146",
+        "neighbourhood": "Oakridge",
+        "location": "1040 W 43rd Avenue, Vancouver, BC",
+        "latitude": "49.231291",
+        "longitude": "-123.130776",
+        "playground_count": "1",
+        "hectare": "4.02",
+        "washrooms": "Y",
+        "subject": "Field Houses;Soccer Fields;Softball",
+        
+        
+        "description": "1 playground in Montgomery Park (Oakridge). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park146.html"
+    },
+    { 
+        "objectid": "park139",
+        "title": "Mount Pleasant Park",
+        "parkid": "139",
+        "neighbourhood": "Mount Pleasant",
+        "location": "3161 Ontario Street, Vancouver, BC",
+        "latitude": "49.25696",
+        "longitude": "-123.106743",
+        "playground_count": "1",
+        "hectare": "1.12",
+        "washrooms": "N",
+        "subject": "Basketball Courts;Skateboard Parks",
+        
+        
+        "description": "1 playground in Mount Pleasant Park (Mount Pleasant). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park139.html"
+    },
+    { 
+        "objectid": "ubc-mundell",
+        "title": "Mundell Park",
+        
+        "neighbourhood": "UBC",
+        "location": "Wesbrook Village, University of British Columbia, Vancouver, BC",
+        "latitude": "49.251961",
+        "longitude": "-123.236261",
+        "playground_count": "1",
+        
+        
+        
+        "equipment": "wave-slide;crawl-tunnel",
+        "surveyed": "2026-10",
+        "description": "1 playground in Mundell Park (Wesbrook Village, UBC), next to an open lawn. Not in the City of Vancouver open data; the position is where the survey photos were taken. The play structure was crowded on the survey day, so only part of the equipment has been recorded; to be photographed again.",
+        "source": "Own survey",
+        "rights": "CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Mundell_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_02.jpg/330px-Mundell_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_02.jpg",
+        "object_location": "",
+        "reference_url": "/en/items/ubc-mundell.html"
+    },
+    { 
+        "objectid": "ubc-mundell-01",
+        "title": "The park across the lawn",
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        "description": "Mundell Park seen across the lawn, with its playground on the left, Wesbrook Village, UBC. People are pixelated.",
+        
+        "rights": "Photo: Satoru Nakamura (Wikimedia Commons User:Satoru196), CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Mundell_Park%2C_UBC%2C_Vancouver%2C_2026-10_01.jpg/330px-Mundell_Park%2C_UBC%2C_Vancouver%2C_2026-10_01.jpg",
+        "object_location": "https://upload.wikimedia.org/wikipedia/commons/9/94/Mundell_Park%2C_UBC%2C_Vancouver%2C_2026-10_01.jpg",
+        "reference_url": "/en/items/ubc-mundell.html#ubc-mundell-01"
+    },
+    { 
+        "objectid": "ubc-mundell-02",
+        "title": "Play structure with slides and a crawl tunnel",
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        "description": "Play structure with slides and a curved crawl tunnel on wood-chip surfacing, Mundell Park playground, UBC. People are pixelated.",
+        
+        "rights": "Photo: Satoru Nakamura (Wikimedia Commons User:Satoru196), CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Mundell_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_02.jpg/330px-Mundell_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_02.jpg",
+        "object_location": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Mundell_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_02.jpg",
+        "reference_url": "/en/items/ubc-mundell.html#ubc-mundell-02"
+    },
+    { 
+        "objectid": "ubc-mundell-03",
+        "title": "The open lawn",
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        "description": "The open lawn of Mundell Park with residential buildings behind, Wesbrook Village, UBC. People are pixelated.",
+        
+        "rights": "Photo: Satoru Nakamura (Wikimedia Commons User:Satoru196), CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Mundell_Park%2C_UBC%2C_Vancouver%2C_2026-10_03.jpg/330px-Mundell_Park%2C_UBC%2C_Vancouver%2C_2026-10_03.jpg",
+        "object_location": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Mundell_Park%2C_UBC%2C_Vancouver%2C_2026-10_03.jpg",
+        "reference_url": "/en/items/ubc-mundell.html#ubc-mundell-03"
+    },
+    { 
+        "objectid": "park196",
+        "title": "Nanaimo Park",
+        "parkid": "196",
+        "neighbourhood": "Victoria-Fraserview",
+        "location": "2390 E 46th Avenue, Vancouver, BC",
+        "latitude": "49.227724",
+        "longitude": "-123.057508",
+        "playground_count": "1",
+        "hectare": "2.91",
+        "washrooms": "Y",
+        "subject": "Baseball Diamonds;Field Houses;Ultimate Fields;Wading Pool",
+        
+        
+        "description": "1 playground in Nanaimo Park (Victoria-Fraserview). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park196.html"
+    },
+    { 
+        "objectid": "park203",
+        "title": "Nelson Park",
+        "parkid": "203",
+        "neighbourhood": "West End",
+        "location": "1030 Bute Street, Vancouver, BC",
+        "latitude": "49.282855",
+        "longitude": "-123.129558",
+        "playground_count": "1",
+        "hectare": "1.16",
+        "washrooms": "N",
+        "subject": "Dogs Off-Leash Areas",
+        
+        
+        "description": "1 playground in Nelson Park (West End). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park203.html"
+    },
+    { 
+        "objectid": "park075",
+        "title": "New Brighton Park",
+        "parkid": "75",
+        "neighbourhood": "Hastings-Sunrise",
+        "location": "3201 New Brighton Road, Vancouver, BC",
+        "latitude": "49.290122",
+        "longitude": "-123.037888",
+        "playground_count": "2",
+        "hectare": "10.0",
+        "washrooms": "Y",
+        "subject": "Dogs Off-Leash Areas;Field Houses;Food Concessions;Picnic Sites;Soccer Fields;Swimming Pools",
+        
+        
+        "description": "2 playgrounds in New Brighton Park (Hastings-Sunrise). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park075.html"
+    },
+    { 
+        "objectid": "park157",
+        "title": "Norquay Park",
+        "parkid": "157",
+        "neighbourhood": "Renfrew-Collingwood",
+        "location": "5050 Wales Street, Vancouver, BC",
+        "latitude": "49.237098",
+        "longitude": "-123.051061",
+        "playground_count": "1",
+        "hectare": "2.26",
+        "washrooms": "Y",
+        "subject": "Field Houses;Soccer Fields;Softball;Water/Spray Parks",
+        
+        
+        "description": "1 playground in Norquay Park (Renfrew-Collingwood). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park157.html"
+    },
+    { 
+        "objectid": "park228",
+        "title": "Oak Meadows Park",
+        "parkid": "228",
+        "neighbourhood": "South Cambie",
+        "location": "899 W 37th Avenue, Vancouver, BC",
+        "latitude": "49.238232",
+        "longitude": "-123.124134",
+        "playground_count": "1",
+        "hectare": "5.0",
+        "washrooms": "N",
+        "subject": "Dogs Off-Leash Areas;Field Hockey;Jogging Trails;Soccer Fields;Ultimate Fields",
+        
+        
+        "description": "1 playground in Oak Meadows Park (South Cambie). Not in the City's list of playgrounds; the position is from OpenStreetMap. Playground equipment confirmed from aerial imagery and review photos (2026-10). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11); position: OpenStreetMap (© OpenStreetMap contributors, ODbL)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver; position © OpenStreetMap contributors, ODbL",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park228.html"
+    },
+    { 
+        "objectid": "park126",
+        "title": "Oak Park",
+        "parkid": "126",
+        "neighbourhood": "Marpole",
+        "location": "900 W 59th Avenue, Vancouver, BC",
+        "latitude": "49.215497",
+        "longitude": "-123.128319",
+        "playground_count": "1",
+        "hectare": "5.25",
+        "washrooms": "Y",
+        "subject": "Ball Hockey;Baseball Diamonds;Basketball Courts;Community Centres;Field Houses;Lighted Fields;Outdoor Roller Hockey Rinks;Soccer Fields;Softball;Tennis Courts;Water/Spray Parks",
+        
+        
+        "description": "1 playground in Oak Park (Marpole). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park126.html"
+    },
+    { 
+        "objectid": "park180",
+        "title": "Oppenheimer Park",
+        "parkid": "180",
+        "neighbourhood": "Strathcona",
+        "location": "488 Powell Street, Vancouver, BC",
+        "latitude": "49.282645",
+        "longitude": "-123.094313",
+        "playground_count": "1",
+        "hectare": "1.0",
+        "washrooms": "Y",
+        "subject": "Field Houses;Picnic Sites",
+        
+        
+        "description": "1 playground in Oppenheimer Park (Strathcona). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park180.html"
+    },
+    { 
+        "objectid": "park056",
+        "title": "Oxford Park",
+        "parkid": "56",
+        "neighbourhood": "Grandview-Woodland",
+        "location": "2050 Wall Street, Vancouver, BC",
+        "latitude": "49.286172",
+        "longitude": "-123.062223",
+        "playground_count": "1",
+        "hectare": "0.22",
+        "washrooms": "N",
+        
+        
+        
+        "description": "1 playground in Oxford Park (Grandview-Woodland). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park056.html"
+    },
+    { 
+        "objectid": "park057",
+        "title": "Pandora Park",
+        "parkid": "57",
+        "neighbourhood": "Grandview-Woodland",
+        "location": "2325 Franklin Street, Vancouver, BC",
+        "latitude": "49.282533",
+        "longitude": "-123.058045",
+        "playground_count": "1",
+        "hectare": "1.66",
+        "washrooms": "Y",
+        "subject": "Basketball Courts;Dogs Off-Leash Areas;Field Houses;Pickleball;Picnic Sites;Tennis Courts;Water/Spray Parks",
+        
+        
+        "description": "1 playground in Pandora Park (Grandview-Woodland). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park057.html"
+    },
+    { 
+        "objectid": "park061",
+        "title": "Park Site on Trinity Street",
+        "parkid": "61",
+        "neighbourhood": "Hastings-Sunrise",
+        "location": "2303 Wall Street, Vancouver, BC",
+        "latitude": "49.289555",
+        "longitude": "-123.059427",
+        "playground_count": "1",
+        "hectare": "0.1",
+        "washrooms": "N",
+        
+        
+        
+        "description": "1 playground in Park Site on Trinity Street (Hastings-Sunrise). Not in the City's list of playgrounds; the position is from OpenStreetMap. Playground equipment confirmed from aerial imagery and review photos (2026-10). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11); position: OpenStreetMap (© OpenStreetMap contributors, ODbL)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver; position © OpenStreetMap contributors, ODbL",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park061.html"
+    },
+    { 
+        "objectid": "park158",
+        "title": "Price Park",
+        "parkid": "158",
+        "neighbourhood": "Renfrew-Collingwood",
+        "location": "3650 Price Street, Vancouver, BC",
+        "latitude": "49.251572",
+        "longitude": "-123.097564",
+        "playground_count": "1",
+        "hectare": "0.35",
+        "washrooms": "N",
+        
+        
+        
+        "description": "1 playground in Price Park (Renfrew-Collingwood). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park158.html"
+    },
+    { 
+        "objectid": "park166",
+        "title": "Prince Edward Park",
+        "parkid": "166",
+        "neighbourhood": "Riley Park",
+        "location": "3773 Prince Edward Street, Vancouver, BC",
+        "latitude": "49.251692",
+        "longitude": "-123.097024",
+        "playground_count": "1",
+        "hectare": "1.21",
+        "washrooms": "Y",
+        "subject": "Field Houses;Soccer Fields;Water/Spray Parks",
+        
+        
+        "description": "1 playground in Prince Edward Park (Riley Park). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park166.html"
+    },
+    { 
+        "objectid": "park003",
+        "title": "Prince of Wales Park",
+        "parkid": "3",
+        "neighbourhood": "Arbutus-Ridge",
+        "location": "4780 Haggart Street, Vancouver, BC",
+        "latitude": "49.244462",
+        "longitude": "-123.155277",
+        "playground_count": "1",
+        "hectare": "2.89",
+        "washrooms": "N",
+        "subject": "Jogging Trails;Soccer Fields",
+        
+        
+        "description": "1 playground in Prince of Wales Park (Arbutus-Ridge). Not in the City's list of playgrounds; the position is from OpenStreetMap. Playground equipment confirmed from aerial imagery and review photos (2026-10). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11); position: OpenStreetMap (© OpenStreetMap contributors, ODbL)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver; position © OpenStreetMap contributors, ODbL",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park003.html"
+    },
+    { 
+        "objectid": "park006",
+        "title": "Quilchena Park",
+        "parkid": "6",
+        "neighbourhood": "Arbutus-Ridge",
+        "location": "4590 Magnolia Street, Vancouver, BC",
+        "latitude": "49.24369",
+        "longitude": "-123.148865",
+        "playground_count": "1",
+        "hectare": "7.67",
+        "washrooms": "Y",
+        "subject": "Baseball Diamonds;Disc Golf Courses;Dogs Off-Leash Areas;Field Houses;Jogging Trails;Skateboard Parks;Soccer Fields",
+        
+        
+        "description": "1 playground in Quilchena Park (Arbutus-Ridge). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park006.html"
+    },
+    { 
+        "objectid": "park159",
+        "title": "Renfrew Community Park",
+        "parkid": "159",
+        "neighbourhood": "Renfrew-Collingwood",
+        "location": "2929 E 22nd Avenue, Vancouver, BC",
+        "latitude": "49.252129",
+        "longitude": "-123.042896",
+        "playground_count": "1",
+        "hectare": "5.0",
+        "washrooms": "N",
+        "subject": "Ball Hockey;Community Centres;Dogs Off-Leash Areas;Field Houses;Football Fields;Lacrosse Boxes;Lighted Fields;Softball;Swimming Pools;Wading Pool",
+        
+        
+        "description": "1 playground in Renfrew Community Park (Renfrew-Collingwood). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park159.html"
+    },
+    { 
+        "objectid": "park168",
+        "title": "Riley Park",
+        "parkid": "168",
+        "neighbourhood": "Riley Park",
+        "location": "50 E 30th Avenue, Vancouver, BC",
+        "latitude": "49.241987",
+        "longitude": "-123.104361",
+        "playground_count": "2",
+        "hectare": "2.7",
+        "washrooms": "N",
+        "subject": "Baseball Diamonds;Basketball Courts;Community Centres;Field Houses;Soccer Fields",
+        
+        
+        "description": "2 playgrounds in Riley Park (Riley Park). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park168.html"
+    },
+    { 
+        "objectid": "park197",
+        "title": "Riverfront Park",
+        "parkid": "197",
+        "neighbourhood": "Killarney",
+        "location": "2750 E Kent Ave S, Vancouver, BC",
+        "latitude": "49.205951",
+        "longitude": "-123.04575",
+        "playground_count": "2",
+        "hectare": "4.01",
+        "washrooms": "Y",
+        "subject": "Basketball Courts;Picnic Sites;Tennis Courts;Ultimate Fields",
+        
+        
+        "description": "2 playgrounds in Riverfront Park (Killarney). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park197.html"
+    },
+    { 
+        "objectid": "park127",
+        "title": "Riverview Park",
+        "parkid": "127",
+        "neighbourhood": "Marpole",
+        "location": "1751 W 66th Avenue, Vancouver, BC",
+        "latitude": "49.212238",
+        "longitude": "-123.147342",
+        "playground_count": "1",
+        "hectare": "2.38",
+        "washrooms": "N",
+        
+        
+        
+        "description": "1 playground in Riverview Park (Marpole). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park127.html"
+    },
+    { 
+        "objectid": "park140",
+        "title": "Robson Park",
+        "parkid": "140",
+        "neighbourhood": "Mount Pleasant",
+        "location": "599 Kingsway, Vancouver, BC",
+        "latitude": "49.258229",
+        "longitude": "-123.091798",
+        "playground_count": "1",
+        "hectare": "1.56",
+        "washrooms": "Y",
+        "subject": "Ball Hockey;Basketball Courts;Field Houses;Soccer Fields;Tennis Courts;Wading Pool",
+        
+        
+        "description": "1 playground in Robson Park (Mount Pleasant). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park140.html"
+    },
+    { 
+        "objectid": "park188",
+        "title": "Ross Park",
+        "parkid": "188",
+        "neighbourhood": "Sunset",
+        "location": "7402 Ross Street, Vancouver, BC",
+        "latitude": "49.217276",
+        "longitude": "-123.082351",
+        "playground_count": "1",
+        "hectare": "1.51",
+        "washrooms": "Y",
+        "subject": "Field Houses;Football Fields;Soccer Fields;Softball;Wading Pool",
+        
+        
+        "description": "1 playground in Ross Park (Sunset). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park188.html"
+    },
+    { 
+        "objectid": "park076",
+        "title": "Rupert Park",
+        "parkid": "76",
+        "neighbourhood": "Hastings-Sunrise",
+        "location": "1600 Rupert Street, Vancouver, BC",
+        "latitude": "49.271629",
+        "longitude": "-123.031384",
+        "playground_count": "1",
+        "hectare": "11.43",
+        "washrooms": "Y",
+        "subject": "Field Houses;Football Fields;Golf Courses;Pickleball;Rugby Fields;Soccer Fields;Softball;Tennis Courts",
+        
+        
+        "description": "1 playground in Rupert Park (Hastings-Sunrise). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park076.html"
+    },
+    { 
+        "objectid": "park212",
+        "title": "Sahalli Park",
+        "parkid": "212",
+        "neighbourhood": "Mount Pleasant",
+        "location": "2300 Fraser Street, Vancouver, BC",
+        "latitude": "49.263950",
+        "longitude": "-123.088968",
+        "playground_count": "1",
+        "hectare": "0.06",
+        "washrooms": "N",
+        
+        
+        
+        "description": "1 playground in Sahalli Park (Mount Pleasant). Not in the City's list of playgrounds; the position is from OpenStreetMap. Playground equipment confirmed from aerial imagery and review photos (2026-10). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11); position: OpenStreetMap (© OpenStreetMap contributors, ODbL)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver; position © OpenStreetMap contributors, ODbL",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park212.html"
+    },
+    { 
+        "objectid": "park058",
+        "title": "Salsbury Park",
+        "parkid": "58",
+        "neighbourhood": "Grandview-Woodland",
+        "location": "1806 Adanac Street, Vancouver, BC",
+        "latitude": "49.277231",
+        "longitude": "-123.068203",
+        "playground_count": "1",
+        "hectare": "0.17",
+        "washrooms": "N",
+        
+        
+        
+        "description": "1 playground in Salsbury Park (Grandview-Woodland). Not in the City's list of playgrounds; the position is from OpenStreetMap. Playground equipment confirmed from aerial imagery and review photos (2026-10). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11); position: OpenStreetMap (© OpenStreetMap contributors, ODbL)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver; position © OpenStreetMap contributors, ODbL",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park058.html"
+    },
+    { 
+        "objectid": "park249",
+        "title": "Shannon Mews",
+        "parkid": "249",
+        "neighbourhood": "Kerrisdale",
+        "location": "1551 W 57th Ave, Vancouver, BC",
+        "latitude": "49.21978389371605",
+        "longitude": "-123.141960658531",
+        "playground_count": "1",
+        "hectare": "0.69",
+        "washrooms": "N",
+        "subject": "Drinking Fountain",
+        
+        
+        "description": "1 playground in Shannon Mews (Kerrisdale). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park249.html"
+    },
+    { 
+        "objectid": "park161",
+        "title": "Slocan Park",
+        "parkid": "161",
+        "neighbourhood": "Renfrew-Collingwood",
+        "location": "2750 E 29th Avenue, Vancouver, BC",
+        "latitude": "49.243921",
+        "longitude": "-123.047574",
+        "playground_count": "1",
+        "hectare": "4.14",
+        "washrooms": "Y",
+        "subject": "Field Houses;Soccer Fields;Tennis Courts;Ultimate Fields;Wading Pool",
+        
+        
+        "description": "1 playground in Slocan Park (Renfrew-Collingwood). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park161.html"
+    },
+    { 
+        "objectid": "park206",
+        "title": "Stanley Park",
+        "parkid": "206",
+        "neighbourhood": "West End",
+        "location": "2000 W Georgia Street, Vancouver, BC",
+        "latitude": "49.302701",
+        "longitude": "-123.144307",
+        "playground_count": "4",
+        "hectare": "400.0",
+        "washrooms": "Y",
+        "subject": "Bowling Greens;Cricket Pitches;Dogs Off-Leash Areas;Field Houses;Food Concessions;Golf Courses;Jogging Trails;Lighted Fields;Picnic Sites;Picnic Sites;Picnic Sites;Picnic Sites;Restaurants;Rugby Fields;Running Tracks;Softball;Swimming Pools;Tennis Courts;Water/Spray Parks",
+        
+        
+        "description": "4 playgrounds in Stanley Park (West End). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park206.html"
+    },
+    { 
+        "objectid": "park182",
+        "title": "Strathcona Linear Park",
+        "parkid": "182",
+        "neighbourhood": "Strathcona",
+        "location": "787 Prior Street, Vancouver, BC",
+        "latitude": "49.276983",
+        "longitude": "-123.087485",
+        "playground_count": "1",
+        "hectare": "0.3",
+        "washrooms": "N",
+        
+        
+        
+        "description": "1 playground in Strathcona Linear Park (Strathcona). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park182.html"
+    },
+    { 
+        "objectid": "park181",
+        "title": "Strathcona Park",
+        "parkid": "181",
+        "neighbourhood": "Strathcona",
+        "location": "857 Malkin Avenue, Vancouver, BC",
+        "latitude": "49.275276",
+        "longitude": "-123.084674",
+        "playground_count": "1",
+        "hectare": "10.07",
+        "washrooms": "Y",
+        "subject": "Baseball Diamonds;Basketball Courts;Dogs Off-Leash Areas;Field Houses;Running Tracks;Skateboard Parks;Soccer Fields;Softball;Tennis Courts",
+        
+        
+        "description": "1 playground in Strathcona Park (Strathcona). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park181.html"
+    },
+    { 
+        "objectid": "park089",
+        "title": "Sunnyside Park",
+        "parkid": "89",
+        "neighbourhood": "Kensington-Cedar Cottage",
+        "location": "1100 E 17th Avenue, Vancouver, BC",
+        "latitude": "49.254924",
+        "longitude": "-123.080752",
+        "playground_count": "1",
+        "hectare": "0.97",
+        "washrooms": "N",
+        
+        
+        
+        "description": "1 playground in Sunnyside Park (Kensington-Cedar Cottage). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park089.html"
+    },
+    { 
+        "objectid": "park077",
+        "title": "Sunrise Park",
+        "parkid": "77",
+        "neighbourhood": "Hastings-Sunrise",
+        "location": "1950 Windermere Street, Vancouver, BC",
+        "latitude": "49.266612",
+        "longitude": "-123.035037",
+        "playground_count": "1",
+        "hectare": "3.18",
+        "washrooms": "Y",
+        "subject": "Baseball Diamonds;Community Halls;Dogs Off-Leash Areas;Field Houses;Soccer Fields;Wading Pool",
+        
+        
+        "description": "1 playground in Sunrise Park (Hastings-Sunrise). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park077.html"
+    },
+    { 
+        "objectid": "park189",
+        "title": "Sunset Park",
+        "parkid": "189",
+        "neighbourhood": "Sunset",
+        "location": "404 E 51st Avenue, Vancouver, BC",
+        "latitude": "49.222561",
+        "longitude": "-123.096916",
+        "playground_count": "1",
+        "hectare": "3.42",
+        "washrooms": "N",
+        "subject": "Community Centres;Dogs Off-Leash Areas;Rinks;Soccer Fields",
+        
+        
+        "description": "1 playground in Sunset Park (Sunset). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park189.html"
+    },
+    { 
+        "objectid": "park119",
+        "title": "Tatlow Park",
+        "parkid": "119",
+        "neighbourhood": "Kitsilano",
+        "location": "2845 W 3rd Avenue, Vancouver, BC",
+        "latitude": "49.270068",
+        "longitude": "-123.169609",
+        "playground_count": "1",
+        "hectare": "1.4",
+        "washrooms": "Y",
+        "subject": "Field Houses;Tennis Courts",
+        
+        
+        "description": "1 playground in Tatlow Park (Kitsilano). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park119.html"
+    },
+    { 
+        "objectid": "park141",
+        "title": "Tea Swamp Park",
+        "parkid": "141",
+        "neighbourhood": "Mount Pleasant",
+        "location": "266 E 15th Avenue, Vancouver, BC",
+        "latitude": "49.257091",
+        "longitude": "-123.098595",
+        "playground_count": "1",
+        "hectare": "0.09",
+        "washrooms": "N",
+        
+        
+        
+        "description": "1 playground in Tea Swamp Park (Mount Pleasant). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park141.html"
+    },
+    { 
+        "objectid": "park198",
+        "title": "Tecumseh Park",
+        "parkid": "198",
+        "neighbourhood": "Victoria-Fraserview",
+        "location": "1751 E 45th Avenue, Vancouver, BC",
+        "latitude": "49.229752",
+        "longitude": "-123.069846",
+        "playground_count": "1",
+        "hectare": "2.09",
+        "washrooms": "N",
+        "subject": "Dogs Off-Leash Areas",
+        
+        
+        "description": "1 playground in Tecumseh Park (Victoria-Fraserview). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park198.html"
+    },
+    { 
+        "objectid": "park060",
+        "title": "Templeton Park",
+        "parkid": "60",
+        "neighbourhood": "Grandview-Woodland",
+        "location": "700 Templeton Drive, Vancouver, BC",
+        "latitude": "49.278279",
+        "longitude": "-123.058646",
+        "playground_count": "1",
+        "hectare": "1.93",
+        "washrooms": "N",
+        "subject": "Running Tracks;Soccer Fields;Softball;Swimming Pools",
+        
+        
+        "description": "1 playground in Templeton Park (Grandview-Woodland). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park060.html"
+    },
+    { 
+        "objectid": "park078",
+        "title": "Thunderbird Park",
+        "parkid": "78",
+        "neighbourhood": "Hastings-Sunrise",
+        "location": "3485 E 2nd Avenue, Vancouver, BC",
+        "latitude": "49.268829",
+        "longitude": "-123.028552",
+        "playground_count": "1",
+        "hectare": "0.89",
+        "washrooms": "N",
+        
+        
+        
+        "description": "1 playground in Thunderbird Park (Hastings-Sunrise). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park078.html"
+    },
+    { 
+        "objectid": "park147",
+        "title": "Tisdall Park",
+        "parkid": "147",
+        "neighbourhood": "Oakridge",
+        "location": "6210 Tisdall Street, Vancouver, BC",
+        "latitude": "49.228625",
+        "longitude": "-123.120571",
+        "playground_count": "1",
+        "hectare": "5.02",
+        "washrooms": "N",
+        "subject": "Football Fields;Softball;Ultimate Fields",
+        
+        
+        "description": "1 playground in Tisdall Park (Oakridge). Not in the City's list of playgrounds; the position is from OpenStreetMap. Playground equipment confirmed from aerial imagery and review photos (2026-10). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11); position: OpenStreetMap (© OpenStreetMap contributors, ODbL)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver; position © OpenStreetMap contributors, ODbL",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park147.html"
+    },
+    { 
+        "objectid": "park008",
+        "title": "Trafalgar Park",
+        "parkid": "8",
+        "neighbourhood": "Arbutus-Ridge",
+        "location": "2610 W 23rd Avenue, Vancouver, BC",
+        "latitude": "49.25046",
+        "longitude": "-123.161879",
+        "playground_count": "1",
+        "hectare": "4.85",
+        "washrooms": "Y",
+        "subject": "Baseball Diamonds;Cricket Pitches;Field Houses;Soccer Fields;Softball;Ultimate Fields",
+        
+        
+        "description": "1 playground in Trafalgar Park (Arbutus-Ridge). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park008.html"
+    },
+    { 
+        "objectid": "park245",
+        "title": "Trillium Park",
+        "parkid": "245",
+        "neighbourhood": "Strathcona",
+        "location": "600 National Avenue, Vancouver, BC",
+        "latitude": "49.275061",
+        "longitude": "-123.093444",
+        "playground_count": "2",
+        "hectare": "3.05",
+        "washrooms": "Y",
+        "subject": "Field Hockey;Soccer Fields;Ultimate Fields",
+        
+        
+        "description": "2 playgrounds in Trillium Park (Strathcona). Not in the City's list of playgrounds; the position is from OpenStreetMap. Playground equipment confirmed from aerial imagery and review photos (2026-10). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11); position: OpenStreetMap (© OpenStreetMap contributors, ODbL)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver; position © OpenStreetMap contributors, ODbL",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park245.html"
+    },
+    { 
+        "objectid": "park062",
+        "title": "Victoria Park",
+        "parkid": "62",
+        "neighbourhood": "Grandview-Woodland",
+        "location": "1425 Victoria Drive, Vancouver, BC",
+        "latitude": "49.271694",
+        "longitude": "-123.06673",
+        "playground_count": "1",
+        "hectare": "0.89",
+        "washrooms": "Y",
+        
+        
+        
+        "description": "1 playground in Victoria Park (Grandview-Woodland). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park062.html"
+    },
+    { 
+        "objectid": "park063",
+        "title": "W.C. Shelly Park",
+        "parkid": "63",
+        "neighbourhood": "Grandview-Woodland",
+        "location": "1500 E 8th Avenue, Vancouver, BC",
+        "latitude": "49.263034",
+        "longitude": "-123.072931",
+        "playground_count": "1",
+        "hectare": "0.3",
+        "washrooms": "N",
+        
+        
+        
+        "description": "1 playground in W.C. Shelly Park (Grandview-Woodland). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park063.html"
+    },
+    { 
+        "objectid": "ubc-wesbrook",
+        "title": "Wesbrook Park",
+        
+        "neighbourhood": "UBC",
+        "location": "Wesbrook Village, University of British Columbia, Vancouver, BC",
+        "latitude": "49.252133",
+        "longitude": "-123.231881",
+        "playground_count": "1",
+        
+        
+        
+        "equipment": "tube-slide;rope-net-spinner;spinning-seat;low-rope-net;stepping-stumps;rail-trolley;climbing-wall;pull-up-bars;parallel-bars;kettlebell-station",
+        "surveyed": "2026-10",
+        "description": "1 playground in Wesbrook Park (Wesbrook Village, UBC), with an outdoor fitness corner (KOMPAN) and a bouldering wall at its south side. Not in the City of Vancouver open data; the position is where the survey photos were taken. The tube slide tower is by Corocord (2019, ages 5-12). Also has a post with three red rings whose use is unknown.",
+        "source": "Own survey",
+        "rights": "CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10-11_04.jpg/330px-Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10-11_04.jpg",
+        "object_location": "",
+        "reference_url": "/en/items/ubc-wesbrook.html"
+    },
+    { 
+        "objectid": "ubc-wesbrook-01",
+        "title": "The playground from the entrance path",
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        "description": "The whole playground from the entrance path: the tube slide tower, the rope net spinner and the log stepping stumps. Passers-by are pixelated.",
+        
+        "rights": "Photo: Satoru Nakamura (Wikimedia Commons User:Satoru196), CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10-11_01.jpg/330px-Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10-11_01.jpg",
+        "object_location": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10-11_01.jpg",
+        "reference_url": "/en/items/ubc-wesbrook.html#ubc-wesbrook-01"
+    },
+    { 
+        "objectid": "ubc-wesbrook-02",
+        "title": "Tube slide tower and low rope net",
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        "description": "The tower with a tube slide, held by a mast and guy ropes, with a low rope net behind.",
+        
+        "rights": "Photo: Satoru Nakamura (Wikimedia Commons User:Satoru196), CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10-11_02.jpg/330px-Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10-11_02.jpg",
+        "object_location": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10-11_02.jpg",
+        "reference_url": "/en/items/ubc-wesbrook.html#ubc-wesbrook-02"
+    },
+    { 
+        "objectid": "ubc-wesbrook-03",
+        "title": "Rope net spinner",
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        "description": "A cone of rope net around a central post, turning with the base disc.",
+        
+        "rights": "Photo: Satoru Nakamura (Wikimedia Commons User:Satoru196), CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10-11_03.jpg/330px-Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10-11_03.jpg",
+        "object_location": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10-11_03.jpg",
+        "reference_url": "/en/items/ubc-wesbrook.html#ubc-wesbrook-03"
+    },
+    { 
+        "objectid": "ubc-wesbrook-04",
+        "title": "Tube slide tower from the front",
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        "description": "The tube slide tower as a whole, from the front.",
+        
+        "rights": "Photo: Satoru Nakamura (Wikimedia Commons User:Satoru196), CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10-11_04.jpg/330px-Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10-11_04.jpg",
+        "object_location": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10-11_04.jpg",
+        "reference_url": "/en/items/ubc-wesbrook.html#ubc-wesbrook-04"
+    },
+    { 
+        "objectid": "ubc-wesbrook-05",
+        "title": "Log stepping stumps",
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        "description": "Log stepping stumps of different heights.",
+        
+        "rights": "Photo: Satoru Nakamura (Wikimedia Commons User:Satoru196), CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10-11_05.jpg/330px-Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10-11_05.jpg",
+        "object_location": "https://upload.wikimedia.org/wikipedia/commons/7/74/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10-11_05.jpg",
+        "reference_url": "/en/items/ubc-wesbrook.html#ubc-wesbrook-05"
+    },
+    { 
+        "objectid": "ubc-wesbrook-06",
+        "title": "Spinning seat",
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        "description": "A single spinning seat with a flexible pole.",
+        
+        "rights": "Photo: Satoru Nakamura (Wikimedia Commons User:Satoru196), CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10-11_06.jpg/330px-Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10-11_06.jpg",
+        "object_location": "https://upload.wikimedia.org/wikipedia/commons/2/27/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10-11_06.jpg",
+        "reference_url": "/en/items/ubc-wesbrook.html#ubc-wesbrook-06"
+    },
+    { 
+        "objectid": "ubc-wesbrook-07",
+        "title": "Post with three red rings",
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        "description": "A post with three red rings. Its use is not known yet.",
+        
+        "rights": "Photo: Satoru Nakamura (Wikimedia Commons User:Satoru196), CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10-11_07.jpg/330px-Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10-11_07.jpg",
+        "object_location": "https://upload.wikimedia.org/wikipedia/commons/9/99/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10-11_07.jpg",
+        "reference_url": "/en/items/ubc-wesbrook.html#ubc-wesbrook-07"
+    },
+    { 
+        "objectid": "ubc-wesbrook-08",
+        "title": "Overhead rail trolley",
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        "description": "A KOMPAN trolley with a hanging grip on a rigid overhead rail, with the start platform and ladder.",
+        
+        "rights": "Photo: Satoru Nakamura (Wikimedia Commons User:Satoru196), CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_08.jpg/330px-Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_08.jpg",
+        "object_location": "https://upload.wikimedia.org/wikipedia/commons/1/13/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_08.jpg",
+        "reference_url": "/en/items/ubc-wesbrook.html#ubc-wesbrook-08"
+    },
+    { 
+        "objectid": "ubc-wesbrook-09",
+        "title": "Pull-up bar with dip handles",
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        "description": "An outdoor fitness pull-up bar with dip handles on the posts, and the bouldering wall behind.",
+        
+        "rights": "Photo: Satoru Nakamura (Wikimedia Commons User:Satoru196), CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_09.jpg/330px-Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_09.jpg",
+        "object_location": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_09.jpg",
+        "reference_url": "/en/items/ubc-wesbrook.html#ubc-wesbrook-09"
+    },
+    { 
+        "objectid": "ubc-wesbrook-10",
+        "title": "Kettlebell lift station",
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        "description": "Kettlebell-shaped weights sliding on vertical rods, with a KOMPAN exercise panel.",
+        
+        "rights": "Photo: Satoru Nakamura (Wikimedia Commons User:Satoru196), CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_10.jpg/330px-Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_10.jpg",
+        "object_location": "https://upload.wikimedia.org/wikipedia/commons/7/77/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_10.jpg",
+        "reference_url": "/en/items/ubc-wesbrook.html#ubc-wesbrook-10"
+    },
+    { 
+        "objectid": "ubc-wesbrook-11",
+        "title": "Bouldering wall",
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        "description": "A free-standing bouldering wall with coloured holds.",
+        
+        "rights": "Photo: Satoru Nakamura (Wikimedia Commons User:Satoru196), CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_11.jpg/330px-Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_11.jpg",
+        "object_location": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_11.jpg",
+        "reference_url": "/en/items/ubc-wesbrook.html#ubc-wesbrook-11"
+    },
+    { 
+        "objectid": "ubc-wesbrook-12",
+        "title": "Parallel bars",
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        "description": "Low parallel bars on orange posts in the outdoor fitness area.",
+        
+        "rights": "Photo: Satoru Nakamura (Wikimedia Commons User:Satoru196), CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_12.jpg/330px-Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_12.jpg",
+        "object_location": "https://upload.wikimedia.org/wikipedia/commons/6/67/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_12.jpg",
+        "reference_url": "/en/items/ubc-wesbrook.html#ubc-wesbrook-12"
+    },
+    { 
+        "objectid": "ubc-wesbrook-13",
+        "title": "Spinning seat and rope net spinner",
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        "description": "The spinning seat on its curved pole, with the rope net spinner on the left.",
+        
+        "rights": "Photo: Satoru Nakamura (Wikimedia Commons User:Satoru196), CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_13.jpg/330px-Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_13.jpg",
+        "object_location": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_13.jpg",
+        "reference_url": "/en/items/ubc-wesbrook.html#ubc-wesbrook-13"
+    },
+    { 
+        "objectid": "ubc-wesbrook-14",
+        "title": "Age label on the tower",
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        "description": "Age label on the tube slide tower mast: designed for children ages 5 to 12, adult supervision recommended (Corocord).",
+        
+        "rights": "Photo: Satoru Nakamura (Wikimedia Commons User:Satoru196), CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_14.jpg/330px-Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_14.jpg",
+        "object_location": "https://upload.wikimedia.org/wikipedia/commons/5/51/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_14.jpg",
+        "reference_url": "/en/items/ubc-wesbrook.html#ubc-wesbrook-14"
+    },
+    { 
+        "objectid": "ubc-wesbrook-15",
+        "title": "Manufacturer plate on the tower",
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        "description": "Corocord plate on the tower mast: recommended age group 5-12, Art. Corocord15-0335-3C1, Ref.-No. 32857, year 2019.",
+        
+        "rights": "Photo: Satoru Nakamura (Wikimedia Commons User:Satoru196), CC BY 4.0",
+        "object_thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_15.jpg/330px-Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_15.jpg",
+        "object_location": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_15.jpg",
+        "reference_url": "/en/items/ubc-wesbrook.html#ubc-wesbrook-15"
+    },
+    { 
+        "objectid": "park221",
+        "title": "West Point Grey Park",
+        "parkid": "221",
+        "neighbourhood": "West Point Grey",
+        "location": "2250 Trimble Street, Vancouver, BC",
+        "latitude": "49.266301",
+        "longitude": "-123.204312",
+        "playground_count": "1",
+        "hectare": "3.4",
+        "washrooms": "Y",
+        "subject": "Baseball Diamonds;Basketball Courts;Bowling Greens;Field Houses;Soccer Fields;Tennis Courts;Wading Pool",
+        
+        
+        "description": "1 playground in West Point Grey Park (West Point Grey). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park221.html"
+    },
+    { 
+        "objectid": "park222",
+        "title": "Westmount Park",
+        "parkid": "222",
+        "neighbourhood": "West Point Grey",
+        "location": "4651 W 2nd Avenue, Vancouver, BC",
+        "latitude": "49.271852",
+        "longitude": "-123.214423",
+        "playground_count": "1",
+        "hectare": "0.4",
+        "washrooms": "N",
+        
+        
+        
+        "description": "1 playground in Westmount Park (West Point Grey). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park222.html"
+    },
+    { 
+        "objectid": "park130",
+        "title": "William Mackie Park",
+        "parkid": "130",
+        "neighbourhood": "Marpole",
+        "location": "1592 W 71st Avenue, Vancouver, BC",
+        "latitude": "49.206787",
+        "longitude": "-123.142733",
+        "playground_count": "1",
+        "hectare": "0.37",
+        "washrooms": "N",
+        "subject": "Basketball Courts",
+        
+        
+        "description": "1 playground in William Mackie Park (Marpole). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park130.html"
+    },
+    { 
+        "objectid": "park131",
+        "title": "Winona Park",
+        "parkid": "131",
+        "neighbourhood": "Marpole",
+        "location": "7575 Columbia Street, Vancouver, BC",
+        "latitude": "49.215431",
+        "longitude": "-123.114024",
+        "playground_count": "1",
+        "hectare": "5.31",
+        "washrooms": "Y",
+        "subject": "Field Houses;Football Fields;Rugby Fields;Softball;Ultimate Fields",
+        
+        
+        "description": "1 playground in Winona Park (Marpole). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park131.html"
+    },
+    { 
+        "objectid": "park064",
+        "title": "Woodland Park",
+        "parkid": "64",
+        "neighbourhood": "Grandview-Woodland",
+        "location": "705 Woodland Drive, Vancouver, BC",
+        "latitude": "49.278526",
+        "longitude": "-123.073387",
+        "playground_count": "1",
+        "hectare": "1.58",
+        "washrooms": "Y",
+        "subject": "Soccer Fields;Softball;Wading Pool",
+        
+        
+        "description": "1 playground in Woodland Park (Grandview-Woodland). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park064.html"
+    },
+    { 
+        "objectid": "park248",
+        "title": "s??q?lxen?m'ts'exwts'a?xwi7",
+        "parkid": "248",
+        "neighbourhood": "Downtown",
+        "location": "860 Richards Street, Vancouver, BC",
+        "latitude": "49.28477",
+        "longitude": "-123.11862",
+        "playground_count": "2",
+        "hectare": "0.32",
+        "washrooms": "N",
+        
+        
+        
+        "description": "2 playgrounds in s??q?lxen?m'ts'exwts'a?xwi7 (Downtown). Equipment not yet surveyed.",
+        "source": "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)",
+        "rights": "Contains information licensed under the Open Government Licence – Vancouver",
+        
+        "object_location": "",
+        "reference_url": "/en/items/park248.html"
+    }
+    
+] }

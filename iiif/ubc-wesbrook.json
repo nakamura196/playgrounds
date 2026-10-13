@@ -1,0 +1,490 @@
+{
+  "@context": [
+    "http://iiif.io/api/extension/navplace/context.json",
+    "http://iiif.io/api/presentation/3/context.json"
+  ],
+  "id": "https://play.ldas.jp/iiif/ubc-wesbrook.json",
+  "type": "Manifest",
+  "label": { "none": [ "Wesbrook Park" ] },
+  "summary": { "en": [ "1 playground in Wesbrook Park (Wesbrook Village, UBC), with an outdoor fitness corner (KOMPAN) and a bouldering wall at its south side. Not in the City of Vancouver open data; the position is where the survey photos were taken. The tube slide tower is by Corocord (2019, ages 5-12). Also has a post with three red rings whose use is unknown." ], "ja": [ "Wesbrook Park（UBC の Wesbrook Village）にある遊び場 1 か所。南側に屋外の運動器具の一角（KOMPAN 社）と登り壁がある。市のオープンデータには無く、位置は現地調査の写真を撮った地点。すべり台の塔は Corocord 社製（2019 年、5〜12 歳向け）。赤い輪が 3 つ付いた、用途の分からない柱もある。" ] },
+  "metadata": [
+    { "label": { "en": [ "Location" ], "ja": [ "所在地" ] }, "value": { "none": [ "Wesbrook Village, University of British Columbia, Vancouver, BC" ] } },
+    { "label": { "en": [ "Surveyed" ], "ja": [ "現地で確認した日" ] }, "value": { "none": [ "2026-10" ] } },
+    { "label": { "en": [ "Play equipment" ], "ja": [ "遊具" ] }, "value": { "en": [ "Curved Tube Slide; Rope Net Spinner; Spinning Seat; Low Rope Net; Log Stepping Stumps; Overhead Rail Trolley; Climbing Wall with Holds; Pull-up Bar with Dip Handles; Parallel Bars; Kettlebell Lift Station" ], "ja": [ "筒形のすべり台、回る網のかご、回る椅子、低い綱の網、切り株の足場、レールを滑る取っ手、登り壁、懸垂の棒（ディップの取っ手付き）、平行棒、ケトルベル形のおもり" ] } }
+  ],
+  "requiredStatement": {
+    "label": { "en": [ "Attribution" ], "ja": [ "クレジット" ] },
+    "value": { "en": [ "Photos: Satoru Nakamura, CC BY 4.0, via Wikimedia Commons" ], "ja": [ "写真: 中村 覚（CC BY 4.0、Wikimedia Commons 経由）" ] }
+  },
+  "rights": "http://creativecommons.org/licenses/by/4.0/",
+  "homepage": [
+    { "id": "https://play.ldas.jp/items/ubc-wesbrook.html", "type": "Text", "label": { "none": [ "Wesbrook Park" ] }, "format": "text/html" }
+  ],
+  "seeAlso": [
+    { "id": "https://play.ldas.jp/items/ubc-wesbrook.jsonld", "type": "Dataset", "format": "application/ld+json", "profile": "https://schema.org/" }
+  ],
+  "navPlace": {
+    "id": "https://play.ldas.jp/iiif/ubc-wesbrook.json/feature-collection/1",
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "id": "https://play.ldas.jp/iiif/ubc-wesbrook.json/feature/1",
+        "type": "Feature",
+        "properties": { "label": { "none": [ "Wesbrook Park" ] } },
+        "geometry": { "type": "Point", "coordinates": [ -123.231881, 49.252133 ] }
+      }
+    ]
+  },
+  "items": [{
+      "id": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/1",
+      "type": "Canvas",
+      "label": { "en": [ "The playground from the entrance path" ], "ja": [ "入口の通路から見た遊び場" ] },
+      "summary": { "en": [ "The whole playground from the entrance path: the tube slide tower, the rope net spinner and the log stepping stumps. Passers-by are pixelated." ], "ja": [ "入口の通路から見た遊び場の全体。筒形のすべり台の塔、回る網のかご、切り株の足場。通りがかった人はぼかしてある。" ] },
+      "width": 4000,
+      "height": 3000,
+      "thumbnail": [ { "id": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10-11_01.jpg/330px-Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10-11_01.jpg", "type": "Image", "format": "image/jpeg" } ],
+      "homepage": [ { "id": "https://commons.wikimedia.org/wiki/File:Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10-11_01.jpg", "type": "Text", "label": { "en": [ "File page on Wikimedia Commons" ], "ja": [ "Wikimedia Commons のファイルのページ" ] }, "format": "text/html" } ],
+      "items": [
+        {
+          "id": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/1/page/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/1/annotation/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10-11_01.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 4000,
+                "height": 3000
+              },
+              "target": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/1"
+            }
+          ]
+        }
+      ]
+    },{
+      "id": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/2",
+      "type": "Canvas",
+      "label": { "en": [ "Tube slide tower and low rope net" ], "ja": [ "すべり台の塔と低い綱の網" ] },
+      "summary": { "en": [ "The tower with a tube slide, held by a mast and guy ropes, with a low rope net behind." ], "ja": [ "筒形のすべり台の塔。柱と綱で支えてあり、奥に低い綱の網がある。" ] },
+      "width": 4000,
+      "height": 3000,
+      "thumbnail": [ { "id": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10-11_02.jpg/330px-Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10-11_02.jpg", "type": "Image", "format": "image/jpeg" } ],
+      "homepage": [ { "id": "https://commons.wikimedia.org/wiki/File:Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10-11_02.jpg", "type": "Text", "label": { "en": [ "File page on Wikimedia Commons" ], "ja": [ "Wikimedia Commons のファイルのページ" ] }, "format": "text/html" } ],
+      "items": [
+        {
+          "id": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/2/page/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/2/annotation/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10-11_02.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 4000,
+                "height": 3000
+              },
+              "target": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/2"
+            }
+          ]
+        }
+      ]
+    },{
+      "id": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/3",
+      "type": "Canvas",
+      "label": { "en": [ "Rope net spinner" ], "ja": [ "回る網のかご" ] },
+      "summary": { "en": [ "A cone of rope net around a central post, turning with the base disc." ], "ja": [ "柱の周りに綱の網が円すい形に張ってあり、下の円盤ごと回る。" ] },
+      "width": 3000,
+      "height": 4000,
+      "thumbnail": [ { "id": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10-11_03.jpg/330px-Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10-11_03.jpg", "type": "Image", "format": "image/jpeg" } ],
+      "homepage": [ { "id": "https://commons.wikimedia.org/wiki/File:Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10-11_03.jpg", "type": "Text", "label": { "en": [ "File page on Wikimedia Commons" ], "ja": [ "Wikimedia Commons のファイルのページ" ] }, "format": "text/html" } ],
+      "items": [
+        {
+          "id": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/3/page/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/3/annotation/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10-11_03.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 3000,
+                "height": 4000
+              },
+              "target": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/3"
+            }
+          ]
+        }
+      ]
+    },{
+      "id": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/4",
+      "type": "Canvas",
+      "label": { "en": [ "Tube slide tower from the front" ], "ja": [ "正面から見たすべり台の塔" ] },
+      "summary": { "en": [ "The tube slide tower as a whole, from the front." ], "ja": [ "筒形のすべり台の塔を正面から見た全体。" ] },
+      "width": 4000,
+      "height": 3000,
+      "thumbnail": [ { "id": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10-11_04.jpg/330px-Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10-11_04.jpg", "type": "Image", "format": "image/jpeg" } ],
+      "homepage": [ { "id": "https://commons.wikimedia.org/wiki/File:Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10-11_04.jpg", "type": "Text", "label": { "en": [ "File page on Wikimedia Commons" ], "ja": [ "Wikimedia Commons のファイルのページ" ] }, "format": "text/html" } ],
+      "items": [
+        {
+          "id": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/4/page/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/4/annotation/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10-11_04.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 4000,
+                "height": 3000
+              },
+              "target": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/4"
+            }
+          ]
+        }
+      ]
+    },{
+      "id": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/5",
+      "type": "Canvas",
+      "label": { "en": [ "Log stepping stumps" ], "ja": [ "切り株の足場" ] },
+      "summary": { "en": [ "Log stepping stumps of different heights." ], "ja": [ "高さの違う切り株を並べた足場。" ] },
+      "width": 4000,
+      "height": 3000,
+      "thumbnail": [ { "id": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10-11_05.jpg/330px-Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10-11_05.jpg", "type": "Image", "format": "image/jpeg" } ],
+      "homepage": [ { "id": "https://commons.wikimedia.org/wiki/File:Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10-11_05.jpg", "type": "Text", "label": { "en": [ "File page on Wikimedia Commons" ], "ja": [ "Wikimedia Commons のファイルのページ" ] }, "format": "text/html" } ],
+      "items": [
+        {
+          "id": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/5/page/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/5/annotation/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://upload.wikimedia.org/wikipedia/commons/7/74/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10-11_05.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 4000,
+                "height": 3000
+              },
+              "target": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/5"
+            }
+          ]
+        }
+      ]
+    },{
+      "id": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/6",
+      "type": "Canvas",
+      "label": { "en": [ "Spinning seat" ], "ja": [ "回る椅子" ] },
+      "summary": { "en": [ "A single spinning seat with a flexible pole." ], "ja": [ "しなる棒の付いた 1 人用の回る椅子。" ] },
+      "width": 3000,
+      "height": 4000,
+      "thumbnail": [ { "id": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10-11_06.jpg/330px-Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10-11_06.jpg", "type": "Image", "format": "image/jpeg" } ],
+      "homepage": [ { "id": "https://commons.wikimedia.org/wiki/File:Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10-11_06.jpg", "type": "Text", "label": { "en": [ "File page on Wikimedia Commons" ], "ja": [ "Wikimedia Commons のファイルのページ" ] }, "format": "text/html" } ],
+      "items": [
+        {
+          "id": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/6/page/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/6/annotation/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://upload.wikimedia.org/wikipedia/commons/2/27/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10-11_06.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 3000,
+                "height": 4000
+              },
+              "target": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/6"
+            }
+          ]
+        }
+      ]
+    },{
+      "id": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/7",
+      "type": "Canvas",
+      "label": { "en": [ "Post with three red rings" ], "ja": [ "赤い輪が 3 つ付いた柱" ] },
+      "summary": { "en": [ "A post with three red rings. Its use is not known yet." ], "ja": [ "赤い輪が 3 つ付いた柱。何に使う物かはまだ分からない。" ] },
+      "width": 3000,
+      "height": 4000,
+      "thumbnail": [ { "id": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10-11_07.jpg/330px-Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10-11_07.jpg", "type": "Image", "format": "image/jpeg" } ],
+      "homepage": [ { "id": "https://commons.wikimedia.org/wiki/File:Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10-11_07.jpg", "type": "Text", "label": { "en": [ "File page on Wikimedia Commons" ], "ja": [ "Wikimedia Commons のファイルのページ" ] }, "format": "text/html" } ],
+      "items": [
+        {
+          "id": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/7/page/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/7/annotation/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://upload.wikimedia.org/wikipedia/commons/9/99/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10-11_07.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 3000,
+                "height": 4000
+              },
+              "target": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/7"
+            }
+          ]
+        }
+      ]
+    },{
+      "id": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/8",
+      "type": "Canvas",
+      "label": { "en": [ "Overhead rail trolley" ], "ja": [ "レールを滑る取っ手" ] },
+      "summary": { "en": [ "A KOMPAN trolley with a hanging grip on a rigid overhead rail, with the start platform and ladder." ], "ja": [ "頭上の固いレールを、ぶら下がる取っ手の付いた台車（KOMPAN 社）が滑る。出発の台とはしご。" ] },
+      "width": 4000,
+      "height": 3000,
+      "thumbnail": [ { "id": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_08.jpg/330px-Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_08.jpg", "type": "Image", "format": "image/jpeg" } ],
+      "homepage": [ { "id": "https://commons.wikimedia.org/wiki/File:Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_08.jpg", "type": "Text", "label": { "en": [ "File page on Wikimedia Commons" ], "ja": [ "Wikimedia Commons のファイルのページ" ] }, "format": "text/html" } ],
+      "items": [
+        {
+          "id": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/8/page/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/8/annotation/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://upload.wikimedia.org/wikipedia/commons/1/13/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_08.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 4000,
+                "height": 3000
+              },
+              "target": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/8"
+            }
+          ]
+        }
+      ]
+    },{
+      "id": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/9",
+      "type": "Canvas",
+      "label": { "en": [ "Pull-up bar with dip handles" ], "ja": [ "懸垂の棒" ] },
+      "summary": { "en": [ "An outdoor fitness pull-up bar with dip handles on the posts, and the bouldering wall behind." ], "ja": [ "柱の内側に取っ手の付いた、屋外運動器具の懸垂の棒。奥に登り壁。" ] },
+      "width": 3000,
+      "height": 4000,
+      "thumbnail": [ { "id": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_09.jpg/330px-Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_09.jpg", "type": "Image", "format": "image/jpeg" } ],
+      "homepage": [ { "id": "https://commons.wikimedia.org/wiki/File:Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_09.jpg", "type": "Text", "label": { "en": [ "File page on Wikimedia Commons" ], "ja": [ "Wikimedia Commons のファイルのページ" ] }, "format": "text/html" } ],
+      "items": [
+        {
+          "id": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/9/page/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/9/annotation/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_09.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 3000,
+                "height": 4000
+              },
+              "target": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/9"
+            }
+          ]
+        }
+      ]
+    },{
+      "id": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/10",
+      "type": "Canvas",
+      "label": { "en": [ "Kettlebell lift station" ], "ja": [ "ケトルベル形のおもり" ] },
+      "summary": { "en": [ "Kettlebell-shaped weights sliding on vertical rods, with a KOMPAN exercise panel." ], "ja": [ "縦の棒に沿って上下するケトルベル形のおもりと、KOMPAN 社の運動の手順の看板。" ] },
+      "width": 3000,
+      "height": 4000,
+      "thumbnail": [ { "id": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_10.jpg/330px-Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_10.jpg", "type": "Image", "format": "image/jpeg" } ],
+      "homepage": [ { "id": "https://commons.wikimedia.org/wiki/File:Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_10.jpg", "type": "Text", "label": { "en": [ "File page on Wikimedia Commons" ], "ja": [ "Wikimedia Commons のファイルのページ" ] }, "format": "text/html" } ],
+      "items": [
+        {
+          "id": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/10/page/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/10/annotation/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://upload.wikimedia.org/wikipedia/commons/7/77/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_10.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 3000,
+                "height": 4000
+              },
+              "target": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/10"
+            }
+          ]
+        }
+      ]
+    },{
+      "id": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/11",
+      "type": "Canvas",
+      "label": { "en": [ "Bouldering wall" ], "ja": [ "登り壁" ] },
+      "summary": { "en": [ "A free-standing bouldering wall with coloured holds." ], "ja": [ "色の付いた取っ手（ホールド）の、独立した登り壁。" ] },
+      "width": 3000,
+      "height": 4000,
+      "thumbnail": [ { "id": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_11.jpg/330px-Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_11.jpg", "type": "Image", "format": "image/jpeg" } ],
+      "homepage": [ { "id": "https://commons.wikimedia.org/wiki/File:Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_11.jpg", "type": "Text", "label": { "en": [ "File page on Wikimedia Commons" ], "ja": [ "Wikimedia Commons のファイルのページ" ] }, "format": "text/html" } ],
+      "items": [
+        {
+          "id": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/11/page/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/11/annotation/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_11.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 3000,
+                "height": 4000
+              },
+              "target": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/11"
+            }
+          ]
+        }
+      ]
+    },{
+      "id": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/12",
+      "type": "Canvas",
+      "label": { "en": [ "Parallel bars" ], "ja": [ "平行棒" ] },
+      "summary": { "en": [ "Low parallel bars on orange posts in the outdoor fitness area." ], "ja": [ "屋外運動器具の一角にある、オレンジ色の柱の低い平行棒。" ] },
+      "width": 3000,
+      "height": 4000,
+      "thumbnail": [ { "id": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_12.jpg/330px-Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_12.jpg", "type": "Image", "format": "image/jpeg" } ],
+      "homepage": [ { "id": "https://commons.wikimedia.org/wiki/File:Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_12.jpg", "type": "Text", "label": { "en": [ "File page on Wikimedia Commons" ], "ja": [ "Wikimedia Commons のファイルのページ" ] }, "format": "text/html" } ],
+      "items": [
+        {
+          "id": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/12/page/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/12/annotation/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://upload.wikimedia.org/wikipedia/commons/6/67/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_12.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 3000,
+                "height": 4000
+              },
+              "target": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/12"
+            }
+          ]
+        }
+      ]
+    },{
+      "id": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/13",
+      "type": "Canvas",
+      "label": { "en": [ "Spinning seat and rope net spinner" ], "ja": [ "回る椅子と回る網のかご" ] },
+      "summary": { "en": [ "The spinning seat on its curved pole, with the rope net spinner on the left." ], "ja": [ "曲がった棒の上で回る椅子。左は回る網のかご。" ] },
+      "width": 3000,
+      "height": 4000,
+      "thumbnail": [ { "id": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_13.jpg/330px-Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_13.jpg", "type": "Image", "format": "image/jpeg" } ],
+      "homepage": [ { "id": "https://commons.wikimedia.org/wiki/File:Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_13.jpg", "type": "Text", "label": { "en": [ "File page on Wikimedia Commons" ], "ja": [ "Wikimedia Commons のファイルのページ" ] }, "format": "text/html" } ],
+      "items": [
+        {
+          "id": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/13/page/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/13/annotation/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_13.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 3000,
+                "height": 4000
+              },
+              "target": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/13"
+            }
+          ]
+        }
+      ]
+    },{
+      "id": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/14",
+      "type": "Canvas",
+      "label": { "en": [ "Age label on the tower" ], "ja": [ "塔の対象年齢の表示" ] },
+      "summary": { "en": [ "Age label on the tube slide tower mast: designed for children ages 5 to 12, adult supervision recommended (Corocord)." ], "ja": [ "すべり台の塔の柱の表示。5〜12 歳向け、大人の見守りを勧める（Corocord 社）。" ] },
+      "width": 3000,
+      "height": 4000,
+      "thumbnail": [ { "id": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_14.jpg/330px-Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_14.jpg", "type": "Image", "format": "image/jpeg" } ],
+      "homepage": [ { "id": "https://commons.wikimedia.org/wiki/File:Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_14.jpg", "type": "Text", "label": { "en": [ "File page on Wikimedia Commons" ], "ja": [ "Wikimedia Commons のファイルのページ" ] }, "format": "text/html" } ],
+      "items": [
+        {
+          "id": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/14/page/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/14/annotation/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://upload.wikimedia.org/wikipedia/commons/5/51/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_14.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 3000,
+                "height": 4000
+              },
+              "target": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/14"
+            }
+          ]
+        }
+      ]
+    },{
+      "id": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/15",
+      "type": "Canvas",
+      "label": { "en": [ "Manufacturer plate on the tower" ], "ja": [ "塔の製造銘板" ] },
+      "summary": { "en": [ "Corocord plate on the tower mast: recommended age group 5-12, Art. Corocord15-0335-3C1, Ref.-No. 32857, year 2019." ], "ja": [ "塔の柱の Corocord 社の銘板。推奨 5〜12 歳、品番 Corocord15-0335-3C1、整理番号 32857、2019 年製。" ] },
+      "width": 3000,
+      "height": 4000,
+      "thumbnail": [ { "id": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_15.jpg/330px-Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_15.jpg", "type": "Image", "format": "image/jpeg" } ],
+      "homepage": [ { "id": "https://commons.wikimedia.org/wiki/File:Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_15.jpg", "type": "Text", "label": { "en": [ "File page on Wikimedia Commons" ], "ja": [ "Wikimedia Commons のファイルのページ" ] }, "format": "text/html" } ],
+      "items": [
+        {
+          "id": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/15/page/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/15/annotation/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10_15.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 3000,
+                "height": 4000
+              },
+              "target": "https://play.ldas.jp/iiif/ubc-wesbrook.json/canvas/15"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

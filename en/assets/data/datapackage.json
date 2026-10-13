@@ -1,0 +1,62 @@
+{
+    "profile": "data-package",
+    "name": "vancouver-playgrounds-data",
+    "title": "Vancouver Playgrounds Data",
+    "description": "Metadata and data derived from Vancouver Playgrounds. A record of the 136 playgrounds in 114 City of Vancouver parks, to be searchable by play equipment. It starts from the City&#39;s open data and adds playgrounds surveyed on site.",
+    "keywords":  ["playground"," play equipment"," Vancouver"," parks"],
+    "homepage": "https://play.ldas.jp/en/",
+    "contributors": [
+        {
+            "title": "City of Vancouver Open Data (park information)",
+            "path": "https://opendata.vancouver.ca/explore/dataset/parks-facilities/",
+            "role": "author"
+        }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Wesbrook_Park_playground%2C_UBC%2C_Vancouver%2C_2026-10-11_04.jpg",
+    "licenses": [
+        {
+            "name": "CC0-1.0",
+            "title": "CC0 1.0",
+            "path": "https://creativecommons.org/publicdomain/zero/1.0/"
+        }
+    ],
+    "resources": [
+         
+        {
+            "name": "facets-json",
+            "path": "facets.json",
+            "title": "Vancouver Playgrounds Metadata Facets",
+            "description":"Unique values and counts of metadata facet fields.",
+            "format":"json",
+            "profile": "data-resource"
+        },
+        
+        
+        
+        {
+            "name": "geodata-json",
+            "path": "geodata.json",
+            "title": "Vancouver Playgrounds geographic metadata",
+            "description": "Geojson data containing all objects with lat-longs and associated descriptive metadata.",
+            "format":"json",
+            "profile": "data-resource"
+        },
+        
+        {
+            "name": "metadata-csv",
+            "path": "metadata.csv",
+            "title": "Vancouver Playgrounds full metadata in csv",
+            "description": "Complete metadata export for Vancouver Playgrounds objects.",
+            "format":"csv",
+            "profile":"data-resource"
+        },
+        {
+            "name": "metadata-json",
+            "path": "metadata.json",
+            "title": "Vancouver Playgrounds full metadata in json",
+            "description": "Complete metadata export for Vancouver Playgrounds objects.",
+            "format":"json",
+            "profile":"data-resource"
+        }
+    ]
+}

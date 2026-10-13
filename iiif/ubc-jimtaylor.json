@@ -1,0 +1,220 @@
+{
+  "@context": [
+    "http://iiif.io/api/extension/navplace/context.json",
+    "http://iiif.io/api/presentation/3/context.json"
+  ],
+  "id": "https://play.ldas.jp/iiif/ubc-jimtaylor.json",
+  "type": "Manifest",
+  "label": { "none": [ "Jim Taylor Park" ] },
+  "summary": { "en": [ "1 playground in Jim Taylor Park (UBC): a wooden play structure with a green spiral slide, a sloping cargo net and a coil climber, a log climbing wall, and a wooden frame with monkey bars. Not in the City of Vancouver open data; the position is where the survey photos were taken." ], "ja": [ "Jim Taylor Park（UBC）にある遊び場 1 か所。緑のらせんのすべり台、斜めの綱の網、らせんの登り棒が付いた木の複合遊具、丸太の登り壁、雲梯を渡した木の枠がある。市のオープンデータには無く、位置は現地調査の写真を撮った地点。" ] },
+  "metadata": [
+    { "label": { "en": [ "Location" ], "ja": [ "所在地" ] }, "value": { "none": [ "University of British Columbia, Vancouver, BC" ] } },
+    { "label": { "en": [ "Surveyed" ], "ja": [ "現地で確認した日" ] }, "value": { "none": [ "2026-10" ] } },
+    { "label": { "en": [ "Play equipment" ], "ja": [ "遊具" ] }, "value": { "en": [ "Single Corkscrew Slide; Sloping Cargo Net; Coil Climber; Climbing Wall with Holds; Monkey Bars" ], "ja": [ "らせんのすべり台、斜めの綱の網、らせんの登り棒、登り壁、雲梯" ] } }
+  ],
+  "requiredStatement": {
+    "label": { "en": [ "Attribution" ], "ja": [ "クレジット" ] },
+    "value": { "en": [ "Photos: Satoru Nakamura, CC BY 4.0, via Wikimedia Commons" ], "ja": [ "写真: 中村 覚（CC BY 4.0、Wikimedia Commons 経由）" ] }
+  },
+  "rights": "http://creativecommons.org/licenses/by/4.0/",
+  "homepage": [
+    { "id": "https://play.ldas.jp/items/ubc-jimtaylor.html", "type": "Text", "label": { "none": [ "Jim Taylor Park" ] }, "format": "text/html" }
+  ],
+  "seeAlso": [
+    { "id": "https://play.ldas.jp/items/ubc-jimtaylor.jsonld", "type": "Dataset", "format": "application/ld+json", "profile": "https://schema.org/" }
+  ],
+  "navPlace": {
+    "id": "https://play.ldas.jp/iiif/ubc-jimtaylor.json/feature-collection/1",
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "id": "https://play.ldas.jp/iiif/ubc-jimtaylor.json/feature/1",
+        "type": "Feature",
+        "properties": { "label": { "none": [ "Jim Taylor Park" ] } },
+        "geometry": { "type": "Point", "coordinates": [ -123.247614, 49.259281 ] }
+      }
+    ]
+  },
+  "items": [{
+      "id": "https://play.ldas.jp/iiif/ubc-jimtaylor.json/canvas/1",
+      "type": "Canvas",
+      "label": { "en": [ "The playground from the path" ], "ja": [ "通路から見た遊び場" ] },
+      "summary": { "en": [ "Jim Taylor Park playground from the path: a wooden play structure with a green spiral slide, and a frame with overhead bars on the left. People are pixelated." ], "ja": [ "通路から見た Jim Taylor Park の遊び場。緑のらせんのすべり台が付いた木の複合遊具と、左に雲梯の枠。人にはモザイクをかけている。" ] },
+      "width": 4000,
+      "height": 3000,
+      "thumbnail": [ { "id": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Jim_Taylor_Park%2C_UBC%2C_Vancouver%2C_2026-10_01.jpg/330px-Jim_Taylor_Park%2C_UBC%2C_Vancouver%2C_2026-10_01.jpg", "type": "Image", "format": "image/jpeg" } ],
+      "homepage": [ { "id": "https://commons.wikimedia.org/wiki/File:Jim_Taylor_Park%2C_UBC%2C_Vancouver%2C_2026-10_01.jpg", "type": "Text", "label": { "en": [ "File page on Wikimedia Commons" ], "ja": [ "Wikimedia Commons のファイルのページ" ] }, "format": "text/html" } ],
+      "items": [
+        {
+          "id": "https://play.ldas.jp/iiif/ubc-jimtaylor.json/canvas/1/page/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://play.ldas.jp/iiif/ubc-jimtaylor.json/canvas/1/annotation/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://upload.wikimedia.org/wikipedia/commons/2/22/Jim_Taylor_Park%2C_UBC%2C_Vancouver%2C_2026-10_01.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 4000,
+                "height": 3000
+              },
+              "target": "https://play.ldas.jp/iiif/ubc-jimtaylor.json/canvas/1"
+            }
+          ]
+        }
+      ]
+    },{
+      "id": "https://play.ldas.jp/iiif/ubc-jimtaylor.json/canvas/2",
+      "type": "Canvas",
+      "label": { "en": [ "Spiral slide" ], "ja": [ "らせんのすべり台" ] },
+      "summary": { "en": [ "Green spiral slide with a hooded top on the wooden play structure, Jim Taylor Park. People are pixelated." ], "ja": [ "木の複合遊具に付いた緑のらせんのすべり台。上の入口に屋根がある。Jim Taylor Park。人にはモザイクをかけている。" ] },
+      "width": 3000,
+      "height": 4000,
+      "thumbnail": [ { "id": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Jim_Taylor_Park%2C_UBC%2C_Vancouver%2C_2026-10_02.jpg/330px-Jim_Taylor_Park%2C_UBC%2C_Vancouver%2C_2026-10_02.jpg", "type": "Image", "format": "image/jpeg" } ],
+      "homepage": [ { "id": "https://commons.wikimedia.org/wiki/File:Jim_Taylor_Park%2C_UBC%2C_Vancouver%2C_2026-10_02.jpg", "type": "Text", "label": { "en": [ "File page on Wikimedia Commons" ], "ja": [ "Wikimedia Commons のファイルのページ" ] }, "format": "text/html" } ],
+      "items": [
+        {
+          "id": "https://play.ldas.jp/iiif/ubc-jimtaylor.json/canvas/2/page/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://play.ldas.jp/iiif/ubc-jimtaylor.json/canvas/2/annotation/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Jim_Taylor_Park%2C_UBC%2C_Vancouver%2C_2026-10_02.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 3000,
+                "height": 4000
+              },
+              "target": "https://play.ldas.jp/iiif/ubc-jimtaylor.json/canvas/2"
+            }
+          ]
+        }
+      ]
+    },{
+      "id": "https://play.ldas.jp/iiif/ubc-jimtaylor.json/canvas/3",
+      "type": "Canvas",
+      "label": { "en": [ "Log climbing wall" ], "ja": [ "丸太の登り壁" ] },
+      "summary": { "en": [ "Climbing wall of upright logs with green handholds and a rope, Jim Taylor Park." ], "ja": [ "縦に並べた丸太に緑の取っ手と綱を付けた登り壁。Jim Taylor Park。" ] },
+      "width": 3000,
+      "height": 4000,
+      "thumbnail": [ { "id": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Jim_Taylor_Park%2C_UBC%2C_Vancouver%2C_2026-10_03.jpg/330px-Jim_Taylor_Park%2C_UBC%2C_Vancouver%2C_2026-10_03.jpg", "type": "Image", "format": "image/jpeg" } ],
+      "homepage": [ { "id": "https://commons.wikimedia.org/wiki/File:Jim_Taylor_Park%2C_UBC%2C_Vancouver%2C_2026-10_03.jpg", "type": "Text", "label": { "en": [ "File page on Wikimedia Commons" ], "ja": [ "Wikimedia Commons のファイルのページ" ] }, "format": "text/html" } ],
+      "items": [
+        {
+          "id": "https://play.ldas.jp/iiif/ubc-jimtaylor.json/canvas/3/page/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://play.ldas.jp/iiif/ubc-jimtaylor.json/canvas/3/annotation/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Jim_Taylor_Park%2C_UBC%2C_Vancouver%2C_2026-10_03.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 3000,
+                "height": 4000
+              },
+              "target": "https://play.ldas.jp/iiif/ubc-jimtaylor.json/canvas/3"
+            }
+          ]
+        }
+      ]
+    },{
+      "id": "https://play.ldas.jp/iiif/ubc-jimtaylor.json/canvas/4",
+      "type": "Canvas",
+      "label": { "en": [ "Cargo net and coil climber" ], "ja": [ "斜めの綱の網と、らせんの登り棒" ] },
+      "summary": { "en": [ "Wooden play structure with a sloping cargo net, a coil climber on the left and a slide behind. People are pixelated." ], "ja": [ "木の複合遊具。斜めに張った綱の網、左にらせん形の登り棒、奥にすべり台。Jim Taylor Park。人にはモザイクをかけている。" ] },
+      "width": 3000,
+      "height": 4000,
+      "thumbnail": [ { "id": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Jim_Taylor_Park%2C_UBC%2C_Vancouver%2C_2026-10_04.jpg/330px-Jim_Taylor_Park%2C_UBC%2C_Vancouver%2C_2026-10_04.jpg", "type": "Image", "format": "image/jpeg" } ],
+      "homepage": [ { "id": "https://commons.wikimedia.org/wiki/File:Jim_Taylor_Park%2C_UBC%2C_Vancouver%2C_2026-10_04.jpg", "type": "Text", "label": { "en": [ "File page on Wikimedia Commons" ], "ja": [ "Wikimedia Commons のファイルのページ" ] }, "format": "text/html" } ],
+      "items": [
+        {
+          "id": "https://play.ldas.jp/iiif/ubc-jimtaylor.json/canvas/4/page/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://play.ldas.jp/iiif/ubc-jimtaylor.json/canvas/4/annotation/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Jim_Taylor_Park%2C_UBC%2C_Vancouver%2C_2026-10_04.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 3000,
+                "height": 4000
+              },
+              "target": "https://play.ldas.jp/iiif/ubc-jimtaylor.json/canvas/4"
+            }
+          ]
+        }
+      ]
+    },{
+      "id": "https://play.ldas.jp/iiif/ubc-jimtaylor.json/canvas/5",
+      "type": "Canvas",
+      "label": { "en": [ "Monkey bars" ], "ja": [ "雲梯" ] },
+      "summary": { "en": [ "Wooden frame with green overhead bars (monkey bars) and a wooden step with a handrail at one end, Jim Taylor Park. People are pixelated." ], "ja": [ "緑の雲梯を渡した木の枠。端に手すりの付いた木の踏み台がある。Jim Taylor Park。人にはモザイクをかけている。" ] },
+      "width": 3000,
+      "height": 4000,
+      "thumbnail": [ { "id": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Jim_Taylor_Park%2C_UBC%2C_Vancouver%2C_2026-10_05.jpg/330px-Jim_Taylor_Park%2C_UBC%2C_Vancouver%2C_2026-10_05.jpg", "type": "Image", "format": "image/jpeg" } ],
+      "homepage": [ { "id": "https://commons.wikimedia.org/wiki/File:Jim_Taylor_Park%2C_UBC%2C_Vancouver%2C_2026-10_05.jpg", "type": "Text", "label": { "en": [ "File page on Wikimedia Commons" ], "ja": [ "Wikimedia Commons のファイルのページ" ] }, "format": "text/html" } ],
+      "items": [
+        {
+          "id": "https://play.ldas.jp/iiif/ubc-jimtaylor.json/canvas/5/page/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://play.ldas.jp/iiif/ubc-jimtaylor.json/canvas/5/annotation/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://upload.wikimedia.org/wikipedia/commons/5/57/Jim_Taylor_Park%2C_UBC%2C_Vancouver%2C_2026-10_05.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 3000,
+                "height": 4000
+              },
+              "target": "https://play.ldas.jp/iiif/ubc-jimtaylor.json/canvas/5"
+            }
+          ]
+        }
+      ]
+    },{
+      "id": "https://play.ldas.jp/iiif/ubc-jimtaylor.json/canvas/6",
+      "type": "Canvas",
+      "label": { "en": [ "Monkey bars from the step end" ], "ja": [ "踏み台の側から見た雲梯" ] },
+      "summary": { "en": [ "The same monkey bars in use, seen from the step end, Jim Taylor Park. People are pixelated." ], "ja": [ "同じ雲梯。踏み台の側から見た、使っているところ。Jim Taylor Park。人にはモザイクをかけている。" ] },
+      "width": 3000,
+      "height": 4000,
+      "thumbnail": [ { "id": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Jim_Taylor_Park%2C_UBC%2C_Vancouver%2C_2026-10_06.jpg/330px-Jim_Taylor_Park%2C_UBC%2C_Vancouver%2C_2026-10_06.jpg", "type": "Image", "format": "image/jpeg" } ],
+      "homepage": [ { "id": "https://commons.wikimedia.org/wiki/File:Jim_Taylor_Park%2C_UBC%2C_Vancouver%2C_2026-10_06.jpg", "type": "Text", "label": { "en": [ "File page on Wikimedia Commons" ], "ja": [ "Wikimedia Commons のファイルのページ" ] }, "format": "text/html" } ],
+      "items": [
+        {
+          "id": "https://play.ldas.jp/iiif/ubc-jimtaylor.json/canvas/6/page/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://play.ldas.jp/iiif/ubc-jimtaylor.json/canvas/6/annotation/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://upload.wikimedia.org/wikipedia/commons/1/10/Jim_Taylor_Park%2C_UBC%2C_Vancouver%2C_2026-10_06.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 3000,
+                "height": 4000
+              },
+              "target": "https://play.ldas.jp/iiif/ubc-jimtaylor.json/canvas/6"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "https://play.ldas.jp/items/grouse-canopy",
+  "@type": "Park",
+  "name": "Kids Tree Canopy Adventure",
+  "description": "Children's play area among the trees at the top of Grouse Mountain: treehouses joined by net bridges, a tube slide down the slope, a vertical climbing net and a wooden footbridge. The sign says it is for ages 3 and up and adult supervision is required. Outside the City of Vancouver (District of North Vancouver) and inside the paid area of the Grouse Mountain resort (reached by the Skyride), so it is an exception to the rule of recording only playgrounds open to everyone. Not in the City of Vancouver open data; the position is where the survey photos were taken.",
+  "identifier": null,
+  "address": "Grouse Mountain, District of North Vancouver, BC",
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 49.380117,
+    "longitude": -123.083992
+  },
+  "containedInPlace": {
+    "@type": "Place",
+    "name": "North Vancouver"
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "playground count",
+      "value": 1
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "equipment surveyed on",
+      "value": "2026-10"
+    }
+  ],
+  "amenityFeature": [
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Treehouse",
+      "value": true,
+      "additionalType": { "@id": "https://play.ldas.jp/vocab/#treehouse" }
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Rope Net Bridge",
+      "value": true,
+      "additionalType": { "@id": "https://play.ldas.jp/vocab/#rope-net-bridge" }
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Curved Tube Slide",
+      "value": true,
+      "additionalType": { "@id": "https://play.ldas.jp/vocab/#tube-slide" }
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Vertical Net Climbing Tube",
+      "value": true,
+      "additionalType": { "@id": "https://play.ldas.jp/vocab/#net-climbing-tube" }
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Washrooms",
+      "value": false
+    }
+  ],
+  "mainEntityOfPage": "https://play.ldas.jp/items/grouse-canopy.html",
+  "isPartOf": { "@id": "https://play.ldas.jp/", "name": "バンクーバーの遊び場" },
+  "isBasedOn": [
+    "https://opendata.vancouver.ca/explore/dataset/parks/",
+    "https://opendata.vancouver.ca/explore/dataset/parks-facilities/"
+  ],
+  "license": "https://opendata.vancouver.ca/pages/licence/",
+  "creditText": "CC BY 4.0"
+}
