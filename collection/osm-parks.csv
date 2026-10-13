@@ -1,0 +1,18 @@
+parkid,title,osm,latitude,longitude,playground_count,note,note_ja
+65,Adanac Park,way/89340656;way/89340660,49.276348,-123.024297,2,,
+49,Alice Townley Park,way/999275531,49.269098,-123.073822,1,,
+142,Cambie Park,way/826845778,49.221581,-123.118370,1,,
+238,Carolina Park,way/738684546,49.266361,-123.090850,1,,
+13,Coal Harbour Park,way/120629486,49.289902,-123.125606,1,,
+51,Garden Park,way/319821544,49.268251,-123.058845,1,,
+225,George Wainborn Park,way/847369250,49.272099,-123.128971,1,A recent Google Maps review (2026-09) says the playground could not be found; not yet confirmed. A candidate for a site visit.,最近の Google マップのクチコミ（2026-09）に、遊び場が見つからないとの声がある。未確認。現地調査の候補。
+194,Gordon Park,way/927963718,49.223379,-123.071325,1,,
+163,Grimmett Park,way/332706283,49.254082,-123.101953,1,,
+95,Malkin Park,way/732701685,49.232553,-123.177304,1,,
+228,Oak Meadows Park,way/534199778,49.238232,-123.124134,1,,
+61,Park Site on Trinity Street,way/1518098344,49.289555,-123.059427,1,,
+3,Prince of Wales Park,way/423200905,49.244462,-123.155277,1,,
+212,Sahalli Park,way/364251118,49.263950,-123.088968,1,,
+58,Salsbury Park,way/332472605,49.277231,-123.068203,1,,
+147,Tisdall Park,node/2240987702,49.228625,-123.120571,1,,
+245,Trillium Park,way/738684542;way/738684543,49.275061,-123.093444,2,,

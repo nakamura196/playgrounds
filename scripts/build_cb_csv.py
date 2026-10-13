@@ -7,6 +7,10 @@
 手で書く表（collection/ に置く。市のデータを取り直しても消えない）:
   surveyed-parks.csv    市のデータに無い遊び場（UBC など）。位置は現地調査の写真の撮影地点
                         equipment は vocab/types.csv、amenities（水飲み場などの設備）は vocab/amenities.csv の id を ; で並べる
+  osm-parks.csv         市の公園なのに、市の遊び場の一覧に無い公園（2026-10-13 に 17 公園）。
+                        compare_osm_city.py で見つけ、Google マップの航空写真とクチコミの写真で遊具を確かめたもの。
+                        位置は OSM の遊び場（leisure=playground）の点（2 点あれば平均）、playground_count は OSM の点の数。
+                        公園名・住所・地区などは市の parks から取る。note / note_ja は説明文の末尾に足す
   photos.csv            現地調査の写真。1 枚 1 行。写真そのものは Wikimedia Commons に置き、ここには名前と
                         元の画像の幅・高さ（IIIF マニフェストに要る。Commons の imageinfo で調べた値）だけ書く
 
@@ -42,10 +46,19 @@ FIELDS = [
     # 現地調査の順（surveyed-parks.csv の行の順、3 桁）。トップの「最近調べた公園」を新しい順に並べる。
     # surveyed は月までしか無いので、同じ月の中の順はこれで決める
     "survey_seq",
+    # 位置の出典にした OSM の要素（osm-parks.csv の行だけ。way/123;node/456）
+    "osm",
 ]
 
 RIGHTS = "Contains information licensed under the Open Government Licence – Vancouver"
 SOURCE = "City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11)"
+
+OSM_SOURCE = ("City of Vancouver Open Data: parks, parks-facilities (retrieved 2026-10-11); "
+              "position: OpenStreetMap (© OpenStreetMap contributors, ODbL)")
+OSM_RIGHTS = RIGHTS + "; position © OpenStreetMap contributors, ODbL"
+# Google マップは確かめるのに使っただけ。写真や位置は持ち込まない（規約上、中身を転載できない）
+OSM_CHECK = "Playground equipment confirmed from aerial imagery and review photos (2026-10)."
+OSM_CHECK_JA = "航空写真とクチコミの写真で遊具を確認（2026-10）。"
 
 SURVEY_SOURCE = "Own survey"
 SURVEY_RIGHTS = "CC BY 4.0"
@@ -135,6 +148,35 @@ def surveyed_rows():
     return parks
 
 
+def city_row(p, fs, count):
+    """市のデータの公園 1 つを行にする。fs はその公園の施設（parks-facilities）。"""
+    others = sorted(f["facilitytype"] for f in fs if f["facilitytype"] != "Playgrounds")
+    address = " ".join(x for x in [p.get("streetnumber"), p.get("streetname")] if x)
+    geo = p.get("googlemapdest") or {}
+    noun = "playground" if count == 1 else "playgrounds"
+    return {
+        "objectid": f"park{p['parkid']:03d}",
+        "title": p["name"],
+        "description": f"{count} {noun} in {p['name']} ({p['neighbourhoodname']}). Equipment not yet surveyed.",
+        "location": f"{address}, Vancouver, BC" if address else "Vancouver, BC",
+        "latitude": geo.get("lat", ""),
+        "longitude": geo.get("lon", ""),
+        # CollectionBuilder の絞り込み（subject）に、公園の他の施設を入れる
+        "subject": ";".join(others),
+        "type": "Place",
+        "display_template": "record",
+        "source": SOURCE,
+        "rights": RIGHTS,
+        "parkid": p["parkid"],
+        "neighbourhood": p["neighbourhoodname"],
+        "playground_count": count,
+        "hectare": p.get("hectare", ""),
+        "washrooms": p.get("washrooms", ""),
+        "equipment": "",
+        "surveyed": "",
+    }
+
+
 def main():
     parks = {p["parkid"]: p for p in json.load(open(SRC / "parks.json"))}
     facilities = json.load(open(SRC / "parks-facilities.json"))
@@ -145,36 +187,34 @@ def main():
 
     rows = []
     for parkid, fs in by_park.items():
-        pg = [f for f in fs if f["facilitytype"] == "Playgrounds"]
-        if not pg:
-            continue
+        count = sum(f["facilitycount"] for f in fs if f["facilitytype"] == "Playgrounds")
+        if count:
+            rows.append(city_row(parks[parkid], fs, count))
+
+    for o in read("osm-parks.csv"):
+        parkid = int(o["parkid"])
+        if parkid in by_park and any(f["facilitytype"] == "Playgrounds" for f in by_park[parkid]):
+            raise SystemExit(f"osm-parks.csv: {o['title']} is already in the city's playground list")
         p = parks[parkid]
-        count = sum(f["facilitycount"] for f in pg)
-        others = sorted(f["facilitytype"] for f in fs if f["facilitytype"] != "Playgrounds")
-        address = " ".join(x for x in [p.get("streetnumber"), p.get("streetname")] if x)
-        geo = p.get("googlemapdest") or {}
+        count = int(o["playground_count"])
+        row = city_row(p, by_park.get(parkid, []), count)
         noun = "playground" if count == 1 else "playgrounds"
-        rows.append({
-            "objectid": f"park{parkid:03d}",
-            "title": p["name"],
-            "description": f"{count} {noun} in {p['name']} ({p['neighbourhoodname']}). Equipment not yet surveyed.",
-            "location": f"{address}, Vancouver, BC" if address else "Vancouver, BC",
-            "latitude": geo.get("lat", ""),
-            "longitude": geo.get("lon", ""),
-            # CollectionBuilder の絞り込み（subject）に、公園の他の施設を入れる
-            "subject": ";".join(others),
-            "type": "Place",
-            "display_template": "record",
-            "source": SOURCE,
-            "rights": RIGHTS,
-            "parkid": parkid,
-            "neighbourhood": p["neighbourhoodname"],
-            "playground_count": count,
-            "hectare": p.get("hectare", ""),
-            "washrooms": p.get("washrooms", ""),
-            "equipment": "",
-            "surveyed": "",
+        row.update({
+            "description": " ".join(x for x in [
+                f"{count} {noun} in {p['name']} ({p['neighbourhoodname']}).",
+                "Not in the City's list of playgrounds; the position is from OpenStreetMap.",
+                OSM_CHECK, o["note"], "Equipment not yet surveyed."] if x),
+            "description_ja": "".join(x for x in [
+                f"{p['name']}（{p['neighbourhoodname']}）にある遊び場 {count} か所。",
+                "市の遊び場の一覧には無く、位置は OpenStreetMap による。",
+                OSM_CHECK_JA, o["note_ja"], "遊具は未調査。"] if x),
+            "latitude": o["latitude"],
+            "longitude": o["longitude"],
+            "source": OSM_SOURCE,
+            "rights": OSM_RIGHTS,
+            "osm": o["osm"],
         })
+        rows.append(row)
 
     surveyed = surveyed_rows()
     rows += [park for park, _ in surveyed]
